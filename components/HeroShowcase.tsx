@@ -24,7 +24,7 @@ const HERO_PILLARS: HeroPillar[] = [
     num: '01',
     title: 'The Leather Compendium',
     shortTitle: 'Leather Compendium',
-    imageUrl: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/products/Bloom_Leather_Hero.jpg',
   },
   {
     id: 'Jute',
@@ -163,14 +163,18 @@ export default function HeroShowcase({
               </div>
 
               {/* Product Photograph Area - Taller Frame for Full Product Visibility */}
-              <div className="relative aspect-[1/1.22] min-h-[165px] sm:min-h-[180px] md:min-h-[195px] w-full rounded-xl overflow-hidden bg-slate-50 border border-black/5 shadow-2xs">
+              <div className="relative aspect-[1/1.22] min-h-[165px] sm:min-h-[180px] md:min-h-[195px] w-full rounded-xl overflow-hidden bg-[#FAF9F6] border border-black/5 shadow-2xs flex items-center justify-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={pillar.imageUrl}
                   alt={pillar.title}
-                  className="h-full w-full object-cover object-center group-hover:scale-106 transition-transform duration-300"
+                  className={`h-full w-full object-cover object-center transition-transform duration-300 ${
+                    pillar.id === 'Leather'
+                      ? 'group-hover:scale-105'
+                      : 'scale-90 group-hover:scale-95'
+                  }`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
 
               {/* Bottom Subtle Indicator */}
