@@ -68,11 +68,11 @@ export default function Navbar({
               alt="ArielMC Logo"
               className="h-11 sm:h-12 w-auto object-contain"
             />
-            <div className="hidden lg:block pl-2.5 border-l border-slate-200">
-              <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#0A1A2F] block">
+            <div className="hidden md:flex flex-col justify-center pl-3.5 border-l border-slate-200">
+              <span className="text-[12.5px] uppercase font-extrabold tracking-[0.14em] text-[#0A1A2F] block leading-tight font-heading">
                 Ariel Marketing & Communications Limited
               </span>
-              <span className="text-[9.5px] tracking-wider text-[#C9A86A] font-bold block">
+              <span className="text-[10px] tracking-wider text-[#C9A86A] font-bold block leading-tight pt-1">
                 Global Sourcing • Export Management • Private Label Development
               </span>
             </div>
