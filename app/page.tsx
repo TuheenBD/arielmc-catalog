@@ -9,6 +9,8 @@ import ExportTray from '@/components/ExportTray';
 import ProductDetailModal from '@/components/ProductDetailModal';
 import SamplePolicyModal from '@/components/SamplePolicyModal';
 import HeroShowcase, { CERTIFICATION_LOGOS } from '@/components/HeroShowcase';
+import SubscribeCard from '@/components/SubscribeCard';
+import Footer from '@/components/Footer';
 import { CurrencyProvider } from '@/components/CurrencyContext';
 import { MOCK_PRODUCTS } from '@/data/mockProducts';
 import { Product, FilterState, ProductCategory } from '@/types/product';
@@ -310,6 +312,15 @@ function CatalogContent() {
           />
         </div>
       </main>
+
+      {/* Sourcing Intelligence Brief - Executive Subscription */}
+      <SubscribeCard />
+
+      {/* ArielMC Official Corporate Footer */}
+      <Footer
+        onOpenSamplePolicy={() => setIsSamplePolicyOpen(true)}
+        onSelectCategory={handleSelectDivisionCategory}
+      />
 
       {/* Mobile Filters Drawer */}
       {mobileFilterOpen && (

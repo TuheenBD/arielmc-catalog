@@ -118,7 +118,7 @@ export default function HeroShowcase({
         </span>
       </div>
 
-      {/* 5 Hero Pillars - Standard & Refined Proportions */}
+      {/* 5 Hero Pillars - Increased Height & Expanded Product Frame for Full Visibility */}
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3">
         {HERO_PILLARS.map((pillar) => {
           const isSelected = selectedCategories.includes(pillar.id);
@@ -136,7 +136,7 @@ export default function HeroShowcase({
               }`}
             >
               {/* Pillar Header: Number + Division Title */}
-              <div className="mb-1.5">
+              <div className="mb-2">
                 <div className="flex items-center justify-between mb-1">
                   <span className="font-mono text-xs font-black text-[#C9A86A]">
                     {pillar.num}
@@ -153,7 +153,7 @@ export default function HeroShowcase({
                 </div>
 
                 <h3
-                  className={`font-heading font-bold text-xs sm:text-[12.5px] leading-snug line-clamp-1 ${
+                  className={`font-heading font-extrabold text-xs sm:text-[13px] leading-snug line-clamp-2 min-h-[2.1rem] ${
                     isSelected ? 'text-white' : 'text-[#0A1A2F]'
                   }`}
                   title={pillar.title}
@@ -162,8 +162,8 @@ export default function HeroShowcase({
                 </h3>
               </div>
 
-              {/* Product Photograph Area - Standard Balanced Aspect Ratio */}
-              <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden bg-slate-100 border border-black/5 shadow-2xs">
+              {/* Product Photograph Area - Taller Frame for Full Product Visibility */}
+              <div className="relative aspect-[1/1.22] min-h-[165px] sm:min-h-[180px] md:min-h-[195px] w-full rounded-xl overflow-hidden bg-slate-50 border border-black/5 shadow-2xs">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={pillar.imageUrl}
@@ -174,7 +174,7 @@ export default function HeroShowcase({
               </div>
 
               {/* Bottom Subtle Indicator */}
-              <div className="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[10px]">
+              <div className="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[10px]">
                 <span
                   className={`font-bold uppercase tracking-wider text-[9px] truncate ${
                     isSelected ? 'text-[#C9A86A]' : 'text-slate-500'
