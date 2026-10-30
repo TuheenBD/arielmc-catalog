@@ -203,7 +203,7 @@ export default function HeroShowcase({
         <div className="flex items-center space-x-2">
           <Sparkles className="h-3.5 w-3.5 text-[#C9A86A] shrink-0" />
           <span>
-            Click any sector card above to filter the <strong>74-item commercial roadmap</strong> instantly. Curated by <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong>.
+            Click any sector card above to filter the <strong>74-item commercial roadmap</strong> instantly. Curated by <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong>.
           </span>
         </div>
         <span className="font-mono text-[10px] text-[#C9A86A] font-extrabold hidden sm:inline uppercase tracking-wider">

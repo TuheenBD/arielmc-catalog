@@ -158,7 +158,7 @@ export default function SamplePolicyModal({
             <div className="space-y-6">
               <div>
                 <h3 className="font-heading text-lg font-bold text-[#0A1A2F]">
-                  <strong className="font-black text-[#0A1A2F]">ArielMC</strong> 3-Tier Sampling Architecture
+                  <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> 3-Tier Sampling Architecture
                 </h3>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                   Engineered to protect master manufacturing line availability while granting friction-free, expedited prototype review for verified Western corporate buyers and procurement directors.
@@ -251,10 +251,10 @@ export default function SamplePolicyModal({
                 <RotateCcw className="h-5 w-5 text-amber-700 shrink-0 mt-0.5" />
                 <div>
                   <strong className="font-bold block text-sm">
-                    <strong className="font-black text-[#0A1A2F]">ArielMC</strong> Zero-Risk Prototype Re-make SLA
+                    <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> Zero-Risk Prototype Re-make SLA
                   </strong>
                   <p className="mt-1 leading-relaxed text-amber-800">
-                    If an expedited prototype diverges by more than <strong>1.5mm</strong> from your approved CAD tech-pack, or fails the agreed Pantone delta-E threshold (<strong>ΔE &gt; 1.5</strong>), <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong> re-engineers, re-inspects, and re-dispatches a revised golden specimen within <strong>7 business days at 100% <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong> expense</strong>.
+                    If an expedited prototype diverges by more than <strong>1.5mm</strong> from your approved CAD tech-pack, or fails the agreed Pantone delta-E threshold (<strong>ΔE &gt; 1.5</strong>), <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> re-engineers, re-inspects, and re-dispatches a revised golden specimen within <strong>7 business days at 100% <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> expense</strong>.
                   </p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function SamplePolicyModal({
                   <span>Accelerated Micro-Fee Settlements ($35 – $140)</span>
                 </h4>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                  To avoid multi-day international SWIFT banking holds on sample fees, <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong> provides frictionless digital settlement via <strong>Corporate Visa/Mastercard/Amex, Stripe, and Wise Direct</strong>, reserving formal SWIFT wires strictly for the 50% bulk production deposit.
+                  To avoid multi-day international SWIFT banking holds on sample fees, <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> provides frictionless digital settlement via <strong>Corporate Visa/Mastercard/Amex, Stripe, and Wise Direct</strong>, reserving formal SWIFT wires strictly for the 50% bulk production deposit.
                 </p>
               </div>
             </div>
@@ -360,7 +360,7 @@ export default function SamplePolicyModal({
                     Freight-Collect via Corporate Account
                   </h4>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                    Provide your enterprise <strong>DHL, FedEx, or UPS</strong> account number during checkout. <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong> consigns the air waybill directly against your corporate billing code with <strong>zero administrative markup</strong>.
+                    Provide your enterprise <strong>DHL, FedEx, or UPS</strong> account number during checkout. <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> consigns the air waybill directly against your corporate billing code with <strong>zero administrative markup</strong>.
                   </p>
                 </div>
 
@@ -373,7 +373,7 @@ export default function SamplePolicyModal({
                     Prepaid Net Pass-Through Invoicing
                   </h4>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                    <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong> books priority air freight and bills at institutional partner rates (0.5 kg – 1.0 kg parcel):
+                    <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> books priority air freight and bills at institutional partner rates (0.5 kg – 1.0 kg parcel):
                   </p>
                   <ul className="text-xs text-slate-700 mt-2 space-y-1 font-mono">
                     <li>• UK & Western Europe: <strong>$38.00 – $48.00 USD</strong></li>
@@ -412,7 +412,7 @@ export default function SamplePolicyModal({
                   Framework Standard: SOP-B2B-LFC-2026
                 </span>
                 <p className="text-xs text-slate-600 mt-2 leading-relaxed">
-                  Every order navigates <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong>’s verified 5-stage institutional workflow with strict milestone gates and deliverables.
+                  Every order navigates <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong>’s verified 5-stage institutional workflow with strict milestone gates and deliverables.
                 </p>
               </div>
 
@@ -561,7 +561,7 @@ export default function SamplePolicyModal({
         {/* Modal Action Footer */}
         <div className="bg-slate-50 border-t border-slate-200 px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
           <div className="text-xs text-slate-500">
-            <span>Ariel Marketing & Communications Limited (<strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong>) • Dhaka, Bangladesh</span>
+            <span>Ariel Marketing & Communications Limited (<strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong>) • Dhaka, Bangladesh</span>
           </div>
           <button
             onClick={onClose}
