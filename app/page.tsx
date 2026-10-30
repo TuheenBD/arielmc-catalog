@@ -8,6 +8,7 @@ import ProductGrid from '@/components/ProductGrid';
 import ExportTray from '@/components/ExportTray';
 import ProductDetailModal from '@/components/ProductDetailModal';
 import SamplePolicyModal from '@/components/SamplePolicyModal';
+import HeroShowcase from '@/components/HeroShowcase';
 import { CurrencyProvider } from '@/components/CurrencyContext';
 import { MOCK_PRODUCTS } from '@/data/mockProducts';
 import { Product, FilterState, ProductCategory } from '@/types/product';
@@ -140,6 +141,16 @@ function CatalogContent() {
     });
   };
 
+  const handleSelectDivisionCategory = (cat: ProductCategory) => {
+    setFilters((prev) => {
+      const exists = prev.selectedCategories.includes(cat);
+      return {
+        ...prev,
+        selectedCategories: exists ? [] : [cat],
+      };
+    });
+  };
+
   const handleSelectAllVisible = () => {
     const currentIds = new Set(selectedProducts.map((p) => p.id));
     const newlyAdded = filteredProducts.filter((p) => !currentIds.has(p.id));
@@ -190,28 +201,31 @@ function CatalogContent() {
       {/* ArielMC Master Compendium Western Corporate Hero Header */}
       <section className="bg-white border-b border-[#0A1A2F]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest mb-3 border border-[#0A1A2F]/10 font-heading">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+            {/* Left Column: Commercial Narrative & Compliance */}
+            <div className="w-full lg:w-5/12 space-y-4">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest border border-[#0A1A2F]/10 font-heading">
                 <Globe className="h-3 w-3 text-[#C9A86A]" />
-                <span>Western Corporate Sourcing & Procurement Edition • 2026 / 2027</span>
+                <span>Western Corporate Sourcing • 2026 / 2027</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase">
+
+              <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
                 The Master Export Compendium
               </h1>
-              <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-2xl">
+
+              <p className="text-sm text-slate-600 leading-relaxed font-sans">
                 Precision OEM / ODM manufacturing across Bangladesh’s certified industrial clusters. Curate commercial line sheets, evaluate master carton logistics (CBM), and order express counter-samples with preferential tariff documentation for the UK, Europe, USA, and Australia.
               </p>
 
               {/* Western Procurement Micro-Perks */}
-              <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+              <div className="flex flex-wrap gap-2 text-xs font-semibold text-slate-700 pt-1">
                 <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
                   <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
-                  <span>UK DCTS 0% Duty Preferential Access</span>
+                  <span>UK DCTS 0% Duty</span>
                 </span>
                 <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
                   <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
-                  <span>EU GSP Everything But Arms (0% Tariff)</span>
+                  <span>EU GSP 0% Tariff</span>
                 </span>
                 <button
                   type="button"
@@ -219,31 +233,40 @@ function CatalogContent() {
                   className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-[#0A1A2F] text-[#C9A86A] border border-[#0A1A2F] hover:bg-slate-900 transition-colors cursor-pointer"
                 >
                   <Clock className="h-3.5 w-3.5 text-[#C9A86A]" />
-                  <span>Sample Policy: 100% Fee Credit to Bulk PO (SOP-B2B-SMP)</span>
+                  <span>Sample Policy: 100% Credit (SOP)</span>
                 </button>
+              </div>
+
+              {/* Compliance Credential Badges */}
+              <div className="bg-[#F8F6F2] p-3.5 rounded-xl border border-slate-200/80 space-y-1.5 mt-2">
+                <div className="flex items-center space-x-2 text-xs font-bold text-[#0A1A2F]">
+                  <ShieldCheck className="h-4 w-4 text-[#C9A86A]" />
+                  <span>Certified International Standards</span>
+                </div>
+                <div className="flex flex-wrap gap-1.5 text-[10px] text-slate-600 font-medium">
+                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">LWG Audited Leather</span>
+                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">GOTS Organic Jute</span>
+                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">OEKO-TEX 100</span>
+                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">BSCI & Sedex</span>
+                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">FDA Food Contact</span>
+                </div>
               </div>
             </div>
 
-            {/* Compliance Credential Badges */}
-            <div className="flex flex-wrap lg:flex-col items-start gap-2 shrink-0 bg-[#F8F6F2] p-4 rounded-xl border border-slate-200/80">
-              <div className="flex items-center space-x-2 text-xs font-bold text-[#0A1A2F]">
-                <ShieldCheck className="h-4 w-4 text-[#C9A86A]" />
-                <span>Enterprise Quality & Factory Audits</span>
-              </div>
-              <div className="flex flex-wrap gap-1.5 text-[10px] text-slate-600 font-medium">
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">LWG Gold Audited</span>
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">GOTS Organic Jute</span>
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">OEKO-TEX Standard 100</span>
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">BSCI & Sedex SMETA</span>
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">FDA 21 CFR & LFGB Food Safe</span>
-              </div>
+            {/* Right Column: 5 Hero Representative Items & Sector Selector */}
+            <div className="w-full lg:w-7/12">
+              <HeroShowcase
+                selectedCategories={filters.selectedCategories}
+                onSelectCategory={handleSelectDivisionCategory}
+                categoryCounts={categoryCounts}
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Catalog Sourcing Matrix */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1">
+      <main id="sourcing-matrix" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1 scroll-mt-24">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Desktop Filter Sidebar */}
           <div className="hidden lg:block">
