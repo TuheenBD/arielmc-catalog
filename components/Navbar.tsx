@@ -72,8 +72,8 @@ export default function Navbar({
               <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#0A1A2F] block">
                 Ariel Marketing & Communications Limited
               </span>
-              <span className="text-[9px] uppercase tracking-wider text-[#C9A86A] font-bold block">
-                Corporate Sourcing • Export Management • Private Label
+              <span className="text-[9.5px] tracking-wider text-[#C9A86A] font-bold block">
+                Global Sourcing • Export Management • Private Label Development
               </span>
             </div>
           </div>
