@@ -608,23 +608,23 @@ function generateArielLineSheetHtml(payload: PDFExportPayload): string {
       <!-- Commercial Compliance Block -->
       <div class="compliance-grid">
         <div>
-          <h6>Incoterms, Duty Preferences & Payment</h6>
-          <div>Quoted baseline is ${incoTerm}. All shipments eligible for 0% Preferential Duty under UK DCTS and EU GSP (Certificate of Origin / Form A provided). Standard payment: 30% advance T/T, 70% against shipping documents, or 100% Irrevocable L/C at sight from prime international bank.</div>
+          <h6>Incoterms, Tariff Preferences & Sample Governance</h6>
+          <div>Quoted baseline is ${incoTerm}. All shipments eligible for 0% Preferential Duty under UK DCTS and EU GSP (GSP Form A / DCTS COO provided). Sample governance under <strong>SOP-B2B-SMP-2026-V1</strong>: 100% of sample development fees credited back on qualifying bulk POs (≥1,000 pcs jute / ≥300 pcs leather / ≥$3,000 value). Air waybill manifested under duty-free mutilated prototype protocol.</div>
           <div class="cert-strip">
             <span class="cert-pill">UK DCTS 0% Duty</span>
             <span class="cert-pill">EU GSP Duty-Free</span>
-            <span class="cert-pill">LWG Audited</span>
-            <span class="cert-pill">GOTS Organic</span>
+            <span class="cert-pill">SOP-B2B-SMP-2026-V1</span>
+            <span class="cert-pill">100% Sample Credit</span>
           </div>
         </div>
         <div>
-          <h6>Quality Assurance & Quarantine Clearance</h6>
-          <div>Every commercial batch passes strict AQL 1.5/2.5 inspection, ISO color fastness testing, DAE Plant Quarantine Phytosanitary Certification, and third-party Fumigation prior to vessel loading. Counter-samples dispatched via DHL/FedEx Express in 7-10 days.</div>
+          <h6>Quality Assurance & Pre-Shipment Dossier (QA-DOC)</h6>
+          <div>Every commercial batch passes strict ISO 2859-1 AQL 1.5 Major / 2.5 Minor inspection per <strong>SOP-B2B-QAD-2026</strong>. Chemical compliance certified under UK REACH Annex XVII (Cr VI &lt; 3.0 mg/kg, DMFu 0.0 mg/kg, Azo-free). 100% vegetable batching oil for jute/linens, DAE Plant Quarantine Phytosanitary, and ISTA 1A carton drop testing.</div>
           <div class="cert-strip">
-            <span class="cert-pill">BSCI Grade A</span>
-            <span class="cert-pill">Sedex SMETA</span>
-            <span class="cert-pill">LFGB Food Safe</span>
-            <span class="cert-pill">DAE Phytosanitary</span>
+            <span class="cert-pill">AQL 1.5/2.5 Audit</span>
+            <span class="cert-pill">REACH Compliant</span>
+            <span class="cert-pill">BSCI / Sedex SMETA</span>
+            <span class="cert-pill">SOP-B2B-QAD-2026</span>
           </div>
         </div>
       </div>

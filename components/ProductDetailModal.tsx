@@ -25,6 +25,7 @@ interface ProductDetailModalProps {
   isSelected: boolean;
   onToggleSelect: (product: Product) => void;
   onRequestSample?: (product: Product) => void;
+  onOpenSamplePolicy?: () => void;
 }
 
 export default function ProductDetailModal({
@@ -33,6 +34,7 @@ export default function ProductDetailModal({
   isSelected,
   onToggleSelect,
   onRequestSample,
+  onOpenSamplePolicy,
 }: ProductDetailModalProps) {
   const { formatPrice, currentCurrency, currencyConfig } = useCurrency();
 
@@ -325,14 +327,26 @@ export default function ProductDetailModal({
 
             {/* IncoTerms & Sample Policy */}
             <div className="border border-slate-200 rounded-xl p-4 bg-white space-y-2.5">
-              <div className="flex items-center space-x-2 border-b border-slate-100 pb-2">
-                <Truck className="h-4 w-4 text-[#C9A86A]" />
-                <h4 className="font-bold text-xs uppercase tracking-wider text-[#0A1A2F]">
-                  International Commercial Terms (IncoTerms 2020)
-                </h4>
+              <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+                <div className="flex items-center space-x-2">
+                  <Truck className="h-4 w-4 text-[#C9A86A]" />
+                  <h4 className="font-bold text-xs uppercase tracking-wider text-[#0A1A2F]">
+                    Commercial Terms & Sample Policy
+                  </h4>
+                </div>
+                {onOpenSamplePolicy && (
+                  <button
+                    type="button"
+                    onClick={onOpenSamplePolicy}
+                    className="text-[10px] font-bold text-[#C9A86A] hover:underline flex items-center space-x-1"
+                  >
+                    <span>Policy SOP</span>
+                    <ExternalLink className="h-2.5 w-2.5" />
+                  </button>
+                )}
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Standard baseline quotation is <strong>FOB Chittagong Sea Port</strong> or <strong>DAC Dhaka Air Cargo</strong>. ArielMC offers turnkey landed CIF Felixstowe / Rotterdam / Los Angeles and DDP to client distribution centers upon request.
+                Standard baseline quotation is <strong>FOB Chittagong Sea Port</strong> or <strong>DAC Dhaka Air Cargo</strong>. 100% of physical sample fee credited back on qualifying bulk POs per <strong>SOP-B2B-SMP-2026-V1</strong>.
               </p>
               <div className="flex flex-wrap gap-1 pt-1">
                 {product.incoTermsAvailable?.map((term, i) => (

@@ -7,6 +7,7 @@ import FilterSidebar from '@/components/FilterSidebar';
 import ProductGrid from '@/components/ProductGrid';
 import ExportTray from '@/components/ExportTray';
 import ProductDetailModal from '@/components/ProductDetailModal';
+import SamplePolicyModal from '@/components/SamplePolicyModal';
 import { CurrencyProvider } from '@/components/CurrencyContext';
 import { MOCK_PRODUCTS } from '@/data/mockProducts';
 import { Product, FilterState, ProductCategory } from '@/types/product';
@@ -19,6 +20,7 @@ function CatalogContent() {
   const [selectedDetailProduct, setSelectedDetailProduct] = useState<Product[] | null>(null);
   const [activeModalProduct, setActiveModalProduct] = useState<Product | null>(null);
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+  const [isSamplePolicyOpen, setIsSamplePolicyOpen] = useState(false);
 
   const [filters, setFilters] = useState<FilterState>({
     searchQuery: '',
@@ -182,6 +184,7 @@ function CatalogContent() {
         selectedCount={selectedProducts.length}
         totalCount={products.length}
         onToggleMobileFilter={() => setMobileFilterOpen(true)}
+        onOpenSamplePolicy={() => setIsSamplePolicyOpen(true)}
       />
 
       {/* ArielMC Master Compendium Western Corporate Hero Header */}
@@ -210,10 +213,14 @@ function CatalogContent() {
                   <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
                   <span>EU GSP Everything But Arms (0% Tariff)</span>
                 </span>
-                <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-blue-50 text-blue-900 border border-blue-200">
-                  <Clock className="h-3.5 w-3.5 text-blue-600" />
-                  <span>7-10 Days DHL Express Sample Dispatch</span>
-                </span>
+                <button
+                  type="button"
+                  onClick={() => setIsSamplePolicyOpen(true)}
+                  className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-[#0A1A2F] text-[#C9A86A] border border-[#0A1A2F] hover:bg-slate-900 transition-colors cursor-pointer"
+                >
+                  <Clock className="h-3.5 w-3.5 text-[#C9A86A]" />
+                  <span>Sample Policy: 100% Fee Credit to Bulk PO (SOP-B2B-SMP)</span>
+                </button>
               </div>
             </div>
 
@@ -299,6 +306,7 @@ function CatalogContent() {
           isSelected={selectedProducts.some((p) => p.id === activeModalProduct.id)}
           onToggleSelect={handleToggleSelect}
           onRequestSample={handleRequestSampleFromModal}
+          onOpenSamplePolicy={() => setIsSamplePolicyOpen(true)}
         />
       )}
 
@@ -307,6 +315,13 @@ function CatalogContent() {
         selectedProducts={selectedProducts}
         onRemoveProduct={handleRemoveSingle}
         onClearAll={handleClearAllSelected}
+        onOpenSamplePolicy={() => setIsSamplePolicyOpen(true)}
+      />
+
+      {/* ArielMC Official Sample Policy & SOP Modal */}
+      <SamplePolicyModal
+        isOpen={isSamplePolicyOpen}
+        onClose={() => setIsSamplePolicyOpen(false)}
       />
     </div>
   );

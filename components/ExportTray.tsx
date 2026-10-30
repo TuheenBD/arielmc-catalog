@@ -18,6 +18,7 @@ import {
   CheckCircle2,
   Globe,
   Clock,
+  ExternalLink,
 } from 'lucide-react';
 
 interface ExportTrayProps {
@@ -25,12 +26,14 @@ interface ExportTrayProps {
   onRemoveProduct: (productId: string) => void;
   onClearAll: () => void;
   activeTab?: 'linesheet' | 'sample' | 'rfq';
+  onOpenSamplePolicy?: () => void;
 }
 
 export default function ExportTray({
   selectedProducts,
   onRemoveProduct,
   onClearAll,
+  onOpenSamplePolicy,
 }: ExportTrayProps) {
   const { currentCurrency, currencyConfig, formatPrice } = useCurrency();
   const [isExpanded, setIsExpanded] = useState(false);
@@ -334,6 +337,42 @@ export default function ExportTray({
                   Request Formal RFQ
                 </button>
               </div>
+
+              {/* Sample Dispatch Banner if in Sample Mode */}
+              {activeMode === 'sample' && (
+                <div className="bg-emerald-950/60 border border-emerald-500/40 rounded-xl p-3.5 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-2 text-emerald-400 font-bold text-xs">
+                      <CheckCircle2 className="h-4 w-4 shrink-0" />
+                      <span>ArielMC Sample Development Governance (SOP-B2B-SMP-2026-V1)</span>
+                    </div>
+                    {onOpenSamplePolicy && (
+                      <button
+                        type="button"
+                        onClick={onOpenSamplePolicy}
+                        className="text-[10px] text-[#C9A86A] hover:underline font-bold uppercase tracking-wider flex items-center space-x-1 cursor-pointer"
+                      >
+                        <span>View Full SOP & Credit Rules</span>
+                        <ExternalLink className="h-2.5 w-2.5" />
+                      </button>
+                    )}
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-[11px] text-slate-300">
+                    <div className="bg-slate-900/70 p-2.5 rounded-lg border border-slate-800">
+                      <strong className="text-emerald-300 block mb-0.5">100% Fee Credited</strong>
+                      Credited against final invoice on qualifying bulk POs (≥1,000 pcs jute / ≥300 pcs leather / ≥$3,000 value).
+                    </div>
+                    <div className="bg-slate-900/70 p-2.5 rounded-lg border border-slate-800">
+                      <strong className="text-[#C9A86A] block mb-0.5">Zero-Tariff Waybill</strong>
+                      Manifested as &quot;Mutilated Prototype – Value for Customs: $10 USD&quot; to prevent import brokerage hold-ups.
+                    </div>
+                    <div className="bg-slate-900/70 p-2.5 rounded-lg border border-slate-800">
+                      <strong className="text-blue-300 block mb-0.5">Courier Options</strong>
+                      Freight-Collect via your DHL/FedEx account, or Net Pass-Through ($38–$48 UK/EU, $42–$55 USA).
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Items in Tray Mini-Matrix */}
               <div>

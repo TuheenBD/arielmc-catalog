@@ -11,6 +11,7 @@ interface NavbarProps {
   selectedCount: number;
   totalCount: number;
   onToggleMobileFilter: () => void;
+  onOpenSamplePolicy?: () => void;
 }
 
 export default function Navbar({
@@ -19,6 +20,7 @@ export default function Navbar({
   selectedCount,
   totalCount,
   onToggleMobileFilter,
+  onOpenSamplePolicy,
 }: NavbarProps) {
   const { currentCurrency, setCurrency } = useCurrency();
 
@@ -35,9 +37,17 @@ export default function Navbar({
             </span>
           </div>
           <div className="flex items-center space-x-4 text-slate-300">
-            <span className="hidden md:inline">The Master Export Compendium • 2026/2027</span>
+            {onOpenSamplePolicy && (
+              <button
+                type="button"
+                onClick={onOpenSamplePolicy}
+                className="text-[#C9A86A] hover:underline flex items-center space-x-1 cursor-pointer"
+              >
+                <span>Sample Policy SOP-B2B-SMP-2026-V1</span>
+              </button>
+            )}
             <span className="hidden md:inline">|</span>
-            <span className="text-[#C9A86A] font-bold">LWG • GOTS • BSCI • LFGB Certified</span>
+            <span className="text-white font-bold hidden sm:inline">LWG • GOTS • BSCI • LFGB Certified</span>
           </div>
         </div>
       </div>
@@ -111,6 +121,20 @@ export default function Navbar({
                 );
               })}
             </div>
+
+            {/* Sample Policy & SOP Button */}
+            {onOpenSamplePolicy && (
+              <button
+                type="button"
+                onClick={onOpenSamplePolicy}
+                className="hidden md:flex items-center space-x-1.5 px-2.5 py-1.5 bg-[#0A1A2F]/5 hover:bg-[#0A1A2F]/10 border border-[#0A1A2F]/15 rounded-lg text-xs font-bold text-[#0A1A2F] transition-all cursor-pointer"
+                title="View Official Sample Policy & SOP-B2B-SMP-2026-V1"
+              >
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Sample Policy</span>
+                <span className="font-mono text-[9px] px-1 py-0.5 rounded bg-[#C9A86A]/20 text-[#0A1A2F] font-extrabold">SOP</span>
+              </button>
+            )}
 
             {/* Mobile Filter Toggle */}
             <button
