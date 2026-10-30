@@ -61,12 +61,16 @@ export default function Navbar({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-3">
           {/* ArielMC Official Brand Logo & Corporate Credentials */}
-          <div className="flex items-center space-x-3 shrink-0">
+          <a
+            href="https://www.arielmc.com"
+            title="Return to ArielMC Corporate Portal"
+            className="flex items-center space-x-3 shrink-0 group transition-opacity hover:opacity-95"
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/brand/logo.png"
               alt="ArielMC Logo"
-              className="h-11 sm:h-12 w-auto object-contain"
+              className="h-11 sm:h-12 w-auto object-contain transition-transform group-hover:scale-102"
             />
             <div className="hidden md:flex flex-col justify-center pl-3.5 border-l border-slate-200">
               <span className="text-[10px] uppercase font-bold tracking-[0.02em] text-[#0A1A2F] block leading-tight font-heading">
@@ -76,7 +80,7 @@ export default function Navbar({
                 Global Sourcing • Export Management • Private Label Development
               </span>
             </div>
-          </div>
+          </a>
 
           {/* Primary High-Visibility Search Bar */}
           <div className="flex-1 max-w-xl mx-1 sm:mx-2">
