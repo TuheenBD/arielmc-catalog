@@ -344,7 +344,7 @@ export default function ExportTray({
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2 text-emerald-400 font-bold text-xs">
                       <CheckCircle2 className="h-4 w-4 shrink-0" />
-                      <span>ArielMC Sample Development Governance (SOP-B2B-SMP-2026-V1)</span>
+                      <span><strong className="font-extrabold text-white">ArielMC</strong> Sample Development Governance (SOP-B2B-SMP-2026-V1)</span>
                     </div>
                     {onOpenSamplePolicy && (
                       <button

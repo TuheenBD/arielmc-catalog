@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { ProductCategory } from '@/types/product';
-import { Check, ShieldCheck } from 'lucide-react';
+import { Check, ShieldCheck, Sparkles } from 'lucide-react';
 
 interface HeroShowcaseProps {
   selectedCategories: ProductCategory[];
@@ -196,6 +196,19 @@ export default function HeroShowcase({
             </button>
           );
         })}
+      </div>
+
+      {/* Interactive Helper Guidance Prompt */}
+      <div className="flex items-center justify-between text-[11px] text-slate-600 bg-white/80 px-3.5 py-2 rounded-xl border border-slate-200/80 shadow-2xs">
+        <div className="flex items-center space-x-2">
+          <Sparkles className="h-3.5 w-3.5 text-[#C9A86A] shrink-0" />
+          <span>
+            Click any sector card above to filter the <strong>74-item commercial roadmap</strong> instantly. Curated by <strong className="font-extrabold text-[#0A1A2F]">ArielMC</strong>.
+          </span>
+        </div>
+        <span className="font-mono text-[10px] text-[#C9A86A] font-extrabold hidden sm:inline uppercase tracking-wider">
+          1-Click Filter
+        </span>
       </div>
 
       {/* Certified International Standards - Original High-Res Logos */}

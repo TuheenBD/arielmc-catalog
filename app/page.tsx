@@ -340,7 +340,7 @@ export default function CatalogPage() {
     <Suspense
       fallback={
         <div className="min-h-screen bg-[#F8F6F2] flex items-center justify-center font-heading text-sm text-[#0A1A2F]">
-          Loading ArielMC Western Corporate Catalog...
+          Loading <strong className="font-extrabold text-[#0A1A2F] mx-1">ArielMC</strong> Western Corporate Catalog...
         </div>
       }
     >

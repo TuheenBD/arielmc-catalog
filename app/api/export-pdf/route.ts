@@ -542,7 +542,7 @@ function generateArielLineSheetHtml(payload: PDFExportPayload): string {
           <div class="brand-details">
             <h1>Ariel Marketing & Communications Limited</h1>
             <div class="tagline">Global Sourcing • Export Management • Private Label Brand Development</div>
-            <div class="promise">Crafted in Bangladesh. Curated by ArielMC. Delivered Worldwide.</div>
+            <div class="promise">Crafted in Bangladesh. Curated by <strong>ArielMC</strong>. Delivered Worldwide.</div>
           </div>
         </div>
         <div class="meta-stamp">

@@ -30,7 +30,9 @@ export default function Navbar({
       <div className="bg-[#0A1A2F] text-white py-1.5 px-4 text-[10px] tracking-wider uppercase font-semibold border-b border-[#C9A86A]/30">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <span className="text-[#C9A86A]">Crafted in Bangladesh. Curated by ArielMC. Delivered Worldwide.</span>
+            <span className="text-[#C9A86A]">
+              Crafted in Bangladesh. Curated by <strong className="font-black text-white">ArielMC</strong>. Delivered Worldwide.
+            </span>
             <span className="hidden lg:inline text-slate-400">|</span>
             <span className="hidden lg:inline text-slate-300">
               UK DCTS & EU GSP Duty-Free Sourcing Partner
@@ -64,7 +66,7 @@ export default function Navbar({
             />
             <div className="hidden lg:block pl-2.5 border-l border-slate-200">
               <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#0A1A2F] block">
-                Ariel Marketing & Communications Limited
+                Ariel Marketing & Communications Limited • <strong className="font-black text-[#0A1A2F]">ArielMC</strong>
               </span>
               <span className="text-[9px] uppercase tracking-wider text-[#C9A86A] font-bold block">
                 Western Corporate Sourcing • Export Management • Private Label
