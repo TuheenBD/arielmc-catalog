@@ -11,6 +11,7 @@ interface ProductGridProps {
   onToggleSelect: (product: Product) => void;
   onSelectAllVisible: () => void;
   onClearSelection: () => void;
+  onViewDetails?: (product: Product) => void;
 }
 
 export default function ProductGrid({
@@ -19,6 +20,7 @@ export default function ProductGrid({
   onToggleSelect,
   onSelectAllVisible,
   onClearSelection,
+  onViewDetails,
 }: ProductGridProps) {
   const selectedIds = new Set(selectedProducts.map((p) => p.id));
   const areAllVisibleSelected =
@@ -76,6 +78,7 @@ export default function ProductGrid({
               product={product}
               isSelected={selectedIds.has(product.id)}
               onToggleSelect={onToggleSelect}
+              onViewDetails={onViewDetails}
             />
           ))}
         </div>
@@ -83,4 +86,3 @@ export default function ProductGrid({
     </div>
   );
 }
-

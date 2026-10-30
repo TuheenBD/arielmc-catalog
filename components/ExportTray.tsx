@@ -1,13 +1,30 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Product, ExportConsigneeInfo } from '@/types/product';
-import { FileDown, Trash2, X, ChevronUp, ChevronDown, Loader2, Building2, Anchor } from 'lucide-react';
+import { useCurrency } from './CurrencyContext';
+import {
+  FileDown,
+  Trash2,
+  X,
+  ChevronUp,
+  ChevronDown,
+  Loader2,
+  Building2,
+  Anchor,
+  Package,
+  Truck,
+  Send,
+  CheckCircle2,
+  Globe,
+  Clock,
+} from 'lucide-react';
 
 interface ExportTrayProps {
   selectedProducts: Product[];
   onRemoveProduct: (productId: string) => void;
   onClearAll: () => void;
+  activeTab?: 'linesheet' | 'sample' | 'rfq';
 }
 
 export default function ExportTray({
@@ -15,26 +32,61 @@ export default function ExportTray({
   onRemoveProduct,
   onClearAll,
 }: ExportTrayProps) {
+  const { currentCurrency, currencyConfig, formatPrice } = useCurrency();
   const [isExpanded, setIsExpanded] = useState(false);
+  const [activeMode, setActiveMode] = useState<'linesheet' | 'sample' | 'rfq'>('linesheet');
   const [isExporting, setIsExporting] = useState(false);
   const [exportError, setExportError] = useState<string | null>(null);
+  const [submissionSuccess, setSubmissionSuccess] = useState<string | null>(null);
 
   const [consignee, setConsignee] = useState<ExportConsigneeInfo>({
     companyName: 'Nordic Heritage Goods Ltd',
     contactName: 'Alexander Lind',
     contactEmail: 'a.lind@nordicheritage.com',
-    targetMarket: 'European Union',
-    targetPort: 'Rotterdam Port (CIF Terms)',
-    notes: 'Require DAE Phytosanitary and Fumigation clearance certificates with consignment.',
+    targetMarket: 'United Kingdom & European Union',
+    targetPort: 'Felixstowe Port (UK DCTS 0% Duty)',
+    incoTerm: 'FOB Chittagong Sea Port',
+    courierAccount: 'DHL Express Account #968341902',
+    deliveryAddress: '44 Commercial Road, London E1 1LN, United Kingdom',
+    notes: 'Require DAE Phytosanitary and Fumigation certificates with GOTS certification.',
   });
+
+  // Calculate container loadability metrics
+  const logisticsSummary = useMemo(() => {
+    let totalCbm = 0;
+    let totalWeightKg = 0;
+    let totalCartons = 0;
+    let totalSampleUsd = 0;
+
+    selectedProducts.forEach((p) => {
+      totalSampleUsd += p.samplePriceUsd || 30;
+      if (p.masterCarton) {
+        const cartonsForMoq = Math.ceil(p.moq / p.masterCarton.unitsPerCarton);
+        totalCartons += cartonsForMoq;
+        totalCbm += cartonsForMoq * p.masterCarton.cbm;
+        totalWeightKg += cartonsForMoq * p.masterCarton.grossWeightKg;
+      }
+    });
+
+    return {
+      totalCbm: Math.round(totalCbm * 100) / 100,
+      totalWeightKg: Math.round(totalWeightKg),
+      totalCartons,
+      totalSampleUsd,
+      pct20ft: Math.min(100, Math.round((totalCbm / 33.2) * 100)),
+      pct40ft: Math.min(100, Math.round((totalCbm / 67.7) * 100)),
+    };
+  }, [selectedProducts]);
 
   if (selectedProducts.length === 0) {
     return null;
   }
 
+  // Handle PDF Generation
   const handleGeneratePdf = async () => {
     setIsExporting(true);
     setExportError(null);
+    setSubmissionSuccess(null);
 
     try {
       const response = await fetch('/api/export-pdf', {
@@ -46,7 +98,14 @@ export default function ExportTray({
           consignee,
           products: selectedProducts,
           generatedAt: new Date().toISOString(),
-          documentTitle: 'ArielMC Master Sourcing Line Sheet — 2026/2027',
+          documentTitle: `ArielMC Commercial Line Sheet — Western Corporate Edition`,
+          selectedCurrency: currentCurrency,
+          currencyRate: currencyConfig.rateFromUsd,
+          currencySymbol: currencyConfig.symbol,
+          incoTerm: consignee.incoTerm,
+          totalEstimatedCbm: logisticsSummary.totalCbm,
+          totalEstimatedWeightKg: logisticsSummary.totalWeightKg,
+          totalEstimatedCartons: logisticsSummary.totalCartons,
         }),
       });
 
@@ -59,8 +118,8 @@ export default function ExportTray({
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      const sanitizedCompany = consignee.companyName.replace(/[^a-zA-Z0-9]/g, '_') || 'ArielMC_Catalog';
-      link.download = `ArielMC_${sanitizedCompany}_LineSheet_${new Date().toISOString().slice(0, 10)}.pdf`;
+      const sanitizedCompany = consignee.companyName.replace(/[^a-zA-Z0-9]/g, '_') || 'ArielMC_Western';
+      link.download = `ArielMC_${sanitizedCompany}_LineSheet_${currentCurrency}_${new Date().toISOString().slice(0, 10)}.pdf`;
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -73,47 +132,135 @@ export default function ExportTray({
     }
   };
 
+  // Handle Courier Sample Dispatch or Formal RFQ
+  const handleCourierSampleOrRfq = async (type: 'sample_dispatch' | 'rfq_quote') => {
+    setIsExporting(true);
+    setExportError(null);
+    setSubmissionSuccess(null);
+
+    try {
+      const payload = {
+        requestType: type,
+        consignee,
+        products: selectedProducts.map((p) => ({
+          id: p.id,
+          sku: p.sku,
+          name: p.name,
+          category: p.category,
+          moq: p.moq,
+          priceUsd: p.price,
+          samplePriceUsd: p.samplePriceUsd,
+          hsCode: p.hsCode,
+        })),
+        currency: currentCurrency,
+        currencyRate: currencyConfig.rateFromUsd,
+        logistics: logisticsSummary,
+        submittedAt: new Date().toISOString(),
+      };
+
+      const res = await fetch('/api/quotes/request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to submit request');
+      }
+
+      setSubmissionSuccess(
+        type === 'sample_dispatch'
+          ? `Sample Order Confirmed! Tracking Ref: ${data.quoteNumber || 'REQ-AMC-2026'}. Courier dispatch scheduled within 7-10 business days.`
+          : `Formal RFQ Dispatched! Reference: ${data.quoteNumber || 'REQ-AMC-2026'}. Our commercial export desk will reply within 24 hours.`
+      );
+    } catch (err: unknown) {
+      setExportError(err instanceof Error ? err.message : 'Failed to dispatch request.');
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
   return (
-    <div className="fixed bottom-0 inset-x-0 z-50 p-4 pointer-events-none">
-      <div className="max-w-5xl mx-auto pointer-events-auto">
+    <div className="fixed bottom-0 inset-x-0 z-50 p-2 sm:p-4 pointer-events-none">
+      <div className="max-w-6xl mx-auto pointer-events-auto">
         <div className="bg-[#0A1A2F] text-white rounded-2xl shadow-2xl border border-[#C9A86A]/40 overflow-hidden transition-all duration-300">
           {/* Main Action Bar */}
-          <div className="p-4 sm:px-6 flex items-center justify-between gap-4">
-            {/* Left: Summary */}
-            <div className="flex items-center space-x-4 min-w-0">
-              <div className="h-10 w-10 rounded-xl bg-[#C9A86A] text-[#0A1A2F] flex items-center justify-center font-bold text-sm shrink-0 shadow-sm font-heading">
+          <div className="p-3 sm:p-4 sm:px-6 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+            {/* Left: Summary & CBM indicator */}
+            <div className="flex items-center space-x-3 min-w-0">
+              <div className="h-10 w-10 rounded-xl bg-[#C9A86A] text-[#0A1A2F] flex items-center justify-center font-extrabold text-sm shrink-0 shadow-sm font-heading">
                 {selectedProducts.length}
               </div>
               <div className="min-w-0">
                 <div className="flex items-center space-x-2">
-                  <h4 className="font-bold text-sm text-white truncate font-heading uppercase tracking-wide">
-                    ArielMC Export Tray Active
+                  <h4 className="font-bold text-xs sm:text-sm text-white truncate font-heading uppercase tracking-wide">
+                    Western Corporate Export Tray
                   </h4>
                   <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#C9A86A]/20 text-[#C9A86A] rounded border border-[#C9A86A]/30 hidden sm:inline-block">
-                    A4 Printable Line Sheet
+                    {currentCurrency} ({currencyConfig.symbol}) Active
                   </span>
                 </div>
-                <p className="text-xs text-slate-300 truncate">
-                  {selectedProducts.map((p) => p.name).join(', ')}
-                </p>
+                <div className="flex items-center space-x-2 text-[11px] text-slate-300 truncate">
+                  <span>
+                    Est. Vol: <strong className="text-[#C9A86A] font-mono">{logisticsSummary.totalCbm} CBM</strong>
+                  </span>
+                  <span>•</span>
+                  <span>{logisticsSummary.totalCartons} Cartons</span>
+                  <span>•</span>
+                  <span>{logisticsSummary.totalWeightKg} kg Gross</span>
+                </div>
               </div>
             </div>
 
-            {/* Right: Actions */}
-            <div className="flex items-center space-x-2 shrink-0">
+            {/* Right: Procurement Mode Actions */}
+            <div className="flex items-center space-x-2 shrink-0 justify-end flex-wrap gap-y-1">
+              {/* Drawer Toggle */}
               <button
                 type="button"
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700 rounded-lg flex items-center space-x-1 transition-colors border border-slate-700"
+                className="px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700 rounded-lg flex items-center space-x-1.5 transition-colors border border-slate-700"
               >
-                <span>Consignee Details</span>
-                {isExpanded ? (
-                  <ChevronDown className="h-3.5 w-3.5" />
+                <Building2 className="h-3.5 w-3.5 text-[#C9A86A]" />
+                <span className="hidden sm:inline">Consignee Specs</span>
+                {isExpanded ? <ChevronDown className="h-3.5 w-3.5" /> : <ChevronUp className="h-3.5 w-3.5" />}
+              </button>
+
+              {/* Sample Dispatch Action */}
+              <button
+                type="button"
+                disabled={isExporting}
+                onClick={() => {
+                  if (!isExpanded) setIsExpanded(true);
+                  setActiveMode('sample');
+                }}
+                className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider rounded-lg border border-slate-600 transition-all flex items-center space-x-1.5"
+              >
+                <Clock className="h-3.5 w-3.5 text-[#C9A86A]" />
+                <span>Request Sample</span>
+              </button>
+
+              {/* PDF Line Sheet Action */}
+              <button
+                type="button"
+                disabled={isExporting}
+                onClick={handleGeneratePdf}
+                className="px-4 py-2 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center space-x-2 disabled:opacity-50 font-heading"
+              >
+                {isExporting ? (
+                  <>
+                    <Loader2 className="h-3.5 w-3.5 animate-spin text-[#0A1A2F]" />
+                    <span>Compiling...</span>
+                  </>
                 ) : (
-                  <ChevronUp className="h-3.5 w-3.5" />
+                  <>
+                    <FileDown className="h-3.5 w-3.5 stroke-[2.5]" />
+                    <span>A4 Line Sheet ({currencyConfig.symbol})</span>
+                  </>
                 )}
               </button>
 
+              {/* Clear Tray */}
               <button
                 type="button"
                 onClick={onClearAll}
@@ -122,31 +269,12 @@ export default function ExportTray({
               >
                 <Trash2 className="h-4 w-4" />
               </button>
-
-              <button
-                type="button"
-                disabled={isExporting}
-                onClick={handleGeneratePdf}
-                className="px-5 py-2.5 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed font-heading"
-              >
-                {isExporting ? (
-                  <>
-                    <Loader2 className="h-4 w-4 animate-spin text-[#0A1A2F]" />
-                    <span>Compiling Line Sheet...</span>
-                  </>
-                ) : (
-                  <>
-                    <FileDown className="h-4 w-4 stroke-[2.5]" />
-                    <span>Generate PDF Catalog</span>
-                  </>
-                )}
-              </button>
             </div>
           </div>
 
-          {/* Error Message */}
+          {/* Feedback Alerts */}
           {exportError && (
-            <div className="px-6 py-2 bg-rose-900/60 border-t border-rose-800 text-rose-200 text-xs flex items-center justify-between">
+            <div className="px-6 py-2 bg-rose-900/70 border-t border-rose-800 text-rose-200 text-xs flex items-center justify-between">
               <span>{exportError}</span>
               <button onClick={() => setExportError(null)} className="hover:text-white">
                 <X className="h-3 w-3" />
@@ -154,9 +282,60 @@ export default function ExportTray({
             </div>
           )}
 
-          {/* Expanded Consignee & Details Drawer */}
+          {submissionSuccess && (
+            <div className="px-6 py-2.5 bg-emerald-900/80 border-t border-emerald-700 text-emerald-200 text-xs flex items-center justify-between">
+              <div className="flex items-center space-x-2">
+                <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
+                <span>{submissionSuccess}</span>
+              </div>
+              <button onClick={() => setSubmissionSuccess(null)} className="hover:text-white">
+                <X className="h-3 w-3" />
+              </button>
+            </div>
+          )}
+
+          {/* Expanded Consignee & International Shipping Logistics Drawer */}
           {isExpanded && (
-            <div className="border-t border-[#C9A86A]/20 bg-[#060f1c] p-5 space-y-4 max-h-[60vh] overflow-y-auto">
+            <div className="border-t border-[#C9A86A]/20 bg-[#060f1c] p-4 sm:p-6 space-y-5 max-h-[70vh] overflow-y-auto">
+              {/* Sourcing Mode Switcher */}
+              <div className="flex border-b border-slate-800 pb-3 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setActiveMode('linesheet')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
+                    activeMode === 'linesheet'
+                      ? 'bg-[#C9A86A] text-[#0A1A2F]'
+                      : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                  }`}
+                >
+                  Commercial Line Sheet (PDF)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setActiveMode('sample')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center space-x-1.5 ${
+                    activeMode === 'sample'
+                      ? 'bg-[#C9A86A] text-[#0A1A2F]'
+                      : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                  }`}
+                >
+                  <Clock className="h-3.5 w-3.5" />
+                  <span>Order Express Samples (7-10d)</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setActiveMode('rfq')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
+                    activeMode === 'rfq'
+                      ? 'bg-[#C9A86A] text-[#0A1A2F]'
+                      : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                  }`}
+                >
+                  Request Formal RFQ
+                </button>
+              </div>
+
+              {/* Items in Tray Mini-Matrix */}
               <div>
                 <h5 className="text-[10px] font-bold text-[#C9A86A] uppercase tracking-wider mb-2 font-heading">
                   Curated Line Items ({selectedProducts.length})
@@ -186,25 +365,63 @@ export default function ExportTray({
                       <p className="font-semibold text-[11px] text-white truncate font-heading">
                         {item.name}
                       </p>
-                      <p className="font-mono text-[9px] text-[#C9A86A]">
-                        {item.sku}
-                      </p>
+                      <div className="flex items-center justify-between text-[9px] text-[#C9A86A] font-mono">
+                        <span>{item.sku}</span>
+                        <span>{formatPrice(item.price)}</span>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
 
+              {/* Container Logistics Summary */}
+              <div className="bg-[#0A1A2F] p-3.5 rounded-xl border border-slate-700 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                <div>
+                  <span className="text-[10px] text-slate-400 uppercase font-bold block">Total Volume</span>
+                  <span className="text-base font-extrabold text-[#C9A86A] font-mono mt-0.5 block">
+                    {logisticsSummary.totalCbm} CBM
+                  </span>
+                  <span className="text-[10px] text-slate-400">
+                    ~{logisticsSummary.pct20ft}% of 20ft FCL
+                  </span>
+                </div>
+
+                <div>
+                  <span className="text-[10px] text-slate-400 uppercase font-bold block">Master Cartons</span>
+                  <span className="text-base font-extrabold text-white mt-0.5 block">
+                    {logisticsSummary.totalCartons} Boxes
+                  </span>
+                  <span className="text-[10px] text-slate-400">5-ply export double-wall</span>
+                </div>
+
+                <div>
+                  <span className="text-[10px] text-slate-400 uppercase font-bold block">Gross Weight</span>
+                  <span className="text-base font-extrabold text-white mt-0.5 block">
+                    {logisticsSummary.totalWeightKg} kg
+                  </span>
+                  <span className="text-[10px] text-slate-400">Air / Sea cargo</span>
+                </div>
+
+                <div>
+                  <span className="text-[10px] text-slate-400 uppercase font-bold block">Sample Package Cost</span>
+                  <span className="text-base font-extrabold text-emerald-400 font-mono mt-0.5 block">
+                    {formatPrice(logisticsSummary.totalSampleUsd)}
+                  </span>
+                  <span className="text-[10px] text-slate-400">DHL/FedEx express dispatch</span>
+                </div>
+              </div>
+
               {/* Consignee Dossier Fields */}
-              <div className="pt-3 border-t border-slate-800">
-                <h5 className="text-[10px] font-bold text-[#C9A86A] uppercase tracking-wider mb-3 flex items-center space-x-1.5 font-heading">
-                  <Building2 className="h-3.5 w-3.5 text-[#C9A86A]" />
-                  <span>Buyer Consignee & International Port Allocation</span>
+              <div className="pt-2 border-t border-slate-800 space-y-3">
+                <h5 className="text-[10px] font-bold text-[#C9A86A] uppercase tracking-wider flex items-center space-x-1.5 font-heading">
+                  <Globe className="h-3.5 w-3.5 text-[#C9A86A]" />
+                  <span>Buyer Consignee & IncoTerm Port Routing</span>
                 </h5>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                   <div>
                     <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
-                      Consignee / Entity Name
+                      Company / Retail Entity
                     </label>
                     <input
                       type="text"
@@ -218,7 +435,7 @@ export default function ExportTray({
 
                   <div>
                     <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
-                      Procurement Officer / Contact
+                      Sourcing Officer / Contact
                     </label>
                     <input
                       type="text"
@@ -232,40 +449,141 @@ export default function ExportTray({
 
                   <div>
                     <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
-                      Destination Port Routing
-                    </label>
-                    <div className="relative">
-                      <select
-                        value={consignee.targetPort}
-                        onChange={(e) =>
-                          setConsignee({ ...consignee, targetPort: e.target.value })
-                        }
-                        className="w-full px-3 py-1.5 bg-[#0A1A2F] border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
-                      >
-                        <option value="Rotterdam Port (CIF Terms)">EU — Rotterdam / Hamburg Port</option>
-                        <option value="Felixstowe Port (CIF Terms)">UK — Felixstowe / Southampton</option>
-                        <option value="Los Angeles Port (CIF Terms)">US — Los Angeles / Long Beach</option>
-                        <option value="New York / Newark (CIF Terms)">US — New York / Newark Gateway</option>
-                        <option value="Sydney Port (CIF Terms)">AU — Sydney / Melbourne Hub</option>
-                        <option value="Chittagong Port (FOB Terms)">Chittagong Port (FOB Bangladesh)</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="sm:col-span-2 md:col-span-3">
-                    <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
-                      Custom Packaging & Certification Instructions
+                      Corporate Work Email
                     </label>
                     <input
-                      type="text"
-                      value={consignee.notes || ''}
+                      type="email"
+                      value={consignee.contactEmail}
                       onChange={(e) =>
-                        setConsignee({ ...consignee, notes: e.target.value })
+                        setConsignee({ ...consignee, contactEmail: e.target.value })
                       }
                       className="w-full px-3 py-1.5 bg-[#0A1A2F] border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
                     />
                   </div>
+
+                  <div>
+                    <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Preferred IncoTerm
+                    </label>
+                    <select
+                      value={consignee.incoTerm}
+                      onChange={(e) =>
+                        setConsignee({ ...consignee, incoTerm: e.target.value })
+                      }
+                      className="w-full px-3 py-1.5 bg-[#0A1A2F] border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
+                    >
+                      <option value="FOB Chittagong Sea Port">FOB Chittagong Sea Port (Default)</option>
+                      <option value="DAC Dhaka Air Cargo">DAC Dhaka Hazrat Shahjalal Airport (Air Freight)</option>
+                      <option value="CIF Felixstowe (UK)">CIF Felixstowe / Southampton (UK)</option>
+                      <option value="CIF Rotterdam (EU)">CIF Rotterdam / Hamburg (EU)</option>
+                      <option value="CIF Los Angeles (USA)">CIF Los Angeles / Long Beach (USA)</option>
+                      <option value="CIF Sydney (Australia)">CIF Sydney / Melbourne (Australia)</option>
+                      <option value="DDP Buyer Warehouse">DDP (Turnkey Delivered Duty Paid to Warehouse)</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Destination Port Routing
+                    </label>
+                    <input
+                      type="text"
+                      value={consignee.targetPort || ''}
+                      onChange={(e) =>
+                        setConsignee({ ...consignee, targetPort: e.target.value })
+                      }
+                      placeholder="e.g. Felixstowe Port / Rotterdam Port"
+                      className="w-full px-3 py-1.5 bg-[#0A1A2F] border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
+                    />
+                  </div>
+
+                  {activeMode === 'sample' ? (
+                    <div>
+                      <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                        Courier Account # (DHL / FedEx / UPS)
+                      </label>
+                      <input
+                        type="text"
+                        value={consignee.courierAccount || ''}
+                        onChange={(e) =>
+                          setConsignee({ ...consignee, courierAccount: e.target.value })
+                        }
+                        placeholder="DHL #123456789 or ArielMC Prepaid"
+                        className="w-full px-3 py-1.5 bg-[#0A1A2F] border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
+                      />
+                    </div>
+                  ) : (
+                    <div>
+                      <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                        Target Market / Distribution Territory
+                      </label>
+                      <input
+                        type="text"
+                        value={consignee.targetMarket}
+                        onChange={(e) =>
+                          setConsignee({ ...consignee, targetMarket: e.target.value })
+                        }
+                        className="w-full px-3 py-1.5 bg-[#0A1A2F] border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
+                      />
+                    </div>
+                  )}
+
+                  <div className="sm:col-span-2 md:col-span-3">
+                    <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      {activeMode === 'sample'
+                        ? 'Physical Delivery Address for Courier Dispatch'
+                        : 'Packaging, Private Label & Compliance Instructions'}
+                    </label>
+                    <input
+                      type="text"
+                      value={
+                        activeMode === 'sample'
+                          ? consignee.deliveryAddress || ''
+                          : consignee.notes || ''
+                      }
+                      onChange={(e) => {
+                        if (activeMode === 'sample') {
+                          setConsignee({ ...consignee, deliveryAddress: e.target.value });
+                        } else {
+                          setConsignee({ ...consignee, notes: e.target.value });
+                        }
+                      }}
+                      className="w-full px-3 py-1.5 bg-[#0A1A2F] border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
+                    />
+                  </div>
                 </div>
+
+                {/* Submit Action for Sample / RFQ */}
+                {activeMode !== 'linesheet' && (
+                  <div className="pt-2 flex justify-end">
+                    <button
+                      type="button"
+                      disabled={isExporting}
+                      onClick={() =>
+                        handleCourierSampleOrRfq(
+                          activeMode === 'sample' ? 'sample_dispatch' : 'rfq_quote'
+                        )
+                      }
+                      className="px-6 py-2.5 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center space-x-2 disabled:opacity-50"
+                    >
+                      {isExporting ? (
+                        <>
+                          <Loader2 className="h-4 w-4 animate-spin text-[#0A1A2F]" />
+                          <span>Transmitting...</span>
+                        </>
+                      ) : (
+                        <>
+                          <Send className="h-4 w-4" />
+                          <span>
+                            {activeMode === 'sample'
+                              ? 'Submit Courier Sample Request (7-10d)'
+                              : 'Submit Formal Enterprise RFQ'}
+                          </span>
+                        </>
+                      )}
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           )}

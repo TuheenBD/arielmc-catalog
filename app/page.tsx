@@ -6,14 +6,18 @@ import Navbar from '@/components/Navbar';
 import FilterSidebar from '@/components/FilterSidebar';
 import ProductGrid from '@/components/ProductGrid';
 import ExportTray from '@/components/ExportTray';
+import ProductDetailModal from '@/components/ProductDetailModal';
+import { CurrencyProvider } from '@/components/CurrencyContext';
 import { MOCK_PRODUCTS } from '@/data/mockProducts';
 import { Product, FilterState, ProductCategory } from '@/types/product';
-import { ShieldCheck, Globe, X } from 'lucide-react';
+import { ShieldCheck, Globe, X, Clock, FileCheck2, Plane, CheckCircle2 } from 'lucide-react';
 
 function CatalogContent() {
   const searchParams = useSearchParams();
   const [products] = useState<Product[]>(MOCK_PRODUCTS);
   const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
+  const [selectedDetailProduct, setSelectedDetailProduct] = useState<Product[] | null>(null);
+  const [activeModalProduct, setActiveModalProduct] = useState<Product | null>(null);
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
 
   const [filters, setFilters] = useState<FilterState>({
@@ -24,7 +28,7 @@ function CatalogContent() {
     sortBy: 'featured',
   });
 
-  // Deep-linking: Parse incoming query parameters from arielmc-website
+  // Deep-linking: Parse incoming query parameters from website
   useEffect(() => {
     const categoryParam = searchParams.get('category');
     const skusParam = searchParams.get('skus');
@@ -89,6 +93,7 @@ function CatalogContent() {
             product.category.toLowerCase().includes(q) ||
             product.divisionTitle.toLowerCase().includes(q) ||
             product.description.toLowerCase().includes(q) ||
+            (product.hsCode && product.hsCode.toLowerCase().includes(q)) ||
             product.materials.some((m) => m.toLowerCase().includes(q));
 
           if (!matchesQuery) return false;
@@ -148,9 +153,25 @@ function CatalogContent() {
     setSelectedProducts([]);
   };
 
+  const handleOpenDetailModal = (product: Product) => {
+    setActiveModalProduct(product);
+  };
+
+  const handleCloseDetailModal = () => {
+    setActiveModalProduct(null);
+  };
+
+  const handleRequestSampleFromModal = (product: Product) => {
+    // Ensure product is in export tray and open drawer
+    if (!selectedProducts.some((p) => p.id === product.id)) {
+      setSelectedProducts((prev) => [...prev, product]);
+    }
+    setActiveModalProduct(null);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#F8F6F2] pb-36">
-      {/* Horizontal Header with Search & Branding */}
+      {/* Horizontal Header with Currency Switcher & Branding */}
       <Navbar
         searchQuery={filters.searchQuery}
         onSearchChange={(query) => setFilters((prev) => ({ ...prev, searchQuery: query }))}
@@ -159,35 +180,51 @@ function CatalogContent() {
         onToggleMobileFilter={() => setMobileFilterOpen(true)}
       />
 
-      {/* ArielMC Master Compendium Hero Header */}
+      {/* ArielMC Master Compendium Western Corporate Hero Header */}
       <section className="bg-white border-b border-[#0A1A2F]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <div className="max-w-3xl">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest mb-3 border border-[#0A1A2F]/10 font-heading">
                 <Globe className="h-3 w-3 text-[#C9A86A]" />
-                <span>Global Sourcing & Export Management • 2026 / 2027 Edition</span>
+                <span>Western Corporate Sourcing & Procurement Edition • 2026 / 2027</span>
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase">
                 The Master Export Compendium
               </h1>
               <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-2xl">
-                Comprehensive OEM / ODM manufacturing across Bangladesh’s premier industrial sectors. Curate customized commercial line sheets for international distribution across the UK, USA, Europe, and Australia.
+                Precision OEM / ODM manufacturing across Bangladesh’s certified industrial clusters. Curate commercial line sheets, evaluate master carton logistics (CBM), and order express counter-samples with preferential tariff documentation for the UK, Europe, USA, and Australia.
               </p>
+
+              {/* Western Procurement Micro-Perks */}
+              <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+                <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+                  <span>UK DCTS 0% Duty Preferential Access</span>
+                </span>
+                <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+                  <span>EU GSP Everything But Arms (0% Tariff)</span>
+                </span>
+                <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-blue-50 text-blue-900 border border-blue-200">
+                  <Clock className="h-3.5 w-3.5 text-blue-600" />
+                  <span>7-10 Days DHL Express Sample Dispatch</span>
+                </span>
+              </div>
             </div>
 
             {/* Compliance Credential Badges */}
             <div className="flex flex-wrap lg:flex-col items-start gap-2 shrink-0 bg-[#F8F6F2] p-4 rounded-xl border border-slate-200/80">
               <div className="flex items-center space-x-2 text-xs font-bold text-[#0A1A2F]">
                 <ShieldCheck className="h-4 w-4 text-[#C9A86A]" />
-                <span>Certified International Standards</span>
+                <span>Enterprise Quality & Factory Audits</span>
               </div>
               <div className="flex flex-wrap gap-1.5 text-[10px] text-slate-600 font-medium">
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">LWG Audited Leather</span>
+                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">LWG Gold Audited</span>
                 <span className="px-2 py-0.5 bg-white rounded border border-slate-200">GOTS Organic Jute</span>
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">OEKO-TEX 100</span>
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">BSCI & Sedex</span>
-                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">FDA Food Contact</span>
+                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">OEKO-TEX Standard 100</span>
+                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">BSCI & Sedex SMETA</span>
+                <span className="px-2 py-0.5 bg-white rounded border border-slate-200">FDA 21 CFR & LFGB Food Safe</span>
               </div>
             </div>
           </div>
@@ -215,6 +252,7 @@ function CatalogContent() {
             onToggleSelect={handleToggleSelect}
             onSelectAllVisible={handleSelectAllVisible}
             onClearSelection={handleClearVisibleSelection}
+            onViewDetails={handleOpenDetailModal}
           />
         </div>
       </main>
@@ -249,6 +287,17 @@ function CatalogContent() {
         </div>
       )}
 
+      {/* Tech-Pack & Corporate Spec Modal */}
+      {activeModalProduct && (
+        <ProductDetailModal
+          product={activeModalProduct}
+          onClose={handleCloseDetailModal}
+          isSelected={selectedProducts.some((p) => p.id === activeModalProduct.id)}
+          onToggleSelect={handleToggleSelect}
+          onRequestSample={handleRequestSampleFromModal}
+        />
+      )}
+
       {/* Interactive Sticky Export Tray */}
       <ExportTray
         selectedProducts={selectedProducts}
@@ -261,8 +310,16 @@ function CatalogContent() {
 
 export default function CatalogPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-[#F8F6F2] flex items-center justify-center font-heading text-sm text-[#0A1A2F]">Loading ArielMC Catalog...</div>}>
-      <CatalogContent />
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-[#F8F6F2] flex items-center justify-center font-heading text-sm text-[#0A1A2F]">
+          Loading ArielMC Western Corporate Catalog...
+        </div>
+      }
+    >
+      <CurrencyProvider>
+        <CatalogContent />
+      </CurrencyProvider>
     </Suspense>
   );
 }
