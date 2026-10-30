@@ -26,19 +26,23 @@ export default function Navbar({
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[#0A1A2F]/10 bg-white/95 backdrop-blur-md transition-all shadow-xs">
-      {/* Top Corporate Dispatch Microbar - Western Enterprise Focus */}
-      <div className="bg-[#0A1A2F] text-white py-1.5 px-4 text-[10px] tracking-wider uppercase font-semibold border-b border-[#C9A86A]/30">
+      {/* Top Corporate Dispatch Microbar - Corporate Enterprise Focus */}
+      <div className="bg-[#0A1A2F] text-white py-1.5 px-4 text-[10px] tracking-wider font-semibold border-b border-[#C9A86A]/30">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <span className="text-[#C9A86A]">
-              Crafted in Bangladesh. Curated by <strong className="normal-case font-black text-white">ArielMC</strong>. Delivered Worldwide.
+              <span className="uppercase">Crafted in Bangladesh. Curated by </span>
+              <strong style={{ textTransform: 'none' }} className="font-black text-white inline-block">
+                ArielMC
+              </strong>
+              <span className="uppercase">. Delivered Worldwide.</span>
             </span>
             <span className="hidden lg:inline text-slate-400">|</span>
-            <span className="hidden lg:inline text-slate-300">
+            <span className="hidden lg:inline text-slate-300 uppercase">
               UK DCTS & EU GSP Duty-Free Sourcing Partner
             </span>
           </div>
-          <div className="flex items-center space-x-4 text-slate-300">
+          <div className="flex items-center space-x-4 text-slate-300 uppercase">
             {onOpenSamplePolicy && (
               <button
                 type="button"
@@ -65,11 +69,14 @@ export default function Navbar({
               className="h-11 sm:h-12 w-auto object-contain"
             />
             <div className="hidden lg:block pl-2.5 border-l border-slate-200">
-              <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#0A1A2F] block">
-                Ariel Marketing & Communications Limited • <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong>
+              <span className="text-[10px] font-extrabold tracking-widest text-[#0A1A2F] block">
+                <span className="uppercase">Ariel Marketing & Communications Limited • </span>
+                <strong style={{ textTransform: 'none' }} className="font-black text-[#0A1A2F] inline-block">
+                  ArielMC
+                </strong>
               </span>
               <span className="text-[9px] uppercase tracking-wider text-[#C9A86A] font-bold block">
-                Western Corporate Sourcing • Export Management • Private Label
+                Corporate Sourcing • Export Management • Private Label
               </span>
             </div>
           </div>
@@ -99,7 +106,7 @@ export default function Navbar({
             </div>
           </div>
 
-          {/* Western Currency Switcher & Procurement Tools */}
+          {/* Corporate Currency Switcher & Procurement Tools */}
           <div className="flex items-center space-x-2 sm:space-x-3 shrink-0">
             {/* Currency Selector Pill */}
             <div className="flex items-center bg-[#F8F6F2] border border-slate-200 rounded-lg p-0.5 text-xs">

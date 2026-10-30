@@ -126,7 +126,7 @@ export default function ProductCard({
           </p>
         </div>
 
-        {/* Western Procurement & Logistics Specs */}
+        {/* Corporate Procurement & Logistics Specs */}
         <div className="pt-2 border-t border-slate-100 space-y-1.5">
           <div className="flex items-center justify-between text-[11px] text-slate-600">
             <span className="flex items-center space-x-1 font-medium">
@@ -172,7 +172,7 @@ export default function ProductCard({
             </span>
           </div>
 
-          {/* Western Compliance Badges */}
+          {/* International Compliance Badges */}
           {product.complianceCertifications && (
             <div className="flex flex-wrap gap-1 pt-1">
               {product.complianceCertifications.slice(0, 2).map((cert, i) => (

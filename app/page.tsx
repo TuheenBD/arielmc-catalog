@@ -198,7 +198,7 @@ function CatalogContent() {
         onOpenSamplePolicy={() => setIsSamplePolicyOpen(true)}
       />
 
-      {/* ArielMC Master Compendium Western Corporate Hero Header */}
+      {/* ArielMC Master Compendium Corporate Hero Header */}
       <section className="bg-white border-b border-[#0A1A2F]/10">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-10">
@@ -206,7 +206,7 @@ function CatalogContent() {
             <div className="w-full lg:w-[34%] xl:w-[33%] flex flex-col justify-center space-y-4 shrink-0">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest border border-[#0A1A2F]/10 font-heading w-fit">
                 <Globe className="h-3 w-3 text-[#C9A86A]" />
-                <span>Western Corporate Sourcing • 2026 / 2027</span>
+                <span>Corporate Sourcing • 2026 / 2027</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
@@ -217,7 +217,7 @@ function CatalogContent() {
                 Precision OEM / ODM manufacturing across Bangladesh’s certified industrial clusters. Curate commercial line sheets, evaluate master carton logistics (CBM), and order express counter-samples with preferential tariff documentation for the UK, Europe, USA, and Australia.
               </p>
 
-              {/* Western Procurement Micro-Perks */}
+              {/* Corporate Procurement Micro-Perks */}
               <div className="flex flex-wrap gap-2 text-xs font-semibold text-slate-700 pt-1">
                 <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
                   <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
@@ -340,7 +340,7 @@ export default function CatalogPage() {
     <Suspense
       fallback={
         <div className="min-h-screen bg-[#F8F6F2] flex items-center justify-center font-heading text-sm text-[#0A1A2F]">
-          Loading <strong className="normal-case font-black text-[#0A1A2F] mx-1">ArielMC</strong> Western Corporate Catalog...
+          Loading <strong style={{ textTransform: 'none' }} className="font-black text-[#0A1A2F] mx-1 inline-block">ArielMC</strong> Corporate Catalog...
         </div>
       }
     >

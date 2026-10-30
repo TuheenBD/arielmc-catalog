@@ -101,7 +101,7 @@ export default function ExportTray({
           consignee,
           products: selectedProducts,
           generatedAt: new Date().toISOString(),
-          documentTitle: `ArielMC Commercial Line Sheet — Western Corporate Edition`,
+          documentTitle: `ArielMC Commercial Line Sheet — Corporate Sourcing Edition`,
           selectedCurrency: currentCurrency,
           currencyRate: currencyConfig.rateFromUsd,
           currencySymbol: currencyConfig.symbol,
@@ -121,7 +121,7 @@ export default function ExportTray({
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      const sanitizedCompany = consignee.companyName.replace(/[^a-zA-Z0-9]/g, '_') || 'ArielMC_Western';
+      const sanitizedCompany = consignee.companyName.replace(/[^a-zA-Z0-9]/g, '_') || 'ArielMC_Corporate';
       link.download = `ArielMC_${sanitizedCompany}_LineSheet_${currentCurrency}_${new Date().toISOString().slice(0, 10)}.pdf`;
       document.body.appendChild(link);
       link.click();
@@ -198,7 +198,7 @@ export default function ExportTray({
               <div className="min-w-0">
                 <div className="flex items-center space-x-2">
                   <h4 className="font-bold text-xs sm:text-sm text-white truncate font-heading uppercase tracking-wide">
-                    Western Corporate Export Tray
+                    Corporate Export Tray
                   </h4>
                   <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#C9A86A]/20 text-[#C9A86A] rounded border border-[#C9A86A]/30 hidden sm:inline-block">
                     {currentCurrency} ({currencyConfig.symbol}) Active
@@ -344,7 +344,7 @@ export default function ExportTray({
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2 text-emerald-400 font-bold text-xs">
                       <CheckCircle2 className="h-4 w-4 shrink-0" />
-                      <span><strong className="normal-case font-black text-white">ArielMC</strong> Sample Development Governance (SOP-B2B-SMP-2026-V1)</span>
+                      <span><strong style={{ textTransform: 'none' }} className="font-black text-white inline-block">ArielMC</strong> Sample Development Governance (SOP-B2B-SMP-2026-V1)</span>
                     </div>
                     {onOpenSamplePolicy && (
                       <button

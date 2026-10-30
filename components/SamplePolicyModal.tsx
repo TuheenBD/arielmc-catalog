@@ -161,7 +161,7 @@ export default function SamplePolicyModal({
                   <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> 3-Tier Sampling Architecture
                 </h3>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                  Engineered to protect master manufacturing line availability while granting friction-free, expedited prototype review for verified Western corporate buyers and procurement directors.
+                  Engineered to protect master manufacturing line availability while granting friction-free, expedited prototype review for verified institutional and corporate buyers and procurement directors.
                 </p>
               </div>
 
@@ -376,7 +376,7 @@ export default function SamplePolicyModal({
                     <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong> books priority air freight and bills at institutional partner rates (0.5 kg – 1.0 kg parcel):
                   </p>
                   <ul className="text-xs text-slate-700 mt-2 space-y-1 font-mono">
-                    <li>• UK & Western Europe: <strong>$38.00 – $48.00 USD</strong></li>
+                    <li>• UK & Europe: <strong>$38.00 – $48.00 USD</strong></li>
                     <li>• USA & Canada: <strong>$42.00 – $55.00 USD</strong></li>
                     <li>• Australia & New Zealand: <strong>$48.00 – $60.00 USD</strong></li>
                   </ul>

@@ -64,7 +64,7 @@ export interface Product {
   inStock: boolean;
   leadTimeWeeks?: number;
 
-  // --- Western Corporate & Enterprise Sourcing Additions ---
+  // --- Corporate & Enterprise Sourcing Additions ---
   prodtId?: number; // 1 - 74 from ArielMC Product Road Map
   roadMapCode?: string; // e.g. LD-EDC-1
   subCategory?: string; // e.g. Wallets & Small Leather Goods

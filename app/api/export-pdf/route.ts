@@ -82,7 +82,7 @@ async function getBrowserInstance(): Promise<Browser> {
 /**
  * Builds the official ArielMC Master Export Compendium line sheet HTML.
  * Adheres strictly to the ArielMC Brand Guideline (#0A1A2F Corporate Navy, #C9A86A Gold, Montserrat & Open Sans).
- * Includes Western Corporate Procurement specifications (HS Tariff Codes, Master Carton CBM, IncoTerms).
+ * Includes Corporate Procurement specifications (HS Tariff Codes, Master Carton CBM, IncoTerms).
  */
 function generateArielLineSheetHtml(payload: PDFExportPayload): string {
   const {
@@ -118,7 +118,7 @@ function generateArielLineSheetHtml(payload: PDFExportPayload): string {
       : `${currencySymbol}${(Math.round(converted * 10) / 10).toFixed(2)}`;
   };
 
-  // Table rows with Western Corporate specifics
+  // Table rows with Corporate Sourcing specifics
   const tableRowsHtml = products
     .map((item: Product) => {
       const { heightMm, widthMm, depthMm } = item.dimensions;
@@ -548,7 +548,7 @@ function generateArielLineSheetHtml(payload: PDFExportPayload): string {
         <div class="meta-stamp">
           <div class="meta-id font-mono">${catalogId}</div>
           <div>Issued: ${formattedDate}</div>
-          <div style="color: #C9A86A; font-weight: 700; font-size: 8px; margin-top: 2px;">WESTERN CORPORATE EDITION</div>
+          <div style="color: #C9A86A; font-weight: 700; font-size: 8px; margin-top: 2px;">CORPORATE SOURCING EDITION</div>
         </div>
       </div>
 
@@ -665,7 +665,7 @@ export async function POST(req: NextRequest) {
       headerTemplate: '<div></div>',
       footerTemplate: `
         <div style="width: 100%; font-size: 8px; color: #64748b; font-family: -apple-system, sans-serif; padding: 0 12mm; display: flex; justify-content: space-between; align-items: center;">
-          <span>Ariel Marketing & Communications Limited • Western Corporate Procurement Desk</span>
+          <span>Ariel Marketing & Communications Limited • Corporate Sourcing & Procurement Desk</span>
           <span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span>
         </div>
       `,
