@@ -8,7 +8,7 @@ import ProductGrid from '@/components/ProductGrid';
 import ExportTray from '@/components/ExportTray';
 import ProductDetailModal from '@/components/ProductDetailModal';
 import SamplePolicyModal from '@/components/SamplePolicyModal';
-import HeroShowcase from '@/components/HeroShowcase';
+import HeroShowcase, { CERTIFICATION_LOGOS } from '@/components/HeroShowcase';
 import { CurrencyProvider } from '@/components/CurrencyContext';
 import { MOCK_PRODUCTS } from '@/data/mockProducts';
 import { Product, FilterState, ProductCategory } from '@/types/product';
@@ -200,46 +200,81 @@ function CatalogContent() {
 
       {/* ArielMC Master Compendium Corporate Hero Header */}
       <section className="bg-white border-b border-[#0A1A2F]/10">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-10">
-            {/* Left Column: Commercial Narrative & Compliance */}
-            <div className="w-full lg:w-[34%] xl:w-[33%] flex flex-col justify-center space-y-4 shrink-0">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest border border-[#0A1A2F]/10 font-heading w-fit">
-                <Globe className="h-3 w-3 text-[#C9A86A]" />
-                <span>Corporate Sourcing • 2026 / 2027</span>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+          <div className="flex flex-col lg:flex-row lg:items-stretch lg:justify-between gap-6 lg:gap-8">
+            {/* Left Column: Commercial Narrative & Certified Compliance */}
+            <div className="w-full lg:w-[36%] xl:w-[35%] flex flex-col justify-between space-y-4 shrink-0">
+              <div className="space-y-3">
+                <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest border border-[#0A1A2F]/10 font-heading w-fit">
+                  <Globe className="h-3 w-3 text-[#C9A86A]" />
+                  <span>Corporate Sourcing • 2026 / 2027</span>
+                </div>
+
+                <h1 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
+                  The Master Export Compendium
+                </h1>
+
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+                  Precision OEM / ODM manufacturing across Bangladesh’s certified industrial clusters. Curate commercial line sheets, evaluate master carton logistics (CBM), and order express counter-samples with preferential tariff documentation for the UK, Europe, USA, and Australia.
+                </p>
+
+                {/* Corporate Procurement Micro-Perks */}
+                <div className="flex flex-wrap gap-1.5 text-xs font-semibold text-slate-700 pt-0.5">
+                  <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+                    <span>UK DCTS 0% Duty</span>
+                  </span>
+                  <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+                    <span>EU GSP 0% Tariff</span>
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setIsSamplePolicyOpen(true)}
+                    className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-[#0A1A2F] text-[#C9A86A] border border-[#0A1A2F] hover:bg-slate-900 transition-colors cursor-pointer"
+                  >
+                    <Clock className="h-3.5 w-3.5 text-[#C9A86A]" />
+                    <span>Sample Policy: 100% Credit (SOP)</span>
+                  </button>
+                </div>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
-                The Master Export Compendium
-              </h1>
+              {/* Certified International Standards - Official Accreditations */}
+              <div className="bg-[#FAF9F6] rounded-xl p-3 border border-slate-200/90 shadow-2xs">
+                <div className="flex items-center space-x-2 mb-2">
+                  <ShieldCheck className="h-4 w-4 text-[#C9A86A] shrink-0" />
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#0A1A2F] font-heading block">
+                      Certified International Standards
+                    </span>
+                    <span className="text-[9.5px] text-slate-500 block">
+                      Direct factory audits & destination compliance certificates
+                    </span>
+                  </div>
+                </div>
 
-              <p className="text-sm text-slate-600 leading-relaxed font-sans">
-                Precision OEM / ODM manufacturing across Bangladesh’s certified industrial clusters. Curate commercial line sheets, evaluate master carton logistics (CBM), and order express counter-samples with preferential tariff documentation for the UK, Europe, USA, and Australia.
-              </p>
-
-              {/* Corporate Procurement Micro-Perks */}
-              <div className="flex flex-wrap gap-2 text-xs font-semibold text-slate-700 pt-1">
-                <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
-                  <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
-                  <span>UK DCTS 0% Duty</span>
-                </span>
-                <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900 border border-emerald-200">
-                  <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
-                  <span>EU GSP 0% Tariff</span>
-                </span>
-                <button
-                  type="button"
-                  onClick={() => setIsSamplePolicyOpen(true)}
-                  className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-[#0A1A2F] text-[#C9A86A] border border-[#0A1A2F] hover:bg-slate-900 transition-colors cursor-pointer"
-                >
-                  <Clock className="h-3.5 w-3.5 text-[#C9A86A]" />
-                  <span>Sample Policy: 100% Credit (SOP)</span>
-                </button>
+                {/* Authentic Logo Strip */}
+                <div className="grid grid-cols-5 gap-1.5">
+                  {CERTIFICATION_LOGOS.map((cert, idx) => (
+                    <div
+                      key={idx}
+                      className="h-8 p-1 bg-white rounded-md border border-slate-200 shadow-2xs flex items-center justify-center hover:border-slate-400 transition-colors"
+                      title={cert.alt}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={cert.src}
+                        alt={cert.alt}
+                        className="h-full w-auto max-w-[55px] object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Right Column: 5 Hero Representative Items & Sector Selector (25% Bigger) */}
-            <div className="w-full lg:w-[66%] xl:w-[67%]">
+            {/* Right Column: 5 Hero Product Divisions (Standard & Balanced Proportions) */}
+            <div className="w-full lg:w-[64%] xl:w-[65%] flex flex-col justify-center">
               <HeroShowcase
                 selectedCategories={filters.selectedCategories}
                 onSelectCategory={handleSelectDivisionCategory}

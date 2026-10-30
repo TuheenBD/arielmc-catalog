@@ -56,7 +56,7 @@ const HERO_PILLARS: HeroPillar[] = [
   },
 ];
 
-const CERTIFICATION_LOGOS = [
+export const CERTIFICATION_LOGOS = [
   {
     name: 'LWG Audited',
     src: '/certifications/lwg-audited.png',
@@ -102,24 +102,24 @@ export default function HeroShowcase({
   };
 
   return (
-    <div className="w-full space-y-3.5">
+    <div className="w-full space-y-3">
       {/* Top Section Header */}
       <div className="flex items-center justify-between">
         <div>
           <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#C9A86A] font-heading block">
             Our 5 Product Divisions
           </span>
-          <h2 className="text-base sm:text-lg font-extrabold text-[#0A1A2F] font-heading">
+          <h2 className="text-sm sm:text-base font-extrabold text-[#0A1A2F] font-heading">
             One Source. Five Strengths.
           </h2>
         </div>
-        <span className="text-[11px] font-mono font-bold text-slate-500 bg-[#0A1A2F]/5 px-2.5 py-1 rounded-md border border-[#0A1A2F]/10">
+        <span className="text-[10.5px] font-mono font-bold text-slate-500 bg-[#0A1A2F]/5 px-2.5 py-1 rounded-md border border-[#0A1A2F]/10">
           74 Export Specifications
         </span>
       </div>
 
-      {/* 5 Hero Pillars - Made 25% Bigger in Height & Width for Flagship Prominence */}
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-3.5">
+      {/* 5 Hero Pillars - Standard & Refined Proportions */}
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3">
         {HERO_PILLARS.map((pillar) => {
           const isSelected = selectedCategories.includes(pillar.id);
           const count = categoryCounts[pillar.id] || 0;
@@ -129,57 +129,54 @@ export default function HeroShowcase({
               key={pillar.id}
               type="button"
               onClick={() => handleCardClick(pillar.id)}
-              className={`group text-left rounded-2xl p-3 sm:p-3.5 md:p-4 transition-all duration-300 flex flex-col justify-between border cursor-pointer ${
+              className={`group text-left rounded-xl p-2.5 sm:p-3 transition-all duration-300 flex flex-col justify-between border cursor-pointer ${
                 isSelected
-                  ? 'bg-[#0A1A2F] text-white border-[#C9A86A] shadow-xl ring-2 ring-[#C9A86A] scale-[1.02]'
-                  : 'bg-white hover:bg-[#FAF9F6] text-[#0A1A2F] border-slate-200/90 hover:border-[#0A1A2F]/40 shadow-sm hover:shadow-lg'
+                  ? 'bg-[#0A1A2F] text-white border-[#C9A86A] shadow-md ring-2 ring-[#C9A86A] scale-[1.01]'
+                  : 'bg-white hover:bg-[#FAF9F6] text-[#0A1A2F] border-slate-200 hover:border-[#0A1A2F]/40 shadow-xs hover:shadow-md'
               }`}
             >
               {/* Pillar Header: Number + Division Title */}
-              <div className="mb-2 sm:mb-2.5">
-                <div className="flex items-center justify-between mb-1.5">
-                  <span
-                    className={`font-mono text-sm sm:text-base font-black ${
-                      isSelected ? 'text-[#C9A86A]' : 'text-[#C9A86A]'
-                    }`}
-                  >
+              <div className="mb-1.5">
+                <div className="flex items-center justify-between mb-1">
+                  <span className="font-mono text-xs font-black text-[#C9A86A]">
                     {pillar.num}
                   </span>
                   {isSelected ? (
-                    <span className="h-5 w-5 rounded-full bg-[#C9A86A] text-[#0A1A2F] flex items-center justify-center">
-                      <Check className="h-3 w-3 stroke-[3]" />
+                    <span className="h-4 w-4 rounded-full bg-[#C9A86A] text-[#0A1A2F] flex items-center justify-center">
+                      <Check className="h-2.5 w-2.5 stroke-[3]" />
                     </span>
                   ) : (
-                    <span className="text-[10px] font-mono text-slate-400 group-hover:text-slate-600 font-bold bg-slate-100 px-1.5 py-0.5 rounded">
+                    <span className="text-[9px] font-mono text-slate-400 group-hover:text-slate-600 font-bold bg-slate-100 px-1.5 py-0.5 rounded">
                       {count} SKUs
                     </span>
                   )}
                 </div>
 
                 <h3
-                  className={`font-heading font-extrabold text-xs sm:text-[13.5px] md:text-[14.5px] leading-snug line-clamp-2 ${
+                  className={`font-heading font-bold text-xs sm:text-[12.5px] leading-snug line-clamp-1 ${
                     isSelected ? 'text-white' : 'text-[#0A1A2F]'
                   }`}
+                  title={pillar.title}
                 >
                   {pillar.title}
                 </h3>
               </div>
 
-              {/* Product Photograph Area - Enlarged Aspect Ratio (25% Taller & Wider) */}
-              <div className="relative aspect-[1/1.22] min-h-[160px] sm:min-h-[195px] md:min-h-[215px] w-full rounded-xl overflow-hidden bg-slate-100 border border-black/5 mt-1 shadow-2xs">
+              {/* Product Photograph Area - Standard Balanced Aspect Ratio */}
+              <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden bg-slate-100 border border-black/5 shadow-2xs">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={pillar.imageUrl}
                   alt={pillar.title}
-                  className="h-full w-full object-cover object-center group-hover:scale-108 transition-transform duration-500"
+                  className="h-full w-full object-cover object-center group-hover:scale-106 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
 
               {/* Bottom Subtle Indicator */}
-              <div className="mt-2.5 pt-2 border-t border-slate-100/30 flex items-center justify-between text-[11px]">
+              <div className="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[10px]">
                 <span
-                  className={`font-bold uppercase tracking-wider text-[10px] truncate ${
+                  className={`font-bold uppercase tracking-wider text-[9px] truncate ${
                     isSelected ? 'text-[#C9A86A]' : 'text-slate-500'
                   }`}
                 >
@@ -203,47 +200,16 @@ export default function HeroShowcase({
         <div className="flex items-center space-x-2">
           <Sparkles className="h-3.5 w-3.5 text-[#C9A86A] shrink-0" />
           <span>
-            Click any sector card above to filter the <strong>74-item commercial roadmap</strong> instantly. Curated by <strong className="normal-case font-black text-[#0A1A2F]">ArielMC</strong>.
+            Click any sector card above to filter the <strong>74-item commercial roadmap</strong> instantly. Curated by{' '}
+            <strong style={{ textTransform: 'none' }} className="font-black text-[#0A1A2F] inline-block">
+              ArielMC
+            </strong>
+            .
           </span>
         </div>
         <span className="font-mono text-[10px] text-[#C9A86A] font-extrabold hidden sm:inline uppercase tracking-wider">
           1-Click Filter
         </span>
-      </div>
-
-      {/* Certified International Standards - Original High-Res Logos */}
-      <div className="bg-[#FAF9F6] rounded-2xl p-3 sm:p-3.5 border border-slate-200/80 shadow-xs">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-          <div className="flex items-center space-x-2 shrink-0">
-            <ShieldCheck className="h-4 w-4 text-[#C9A86A] shrink-0" />
-            <div>
-              <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#0A1A2F] font-heading block">
-                Certified International Standards
-              </span>
-              <span className="text-[10px] text-slate-500 block">
-                Direct factory audits & destination compliance certificates
-              </span>
-            </div>
-          </div>
-
-          {/* Authentic Logo Strip */}
-          <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
-            {CERTIFICATION_LOGOS.map((cert, idx) => (
-              <div
-                key={idx}
-                className="h-9 px-2 py-1 bg-white rounded-lg border border-slate-200 shadow-2xs flex items-center justify-center hover:border-slate-400 transition-colors"
-                title={cert.alt}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={cert.src}
-                  alt={cert.alt}
-                  className="h-full w-auto max-w-[70px] sm:max-w-[85px] object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
