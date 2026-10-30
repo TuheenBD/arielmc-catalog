@@ -65,6 +65,10 @@ export interface Product {
   leadTimeWeeks?: number;
 
   // --- Western Corporate & Enterprise Sourcing Additions ---
+  prodtId?: number; // 1 - 74 from ArielMC Product Road Map
+  roadMapCode?: string; // e.g. LD-EDC-1
+  subCategory?: string; // e.g. Wallets & Small Leather Goods
+  categoryGroup?: string; // e.g. Everyday Carry & SLGs
   hsCode: string; // e.g., '4202.11.00', '6305.10.10'
   tariffPreferences?: string[]; // e.g., ['UK DCTS 0% Duty', 'EU GSP 0% Duty', 'US MFN']
   masterCarton: MasterCartonLogistics;
@@ -77,6 +81,7 @@ export interface Product {
 export interface FilterState {
   searchQuery: string;
   selectedCategories: ProductCategory[];
+  selectedSubCategories?: string[];
   priceRange: [number, number];
   selectedMaterials: string[];
   sortBy: 'featured' | 'price-asc' | 'price-desc' | 'name-asc' | 'sku-asc';

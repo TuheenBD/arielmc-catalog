@@ -104,6 +104,23 @@ export default function ProductDetailModal({
             {/* Commercial Parameters */}
             <div className="md:col-span-7 flex flex-col justify-between space-y-4">
               <div>
+                {product.categoryGroup && (
+                  <div className="flex items-center space-x-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1 font-heading">
+                    <span className="text-[#C9A86A]">{product.categoryGroup}</span>
+                    {product.subCategory && (
+                      <>
+                        <span>•</span>
+                        <span className="text-slate-600">{product.subCategory}</span>
+                      </>
+                    )}
+                    {product.prodtId && (
+                      <>
+                        <span>•</span>
+                        <span className="font-mono text-slate-400">Roadmap Item #{product.prodtId}</span>
+                      </>
+                    )}
+                  </div>
+                )}
                 <h2 className="text-xl sm:text-2xl font-extrabold text-[#0A1A2F] font-heading leading-tight">
                   {product.name}
                 </h2>

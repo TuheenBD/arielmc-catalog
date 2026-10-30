@@ -103,9 +103,16 @@ export default function ProductCard({
       <div className="p-4 flex-1 flex flex-col justify-between space-y-3">
         <div>
           <div className="flex items-start justify-between gap-2">
-            <h3 className="font-bold text-sm text-[#0A1A2F] line-clamp-1 group-hover:text-[#C9A86A] transition-colors font-heading">
-              {product.name}
-            </h3>
+            <div className="min-w-0 flex-1">
+              {product.subCategory && (
+                <span className="text-[10px] font-bold text-[#C9A86A] uppercase tracking-wider truncate block mb-0.5">
+                  {product.subCategory}
+                </span>
+              )}
+              <h3 className="font-bold text-sm text-[#0A1A2F] line-clamp-1 group-hover:text-[#C9A86A] transition-colors font-heading">
+                {product.name}
+              </h3>
+            </div>
             <div className="text-right shrink-0">
               <span className="text-sm font-extrabold text-[#0A1A2F] font-mono">
                 {formatPrice(product.price)}

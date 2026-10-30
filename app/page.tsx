@@ -90,8 +90,11 @@ function CatalogContent() {
           const matchesQuery =
             product.name.toLowerCase().includes(q) ||
             product.sku.toLowerCase().includes(q) ||
+            (product.roadMapCode && product.roadMapCode.toLowerCase().includes(q)) ||
             product.category.toLowerCase().includes(q) ||
             product.divisionTitle.toLowerCase().includes(q) ||
+            (product.subCategory && product.subCategory.toLowerCase().includes(q)) ||
+            (product.categoryGroup && product.categoryGroup.toLowerCase().includes(q)) ||
             product.description.toLowerCase().includes(q) ||
             (product.hsCode && product.hsCode.toLowerCase().includes(q)) ||
             product.materials.some((m) => m.toLowerCase().includes(q));
@@ -116,6 +119,7 @@ function CatalogContent() {
         return true;
       })
       .sort((a, b) => {
+        if (filters.sortBy === 'featured') return (a.prodtId || 0) - (b.prodtId || 0);
         if (filters.sortBy === 'price-asc') return a.price - b.price;
         if (filters.sortBy === 'price-desc') return b.price - a.price;
         if (filters.sortBy === 'name-asc') return a.name.localeCompare(b.name);
