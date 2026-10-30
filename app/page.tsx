@@ -203,13 +203,13 @@ function CatalogContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
             {/* Left Column: Commercial Narrative & Compliance */}
-            <div className="w-full lg:w-5/12 space-y-4">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest border border-[#0A1A2F]/10 font-heading">
+            <div className="w-full lg:w-5/12 flex flex-col justify-center space-y-4">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest border border-[#0A1A2F]/10 font-heading w-fit">
                 <Globe className="h-3 w-3 text-[#C9A86A]" />
                 <span>Western Corporate Sourcing • 2026 / 2027</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
                 The Master Export Compendium
               </h1>
 
@@ -235,21 +235,6 @@ function CatalogContent() {
                   <Clock className="h-3.5 w-3.5 text-[#C9A86A]" />
                   <span>Sample Policy: 100% Credit (SOP)</span>
                 </button>
-              </div>
-
-              {/* Compliance Credential Badges */}
-              <div className="bg-[#F8F6F2] p-3.5 rounded-xl border border-slate-200/80 space-y-1.5 mt-2">
-                <div className="flex items-center space-x-2 text-xs font-bold text-[#0A1A2F]">
-                  <ShieldCheck className="h-4 w-4 text-[#C9A86A]" />
-                  <span>Certified International Standards</span>
-                </div>
-                <div className="flex flex-wrap gap-1.5 text-[10px] text-slate-600 font-medium">
-                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">LWG Audited Leather</span>
-                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">GOTS Organic Jute</span>
-                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">OEKO-TEX 100</span>
-                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">BSCI & Sedex</span>
-                  <span className="px-2 py-0.5 bg-white rounded border border-slate-200">FDA Food Contact</span>
-                </div>
               </div>
             </div>
 
