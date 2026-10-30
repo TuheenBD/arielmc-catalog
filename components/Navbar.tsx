@@ -69,11 +69,8 @@ export default function Navbar({
               className="h-11 sm:h-12 w-auto object-contain"
             />
             <div className="hidden lg:block pl-2.5 border-l border-slate-200">
-              <span className="text-[10px] font-extrabold tracking-widest text-[#0A1A2F] block">
-                <span className="uppercase">Ariel Marketing & Communications Limited • </span>
-                <strong style={{ textTransform: 'none' }} className="font-black text-[#0A1A2F] inline-block">
-                  ArielMC
-                </strong>
+              <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#0A1A2F] block">
+                Ariel Marketing & Communications Limited
               </span>
               <span className="text-[9px] uppercase tracking-wider text-[#C9A86A] font-bold block">
                 Corporate Sourcing • Export Management • Private Label
