@@ -24,7 +24,7 @@ const HERO_PILLARS: HeroPillar[] = [
     num: '01',
     title: 'The Leather Compendium',
     shortTitle: 'Leather Compendium',
-    imageUrl: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800',
+    imageUrl: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: 'Jute',
@@ -118,8 +118,8 @@ export default function HeroShowcase({
         </span>
       </div>
 
-      {/* 5 Hero Pillars - Minimal, Breathable, Cohesive Luxury Palette (No multi-color clash) */}
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3">
+      {/* 5 Hero Pillars - Made 25% Bigger in Height & Width for Flagship Prominence */}
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-3.5">
         {HERO_PILLARS.map((pillar) => {
           const isSelected = selectedCategories.includes(pillar.id);
           const count = categoryCounts[pillar.id] || 0;
@@ -129,35 +129,35 @@ export default function HeroShowcase({
               key={pillar.id}
               type="button"
               onClick={() => handleCardClick(pillar.id)}
-              className={`group text-left rounded-2xl p-2.5 sm:p-3 transition-all duration-300 flex flex-col justify-between border cursor-pointer ${
+              className={`group text-left rounded-2xl p-3 sm:p-3.5 md:p-4 transition-all duration-300 flex flex-col justify-between border cursor-pointer ${
                 isSelected
-                  ? 'bg-[#0A1A2F] text-white border-[#C9A86A] shadow-lg ring-2 ring-[#C9A86A] scale-[1.02]'
-                  : 'bg-white hover:bg-[#FAF9F6] text-[#0A1A2F] border-slate-200/90 hover:border-[#0A1A2F]/40 shadow-xs hover:shadow-md'
+                  ? 'bg-[#0A1A2F] text-white border-[#C9A86A] shadow-xl ring-2 ring-[#C9A86A] scale-[1.02]'
+                  : 'bg-white hover:bg-[#FAF9F6] text-[#0A1A2F] border-slate-200/90 hover:border-[#0A1A2F]/40 shadow-sm hover:shadow-lg'
               }`}
             >
               {/* Pillar Header: Number + Division Title */}
-              <div className="mb-2">
-                <div className="flex items-center justify-between mb-1">
+              <div className="mb-2 sm:mb-2.5">
+                <div className="flex items-center justify-between mb-1.5">
                   <span
-                    className={`font-mono text-xs font-black ${
+                    className={`font-mono text-sm sm:text-base font-black ${
                       isSelected ? 'text-[#C9A86A]' : 'text-[#C9A86A]'
                     }`}
                   >
                     {pillar.num}
                   </span>
                   {isSelected ? (
-                    <span className="h-4 w-4 rounded-full bg-[#C9A86A] text-[#0A1A2F] flex items-center justify-center">
-                      <Check className="h-2.5 w-2.5 stroke-[3]" />
+                    <span className="h-5 w-5 rounded-full bg-[#C9A86A] text-[#0A1A2F] flex items-center justify-center">
+                      <Check className="h-3 w-3 stroke-[3]" />
                     </span>
                   ) : (
-                    <span className="text-[9px] font-mono text-slate-400 group-hover:text-slate-600 font-semibold">
+                    <span className="text-[10px] font-mono text-slate-400 group-hover:text-slate-600 font-bold bg-slate-100 px-1.5 py-0.5 rounded">
                       {count} SKUs
                     </span>
                   )}
                 </div>
 
                 <h3
-                  className={`font-heading font-extrabold text-xs sm:text-[13px] leading-tight line-clamp-2 ${
+                  className={`font-heading font-extrabold text-xs sm:text-[13.5px] md:text-[14.5px] leading-snug line-clamp-2 ${
                     isSelected ? 'text-white' : 'text-[#0A1A2F]'
                   }`}
                 >
@@ -165,29 +165,29 @@ export default function HeroShowcase({
                 </h3>
               </div>
 
-              {/* Product Photograph Area with Studio Framing */}
-              <div className="relative aspect-3/4 w-full rounded-xl overflow-hidden bg-slate-100 border border-black/5 mt-1">
+              {/* Product Photograph Area - Enlarged Aspect Ratio (25% Taller & Wider) */}
+              <div className="relative aspect-[1/1.22] min-h-[160px] sm:min-h-[195px] md:min-h-[215px] w-full rounded-xl overflow-hidden bg-slate-100 border border-black/5 mt-1 shadow-2xs">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={pillar.imageUrl}
                   alt={pillar.title}
-                  className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="h-full w-full object-cover object-center group-hover:scale-108 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
 
               {/* Bottom Subtle Indicator */}
-              <div className="mt-2 pt-1.5 border-t border-slate-100/30 flex items-center justify-between text-[10px]">
+              <div className="mt-2.5 pt-2 border-t border-slate-100/30 flex items-center justify-between text-[11px]">
                 <span
-                  className={`font-medium truncate ${
+                  className={`font-bold uppercase tracking-wider text-[10px] truncate ${
                     isSelected ? 'text-[#C9A86A]' : 'text-slate-500'
                   }`}
                 >
                   {isSelected ? 'Active Filter' : 'Explore'}
                 </span>
                 <span
-                  className={`font-mono text-[9px] ${
-                    isSelected ? 'text-white font-bold' : 'text-slate-400'
+                  className={`font-mono text-xs font-bold ${
+                    isSelected ? 'text-white' : 'text-[#C9A86A]'
                   }`}
                 >
                   &rarr;

@@ -200,16 +200,16 @@ function CatalogContent() {
 
       {/* ArielMC Master Compendium Western Corporate Hero Header */}
       <section className="bg-white border-b border-[#0A1A2F]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-10">
             {/* Left Column: Commercial Narrative & Compliance */}
-            <div className="w-full lg:w-5/12 flex flex-col justify-center space-y-4">
+            <div className="w-full lg:w-[34%] xl:w-[33%] flex flex-col justify-center space-y-4 shrink-0">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#0A1A2F]/5 text-[#0A1A2F] text-[11px] font-bold uppercase tracking-widest border border-[#0A1A2F]/10 font-heading w-fit">
                 <Globe className="h-3 w-3 text-[#C9A86A]" />
                 <span>Western Corporate Sourcing • 2026 / 2027</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-extrabold text-[#0A1A2F] tracking-tight font-heading uppercase leading-tight">
                 The Master Export Compendium
               </h1>
 
@@ -238,8 +238,8 @@ function CatalogContent() {
               </div>
             </div>
 
-            {/* Right Column: 5 Hero Representative Items & Sector Selector */}
-            <div className="w-full lg:w-7/12">
+            {/* Right Column: 5 Hero Representative Items & Sector Selector (25% Bigger) */}
+            <div className="w-full lg:w-[66%] xl:w-[67%]">
               <HeroShowcase
                 selectedCategories={filters.selectedCategories}
                 onSelectCategory={handleSelectDivisionCategory}
