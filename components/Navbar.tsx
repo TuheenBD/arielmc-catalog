@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Search, SlidersHorizontal, BookOpen, ChevronDown, Globe } from 'lucide-react';
+import { Search, SlidersHorizontal, BookOpen, ChevronDown, Globe, Download } from 'lucide-react';
 import { useCurrency } from './CurrencyContext';
 import { CurrencyCode, SUPPORTED_CURRENCIES } from '@/types/product';
 
@@ -137,7 +137,7 @@ export default function Navbar({
               <button
                 type="button"
                 onClick={onOpenSamplePolicy}
-                className="hidden md:flex items-center space-x-1.5 px-2.5 py-1.5 bg-[#0A1A2F]/5 hover:bg-[#0A1A2F]/10 border border-[#0A1A2F]/15 rounded-lg text-xs font-bold text-[#0A1A2F] transition-all cursor-pointer"
+                className="hidden lg:flex items-center space-x-1.5 px-2.5 py-1.5 bg-[#0A1A2F]/5 hover:bg-[#0A1A2F]/10 border border-[#0A1A2F]/15 rounded-lg text-xs font-bold text-[#0A1A2F] transition-all cursor-pointer"
                 title="View Official Sample Policy & SOP-B2B-SMP-2026-V1"
               >
                 <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -145,6 +145,17 @@ export default function Navbar({
                 <span className="font-mono text-[9px] px-1 py-0.5 rounded bg-[#C9A86A]/20 text-[#0A1A2F] font-extrabold">SOP</span>
               </button>
             )}
+
+            {/* Catalog Download Center Button */}
+            <a
+              href="/downloads"
+              className="flex items-center space-x-1.5 px-3 py-1.5 bg-[#C9A86A]/15 hover:bg-[#C9A86A]/25 border border-[#C9A86A]/50 rounded-lg text-xs font-bold text-[#0A1A2F] transition-all cursor-pointer"
+              title="Official Catalog Download Center (Master, Compendiums & Lookbooks)"
+            >
+              <Download className="h-3.5 w-3.5 text-[#C9A86A]" />
+              <span className="hidden sm:inline">Catalogs</span>
+              <span className="font-mono text-[9px] px-1.5 py-0.5 rounded bg-[#0A1A2F] text-[#C9A86A] font-bold">PDF</span>
+            </a>
 
             {/* Mobile Filter Toggle */}
             <button

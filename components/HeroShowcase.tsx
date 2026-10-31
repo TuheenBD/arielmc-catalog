@@ -207,9 +207,12 @@ export default function HeroShowcase({
             .
           </span>
         </div>
-        <span className="font-mono text-[10px] text-[#C9A86A] font-extrabold hidden sm:inline uppercase tracking-wider">
-          1-Click Filter
-        </span>
+        <a
+          href="/downloads"
+          className="font-mono text-[10.5px] text-[#0A1A2F] bg-[#C9A86A]/20 hover:bg-[#C9A86A]/30 border border-[#C9A86A]/40 px-2.5 py-1 rounded-md font-bold hidden sm:inline-flex items-center space-x-1.5 transition-colors uppercase tracking-wider"
+        >
+          <span>📥 PDF Download Center</span>
+        </a>
       </div>
     </div>
   );
