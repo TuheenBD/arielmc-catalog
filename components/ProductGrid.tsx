@@ -1,9 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Product } from '@/types/product';
 import ProductCard from './ProductCard';
-import { CheckSquare, Square, PackageOpen } from 'lucide-react';
+import ProductTree from './ProductTree';
+import { CheckSquare, Square, PackageOpen, LayoutGrid, ListTree, Columns } from 'lucide-react';
 
 interface ProductGridProps {
   products: Product[];
@@ -22,6 +23,9 @@ export default function ProductGrid({
   onClearSelection,
   onViewDetails,
 }: ProductGridProps) {
+  // Default to 'tree' view as requested: displays product tree right after "Showing 74 Products" line
+  const [viewMode, setViewMode] = useState<'tree' | 'grid' | 'both'>('tree');
+
   const selectedIds = new Set(selectedProducts.map((p) => p.id));
   const areAllVisibleSelected =
     products.length > 0 && products.every((p) => selectedIds.has(p.id));
@@ -29,9 +33,54 @@ export default function ProductGrid({
   return (
     <div className="flex-1 space-y-4">
       {/* Grid Action Toolbar */}
-      <div className="flex items-center justify-between pb-2 border-b border-slate-200">
-        <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-          Showing <span className="text-slate-900 font-bold">{products.length}</span> Products
+      <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-200">
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+            Showing <span className="text-slate-900 font-bold">{products.length}</span> Products
+          </div>
+
+          {/* View Mode Switcher Pills */}
+          <div className="inline-flex rounded-lg border border-slate-200 bg-slate-100 p-0.5 text-xs font-medium">
+            <button
+              type="button"
+              onClick={() => setViewMode('tree')}
+              className={`flex items-center space-x-1.5 px-3 py-1 rounded-md transition-all ${
+                viewMode === 'tree'
+                  ? 'bg-white text-slate-900 shadow-xs font-bold'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+              title="Hierarchical Category & Product Tree"
+            >
+              <ListTree className="h-3.5 w-3.5 text-[#C9A86A]" />
+              <span>Product Tree</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setViewMode('grid')}
+              className={`flex items-center space-x-1.5 px-3 py-1 rounded-md transition-all ${
+                viewMode === 'grid'
+                  ? 'bg-white text-slate-900 shadow-xs font-bold'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+              title="Visual Product Cards Grid"
+            >
+              <LayoutGrid className="h-3.5 w-3.5 text-slate-500" />
+              <span>Grid Cards</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setViewMode('both')}
+              className={`flex items-center space-x-1.5 px-3 py-1 rounded-md transition-all ${
+                viewMode === 'both'
+                  ? 'bg-white text-slate-900 shadow-xs font-bold'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+              title="Display Tree and Grid Together"
+            >
+              <Columns className="h-3.5 w-3.5 text-slate-500" />
+              <span>Both</span>
+            </button>
+          </div>
         </div>
 
         {products.length > 0 && (
@@ -57,7 +106,7 @@ export default function ProductGrid({
         )}
       </div>
 
-      {/* Grid Layout */}
+      {/* Main Content Layout */}
       {products.length === 0 ? (
         <div className="flex flex-col items-center justify-center p-12 bg-white rounded-xl border border-dashed border-slate-300 text-center space-y-3">
           <div className="h-12 w-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400">
@@ -71,17 +120,41 @@ export default function ProductGrid({
           </div>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              isSelected={selectedIds.has(product.id)}
+        <>
+          {/* Product Tree: rendered right after SHOWING PRODUCTS line */}
+          {(viewMode === 'tree' || viewMode === 'both') && (
+            <ProductTree
+              products={products}
+              selectedProducts={selectedProducts}
               onToggleSelect={onToggleSelect}
               onViewDetails={onViewDetails}
             />
-          ))}
-        </div>
+          )}
+
+          {/* Grid Layout Cards */}
+          {(viewMode === 'grid' || viewMode === 'both') && (
+            <div>
+              {viewMode === 'both' && (
+                <div className="pt-2 pb-4">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-2">
+                    Visual Product Card Showcase ({products.length} Specifications)
+                  </h4>
+                </div>
+              )}
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                {products.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    isSelected={selectedIds.has(product.id)}
+                    onToggleSelect={onToggleSelect}
+                    onViewDetails={onViewDetails}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </>
       )}
     </div>
   );
