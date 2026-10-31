@@ -23,8 +23,8 @@ export default function ProductGrid({
   onClearSelection,
   onViewDetails,
 }: ProductGridProps) {
-  // Default to 'tree' view as requested: displays product tree right after "Showing 74 Products" line
-  const [viewMode, setViewMode] = useState<'tree' | 'grid' | 'both'>('tree');
+  // Default to 'both': displays product tree right after "Showing 74 Products" line AND visual product cards below it
+  const [viewMode, setViewMode] = useState<'both' | 'tree' | 'grid'>('both');
 
   const selectedIds = new Set(selectedProducts.map((p) => p.id));
   const areAllVisibleSelected =

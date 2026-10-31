@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import Image from 'next/image';
 import { Product, ProductCategory } from '@/types/product';
 import { useCurrency } from './CurrencyContext';
 import {
@@ -454,13 +453,13 @@ export default function ProductTree({
                                               </span>
 
                                               {/* Small Thumbnail Preview */}
-                                              <div className="relative h-7 w-7 rounded overflow-hidden bg-slate-100 border border-slate-200 shrink-0">
-                                                <Image
+                                              <div className="h-7 w-7 rounded overflow-hidden bg-slate-100 border border-slate-200 shrink-0">
+                                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                <img
                                                   src={product.imageUrl}
                                                   alt={product.name}
-                                                  fill
-                                                  sizes="32px"
-                                                  className="object-cover"
+                                                  className="h-full w-full object-cover"
+                                                  loading="lazy"
                                                 />
                                               </div>
 
@@ -536,3 +535,4 @@ export default function ProductTree({
     </div>
   );
 }
+
