@@ -53,9 +53,9 @@ export const COMPENDIUM_DIVISIONS: CompendiumDivision[] = [
     label: 'Fine Stoneware Ceramics',
     departments: [
       { name: 'Dinnerware & Tabletop', count: 4 },
-      { name: 'Drinkware & Café', count: 9 },
-      { name: 'Modern Living & Decor', count: 5 },
-      { name: 'Culinary Serving & Hospitality', count: 11 },
+      { name: 'Drinkware & Café', count: 5 },
+      { name: 'Modern Living & Decor', count: 3 },
+      { name: 'Culinary Serving & Specialty Tabletop', count: 17 },
     ],
   },
   {

@@ -74,13 +74,13 @@ export const MOCK_PRODUCTS: Product[] = [
         "label": "Front Assembly",
         "tag": "Primary Front Profile",
         "title": "Full Front Assembly & Primary Carry",
-        "desc": "10.25\" shoulder drop rolled harness leather handles, 1.6 mm Savar vegetable-tanned Cognac cowhide upper band, and 12–14 oz Narayanganj enzyme-washed indigo denim body with mechanical turn-lock closure strap."
+        "desc": "10.25\" shoulder drop rolled harness leather handles, 1.6 mm Savar vegetable-tanned Cognac cowhide upper band, and 12\u201314 oz Narayanganj enzyme-washed indigo denim body with mechanical turn-lock closure strap."
       },
       {
         "src": "/images/products/leather/LD-EDC-1-front-strap.jpg",
         "label": "Crossbody Strap",
         "tag": "Transit Configuration",
-        "desc": "Detachable 45\"–52\" adjustable harness leather crossbody strap with 5 punched eyelets, heavy-duty swivel snaps, and salt-spray anti-tarnish antique brass hardware."
+        "desc": "Detachable 45\"\u201352\" adjustable harness leather crossbody strap with 5 punched eyelets, heavy-duty swivel snaps, and salt-spray anti-tarnish antique brass hardware."
       },
       {
         "src": "/images/products/leather/LD-EDC-1-front-detail.jpg",
@@ -1138,7 +1138,7 @@ export const MOCK_PRODUCTS: Product[] = [
         "label": "Rope & Tech",
         "tag": "Ergonomics & Capacity",
         "title": "Twisted Nautical Rope & Tech Capacity",
-        "desc": "Ergonomic dual-ply twisted rope handles anchored through heavy-duty metal eyelets, accommodating 14\"–16\" laptops, planners, cables, and daily desk essentials."
+        "desc": "Ergonomic dual-ply twisted rope handles anchored through heavy-duty metal eyelets, accommodating 14\"\u201316\" laptops, planners, cables, and daily desk essentials."
       }
     ]
   },
@@ -1351,7 +1351,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Hand-Coiled & Braided Storage Baskets",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & Décor",
+    "categoryGroup": "Modern Living & D\u00e9cor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Nesting trio of cylindrical storage vessels handcrafted from continuous braided raw golden jute rope with integrated flush loop handles.",
     "price": 32,
@@ -1428,7 +1428,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Indoor Botanical Planter Covers",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & Décor",
+    "categoryGroup": "Modern Living & D\u00e9cor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Breathable rustic basket planter cover with internal waterproof drop-tray lining to protect hardwood floors from moisture while showcasing botanical foliage.",
     "price": 12,
@@ -1488,7 +1488,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Table Runners, Coasters & Dining Mats",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & Décor",
+    "categoryGroup": "Modern Living & D\u00e9cor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Artisan table setting suite containing a 180 cm woven herringbone jute runner and 6 matching circular coasters with frayed fringe edging.",
     "price": 18,
@@ -1579,7 +1579,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Natural Hessian Area Rugs & Floor Mats",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & Décor",
+    "categoryGroup": "Modern Living & D\u00e9cor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Heavyweight architectural floor rug emphasizing natural tonal striations of organic unbleached jute. Flat-weave reversible build with flame-retardant backing.",
     "price": 180,
@@ -1668,7 +1668,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 24,
     "roadMapCode": "JD-TES-24",
     "sku": "JD-TES-24",
-    "name": "Shock-Resistant Padded Laptop Sleeves (13\"–16\")",
+    "name": "Shock-Resistant Padded Laptop Sleeves (13\"\u201316\")",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
     "categoryGroup": "Tech & Eco-Stationery",
@@ -2279,7 +2279,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -2309,7 +2309,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Dinnerware & Tabletop",
     "subCategory": "Hospitality & Retail Tableware Suites",
-    "description": "1,280°C Vitrified stoneware suite in textured matte charcoal ombré. Includes 28 cm charger, 22 cm salad plate, 18 cm soup bowl, and 380 ml mug.",
+    "description": "1,280\u00b0C Vitrified stoneware suite in textured matte charcoal ombr\u00e9. Includes 28 cm charger, 22 cm salad plate, 18 cm soup bowl, and 380 ml mug.",
     "price": 28,
     "currency": "USD",
     "moq": 150,
@@ -2364,7 +2364,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -2373,13 +2373,13 @@ export const MOCK_PRODUCTS: Product[] = [
         "label": "Concentric Suite",
         "tag": "Concentric Suite Overview",
         "title": "Complete 4-Piece Tableware Suite",
-        "desc": "Top-down aerial profile displaying concentric nesting of charger plate, salad plate, deep pasta bowl, and ergonomic ombré mug with matte reactive glaze."
+        "desc": "Top-down aerial profile displaying concentric nesting of charger plate, salad plate, deep pasta bowl, and ergonomic ombr\u00e9 mug with matte reactive glaze."
       },
       {
         "src": "/images/products/ceramics/CT-DWC-53-mug.jpg",
-        "label": "Ombré Mug",
+        "label": "Ombr\u00e9 Mug",
         "tag": "Barista Drinkware Detail",
-        "title": "Ergonomic Barista Ombré Coffee Mug",
+        "title": "Ergonomic Barista Ombr\u00e9 Coffee Mug",
         "desc": "380 ml capacity comfort-grip handle with dual-tone gradient spray transition and vitrified unglazed heat-retention base."
       }
     ]
@@ -2449,7 +2449,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -2527,7 +2527,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -2548,9 +2548,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Ergonomic Reactive Glaze Coffee Mugs (380 ml)",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Drinkware & Caf\u00e9",
     "subCategory": "Specialty Beverage Collections",
-    "description": "Single-fire vitrified stoneware mug with ergonomic comfort handle, dipped reactive ombré glaze, and unglazed heat-retaining foot.",
+    "description": "Single-fire vitrified stoneware mug with ergonomic comfort handle, dipped reactive ombr\u00e9 glaze, and unglazed heat-retaining foot.",
     "price": 3.8,
     "currency": "USD",
     "moq": 500,
@@ -2605,13 +2605,13 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
       {
         "src": "/images/products/ceramics/CT-DWC-53-mug.jpg",
-        "label": "Ombré Mug",
+        "label": "Ombr\u00e9 Mug",
         "tag": "Ergonomic Profile",
         "title": "Ergonomic Reactive Glaze Barista Mug",
         "desc": "Matte smoke-to-charcoal transition glaze with comfort-curve handle and vitrified chip-resistant rim."
@@ -2633,7 +2633,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Neelima Royal Cobalt Floral Tea Service",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Drinkware & Caf\u00e9",
     "subCategory": "Specialty Beverage Collections",
     "description": "Classic hand-painted cobalt blue & white floral teapot pouring set with matching saucers, cups, and creamer.",
     "price": 24,
@@ -2690,7 +2690,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -2711,7 +2711,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Indigo Petals Royal Cobalt Ceramic Tea Set",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Drinkware & Caf\u00e9",
     "subCategory": "Specialty Beverage Collections",
     "description": "Deep royal cobalt indigo glazed ceramic teapot, covered sugar, creamer, and teacups with botanical petal reliefs.",
     "price": 22,
@@ -2768,7 +2768,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -2789,7 +2789,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Handcrafted Meenakari Teapot Set",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Drinkware & Caf\u00e9",
     "subCategory": "Specialty Beverage Collections",
     "description": "8-Piece tea service suite: 1.0L hand-enameled aluminium teapot, 6 matching cutting chai glasses (100 ml), and hand-painted wooden cart tray holder. Available in Midnight and Cobalt.",
     "price": 35,
@@ -2846,7 +2846,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -2874,7 +2874,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Whimsical Cat-Lid Ceramic Mug (480 ml)",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Drinkware & Caf\u00e9",
     "subCategory": "Specialty Beverage Collections",
     "description": "Artisanal 480 ml porcelain stoneware mug with sculpted 3D cat head lid finial, fitted ceramic ball spoon, branch-form handle, and hand-drawn chef cat illustration.",
     "price": 4.8,
@@ -2931,7 +2931,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3009,7 +3009,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3044,7 +3044,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Royal Blue Flora Botanica Mug with Lid",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Modern Living & Decor",
     "subCategory": "Specialty Beverage Collections",
     "description": "Fine cobalt blue botanical ceramic mug crafted with intricate white flora, comfortable arched handle, and matching tea lid.",
     "price": 4.2,
@@ -3101,7 +3101,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3122,7 +3122,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Modern Ceramic Artisan Coffee Mug Suite",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Modern Living & Decor",
     "subCategory": "Specialty Beverage Collections",
     "description": "Contemporary matte ceramic coffee mug collection with minimalist typography, line-art illustrations, and ergonomic handle design.",
     "price": 3.6,
@@ -3179,7 +3179,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3200,7 +3200,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Airtight Porcelain Biscuit Canister",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Modern Living & Decor",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Botanicals & Interior Vessels",
     "description": "1,000 ml food-safe porcelain airtight storage jar with food-grade silicone freshness gasket and sculptural 24K gold wing finial lid.",
     "price": 14.5,
@@ -3258,7 +3258,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3300,7 +3300,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Botanical Floral Porcelain Pedestal Cake Stand",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Modern Living & Decor",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Botanicals & Interior Vessels",
     "description": "30.5 cm (12\") raised pedestal cake and dessert display stand in fine porcelain, showcasing vibrant red poppies, blue hydrangeas, and glossy vitrified glaze.",
     "price": 19.5,
@@ -3358,7 +3358,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3386,7 +3386,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Ceramic Serving Handi & Casserole (1.5L)",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Export-grade culinary serving handi in 1,500 ml banquet casserole with 24K gold finial domed cover. Available in 4 heritage motifs: Cobalt Ikat, Onyx Nakshi, Folk Chevron, and Yellow Damask.",
     "price": 18,
@@ -3443,7 +3443,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3485,9 +3485,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Ceramic Mini Handi Duo with Serving Tray",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "Twin 200 cc covered mini handis with matching 20 × 13 cm porcelain platter tray in rich Crimson/Onyx Nakshi Paisley and Ivory/Sand Folk Chevron.",
+    "description": "Twin 200 cc covered mini handis with matching 20 \u00d7 13 cm porcelain platter tray in rich Crimson/Onyx Nakshi Paisley and Ivory/Sand Folk Chevron.",
     "price": 16.5,
     "currency": "USD",
     "moq": 200,
@@ -3542,7 +3542,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3551,14 +3551,14 @@ export const MOCK_PRODUCTS: Product[] = [
         "label": "200cc Nakshi Duo + Tray",
         "tag": "2 Handis + Tray Gift Set",
         "title": "200 cc Nakshi Paisley Handi Duo & Tray Set",
-        "desc": "Twin 200 cc mini handis in Crimson Red and Onyx Black with 24K gold knobs on matching 20 × 13 cm porcelain platter."
+        "desc": "Twin 200 cc mini handis in Crimson Red and Onyx Black with 24K gold knobs on matching 20 \u00d7 13 cm porcelain platter."
       },
       {
         "src": "/images/products/ceramics/CT-DUO-76-flk-sq.jpg",
         "label": "200cc Folk Duo + Tray",
         "tag": "2 Handis + Tray Gift Set",
         "title": "200 cc Folk Chevron Handi Duo & Tray Set",
-        "desc": "Twin 200 cc mini handis in Pure Ivory and Sand Dune with lotus lids and 24K gold knobs on 20 × 13 cm porcelain platter."
+        "desc": "Twin 200 cc mini handis in Pure Ivory and Sand Dune with lotus lids and 24K gold knobs on 20 \u00d7 13 cm porcelain platter."
       }
     ]
   },
@@ -3570,9 +3570,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Ceramic Teacup & Serving Tray Duo Suite",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Specialty Beverage Collections",
-    "description": "Artisan glazed 2-piece cup/mug set with matching 20 × 13 cm serving tray. Available in Royal Cobalt Aztec Ikat (150 ml), Turquoise Daisy Trellis (150 ml), Crimson Nakshi Paisley (300 ml), and Royal Marigold Damask (150 ml) with hand-finished rim accents.",
+    "description": "Artisan glazed 2-piece cup/mug set with matching 20 \u00d7 13 cm serving tray. Available in Royal Cobalt Aztec Ikat (150 ml), Turquoise Daisy Trellis (150 ml), Crimson Nakshi Paisley (300 ml), and Royal Marigold Damask (150 ml) with hand-finished rim accents.",
     "price": 12.5,
     "currency": "USD",
     "moq": 200,
@@ -3627,7 +3627,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3636,7 +3636,7 @@ export const MOCK_PRODUCTS: Product[] = [
         "label": "Cobalt Aztec Ikat",
         "tag": "150 ml Duo + Tray",
         "title": "Royal Cobalt Aztec Ikat Teacup & Tray Duo",
-        "desc": "Royal navy and ochre geometric Aztec folk chevron motif with gold rim teacups on matching 20 × 13 cm serving tray."
+        "desc": "Royal navy and ochre geometric Aztec folk chevron motif with gold rim teacups on matching 20 \u00d7 13 cm serving tray."
       },
       {
         "src": "/images/products/ceramics/CT-FLR-59-tur-sq.jpg",
@@ -3657,7 +3657,7 @@ export const MOCK_PRODUCTS: Product[] = [
         "label": "Royal Marigold Damask",
         "tag": "150 ml Duo + Tray",
         "title": "Royal Marigold Damask Trellis Teacup & Tray Duo",
-        "desc": "Regal golden marigold floral damask trellis motif on textured charcoal ground with accent yellow rims, two 150 ml flared teacups, and matching 20 × 13 cm serving platter."
+        "desc": "Regal golden marigold floral damask trellis motif on textured charcoal ground with accent yellow rims, two 150 ml flared teacups, and matching 20 \u00d7 13 cm serving platter."
       }
     ]
   },
@@ -3669,7 +3669,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Emerald Blossom Pastel Floral Tea Suite",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Café",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Specialty Beverage Collections",
     "description": "Mint emerald green floral patterned porcelain tea service with teacups, teapot, and coordinated serving platter.",
     "price": 22.5,
@@ -3726,7 +3726,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -3747,9 +3747,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Porcelain Snacks & Serving Platter",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "20 × 13 cm vitrified fine porcelain snacks and hors d'oeuvre platter with genuine 24K gold rim. Oven, microwave, and dishwasher safe.",
+    "description": "20 \u00d7 13 cm vitrified fine porcelain snacks and hors d'oeuvre platter with genuine 24K gold rim. Oven, microwave, and dishwasher safe.",
     "price": 8.5,
     "currency": "USD",
     "moq": 300,
@@ -3804,35 +3804,35 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
       {
         "src": "/images/products/ceramics/CT-PLT-63-tur-sq.jpg",
         "label": "Turquoise Mosaic",
-        "tag": "20 × 13 cm Snacks Platter",
+        "tag": "20 \u00d7 13 cm Snacks Platter",
         "title": "Turquoise Mosaic Porcelain Snacks Platter",
         "desc": "Lush geometric mosaic porcelain snacks platter with 24K gold rim on black tabletop styling."
       },
       {
         "src": "/images/products/ceramics/CT-PLT-63-ivo-sq.jpg",
         "label": "Ivory Mandala",
-        "tag": "20 × 13 cm Snacks Platter",
+        "tag": "20 \u00d7 13 cm Snacks Platter",
         "title": "Ivory Bengal Mandala Porcelain Snacks Platter",
         "desc": "Warm ivory porcelain platter featuring intricate Bengal nakshi paisley borders and central mandalas."
       },
       {
         "src": "/images/products/ceramics/CT-PLT-63-blu-sq.jpg",
         "label": "Cobalt Ikat",
-        "tag": "20 × 13 cm Snacks Platter",
+        "tag": "20 \u00d7 13 cm Snacks Platter",
         "title": "Cobalt Ethnic Ikat Porcelain Snacks Platter",
         "desc": "Royal cobalt blue geometric ikat chevron platter with teacup and artisanal bowl of mixed nuts."
       },
       {
         "src": "/images/products/ceramics/CT-PLT-63-red-sq.jpg",
         "label": "Crimson Nakshi",
-        "tag": "20 × 13 cm Snacks Platter",
+        "tag": "20 \u00d7 13 cm Snacks Platter",
         "title": "Crimson Nakshi Paisley Porcelain Snacks Platter",
         "desc": "Festive red vitrified porcelain snacks platter adorned with intricate folk nakshi paisley and floral medallions with genuine 24K gold rim."
       }
@@ -3846,9 +3846,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Ceramic Pizza & Flatbread Platter",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "34 × 20 cm handcrafted vitrified ceramic pizza paddle with ergonomic serving handle. Oven, microwave, and dishwasher safe.",
+    "description": "34 \u00d7 20 cm handcrafted vitrified ceramic pizza paddle with ergonomic serving handle. Oven, microwave, and dishwasher safe.",
     "price": 15,
     "currency": "USD",
     "moq": 200,
@@ -3903,28 +3903,28 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
       {
         "src": "/images/products/ceramics/CT-PZA-64-nok-sq.jpg",
         "label": "Ivory Nokshekhata",
-        "tag": "34 × 20 cm Pizza Platter",
+        "tag": "34 \u00d7 20 cm Pizza Platter",
         "title": "Ivory Nokshekhata Ceramic Pizza & Flatbread Platter",
         "desc": "Handcrafted ivory ceramic pizza paddle platter featuring elaborate concentric Bengal Nokshekhata embroidery mandala patterns with integral ergonomic serving handle."
       },
       {
         "src": "/images/products/ceramics/CT-PZA-64-red-sq.jpg",
         "label": "Crimson Bengal Mandala",
-        "tag": "34 × 20 cm Pizza Platter",
+        "tag": "34 \u00d7 20 cm Pizza Platter",
         "title": "Crimson Bengal Mandala Ceramic Pizza Platter",
         "desc": "Traditional Bengal folk nakshi paisley borders and central lotus mandala medallion in terracotta crimson on ivory ceramic paddle."
       },
       {
         "src": "/images/products/ceramics/CT-PZA-64-yel-sq.jpg",
         "label": "Sunshine Daisy",
-        "tag": "34 × 20 cm Pizza Platter",
+        "tag": "34 \u00d7 20 cm Pizza Platter",
         "title": "Sunshine Daisy Ceramic Pizza Platter",
         "desc": "Vibrant sunflower-yellow medallion featuring bold white petals with black ink detailing and golden stamen centers."
       }
@@ -3938,9 +3938,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Porcelain Oval Serving Set (3 Pcs)",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "3-piece banquet-grade vitrified porcelain oval serving platter and deep baker set (1× 34 cm platter, 2× 28 cm entrée bakers). Oven, microwave, and dishwasher safe.",
+    "description": "3-piece banquet-grade vitrified porcelain oval serving platter and deep baker set (1\u00d7 34 cm platter, 2\u00d7 28 cm entr\u00e9e bakers). Oven, microwave, and dishwasher safe.",
     "price": 24,
     "currency": "USD",
     "moq": 150,
@@ -3995,7 +3995,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -4011,7 +4011,7 @@ export const MOCK_PRODUCTS: Product[] = [
         "label": "Ivory Bengal Nakshi",
         "tag": "3-Piece Oval Serving Suite",
         "title": "Ivory Bengal Nakshi Porcelain Oval Serving Set",
-        "desc": "Warm ivory porcelain with delicate Bengali folk geometric borders, serving roasted chicken entrée and seasoned vegetables."
+        "desc": "Warm ivory porcelain with delicate Bengali folk geometric borders, serving roasted chicken entr\u00e9e and seasoned vegetables."
       },
       {
         "src": "/images/products/ceramics/CT-SRV-65-red-sq.jpg",
@@ -4037,9 +4037,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Porcelain Casserole & Curry Bowl Set",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "Tiered 3-piece vitrified porcelain casserole and curry bowl set (7″, 8″ & 10″) with dual stay-cool handles and fitted steam-vented lids. Oven, microwave, and dishwasher safe.",
+    "description": "Tiered 3-piece vitrified porcelain casserole and curry bowl set (7\u2033, 8\u2033 & 10\u2033) with dual stay-cool handles and fitted steam-vented lids. Oven, microwave, and dishwasher safe.",
     "price": 26,
     "currency": "USD",
     "moq": 150,
@@ -4094,7 +4094,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -4129,9 +4129,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Porcelain Covered Banquet Dish",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "Generous 12″ (30.5 cm / 3.8L) vitrified porcelain covered banquet dish with fitted domed lid and spherical knob. Persian turquoise floral medallions with 24K gold rim.",
+    "description": "Generous 12\u2033 (30.5 cm / 3.8L) vitrified porcelain covered banquet dish with fitted domed lid and spherical knob. Persian turquoise floral medallions with 24K gold rim.",
     "price": 29,
     "currency": "USD",
     "moq": 100,
@@ -4186,15 +4186,15 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
       {
         "src": "/images/products/ceramics/CT-DSH-67-sq.jpg",
-        "label": "12″ Banquet Dish & Lid",
+        "label": "12\u2033 Banquet Dish & Lid",
         "tag": "Covered Banquet Baker",
-        "title": "Artisanal Porcelain Covered Banquet Dish with Domed Lid (12″)",
+        "title": "Artisanal Porcelain Covered Banquet Dish with Domed Lid (12\u2033)",
         "desc": "Vibrant Persian turquoise floral medallions with saffron and cobalt accents, paired with matching fitted domed porcelain lid and hot biryani filling."
       },
       {
@@ -4208,7 +4208,7 @@ export const MOCK_PRODUCTS: Product[] = [
         "src": "/images/products/ceramics/CT-DSH-67.jpg",
         "label": "Oven-to-Table Presentation",
         "tag": "Culinary Banquet Context",
-        "title": "12″ Porcelain Banquet Dish Table Setting",
+        "title": "12\u2033 Porcelain Banquet Dish Table Setting",
         "desc": "Full lifestyle presentation showing the covered dish on marble tabletop, ideal for high-end hospitality, family banquet, and catering services."
       }
     ]
@@ -4221,7 +4221,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Porcelain Dessert Bowl Set (6 Pcs)",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Vitrified porcelain 6-piece dessert and appetizer suites (11 cm / 12 cm). Available in Piscine Artisan Fish, Bohemian Mandala, and Sakura Blossom pastels. Microwave & dishwasher safe.",
     "price": 14,
@@ -4278,14 +4278,14 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
       {
         "src": "/images/products/ceramics/CT-DST-68-fish-sq.jpg",
         "label": "Piscine Artisan Suite",
-        "tag": "4.5″ Fish Bowls (6 Pcs)",
+        "tag": "4.5\u2033 Fish Bowls (6 Pcs)",
         "title": "Piscine Artisan Fish Dessert & Dipping Bowls (6 Pcs)",
         "desc": "Six vibrant hand-painted fish-form porcelain appetizer & dessert bowls with sculpted fin and tail handles, featuring distinct geometric, scale, wave, and floral decal interiors."
       },
@@ -4313,9 +4313,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Ceramic Tote Cutlery Holder",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Modern Living & Decor",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Botanicals & Interior Vessels",
-    "description": "Architectural tote-bag silhouette ceramic cutlery and utensil caddy (11.5 × 8 × 12 cm) with dual upright arch loop handles. Available in Moroccan Trellis, Ethnic Ikat, and Folk Chevron.",
+    "description": "Architectural tote-bag silhouette ceramic cutlery and utensil caddy (11.5 \u00d7 8 \u00d7 12 cm) with dual upright arch loop handles. Available in Moroccan Trellis, Ethnic Ikat, and Folk Chevron.",
     "price": 9.5,
     "currency": "USD",
     "moq": 250,
@@ -4370,7 +4370,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -4405,7 +4405,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Imperial Swan-Neck Porcelain Tureen",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Palace-grade vitrified bone porcelain banquet tureen (2.0L) with sculpted swan handles, pedestal foot, and 24K gold finial domed lid. Available in Royal Marigold and Emerald Peacock.",
     "price": 38,
@@ -4462,7 +4462,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -4490,7 +4490,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "3-Compartment Handled Relish Platter",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
     "description": "24.5 cm Triple-bowl relish & condiment caddy with central ergonomic loop handle. Fused high-fire ceramic with hand-painted crimson peony and sapphire berry botanical motifs.",
     "price": 11.5,
@@ -4547,7 +4547,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -4568,7 +4568,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Ceramic Spice Canister Suite",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Modern Living & Decor",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Botanicals & Interior Vessels",
     "description": "350 ml Vitrified ceramic spice & condiment canister suite with knobbed lids. Available in artisan heritage patterns (Moroccan Trellis, Daisy, Floral Garland, Florette) or high-gloss solid glazes.",
     "price": 16,
@@ -4626,7 +4626,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -4654,7 +4654,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Imperial Hand-Painted Fish Banquet Platter",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Culinary Serving & Hospitality",
+    "categoryGroup": "Culinary Serving & Specialty Tabletop",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Grand 48 cm artisanal ceramic fish silhouette serving dish with Persian Bengal botanical mandala artwork, sculpted lips, saffron fins, and 4.3 cm depth profile.",
     "price": 34,
@@ -4711,7 +4711,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
     },
     "gallery": [
@@ -4729,7 +4729,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 33,
     "roadMapCode": "AH-RKB-33",
     "sku": "AH-RKB-33",
-    "name": "Combed Organic Cotton T-Shirts & Tank Tops (160–240 GSM)",
+    "name": "Combed Organic Cotton T-Shirts & Tank Tops (160\u2013240 GSM)",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "RMG: Knitwear & Basics",
@@ -4795,7 +4795,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 34,
     "roadMapCode": "AH-RKB-34",
     "sku": "AH-RKB-34",
-    "name": "Heavyweight French Terry & Fleece Hoodies (320–420 GSM)",
+    "name": "Heavyweight French Terry & Fleece Hoodies (320\u2013420 GSM)",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "RMG: Knitwear & Basics",
@@ -4873,12 +4873,12 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 35,
     "roadMapCode": "AH-RKB-35",
     "sku": "AH-RKB-35",
-    "name": "Cotton-Piqué Polo Shirts & Long-Sleeve Henley Tops",
+    "name": "Cotton-Piqu\u00e9 Polo Shirts & Long-Sleeve Henley Tops",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "RMG: Knitwear & Basics",
     "subCategory": "Circular Knit Casualwear & Lounge",
-    "description": "Executive 220 GSM honeycomb cotton-piqué classic polo shirt featuring jacquard knit flat collar, mother-of-pearl 3-button placket, and side-vent split hem.",
+    "description": "Executive 220 GSM honeycomb cotton-piqu\u00e9 classic polo shirt featuring jacquard knit flat collar, mother-of-pearl 3-button placket, and side-vent split hem.",
     "price": 7.8,
     "currency": "USD",
     "moq": 300,
@@ -4888,7 +4888,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "depthMm": 15
     },
     "materials": [
-      "100% Combed Ringspun Piqué Cotton (220 GSM)",
+      "100% Combed Ringspun Piqu\u00e9 Cotton (220 GSM)",
       "Genuine Shell Buttons"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
@@ -5177,7 +5177,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 40,
     "roadMapCode": "AH-BSL-40",
     "sku": "AH-BSL-40",
-    "name": "200TC–300TC Crisp Cotton Percale Sheet Sets",
+    "name": "200TC\u2013300TC Crisp Cotton Percale Sheet Sets",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "Bedding & Sleep Linens",
@@ -5238,7 +5238,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 41,
     "roadMapCode": "AH-BSL-41",
     "sku": "AH-BSL-41",
-    "name": "300TC–600TC Silky Cotton Sateen Hotel Suites",
+    "name": "300TC\u2013600TC Silky Cotton Sateen Hotel Suites",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "Bedding & Sleep Linens",
@@ -5369,7 +5369,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 43,
     "roadMapCode": "AH-BNT-43",
     "sku": "AH-BNT-43",
-    "name": "Zero-Twist & Combed Cotton Bath Towels (500–700 GSM)",
+    "name": "Zero-Twist & Combed Cotton Bath Towels (500\u2013700 GSM)",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "Bath & Towels",
@@ -5732,7 +5732,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 62,
     "roadMapCode": "PT-BNG-62",
     "sku": "PT-BNG-62",
-    "name": "Fluted & Ribbed Cylinder Pots with Saucers (15–30 cm)",
+    "name": "Fluted & Ribbed Cylinder Pots with Saucers (15\u201330 cm)",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
     "categoryGroup": "Botanical & Garden",
@@ -5784,7 +5784,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "DDP Available"
     ],
     "technicalSpecs": {
-      "testStandard": "Frost resistance EN 539-2 down to -10°C",
+      "testStandard": "Frost resistance EN 539-2 down to -10\u00b0C",
       "chemicalCompliance": "100% lead-free alluvial sediment"
     },
     "gallery": [
@@ -5891,7 +5891,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "05 Earth & Form",
     "categoryGroup": "Botanical & Garden",
     "subCategory": "Breathable Architectural Planters",
-    "description": "Indoor hanging succulent pot with 3-strand natural jute suspension macramé rope, paired with 2 micro-porous terracotta slow-release plant irrigation spikes.",
+    "description": "Indoor hanging succulent pot with 3-strand natural jute suspension macram\u00e9 rope, paired with 2 micro-porous terracotta slow-release plant irrigation spikes.",
     "price": 9.5,
     "currency": "USD",
     "moq": 200,
@@ -6088,8 +6088,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "DDP Available"
     ],
     "technicalSpecs": {
-      "testStandard": "LFGB § 30 & 31",
-      "foodSafety": "Naturally cools water by 3-5°C"
+      "testStandard": "LFGB \u00a7 30 & 31",
+      "foodSafety": "Naturally cools water by 3-5\u00b0C"
     }
   },
   {
@@ -6220,7 +6220,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Hand-Coiled Floor Vases & Amphora Vessels",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
-    "categoryGroup": "Home Living & Décor",
+    "categoryGroup": "Home Living & D\u00e9cor",
     "subCategory": "Sculptural Accents & Interior Objects",
     "description": "Grand 65 cm artisan statement floor amphora vessel hand-coiled by master potters. Raw terracotta textured base with fluid turquoise drip glaze neck accent.",
     "price": 65,
@@ -6281,7 +6281,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Minimalist Candle Holders, Vessels & Oil Diffusers",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
-    "categoryGroup": "Home Living & Décor",
+    "categoryGroup": "Home Living & D\u00e9cor",
     "subCategory": "Sculptural Accents & Interior Objects",
     "description": "Organic geometric taper candle holder pair and essential oil burner with hollow heat-diffusing candle chamber and unglazed textural raw finish.",
     "price": 11.5,
@@ -6341,7 +6341,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Decorative Terracotta Wall Plates & Catchall Trays",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
-    "categoryGroup": "Home Living & Décor",
+    "categoryGroup": "Home Living & D\u00e9cor",
     "subCategory": "Sculptural Accents & Interior Objects",
     "description": "Hand-etched decorative medallion wall plate (28 cm) with integrated wire hanging fixture and traditional Bengali folk geometric carved relief motifs.",
     "price": 14,
