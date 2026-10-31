@@ -16,6 +16,14 @@ import { MOCK_PRODUCTS } from '@/data/mockProducts';
 import { Product, FilterState, ProductCategory } from '@/types/product';
 import { ShieldCheck, Globe, X, Clock, FileCheck2, Plane, CheckCircle2 } from 'lucide-react';
 
+const DIVISION_ORDER: Record<string, number> = {
+  Leather: 1,
+  Jute: 2,
+  Ceramics: 3,
+  Textiles: 4,
+  Pottery: 5,
+};
+
 function CatalogContent() {
   const searchParams = useSearchParams();
   const [products] = useState<Product[]>(MOCK_PRODUCTS);
@@ -133,7 +141,12 @@ function CatalogContent() {
         return true;
       })
       .sort((a, b) => {
-        if (filters.sortBy === 'featured') return (a.prodtId || 0) - (b.prodtId || 0);
+        if (filters.sortBy === 'featured') {
+          const divA = DIVISION_ORDER[a.category] || 99;
+          const divB = DIVISION_ORDER[b.category] || 99;
+          if (divA !== divB) return divA - divB;
+          return (a.prodtId || 0) - (b.prodtId || 0);
+        }
         if (filters.sortBy === 'price-asc') return a.price - b.price;
         if (filters.sortBy === 'price-desc') return b.price - a.price;
         if (filters.sortBy === 'name-asc') return a.name.localeCompare(b.name);

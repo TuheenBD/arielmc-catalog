@@ -4,7 +4,7 @@ import React, { useMemo } from 'react';
 import { Product, ProductCategory } from '@/types/product';
 import ProductCard from './ProductCard';
 import DivisionHeroBanner from './DivisionHeroBanner';
-import { getDepartmentAnchorId } from './FilterSidebar';
+import { getDepartmentAnchorId, COMPENDIUM_DIVISIONS } from './FilterSidebar';
 import { CheckSquare, Square, PackageOpen } from 'lucide-react';
 
 interface ProductGridProps {
@@ -40,39 +40,73 @@ export default function ProductGrid({
   const areAllVisibleSelected =
     products.length > 0 && products.every((p) => selectedIds.has(p.id));
 
-  // Structure products by Division and Department (Category Group)
+  // Canonical Division & Department Serialization (Strict Order: 01 -> 02 -> 03 -> 04 -> 05)
   const structuredSections = useMemo(() => {
     const sections: {
       key: string;
       anchorId: string;
+      divisionNum: string;
       divisionTitle: string;
       groupName: string;
       items: Product[];
     }[] = [];
 
-    const uniqueDivisions = Array.from(
-      new Set(products.map((p) => p.divisionTitle || p.category || 'General Compendium'))
-    );
+    const normalize = (s: string) =>
+      (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+
+    const claimedProductIds = new Set<string>();
+
+    // 1. Iterate strictly over the 5 Canonical Compendium Divisions in sequential order (01 -> 02 -> 03 -> 04 -> 05)
+    COMPENDIUM_DIVISIONS.forEach((div) => {
+      div.departments.forEach((dept) => {
+        const matchingProducts = products.filter(
+          (p) =>
+            p.category === div.key &&
+            normalize(p.categoryGroup || '') === normalize(dept.name)
+        );
+
+        if (matchingProducts.length > 0) {
+          matchingProducts.forEach((p) => claimedProductIds.add(p.id));
+          const anchorId = getDepartmentAnchorId(div.num, dept.name);
+          sections.push({
+            key: `${div.num}__${div.officialTitle}__${dept.name}`,
+            anchorId,
+            divisionNum: div.num,
+            divisionTitle: `${div.num} ${div.officialTitle.toUpperCase()}`,
+            groupName: dept.name,
+            items: matchingProducts,
+          });
+        }
+      });
+    });
+
+    // 2. Unclaimed fallback (ensures any dynamically filtered or custom-curated items are never lost)
+    const unclaimedProducts = products.filter((p) => !claimedProductIds.has(p.id));
+    if (unclaimedProducts.length > 0) {
+      const fallbackMap = new Map<string, Product[]>();
+      unclaimedProducts.forEach((p) => {
+        const grp = p.categoryGroup || 'Additional Curations';
+        const k = `${p.category || 'General'}__${grp}`;
+        if (!fallbackMap.has(k)) fallbackMap.set(k, []);
+        fallbackMap.get(k)!.push(p);
+      });
+
+      fallbackMap.forEach((items, k) => {
+        const [cat, grp] = k.split('__');
+        const divNum = DIVISION_NUMBERS[cat] || '06';
+        sections.push({
+          key: k,
+          anchorId: getDepartmentAnchorId(divNum, grp),
+          divisionNum: divNum,
+          divisionTitle: cat,
+          groupName: grp,
+          items,
+        });
+      });
+    }
+
+    const uniqueDivisions = Array.from(new Set(sections.map((s) => s.divisionNum)));
     const isMultiDivision = uniqueDivisions.length > 1;
-
-    const sectionMap = new Map<string, { divisionTitle: string; groupName: string; divisionNum: string; items: Product[] }>();
-
-    products.forEach((product) => {
-      const divisionTitle = product.divisionTitle || product.category || 'General Compendium';
-      const groupName = product.categoryGroup || 'General Collection';
-      const divisionNum = DIVISION_NUMBERS[product.category] || divisionTitle.slice(0, 2) || '01';
-      const key = `${divisionTitle}__${groupName}`;
-
-      if (!sectionMap.has(key)) {
-        sectionMap.set(key, { divisionTitle, groupName, divisionNum, items: [] });
-      }
-      sectionMap.get(key)!.items.push(product);
-    });
-
-    sectionMap.forEach((val, key) => {
-      const anchorId = getDepartmentAnchorId(val.divisionNum, val.groupName);
-      sections.push({ key, anchorId, divisionTitle: val.divisionTitle, groupName: val.groupName, items: val.items });
-    });
 
     return { sections, isMultiDivision };
   }, [products]);
@@ -159,7 +193,7 @@ export default function ProductGrid({
           {structuredSections.sections.map((section, idx) => {
             const isFirstOfDivision =
               structuredSections.isMultiDivision &&
-              (idx === 0 || structuredSections.sections[idx - 1].divisionTitle !== section.divisionTitle);
+              (idx === 0 || structuredSections.sections[idx - 1].divisionNum !== section.divisionNum);
 
             const allDeptSelected = section.items.every((p) => selectedIds.has(p.id));
             const someDeptSelected = section.items.some((p) => selectedIds.has(p.id));
