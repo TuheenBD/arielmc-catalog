@@ -38,6 +38,18 @@ export default function ProductDetailModal({
 }: ProductDetailModalProps) {
   const { formatPrice, currentCurrency, currencyConfig } = useCurrency();
 
+  const [activeImage, setActiveImage] = React.useState<string>(product?.imageUrl || '');
+  const [activeLabel, setActiveLabel] = React.useState<string>(
+    product?.gallery?.[0]?.label || product?.gallery?.[0]?.tag || ''
+  );
+
+  React.useEffect(() => {
+    if (product) {
+      setActiveImage(product.imageUrl);
+      setActiveLabel(product.gallery?.[0]?.label || product.gallery?.[0]?.tag || '');
+    }
+  }, [product]);
+
   if (!product) return null;
 
   const { heightMm, widthMm, depthMm } = product.dimensions;
@@ -83,16 +95,69 @@ export default function ProductDetailModal({
               <div className="relative aspect-4/3 md:aspect-square w-full rounded-xl overflow-hidden bg-[#F8F6F2] border border-slate-200">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={product.imageUrl}
+                  src={activeImage || product.imageUrl}
                   alt={product.name}
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center transition-all duration-300"
                 />
                 <div className="absolute top-2 left-2">
                   <span className="text-[10px] font-bold px-2 py-1 rounded bg-[#0A1A2F]/90 text-[#C9A86A] backdrop-blur-xs border border-[#C9A86A]/30">
                     {product.category}
                   </span>
                 </div>
+
+                {/* Floating Variant Label */}
+                {activeLabel && (
+                  <div className="absolute bottom-2 left-2 z-10 max-w-[80%]">
+                    <span className="inline-block truncate bg-[#0A1A2F]/85 backdrop-blur-xs text-white text-[11px] px-2.5 py-1 rounded font-mono shadow-xs border border-white/10">
+                      {activeLabel}
+                    </span>
+                  </div>
+                )}
               </div>
+
+              {/* Multi-Angle / Colorway Gallery Thumbnails */}
+              {product.gallery && product.gallery.length > 1 && (
+                <div
+                  className={`grid gap-2 ${
+                    product.gallery.length === 2
+                      ? 'grid-cols-2'
+                      : product.gallery.length === 3
+                      ? 'grid-cols-3'
+                      : product.gallery.length === 4
+                      ? 'grid-cols-4'
+                      : product.gallery.length === 5
+                      ? 'grid-cols-5'
+                      : 'grid-cols-6'
+                  }`}
+                >
+                  {product.gallery.map((item, idx) => {
+                    const isActive = (activeImage || product.imageUrl) === item.src;
+                    return (
+                      <button
+                        key={idx}
+                        type="button"
+                        title={item.title || item.label}
+                        onClick={() => {
+                          setActiveImage(item.src);
+                          setActiveLabel(item.label || item.tag || '');
+                        }}
+                        className={`aspect-square rounded-lg overflow-hidden p-0.5 bg-white transition-all cursor-pointer ${
+                          isActive
+                            ? 'border-2 border-[#C9A86A] shadow-md scale-105'
+                            : 'border border-slate-200 opacity-60 hover:opacity-100 hover:border-slate-400'
+                        }`}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={item.src}
+                          alt={item.label || product.name}
+                          className="w-full h-full object-cover rounded"
+                        />
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
 
               {/* Origin Hub */}
               {product.originHub && (

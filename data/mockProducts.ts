@@ -1,4 +1,4 @@
-import { Product } from '@/types/product';
+import { Product } from "@/types/product";
 
 export const MOCK_PRODUCTS: Product[] = [
   {
@@ -12,7 +12,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Everyday Carry & SLGs",
     "subCategory": "Wallets & Small Leather Goods",
     "description": "Engineered multi-slot bifold and trifold architecture with internal RFID-blocking alloy mesh. Hand-stitched with waxed bonded nylon thread and burnished with natural beeswax.",
-    "price": 28.0,
+    "price": 28,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -25,8 +25,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "RFID Shielding Foil",
       "Bonded Nylon Thread"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-EDC-1.jpg",
+    "aspectRatio": 1,
     "weightGrams": 85,
     "originHub": "Savar Leather Tannery Cluster",
     "complianceCertifications": [
@@ -67,7 +67,46 @@ export const MOCK_PRODUCTS: Product[] = [
       "chemicalCompliance": "Chromium-VI < 3 ppm (DIN EN ISO 17075)",
       "finishing": "Aniline drum-dyed pull-up temper",
       "barcodePackaging": "Individual FSC rigid gift box with GS1 barcode"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-EDC-1.jpg",
+        "label": "Front Assembly",
+        "tag": "Primary Front Profile",
+        "title": "Full Front Assembly & Primary Carry",
+        "desc": "10.25\" shoulder drop rolled harness leather handles, 1.6 mm Savar vegetable-tanned Cognac cowhide upper band, and 12–14 oz Narayanganj enzyme-washed indigo denim body with mechanical turn-lock closure strap."
+      },
+      {
+        "src": "/images/products/leather/LD-EDC-1-front-strap.jpg",
+        "label": "Crossbody Strap",
+        "tag": "Transit Configuration",
+        "desc": "Detachable 45\"–52\" adjustable harness leather crossbody strap with 5 punched eyelets, heavy-duty swivel snaps, and salt-spray anti-tarnish antique brass hardware."
+      },
+      {
+        "src": "/images/products/leather/LD-EDC-1-front-detail.jpg",
+        "label": "Embroidery Detail",
+        "tag": "Artisan & Hardware Detail",
+        "desc": "High-tensile multi-tonal wildflower embroidery with heat-fused 80 GSM non-woven stabilizer, mechanical brass turn-lock clasp, and detachable 50 mm blind-debossed round clochette hangtag."
+      },
+      {
+        "src": "/images/products/leather/LD-EDC-1-back.jpg",
+        "label": "Rear Zip Pocket",
+        "tag": "Rear Utility Panel",
+        "desc": "Flush 20 cm wide zippered pocket for secure on-the-go retrieval of phone, passport, and boarding passes, reinforced by double box-X cross-stitching on handle anchors."
+      },
+      {
+        "src": "/images/products/leather/LD-EDC-1-side.jpg",
+        "label": "Gusset & Zipper",
+        "tag": "Gusset & Architecture",
+        "desc": "Structured 4.75\" gusset allows tote to stand upright on flat surfaces, supported by 4 domed metal feet on Texon stiffener board with a recessed #5 YKK antique brass zipper for rain shedding."
+      },
+      {
+        "src": "/images/products/leather/LD-EDC-1-interior.jpg",
+        "label": "Interior EVA Cradle",
+        "tag": "Interior Anatomy & Protection",
+        "desc": "220 GSM brushed sand beige twill lining with an 8 mm shock-absorbing EVA foam cradle suspended 1.5 cm above floor, plus 1 zippered secure pocket and 2 accessory slip pouches."
+      }
+    ]
   },
   {
     "id": "prod-ld-02",
@@ -80,7 +119,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Everyday Carry & SLGs",
     "subCategory": "Wallets & Small Leather Goods",
     "description": "Ultra-compact ergonomic 4-card sleeve with central cash pocket and expanding zippered gusseted coin chamber. Designed for effortless modern pocket carry.",
-    "price": 18.0,
+    "price": 18,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -93,8 +132,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "YKK Excella Brass Zipper",
       "Microfiber Suede Lining"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-EDC-2-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 55,
     "originHub": "Savar Leather Tannery Cluster",
     "complianceCertifications": [
@@ -113,7 +152,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 250,
       "widthMm": 450,
       "depthMm": 350,
-      "grossWeightKg": 12.0,
+      "grossWeightKg": 12,
       "cbm": 0.0394,
       "unitsPer20ftContainer": 160000,
       "unitsPer40ftContainer": 340000
@@ -130,7 +169,16 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5 Major",
       "chemicalCompliance": "Azo-Free Dye",
       "barcodePackaging": "Polybag + inner carton of 25 pcs"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-EDC-2-sq.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "Men's RFID Slim Bifold Wallet Suite",
+        "desc": "Ultra-slim profile engineered to eliminate pocket bulk with signal-shielding copper-nickel mesh and hand-waxed bonded nylon stitching."
+      }
+    ]
   },
   {
     "id": "prod-ld-03",
@@ -143,7 +191,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Everyday Carry & SLGs",
     "subCategory": "Wallets & Small Leather Goods",
     "description": "Full-perimeter zippered organizer unfolding into 6 fan-fold credit card partitions, dual bill sleeves, and integrated brass key post attachment.",
-    "price": 34.0,
+    "price": 34,
     "currency": "USD",
     "moq": 80,
     "dimensions": {
@@ -156,8 +204,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Solid Brass Key Snap",
       "Smooth Tooth Metal Zipper"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-HNB-09.jpg",
+    "aspectRatio": 1,
     "weightGrams": 120,
     "originHub": "Hazaribagh / Savar Cluster",
     "complianceCertifications": [
@@ -192,7 +240,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "finishing": "Waxed edge lacquer sealant"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-HNB-09.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "Style Essential Structured Crossbody",
+        "desc": "Artisanal structured cream body with cognac leather flap, adjustable leather shoulder strap, and polished gold-tone turn-lock clasp."
+      }
+    ]
   },
   {
     "id": "prod-ld-04",
@@ -205,7 +262,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Structured Carry & Bags",
     "subCategory": "Handbags & Executive Carry",
     "description": "Sculptural structured silhouette featuring magnetic front flap closure, dual internal organizer compartments, and an adjustable detachable leather shoulder strap.",
-    "price": 85.0,
+    "price": 85,
     "currency": "USD",
     "moq": 40,
     "dimensions": {
@@ -218,8 +275,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Suede Lining",
       "Custom Gold-Plated Alloy Clasps"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-DEN-01.jpg",
+    "aspectRatio": 1,
     "weightGrams": 550,
     "originHub": "Dhaka Export Processing Zone (DEPZ)",
     "complianceCertifications": [
@@ -258,7 +315,16 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5 / 2.5 Major/Minor",
       "chemicalCompliance": "Zero Lead & Nickel Release (EN 1811)",
       "barcodePackaging": "Flannel dust bag + 5-ply export box"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-DEN-01.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "Dark Denim & Tan Leather Tassel Tote (Style Collection 1)",
+        "desc": "Dark denim shoulder tote featuring tan leather trim, an adjustable strap, embossed flap, and dual fringe tassels."
+      }
+    ]
   },
   {
     "id": "prod-ld-05",
@@ -271,7 +337,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Structured Carry & Bags",
     "subCategory": "Handbags & Executive Carry",
     "description": "Executive capacity tote fitted with padded 15\" laptop divider, key leash, luggage trolley pass-through sleeve, and reinforced tubular shoulder carry handles.",
-    "price": 135.0,
+    "price": 135,
     "currency": "USD",
     "moq": 30,
     "dimensions": {
@@ -284,8 +350,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Waterproof Twill Cotton Lining",
       "Reinforced Brass Base Feet"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-SCB-5-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 1150,
     "originHub": "Dhaka Export Processing Zone",
     "complianceCertifications": [
@@ -322,7 +388,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "seamStrength": "Handles reinforced to 25 kg dynamic load"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-SCB-5-sq.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "Structured Leather Commuter Tote & Satchel",
+        "desc": "Minimalist architectural silhouette engineered for business utility with reinforced dual shoulder handles comfortably bearing heavy tech payloads."
+      }
+    ]
   },
   {
     "id": "prod-ld-06",
@@ -335,7 +410,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Structured Carry & Bags",
     "subCategory": "Handbags & Executive Carry",
     "description": "Rigid heritage briefcase and satchel with signature turn-lock mechanism, accordion interior dividing walls, and burnished edge saddle-stitch construction.",
-    "price": 175.0,
+    "price": 175,
     "currency": "USD",
     "moq": 25,
     "dimensions": {
@@ -348,8 +423,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Solid Brass Turn-lock",
       "Pigskin Suede Interior"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-CRK-03.jpg",
+    "aspectRatio": 1,
     "weightGrams": 1450,
     "originHub": "Savar Tannery Estate",
     "complianceCertifications": [
@@ -384,7 +459,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0 Strict",
       "finishing": "Hand-dyed edge coating"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-CRK-03.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "Black & Burgundy Croc-Embossed Tote (Style Collection 3)",
+        "desc": "Structured black tote featuring burgundy croc-embossed leather trim, elongated shoulder handles, and subtle script debossing."
+      }
+    ]
   },
   {
     "id": "prod-ld-07",
@@ -397,7 +481,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Tech & Workspace",
     "subCategory": "Office & Digital Device Protection",
     "description": "Form-fitting executive laptop sleeve lined with 5 mm high-density memory foam and scratch-resistant micro-velour. Tailored specifically for MacBook and enterprise Ultrabooks.",
-    "price": 55.0,
+    "price": 55,
     "currency": "USD",
     "moq": 50,
     "dimensions": {
@@ -410,8 +494,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Memory Foam Impact Core",
       "Water-Repellent Polyurethane Zipper"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-TNW-7-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 380,
     "originHub": "DEPZ Industrial Zone",
     "complianceCertifications": [
@@ -446,7 +530,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "finishing": "YKK reverse water-guard coil"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-TNW-7-sq.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "The Hudson 14\" Padded Leather Folio Suite",
+        "desc": "Tailored full-grain leather shield designed for modern professional transit and high-end executive corporate gifting."
+      }
+    ]
   },
   {
     "id": "prod-ld-08",
@@ -459,7 +552,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Tech & Workspace",
     "subCategory": "Office & Digital Device Protection",
     "description": "Streamlined tablet slipcase featuring an elasticized Apple Pencil/stylus holster, magnetic snap security flap, and rear document pocket.",
-    "price": 38.0,
+    "price": 38,
     "currency": "USD",
     "moq": 60,
     "dimensions": {
@@ -471,8 +564,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Oil-Waxed Pull-up Leather",
       "Cushioned Wool Felt Lining"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-HNB-11.jpg",
+    "aspectRatio": 1,
     "weightGrams": 240,
     "originHub": "Savar Tannery Estate",
     "complianceCertifications": [
@@ -506,7 +599,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "chemicalCompliance": "Non-staining natural oils"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-HNB-11.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "Cognac Executive Briefcase & Laptop Tote",
+        "desc": "A stylish executive handbag designed to offer ample space, durable quality, and effortless elegance for corporate or professional transit."
+      }
+    ]
   },
   {
     "id": "prod-ld-09",
@@ -519,7 +621,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Tech & Workspace",
     "subCategory": "Office & Digital Device Protection",
     "description": "Executive boardroom portfolio with dual pen loops, business card slots, legal notepad slot, and matching weighted leather desk blotter pad with non-slip suede base.",
-    "price": 68.0,
+    "price": 68,
     "currency": "USD",
     "moq": 40,
     "dimensions": {
@@ -531,8 +633,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Full-Grain Vegetable Tanned Leather",
       "Non-Slip Micro-Suede Backing"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/leather/LD-TOT-05.jpg",
+    "aspectRatio": 1,
     "weightGrams": 720,
     "originHub": "Savar Leather Tannery Cluster",
     "complianceCertifications": [
@@ -551,7 +653,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 360,
       "widthMm": 540,
       "depthMm": 380,
-      "grossWeightKg": 12.0,
+      "grossWeightKg": 12,
       "cbm": 0.0739,
       "unitsPer20ftContainer": 6800,
       "unitsPer40ftContainer": 14500
@@ -567,7 +669,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "barcodePackaging": "Gift box with custom gold foil logo option"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-TOT-05.jpg",
+        "label": "Overview",
+        "tag": "Product Overview",
+        "title": "Chestnut Full-Grain Everyday Carry Tote (Latest Arrival)",
+        "desc": "A stylish everyday handbag designed to offer ample space, durable quality, and effortless elegance with reinforced dual brass-riveted shoulder straps."
+      }
+    ]
   },
   {
     "id": "prod-ld-10",
@@ -580,7 +691,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Travel & Voyage",
     "subCategory": "The Journey Collection",
     "description": "International voyager wallet engineered to house two standard passports, boarding passes, foreign currencies, SIM card ejector tool, and transit cards with RFID blocking.",
-    "price": 24.0,
+    "price": 24,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -594,7 +705,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Burnished Edges"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 95,
     "originHub": "Savar Leather Cluster",
     "complianceCertifications": [
@@ -641,7 +752,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Travel & Voyage",
     "subCategory": "The Journey Collection",
     "description": "Heavy bridle leather luggage identification tag with privacy flap, stainless steel screw-lock cable loop, and matching zip-around travel itinerary folder.",
-    "price": 29.0,
+    "price": 29,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -655,7 +766,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Clear Mylar Privacy Shield"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 180,
     "originHub": "Savar Cluster",
     "complianceCertifications": [
@@ -702,7 +813,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Travel & Voyage",
     "subCategory": "The Journey Collection",
     "description": "Dual-tier toiletry wash kit featuring water-resistant wipe-clean synthetic lining, heavy-duty wireframe doctor's bag opening, and bottom zippered wet grooming compartment.",
-    "price": 49.0,
+    "price": 49,
     "currency": "USD",
     "moq": 50,
     "dimensions": {
@@ -716,7 +827,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "YKK Brass Zippers"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 420,
     "originHub": "DEPZ Export Park",
     "complianceCertifications": [
@@ -764,7 +875,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Wardrobe Accents",
     "subCategory": "Belts & Hardware Accessories",
     "description": "Refined 32 mm dress belt crafted from single-piece vegetable-tanned steer hide. Hand-beveled and edge-painted with mirror-polished nickel-free brass buckle.",
-    "price": 22.0,
+    "price": 22,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -777,7 +888,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Solid Cast Brass Buckle (Nickel Free)"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 190,
     "originHub": "Savar Leather Tannery Cluster",
     "complianceCertifications": [
@@ -826,7 +937,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Wardrobe Accents",
     "subCategory": "Belts & Hardware Accessories",
     "description": "Rugged 38 mm denim belt showcasing heavy saddle-stitching, vintage antiqued brass roller buckle, and deeply oiled full-grain leather that burnishes with wear.",
-    "price": 26.0,
+    "price": 26,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -840,7 +951,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Heavy Waxed Thread"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 240,
     "originHub": "Savar Tannery Estate",
     "complianceCertifications": [
@@ -859,7 +970,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 280,
       "widthMm": 480,
       "depthMm": 380,
-      "grossWeightKg": 13.0,
+      "grossWeightKg": 13,
       "cbm": 0.0511,
       "unitsPer20ftContainer": 32000,
       "unitsPer40ftContainer": 68000
@@ -887,7 +998,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Wardrobe Accents",
     "subCategory": "Belts & Hardware Accessories",
     "description": "Quick-release interchangeable 20 mm and 22 mm watch straps compatible with luxury horology and smartwatches, paired with a matching brass d-ring key clip.",
-    "price": 14.0,
+    "price": 14,
     "currency": "USD",
     "moq": 200,
     "dimensions": {
@@ -901,7 +1012,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Hypoallergenic Zermatt Lining"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 35,
     "originHub": "Savar Cluster",
     "complianceCertifications": [
@@ -961,8 +1072,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Food-Safe LDPE Water Barrier",
       "Padded Cotton Webbing"
     ],
-    "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/jute/JD-EDC-16.jpg",
+    "aspectRatio": 1,
     "weightGrams": 380,
     "originHub": "Narayanganj Jute Hub",
     "complianceCertifications": [
@@ -983,7 +1094,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 450,
       "widthMm": 650,
       "depthMm": 420,
-      "grossWeightKg": 20.0,
+      "grossWeightKg": 20,
       "cbm": 0.1229,
       "unitsPer20ftContainer": 13500,
       "unitsPer40ftContainer": 28000
@@ -999,7 +1110,37 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5 / 2.5",
       "seamStrength": "Handle pull test > 200N"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/jute/JD-EDC-16.jpg",
+        "label": "River Teal",
+        "tag": "Primary Colorway",
+        "title": "River Teal Accent & Front Pocket Profile",
+        "desc": "Natural unbleached juco canvas body with signature River Teal twisted nautical rope handles, matching side beverage pocket, and front organizer flap with high-definition ArielMC branding."
+      },
+      {
+        "src": "/images/products/jute/JD-EDC-16-navy-sq.jpg",
+        "label": "Deep Navy",
+        "tag": "Alternate Colorway",
+        "title": "Deep Navy Accent & Primary Carry Profile",
+        "desc": "Executive Deep Navy colorway with nautical rope handles, reinforced side utility pocket, and high-contrast corporate silhouette for executive gifting and daily transit."
+      },
+      {
+        "src": "/images/products/jute/JD-EDC-16-logo-detail.jpg",
+        "label": "Logo & Flap",
+        "tag": "Branding & Hardware",
+        "title": "Front Flap Pocket & Brandmark Transfer",
+        "desc": "Generous structured front flap pocket engineered for quick-access notebooks, pens, and smartphones, with high-definition multi-color branding and clean turned-edge stitching."
+      },
+      {
+        "src": "/images/products/jute/JD-EDC-16-handle-detail.jpg",
+        "label": "Rope & Tech",
+        "tag": "Ergonomics & Capacity",
+        "title": "Twisted Nautical Rope & Tech Capacity",
+        "desc": "Ergonomic dual-ply twisted rope handles anchored through heavy-duty metal eyelets, accommodating 14\"–16\" laptops, planners, cables, and daily desk essentials."
+      }
+    ]
   },
   {
     "id": "prod-jd-17",
@@ -1025,8 +1166,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "12oz Organic Cotton Canvas",
       "Heavy Brass Rivets"
     ],
-    "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/jute/JD-EDC-17-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 420,
     "originHub": "Narayanganj Jute & Textile Cluster",
     "complianceCertifications": [
@@ -1062,7 +1203,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "chemicalCompliance": "AZO-Free Pigments"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/jute/JD-EDC-17-sq.jpg",
+        "label": "Front Profile",
+        "tag": "Structured Shopper",
+        "title": "Structured Golden Jute Shopper Tote",
+        "desc": "Clean standing rectangular silhouette with heavy-duty cream cotton handles and contrast edge binding."
+      },
+      {
+        "src": "/images/products/jute/JD-EDC-17-combo.jpg",
+        "label": "Living Set Context",
+        "tag": "Living Suite Setting",
+        "title": "Paired Jute Lifestyle & Living Set",
+        "desc": "Shown alongside matching hand-braided coil jute storage basket for modern eco-conscious living."
+      }
+    ]
   },
   {
     "id": "prod-jd-18",
@@ -1075,7 +1232,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Everyday Carry & Bags",
     "subCategory": "Market Shoppers & Lifestyle Totes",
     "description": "Extra-wide resort shopper with heavy nautical rope handles, reinforced base panel, internal waterproof zip pouch for valuables, and sand-resistant weave.",
-    "price": 16.0,
+    "price": 16,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -1089,7 +1246,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Soft Twisted Cotton Rope"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1595991209266-5ff5a3a2f008?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 490,
     "originHub": "Faridpur Jute Mills",
     "complianceCertifications": [
@@ -1106,7 +1263,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 450,
       "widthMm": 620,
       "depthMm": 450,
-      "grossWeightKg": 16.0,
+      "grossWeightKg": 16,
       "cbm": 0.1256,
       "unitsPer20ftContainer": 7500,
       "unitsPer40ftContainer": 16000
@@ -1150,7 +1307,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Genuine Leather Trim"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1595991209266-5ff5a3a2f008?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 310,
     "originHub": "Narayanganj Jute Hub",
     "complianceCertifications": [
@@ -1169,7 +1326,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 400,
       "widthMm": 600,
       "depthMm": 400,
-      "grossWeightKg": 17.0,
+      "grossWeightKg": 17,
       "cbm": 0.096,
       "unitsPer20ftContainer": 16000,
       "unitsPer40ftContainer": 34000
@@ -1194,10 +1351,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Hand-Coiled & Braided Storage Baskets",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & D\u00e9cor",
+    "categoryGroup": "Modern Living & Décor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Nesting trio of cylindrical storage vessels handcrafted from continuous braided raw golden jute rope with integrated flush loop handles.",
-    "price": 32.0,
+    "price": 32,
     "currency": "USD",
     "moq": 60,
     "dimensions": {
@@ -1209,8 +1366,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Raw Braided Golden Jute Twine",
       "Unbleached Cotton Accent Thread"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595991209266-5ff5a3a2f008?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/jute/JD-MLD-20-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 750,
     "originHub": "Faridpur Artisan Jute Mills",
     "complianceCertifications": [
@@ -1245,7 +1402,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "ISO 13934-1",
       "chemicalCompliance": "Free from chlorinated phenols"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/jute/JD-MLD-20-sq.jpg",
+        "label": "Basket Profile",
+        "tag": "Coil Storage Tub",
+        "title": "Hand-Braided Jute Storage Basket",
+        "desc": "Sturdy circular coil construction with reinforced top cotton border for modern home organizing."
+      },
+      {
+        "src": "/images/products/jute/JD-MLD-20-combo.jpg",
+        "label": "Living Set Context",
+        "tag": "Living Suite Setting",
+        "title": "Paired Jute Living Suite",
+        "desc": "Coordinated with structured golden jute shopping tote on clean studio backdrop."
+      }
+    ]
   },
   {
     "id": "prod-jd-21",
@@ -1255,10 +1428,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Indoor Botanical Planter Covers",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & D\u00e9cor",
+    "categoryGroup": "Modern Living & Décor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Breathable rustic basket planter cover with internal waterproof drop-tray lining to protect hardwood floors from moisture while showcasing botanical foliage.",
-    "price": 12.0,
+    "price": 12,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -1271,7 +1444,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Waterproof TPU Interior Liner"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 280,
     "originHub": "Narayanganj Jute Hub",
     "complianceCertifications": [
@@ -1290,7 +1463,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 460,
       "widthMm": 680,
       "depthMm": 460,
-      "grossWeightKg": 15.0,
+      "grossWeightKg": 15,
       "cbm": 0.1438,
       "unitsPer20ftContainer": 10500,
       "unitsPer40ftContainer": 22000
@@ -1315,10 +1488,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Table Runners, Coasters & Dining Mats",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & D\u00e9cor",
+    "categoryGroup": "Modern Living & Décor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Artisan table setting suite containing a 180 cm woven herringbone jute runner and 6 matching circular coasters with frayed fringe edging.",
-    "price": 18.0,
+    "price": 18,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -1330,8 +1503,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Fine-Spun Golden Jute Yarn",
       "Cotton Warp Threads"
     ],
-    "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/jute/JD-MLD-22-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 480,
     "originHub": "Faridpur Weaving Mills",
     "complianceCertifications": [
@@ -1366,7 +1539,37 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "chemicalCompliance": "Zero formaldehyde"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/jute/JD-MLD-22-sq.jpg",
+        "label": "Aerial Setting",
+        "tag": "Floral Runner & Placemats",
+        "title": "Sunpetal Dining Suite Aerial Flat-Lay",
+        "desc": "Top-down aerial view of blooming floral table runner flanked by 6 matching circular floral placemats."
+      },
+      {
+        "src": "/images/products/jute/JD-MLD-22-table.jpg",
+        "label": "Table Context",
+        "tag": "Formal Dining Table Context",
+        "title": "Sunpetal Dining Table Setting",
+        "desc": "Horizontal wide-angle dining table setting showcasing natural and bleached jute texture across marble tabletop."
+      },
+      {
+        "src": "/images/products/jute/JD-MLD-22-flr-sq.jpg",
+        "label": "Placemat Detail",
+        "tag": "Artisan Floral Medallion",
+        "title": "Sunpetal Floral Placemat Close-Up",
+        "desc": "Detailed view of concentric natural and bleached spiral medallion with delicate looped petal perimeter."
+      },
+      {
+        "src": "/images/products/jute/JD-MLD-22-macro-sq.jpg",
+        "label": "Loop Braid Macro",
+        "tag": "Craftsmanship Texture",
+        "title": "Hand-Touched Loop Braid Texture",
+        "desc": "Extreme macro showing the precision of hand-touched natural jute coils and contrasting bleached loops."
+      }
+    ]
   },
   {
     "id": "prod-jd-23",
@@ -1376,10 +1579,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Natural Hessian Area Rugs & Floor Mats",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & D\u00e9cor",
+    "categoryGroup": "Modern Living & Décor",
     "subCategory": "Home Storage & Living Accessories",
     "description": "Heavyweight architectural floor rug emphasizing natural tonal striations of organic unbleached jute. Flat-weave reversible build with flame-retardant backing.",
-    "price": 180.0,
+    "price": 180,
     "currency": "USD",
     "moq": 15,
     "dimensions": {
@@ -1391,8 +1594,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Premium Long-Staple Jute Twine",
       "Organic Tensile Cord"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/jute/JD-MLD-23-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 5800,
     "originHub": "Faridpur Artisan Jute Mills",
     "complianceCertifications": [
@@ -1428,20 +1631,50 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "BS 4790 Textile Floor Coverings",
       "finishing": "Anti-slip natural latex mist option"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/jute/JD-MLD-23-sq.jpg",
+        "label": "Mandala Rug",
+        "tag": "Spiral Mandala Rug Profile",
+        "title": "Natura Circular Spiral Loop Braided Jute Rug",
+        "desc": "Sculptural round floor rug featuring center spiral medallion, looped floral ring, and outer spiral rosettes."
+      },
+      {
+        "src": "/images/products/jute/JD-MLD-23-loop-sq.jpg",
+        "label": "Border Loops",
+        "tag": "Looped Border Detail",
+        "title": "Sculptural Looped Border Braid Detail",
+        "desc": "Close-up perspective of the three-dimensional braided loop fringe adding organic depth and artisanal charm."
+      },
+      {
+        "src": "/images/products/jute/JD-MLD-23-coils-sq.jpg",
+        "label": "Spiral Coils",
+        "tag": "Concentric Rosette Coils",
+        "title": "Hand-Coiled Concentric Rosette Detail",
+        "desc": "Macro craftsmanship detail showing tightly wound spiral jute rope elements and heavy structural stitching."
+      },
+      {
+        "src": "/images/products/jute/JD-MLD-23-natura-composite.jpg",
+        "label": "Natura Collection",
+        "tag": "Two-Tone Braid Styling",
+        "title": "Natura Rugs Contrasting Cream & Natural Braid Suite",
+        "desc": "Styling presentation featuring concentric cream-bleached braid inlays and repeating geometric circular patterns."
+      }
+    ]
   },
   {
     "id": "prod-jd-24",
     "prodtId": 24,
     "roadMapCode": "JD-TES-24",
     "sku": "JD-TES-24",
-    "name": "Shock-Resistant Padded Laptop Sleeves (13\"\u201316\")",
+    "name": "Shock-Resistant Padded Laptop Sleeves (13\"–16\")",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
     "categoryGroup": "Tech & Eco-Stationery",
     "subCategory": "Workspace & Corporate Essentials",
     "description": "Eco-friendly tech folio pairing tight-count natural jute fabric with recycled felt padding, bamboo zipper pulls, and interior cable accessory slot.",
-    "price": 22.0,
+    "price": 22,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -1455,7 +1688,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Bamboo Zipper Pull"
     ],
     "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 220,
     "originHub": "Narayanganj Jute Hub",
     "complianceCertifications": [
@@ -1502,7 +1735,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Tech & Eco-Stationery",
     "subCategory": "Workspace & Corporate Essentials",
     "description": "Sustainable conference document folio with integrated business card sleeve, wooden button and jute twine loop closure, and unbleached cotton pen holder.",
-    "price": 15.0,
+    "price": 15,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -1516,7 +1749,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Cotton Elastic Loop"
     ],
     "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 190,
     "originHub": "Narayanganj Jute Hub",
     "complianceCertifications": [
@@ -1577,7 +1810,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Ribbon Page Marker"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 280,
     "originHub": "Dhaka Artisan Paper Cluster",
     "complianceCertifications": [
@@ -1624,7 +1857,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Tech & Eco-Stationery",
     "subCategory": "Workspace & Corporate Essentials",
     "description": "Structured catchall valet tray with fold-flat corner brass snap fasteners. Hand-wrapped in fine jute twill with suede interior lining.",
-    "price": 11.0,
+    "price": 11,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -1638,7 +1871,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Brass Corner Snaps"
     ],
     "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 140,
     "originHub": "Narayanganj Jute Hub",
     "complianceCertifications": [
@@ -1698,7 +1931,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Natural Organic Starch Finish"
     ],
     "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 130,
     "originHub": "Narayanganj Jute Cluster",
     "complianceCertifications": [
@@ -1761,7 +1994,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Protective Internal Divider"
     ],
     "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 190,
     "originHub": "Faridpur Jute Mills",
     "complianceCertifications": [
@@ -1780,7 +2013,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 380,
       "widthMm": 550,
       "depthMm": 420,
-      "grossWeightKg": 20.0,
+      "grossWeightKg": 20,
       "cbm": 0.0878,
       "unitsPer20ftContainer": 35000,
       "unitsPer40ftContainer": 75000
@@ -1821,7 +2054,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Double Satin Drawcord"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1595991209266-5ff5a3a2f008?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 45,
     "originHub": "Narayanganj Jute Cluster",
     "complianceCertifications": [
@@ -1840,7 +2073,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 350,
       "widthMm": 450,
       "depthMm": 350,
-      "grossWeightKg": 19.0,
+      "grossWeightKg": 19,
       "cbm": 0.0551,
       "unitsPer20ftContainer": 230000,
       "unitsPer40ftContainer": 480000
@@ -1882,7 +2115,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Cotton Webbing Handles"
     ],
     "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 210,
     "originHub": "Narayanganj Jute Hub",
     "complianceCertifications": [
@@ -1901,7 +2134,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 420,
       "widthMm": 650,
       "depthMm": 350,
-      "grossWeightKg": 22.0,
+      "grossWeightKg": 22,
       "cbm": 0.0956,
       "unitsPer20ftContainer": 33000,
       "unitsPer40ftContainer": 70000
@@ -1944,7 +2177,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Reinforced Eyelets"
     ],
     "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 160,
     "originHub": "Narayanganj Jute Cluster",
     "complianceCertifications": [
@@ -1991,7 +2224,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Dinnerware & Tabletop",
     "subCategory": "Hospitality & Retail Tableware Suites",
     "description": "Fine porcelain 26/52-piece export dinner set adorned with opulent 24K gold filigree edging for timeless luxury dining.",
-    "price": 48.0,
+    "price": 48,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -2005,7 +2238,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Lead-Free Glaze"
     ],
     "imageUrl": "/images/products/ceramics/CT-ATH-48-plate-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 4200,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2033,7 +2266,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 1852
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 72.0,
+    "samplePriceUsd": 72,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -2046,9 +2279,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-ATH-48-plate-sq.jpg",
+        "label": "Gold Filigree",
+        "tag": "Gold Filigree Setting",
+        "title": "Athena 24K Gold Filigree Plate Setting",
+        "desc": "Opulent gold filigree concentric border pattern on high-translucency fine white porcelain charger plate."
+      },
+      {
+        "src": "/images/products/ceramics/CT-ATH-48-table.jpg",
+        "label": "Table Setting",
+        "tag": "Table Setting View",
+        "title": "Athena Luxury Table Setting View",
+        "desc": "Coordinated formal dining table layout with fine bone china teaware, coffee cup, and gold filigree rim."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-dnt-49",
@@ -2060,8 +2309,8 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Dinnerware & Tabletop",
     "subCategory": "Hospitality & Retail Tableware Suites",
-    "description": "1,280\u00b0C Vitrified stoneware suite in textured matte charcoal ombr\u00e9. Includes 28 cm charger, 22 cm salad plate, 18 cm soup bowl, and 380 ml mug.",
-    "price": 28.0,
+    "description": "1,280°C Vitrified stoneware suite in textured matte charcoal ombré. Includes 28 cm charger, 22 cm salad plate, 18 cm soup bowl, and 380 ml mug.",
+    "price": 28,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -2074,7 +2323,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Charcoal Ombre Reactive Glaze"
     ],
     "imageUrl": "/images/products/ceramics/CT-DNT-49-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 3800,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2102,7 +2351,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 4883
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 42.0,
+    "samplePriceUsd": 42,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -2115,9 +2364,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-DNT-49-sq.jpg",
+        "label": "Concentric Suite",
+        "tag": "Concentric Suite Overview",
+        "title": "Complete 4-Piece Tableware Suite",
+        "desc": "Top-down aerial profile displaying concentric nesting of charger plate, salad plate, deep pasta bowl, and ergonomic ombré mug with matte reactive glaze."
+      },
+      {
+        "src": "/images/products/ceramics/CT-DWC-53-mug.jpg",
+        "label": "Ombré Mug",
+        "tag": "Barista Drinkware Detail",
+        "title": "Ergonomic Barista Ombré Coffee Mug",
+        "desc": "380 ml capacity comfort-grip handle with dual-tone gradient spray transition and vitrified unglazed heat-retention base."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-eth-50",
@@ -2130,7 +2395,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Dinnerware & Tabletop",
     "subCategory": "Hospitality & Retail Tableware Suites",
     "description": "Fine vitrified ceramic dinnerware showcasing an elaborate ethnic floral kaleidoscope design with coordinating teaware.",
-    "price": 32.0,
+    "price": 32,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -2143,7 +2408,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Ethnic Kaleidoscope Underglaze Decal"
     ],
     "imageUrl": "/images/products/ceramics/CT-ETH-50-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 3900,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2165,13 +2430,13 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 310,
       "widthMm": 330,
       "depthMm": 600,
-      "grossWeightKg": 17.0,
+      "grossWeightKg": 17,
       "cbm": 0.0614,
       "unitsPer20ftContainer": 1824,
       "unitsPer40ftContainer": 4429
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 48.0,
+    "samplePriceUsd": 48,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -2184,9 +2449,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-ETH-50-sq.jpg",
+        "label": "Kaleidoscope",
+        "tag": "Floral Kaleidoscope Pattern",
+        "title": "Ethnic Floral Kaleidoscope Dinnerware",
+        "desc": "Intricate concentric floral mandala decal print with matching teaware and lemon garnish accent."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-tur-58",
@@ -2199,7 +2473,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Dinnerware & Tabletop",
     "subCategory": "Hospitality & Retail Tableware Suites",
     "description": "Contemporary turquoise/teal ribbed rim dinnerware set engineered for luxury hospitality and everyday dining.",
-    "price": 26.0,
+    "price": 26,
     "currency": "USD",
     "moq": 200,
     "dimensions": {
@@ -2212,7 +2486,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Ribbed Rim Turquoise Glaze"
     ],
     "imageUrl": "/images/products/ceramics/CT-TUR-58-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 3400,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2234,13 +2508,13 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 290,
       "widthMm": 310,
       "depthMm": 560,
-      "grossWeightKg": 15.0,
+      "grossWeightKg": 15,
       "cbm": 0.0503,
       "unitsPer20ftContainer": 2226,
       "unitsPer40ftContainer": 5407
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 39.0,
+    "samplePriceUsd": 39,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -2253,9 +2527,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-TUR-58-sq.jpg",
+        "label": "Turquoise Set",
+        "tag": "Hospitality Tableware Suite",
+        "title": "Turquoise Horizon Ribbed Dinnerware",
+        "desc": "Modern teal vitrified stoneware plates, deep pasta bowls, and side plates arranged in hospitality display."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-dwc-53",
@@ -2265,9 +2548,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Ergonomic Reactive Glaze Coffee Mugs (380 ml)",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
-    "description": "Single-fire vitrified stoneware mug with ergonomic comfort handle, dipped reactive ombr\u00e9 glaze, and unglazed heat-retaining foot.",
+    "description": "Single-fire vitrified stoneware mug with ergonomic comfort handle, dipped reactive ombré glaze, and unglazed heat-retaining foot.",
     "price": 3.8,
     "currency": "USD",
     "moq": 500,
@@ -2281,7 +2564,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Dipped Reactive Glaze"
     ],
     "imageUrl": "/images/products/ceramics/CT-DWC-53-mug.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 340,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2322,9 +2605,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-DWC-53-mug.jpg",
+        "label": "Ombré Mug",
+        "tag": "Ergonomic Profile",
+        "title": "Ergonomic Reactive Glaze Barista Mug",
+        "desc": "Matte smoke-to-charcoal transition glaze with comfort-curve handle and vitrified chip-resistant rim."
+      },
+      {
+        "src": "/images/products/ceramics/CT-DNT-49-sq.jpg",
+        "label": "Suite Context",
+        "tag": "Tabletop Context",
+        "title": "Full Stoneware Suite Setting",
+        "desc": "Paired with matching concentric dinnerware plates and bowls."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-nel-51",
@@ -2334,10 +2633,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Neelima Royal Cobalt Floral Tea Service",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
     "description": "Classic hand-painted cobalt blue & white floral teapot pouring set with matching saucers, cups, and creamer.",
-    "price": 24.0,
+    "price": 24,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -2350,7 +2649,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Food-Grade Clear Glaze"
     ],
     "imageUrl": "/images/products/ceramics/CT-NEL-51-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1850,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2378,7 +2677,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 5326
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 36.0,
+    "samplePriceUsd": 36,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -2391,9 +2690,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-NEL-51-sq.jpg",
+        "label": "Neelima Tea Set",
+        "tag": "Artisan Tea Service",
+        "title": "Neelima Royal Cobalt Tea Service",
+        "desc": "Handcrafted teapot pouring fresh tea into matching cobalt blue floral teacup with coordinated saucers and creamer."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-ind-52",
@@ -2403,10 +2711,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Indigo Petals Royal Cobalt Ceramic Tea Set",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
     "description": "Deep royal cobalt indigo glazed ceramic teapot, covered sugar, creamer, and teacups with botanical petal reliefs.",
-    "price": 22.0,
+    "price": 22,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -2419,7 +2727,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Indigo Petal Studio Glaze"
     ],
     "imageUrl": "/images/products/ceramics/CT-IND-52-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1750,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2441,13 +2749,13 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 370,
       "widthMm": 460,
       "depthMm": 410,
-      "grossWeightKg": 12.0,
+      "grossWeightKg": 12,
       "cbm": 0.0698,
       "unitsPer20ftContainer": 2406,
       "unitsPer40ftContainer": 5845
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 33.0,
+    "samplePriceUsd": 33,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -2460,9 +2768,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-IND-52-sq.jpg",
+        "label": "Indigo Petals",
+        "tag": "Studio Ceramic Tea Set",
+        "title": "Indigo Petals Royal Cobalt Tea Suite",
+        "desc": "Deep royal blue glazed ceramic teapot with covered sugar pot and teacups set against fresh studio botanicals."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-mnk-71",
@@ -2472,10 +2789,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Handcrafted Meenakari Teapot Set",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
     "description": "8-Piece tea service suite: 1.0L hand-enameled aluminium teapot, 6 matching cutting chai glasses (100 ml), and hand-painted wooden cart tray holder. Available in Midnight and Cobalt.",
-    "price": 35.0,
+    "price": 35,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -2488,7 +2805,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Meenakari Floral Motifs"
     ],
     "imageUrl": "/images/products/ceramics/CT-MNK-71-blk-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1950,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2529,9 +2846,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-MNK-71-blk-sq.jpg",
+        "label": "Midnight Royal Floral",
+        "tag": "Midnight Peacock Edition",
+        "title": "Midnight Royal Floral Handcrafted Meenakari Teapot Set with Wooden Cart Holder",
+        "desc": "Opulent midnight black handcrafted Meenakari teapot with peacock spout, 6 matching floral cutting chai glasses (100 ml), and hand-painted black wooden cart holder."
+      },
+      {
+        "src": "/images/products/ceramics/CT-MNK-71-blu-sq.jpg",
+        "label": "Cobalt Royal Floral",
+        "tag": "Royal Cobalt Edition",
+        "title": "Cobalt Royal Floral Meenakari Teapot Set with Ochre Cart Tray",
+        "desc": "Regal royal blue floral Meenakari cutting chai glasses, gold lattice jewel kettle with ruby-red handle, and antique mustard-ochre hand-painted wooden chariot tray."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-cat-73",
@@ -2541,7 +2874,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Whimsical Cat-Lid Ceramic Mug (480 ml)",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
     "description": "Artisanal 480 ml porcelain stoneware mug with sculpted 3D cat head lid finial, fitted ceramic ball spoon, branch-form handle, and hand-drawn chef cat illustration.",
     "price": 4.8,
@@ -2557,7 +2890,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Sculpted 3D Cat Lid Finial"
     ],
     "imageUrl": "/images/products/ceramics/CT-CAT-73-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 420,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2598,9 +2931,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-CAT-73-sq.jpg",
+        "label": "Cat Lid & Spoon",
+        "tag": "Chef Cat Edition",
+        "title": "Whimsical Cat-Lid Artisanal Ceramic Barista Mug with Spoon (480 ml)",
+        "desc": "480 ml vitrified ceramic mug with sculpted 3D cat head lid, matching stir spoon, branch handle, and chef cat illustration."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-vas-55",
@@ -2613,7 +2955,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Modern Living & Decor",
     "subCategory": "Botanicals & Interior Vessels",
     "description": "Hand-thrown vitrified white porcelain spherical centerpiece vase (20 cm diameter) adorned with master hand-painted cobalt blue botanical tendrils and floral brushwork.",
-    "price": 28.0,
+    "price": 28,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -2626,7 +2968,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Underglaze Cobalt Flora"
     ],
     "imageUrl": "/images/products/ceramics/CT-VAS-55-ped-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1400,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2648,13 +2990,13 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 440,
       "widthMm": 440,
       "depthMm": 460,
-      "grossWeightKg": 10.0,
+      "grossWeightKg": 10,
       "cbm": 0.0891,
       "unitsPer20ftContainer": 1885,
       "unitsPer40ftContainer": 4579
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 42.0,
+    "samplePriceUsd": 42,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -2667,9 +3009,32 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-VAS-55-ped-sq.jpg",
+        "label": "Botanical Pedestal",
+        "tag": "20 cm Globe Vase",
+        "title": "Heritage Cobalt Flora Porcelain Globe Vase on Pedestal",
+        "desc": "Hand-thrown white porcelain globe vase styled with lush botanical ferns on natural pine pedestal pillar."
+      },
+      {
+        "src": "/images/products/ceramics/CT-VAS-55-dtl-sq.jpg",
+        "label": "Porcelain Detail",
+        "tag": "20 cm Globe Vase",
+        "title": "Cobalt Brushwork Neck & Rim Macro Detail",
+        "desc": "Close-up macro detail of the circular vase mouth, hand-painted cobalt scrollwork, and mirror-smooth porcelain glaze."
+      },
+      {
+        "src": "/images/products/ceramics/CT-VAS-55-sq.jpg",
+        "label": "Sideboard Styling",
+        "tag": "20 cm Globe Vase",
+        "title": "Heritage Cobalt Flora Porcelain Globe Vase on Sideboard",
+        "desc": "Vitreous porcelain globe vase styled with pillar candles and sculptural branches on walnut credenza."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-bot-54",
@@ -2679,7 +3044,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Royal Blue Flora Botanica Mug with Lid",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
     "description": "Fine cobalt blue botanical ceramic mug crafted with intricate white flora, comfortable arched handle, and matching tea lid.",
     "price": 4.2,
@@ -2695,7 +3060,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Matching Porcelain Lid"
     ],
     "imageUrl": "/images/products/ceramics/CT-BOT-54-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 380,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2717,7 +3082,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 300,
       "widthMm": 390,
       "depthMm": 440,
-      "grossWeightKg": 15.0,
+      "grossWeightKg": 15,
       "cbm": 0.0515,
       "unitsPer20ftContainer": 19572,
       "unitsPer40ftContainer": 47533
@@ -2736,9 +3101,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-BOT-54-sq.jpg",
+        "label": "Botanica Mug",
+        "tag": "Floral Steeping Mug",
+        "title": "Royal Blue Flora Botanica Ceramic Mug",
+        "desc": "Intricate white floral vine pattern on deep royal blue ceramic mug with coordinated steeping lid."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-mug-60",
@@ -2748,7 +3122,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Modern Ceramic Artisan Coffee Mug Suite",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
     "description": "Contemporary matte ceramic coffee mug collection with minimalist typography, line-art illustrations, and ergonomic handle design.",
     "price": 3.6,
@@ -2764,7 +3138,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Minimalist Typography Decal"
     ],
     "imageUrl": "/images/products/ceramics/CT-MUG-60-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 320,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2805,9 +3179,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-MUG-60-sq.jpg",
+        "label": "Artisan Mugs",
+        "tag": "Modern Lifestyle Mugs",
+        "title": "Modern Ceramic Artisan Coffee Mug Collection",
+        "desc": "Minimalist white and black ceramic mugs featuring artisanal line art and modern typography."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-jar-61",
@@ -2834,7 +3217,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "24K Gold Finial"
     ],
     "imageUrl": "/images/products/ceramics/CT-JAR-61-tur-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 750,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2875,9 +3258,39 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-JAR-61-tur-sq.jpg",
+        "label": "Turquoise Mosaic",
+        "tag": "1000 ml Airtight Canister",
+        "title": "Turquoise Mosaic Airtight Biscuit Canister (1000 ml)",
+        "desc": "Lush turquoise geometric mosaic porcelain jar with airtight freshness seal and 24K gold sculptural finial."
+      },
+      {
+        "src": "/images/products/ceramics/CT-JAR-61-ivo-sq.jpg",
+        "label": "Ivory Mandala",
+        "tag": "1000 ml Airtight Canister",
+        "title": "Ivory Mandala Airtight Biscuit Canister (1000 ml)",
+        "desc": "Warm ivory porcelain canister adorned with intricate multicolor Bengal mandala motifs and gold finial."
+      },
+      {
+        "src": "/images/products/ceramics/CT-JAR-61-red-sq.jpg",
+        "label": "Crimson Nakshi",
+        "tag": "1000 ml Airtight Canister",
+        "title": "Crimson Nakshi Paisley Airtight Biscuit Canister (1000 ml)",
+        "desc": "Rich crimson porcelain canister with handcrafted heritage nakshi paisley embroidery-inspired decals and gold finial."
+      },
+      {
+        "src": "/images/products/ceramics/CT-JAR-61-blu-sq.jpg",
+        "label": "Cobalt Ikat",
+        "tag": "1000 ml Airtight Canister",
+        "title": "Cobalt Ethnic Ikat Airtight Biscuit Canister (1000 ml)",
+        "desc": "Royal cobalt blue porcelain canister featuring geometric ethnic tribal ikat patterns and 24K gold finial."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-cks-62",
@@ -2904,7 +3317,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Glazed Pedestal Base"
     ],
     "imageUrl": "/images/products/ceramics/CT-CKS-62-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1600,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -2945,9 +3358,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-CKS-62-sq.jpg",
+        "label": "12\" Cake Stand",
+        "tag": "Botanical Pedestal Stand",
+        "title": "Botanical Floral Porcelain Pedestal Cake Stand (12 Inch)",
+        "desc": "Vibrant 12-inch fine porcelain pedestal display stand adorned with scarlet poppies and blue hydrangeas on marble."
+      },
+      {
+        "src": "/images/products/ceramics/CT-CKS-62-clean.jpg",
+        "label": "Platter Detail",
+        "tag": "High-Gloss Botanical Vitrification",
+        "title": "Vitrified Botanical Floral Glaze Surface",
+        "desc": "High-gloss vitrified surface highlighting the vivid in-glaze poppy petals, butterflies, and pristine porcelain rim."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-hnd-56",
@@ -2960,7 +3389,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Export-grade culinary serving handi in 1,500 ml banquet casserole with 24K gold finial domed cover. Available in 4 heritage motifs: Cobalt Ikat, Onyx Nakshi, Folk Chevron, and Yellow Damask.",
-    "price": 18.0,
+    "price": 18,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -2973,7 +3402,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "24K Gold Plated Finial"
     ],
     "imageUrl": "/images/products/ceramics/CT-HND-56-15L-blu-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1450,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3001,7 +3430,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 5619
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 27.0,
+    "samplePriceUsd": 27,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -3014,9 +3443,39 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-HND-56-15L-blu-sq.jpg",
+        "label": "1.5L Cobalt Ikat",
+        "tag": "1500 ml Banquet Handi",
+        "title": "1.5L Cobalt Ikat Ceramic Banquet Handi",
+        "desc": "Deep royal cobalt blue ethnic Ikat motif serving handi with 24K gold finial lid, presented in a luxury banquet table setting with aromatic biryani."
+      },
+      {
+        "src": "/images/products/ceramics/CT-HND-56-15L-blk-sq.jpg",
+        "label": "1.5L Onyx Nakshi",
+        "tag": "1500 ml Banquet Handi",
+        "title": "1.5L Onyx Nakshi Ceramic Banquet Handi",
+        "desc": "Jet black glazed stoneware handi featuring intricate Bengal Nakshi kantha paisley dot-work with gold finial domed cover."
+      },
+      {
+        "src": "/images/products/ceramics/CT-HND-56-15L-folk-sq.jpg",
+        "label": "1.5L Folk Chevron",
+        "tag": "1500 ml Banquet Handi",
+        "title": "1.5L Folk Chevron Ceramic Banquet Handi",
+        "desc": "Vibrant 1,500 ml serving handi with traditional Bengal folk chevron decal, domed lid with 24K gold rim, and solid wood coaster."
+      },
+      {
+        "src": "/images/products/ceramics/CT-HND-56-15L-damask-sq.jpg",
+        "label": "1.5L Yellow Damask",
+        "tag": "1500 ml Banquet Handi",
+        "title": "1.5L Yellow Damask Ceramic Banquet Handi",
+        "desc": "Opulent 1,500 ml serving handi in slate grey and golden yellow floral arabesque damask with 24K gold finial lid."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-duo-76",
@@ -3028,7 +3487,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "Twin 200 cc covered mini handis with matching 20 \u00d7 13 cm porcelain platter tray in rich Crimson/Onyx Nakshi Paisley and Ivory/Sand Folk Chevron.",
+    "description": "Twin 200 cc covered mini handis with matching 20 × 13 cm porcelain platter tray in rich Crimson/Onyx Nakshi Paisley and Ivory/Sand Folk Chevron.",
     "price": 16.5,
     "currency": "USD",
     "moq": 200,
@@ -3042,7 +3501,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Matching Porcelain Platter Tray"
     ],
     "imageUrl": "/images/products/ceramics/CT-DUO-76-nak-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1100,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3083,9 +3542,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-DUO-76-nak-sq.jpg",
+        "label": "200cc Nakshi Duo + Tray",
+        "tag": "2 Handis + Tray Gift Set",
+        "title": "200 cc Nakshi Paisley Handi Duo & Tray Set",
+        "desc": "Twin 200 cc mini handis in Crimson Red and Onyx Black with 24K gold knobs on matching 20 × 13 cm porcelain platter."
+      },
+      {
+        "src": "/images/products/ceramics/CT-DUO-76-flk-sq.jpg",
+        "label": "200cc Folk Duo + Tray",
+        "tag": "2 Handis + Tray Gift Set",
+        "title": "200 cc Folk Chevron Handi Duo & Tray Set",
+        "desc": "Twin 200 cc mini handis in Pure Ivory and Sand Dune with lotus lids and 24K gold knobs on 20 × 13 cm porcelain platter."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-flr-59",
@@ -3095,9 +3570,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Artisanal Ceramic Teacup & Serving Tray Duo Suite",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
-    "description": "Artisan glazed 2-piece cup/mug set with matching 20 \u00d7 13 cm serving tray. Available in Royal Cobalt Aztec Ikat (150 ml), Turquoise Daisy Trellis (150 ml), Crimson Nakshi Paisley (300 ml), and Royal Marigold Damask (150 ml) with hand-finished rim accents.",
+    "description": "Artisan glazed 2-piece cup/mug set with matching 20 × 13 cm serving tray. Available in Royal Cobalt Aztec Ikat (150 ml), Turquoise Daisy Trellis (150 ml), Crimson Nakshi Paisley (300 ml), and Royal Marigold Damask (150 ml) with hand-finished rim accents.",
     "price": 12.5,
     "currency": "USD",
     "moq": 200,
@@ -3111,7 +3586,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Underglaze Ceramic Platter Tray"
     ],
     "imageUrl": "/images/products/ceramics/CT-FLR-59-ikt-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 850,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3152,9 +3627,39 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-FLR-59-ikt-sq.jpg",
+        "label": "Cobalt Aztec Ikat",
+        "tag": "150 ml Duo + Tray",
+        "title": "Royal Cobalt Aztec Ikat Teacup & Tray Duo",
+        "desc": "Royal navy and ochre geometric Aztec folk chevron motif with gold rim teacups on matching 20 × 13 cm serving tray."
+      },
+      {
+        "src": "/images/products/ceramics/CT-FLR-59-tur-sq.jpg",
+        "label": "Turquoise Daisy",
+        "tag": "150 ml Duo + Tray",
+        "title": "Turquoise Daisy Trellis Teacup & Tray Duo",
+        "desc": "Vibrant turquoise lattice with sunny white & yellow daisies, paired with matching rectangular porcelain serving platter."
+      },
+      {
+        "src": "/images/products/ceramics/CT-FLR-59-red-sq.jpg",
+        "label": "Crimson Nakshi",
+        "tag": "300 ml Duo + Tray",
+        "title": "Crimson Nakshi Paisley Mug & Tray Duo",
+        "desc": "Rich scarlet crimson 300 ml mugs with traditional Bengali Nakshi embroidery paisley motifs, gold rim, and matching serving platter."
+      },
+      {
+        "src": "/images/products/ceramics/CT-FLR-59-yel-sq.jpg",
+        "label": "Royal Marigold Damask",
+        "tag": "150 ml Duo + Tray",
+        "title": "Royal Marigold Damask Trellis Teacup & Tray Duo",
+        "desc": "Regal golden marigold floral damask trellis motif on textured charcoal ground with accent yellow rims, two 150 ml flared teacups, and matching 20 × 13 cm serving platter."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-emr-57",
@@ -3164,7 +3669,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Emerald Blossom Pastel Floral Tea Suite",
     "category": "Ceramics",
     "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
+    "categoryGroup": "Drinkware & Café",
     "subCategory": "Specialty Beverage Collections",
     "description": "Mint emerald green floral patterned porcelain tea service with teacups, teapot, and coordinated serving platter.",
     "price": 22.5,
@@ -3180,7 +3685,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Gold Accent Trims"
     ],
     "imageUrl": "/images/products/ceramics/CT-EMR-57-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1650,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3221,9 +3726,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-EMR-57-sq.jpg",
+        "label": "Emerald Suite",
+        "tag": "Pastel Floral Tea Suite",
+        "title": "Emerald Blossom Pastel Floral Tea Suite",
+        "desc": "Refreshing pastel mint emerald floral teapot, cups, and coordinating round tray displayed on studio counter."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-plt-63",
@@ -3235,7 +3749,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "20 \u00d7 13 cm vitrified fine porcelain snacks and hors d'oeuvre platter with genuine 24K gold rim. Oven, microwave, and dishwasher safe.",
+    "description": "20 × 13 cm vitrified fine porcelain snacks and hors d'oeuvre platter with genuine 24K gold rim. Oven, microwave, and dishwasher safe.",
     "price": 8.5,
     "currency": "USD",
     "moq": 300,
@@ -3249,7 +3763,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "24K Gold Filigree Rim"
     ],
     "imageUrl": "/images/products/ceramics/CT-PLT-63-tur-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 420,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3271,7 +3785,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 240,
       "widthMm": 320,
       "depthMm": 440,
-      "grossWeightKg": 11.0,
+      "grossWeightKg": 11,
       "cbm": 0.0338,
       "unitsPer20ftContainer": 19881,
       "unitsPer40ftContainer": 48284
@@ -3290,9 +3804,39 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-PLT-63-tur-sq.jpg",
+        "label": "Turquoise Mosaic",
+        "tag": "20 × 13 cm Snacks Platter",
+        "title": "Turquoise Mosaic Porcelain Snacks Platter",
+        "desc": "Lush geometric mosaic porcelain snacks platter with 24K gold rim on black tabletop styling."
+      },
+      {
+        "src": "/images/products/ceramics/CT-PLT-63-ivo-sq.jpg",
+        "label": "Ivory Mandala",
+        "tag": "20 × 13 cm Snacks Platter",
+        "title": "Ivory Bengal Mandala Porcelain Snacks Platter",
+        "desc": "Warm ivory porcelain platter featuring intricate Bengal nakshi paisley borders and central mandalas."
+      },
+      {
+        "src": "/images/products/ceramics/CT-PLT-63-blu-sq.jpg",
+        "label": "Cobalt Ikat",
+        "tag": "20 × 13 cm Snacks Platter",
+        "title": "Cobalt Ethnic Ikat Porcelain Snacks Platter",
+        "desc": "Royal cobalt blue geometric ikat chevron platter with teacup and artisanal bowl of mixed nuts."
+      },
+      {
+        "src": "/images/products/ceramics/CT-PLT-63-red-sq.jpg",
+        "label": "Crimson Nakshi",
+        "tag": "20 × 13 cm Snacks Platter",
+        "title": "Crimson Nakshi Paisley Porcelain Snacks Platter",
+        "desc": "Festive red vitrified porcelain snacks platter adorned with intricate folk nakshi paisley and floral medallions with genuine 24K gold rim."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-pza-64",
@@ -3304,8 +3848,8 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "34 \u00d7 20 cm handcrafted vitrified ceramic pizza paddle with ergonomic serving handle. Oven, microwave, and dishwasher safe.",
-    "price": 15.0,
+    "description": "34 × 20 cm handcrafted vitrified ceramic pizza paddle with ergonomic serving handle. Oven, microwave, and dishwasher safe.",
+    "price": 15,
     "currency": "USD",
     "moq": 200,
     "dimensions": {
@@ -3318,7 +3862,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Ergonomic Integral Paddle Handle"
     ],
     "imageUrl": "/images/products/ceramics/CT-PZA-64-nok-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 850,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3359,9 +3903,32 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-PZA-64-nok-sq.jpg",
+        "label": "Ivory Nokshekhata",
+        "tag": "34 × 20 cm Pizza Platter",
+        "title": "Ivory Nokshekhata Ceramic Pizza & Flatbread Platter",
+        "desc": "Handcrafted ivory ceramic pizza paddle platter featuring elaborate concentric Bengal Nokshekhata embroidery mandala patterns with integral ergonomic serving handle."
+      },
+      {
+        "src": "/images/products/ceramics/CT-PZA-64-red-sq.jpg",
+        "label": "Crimson Bengal Mandala",
+        "tag": "34 × 20 cm Pizza Platter",
+        "title": "Crimson Bengal Mandala Ceramic Pizza Platter",
+        "desc": "Traditional Bengal folk nakshi paisley borders and central lotus mandala medallion in terracotta crimson on ivory ceramic paddle."
+      },
+      {
+        "src": "/images/products/ceramics/CT-PZA-64-yel-sq.jpg",
+        "label": "Sunshine Daisy",
+        "tag": "34 × 20 cm Pizza Platter",
+        "title": "Sunshine Daisy Ceramic Pizza Platter",
+        "desc": "Vibrant sunflower-yellow medallion featuring bold white petals with black ink detailing and golden stamen centers."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-srv-65",
@@ -3373,8 +3940,8 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "3-piece banquet-grade vitrified porcelain oval serving platter and deep baker set (1\u00d7 34 cm platter, 2\u00d7 28 cm entr\u00e9e bakers). Oven, microwave, and dishwasher safe.",
-    "price": 24.0,
+    "description": "3-piece banquet-grade vitrified porcelain oval serving platter and deep baker set (1× 34 cm platter, 2× 28 cm entrée bakers). Oven, microwave, and dishwasher safe.",
+    "price": 24,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -3387,7 +3954,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Hand-Decorated Flora Motifs"
     ],
     "imageUrl": "/images/products/ceramics/CT-SRV-65-tur-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2200,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3409,13 +3976,13 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 280,
       "widthMm": 380,
       "depthMm": 480,
-      "grossWeightKg": 10.0,
+      "grossWeightKg": 10,
       "cbm": 0.0511,
       "unitsPer20ftContainer": 2191,
       "unitsPer40ftContainer": 5322
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 36.0,
+    "samplePriceUsd": 36,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -3428,9 +3995,39 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-SRV-65-tur-sq.jpg",
+        "label": "Turquoise Mosaic",
+        "tag": "3-Piece Oval Serving Suite",
+        "title": "Turquoise Mosaic Porcelain Oval Serving Set",
+        "desc": "Lush Mediterranean geometric mosaic 3-piece nesting oval platter suite with genuine 24K gold rim, styled with chicken pasta and candle."
+      },
+      {
+        "src": "/images/products/ceramics/CT-SRV-65-ivo-sq.jpg",
+        "label": "Ivory Bengal Nakshi",
+        "tag": "3-Piece Oval Serving Suite",
+        "title": "Ivory Bengal Nakshi Porcelain Oval Serving Set",
+        "desc": "Warm ivory porcelain with delicate Bengali folk geometric borders, serving roasted chicken entrée and seasoned vegetables."
+      },
+      {
+        "src": "/images/products/ceramics/CT-SRV-65-red-sq.jpg",
+        "label": "Crimson Mandala",
+        "tag": "3-Piece Oval Serving Suite",
+        "title": "Crimson Bengal Mandala Porcelain Oval Serving Set",
+        "desc": "Terracotta crimson folk nakshi paisley borders with central mandalas, styled on rustic burlap runner with glowing brass lantern."
+      },
+      {
+        "src": "/images/products/ceramics/CT-SRV-65-blu-sq.jpg",
+        "label": "Cobalt Ethnic Ikat",
+        "tag": "3-Piece Oval Serving Suite",
+        "title": "Cobalt Ethnic Ikat Porcelain Oval Serving Set",
+        "desc": "Royal cobalt blue and olive geometric ikat chevron with 24K gold rim, stacked multi-tiered banquet presentation with roasted chicken drumsticks."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-cry-66",
@@ -3442,8 +4039,8 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "Tiered 3-piece vitrified porcelain casserole and curry bowl set (7\u2033, 8\u2033 & 10\u2033) with dual stay-cool handles and fitted steam-vented lids. Oven, microwave, and dishwasher safe.",
-    "price": 26.0,
+    "description": "Tiered 3-piece vitrified porcelain casserole and curry bowl set (7″, 8″ & 10″) with dual stay-cool handles and fitted steam-vented lids. Oven, microwave, and dishwasher safe.",
+    "price": 26,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -3456,7 +4053,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "24K Gold Rim Accent"
     ],
     "imageUrl": "/images/products/ceramics/CT-CRY-66-red-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2400,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3484,7 +4081,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 5250
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 39.0,
+    "samplePriceUsd": 39,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -3497,9 +4094,32 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-CRY-66-red-sq.jpg",
+        "label": "Crimson Bengal Mandala",
+        "tag": "3-Piece Curry Bowl Suite",
+        "title": "Crimson Bengal Mandala Porcelain Curry Bowl Set",
+        "desc": "Rich terracotta crimson porcelain curry bowls with intricate Bengal nakshi paisley and floral medallion decals, double loop handles, and fitted lid."
+      },
+      {
+        "src": "/images/products/ceramics/CT-CRY-66-blu-sq.jpg",
+        "label": "Cobalt Ethnic Ikat",
+        "tag": "3-Piece Curry Bowl Suite",
+        "title": "Cobalt Ethnic Ikat Porcelain Curry Bowl Set",
+        "desc": "Royal cobalt blue and olive geometric ikat chevron with 24K gold rim and handle detailing, shown with matching open fitted lids."
+      },
+      {
+        "src": "/images/products/ceramics/CT-CRY-66-mah-sq.jpg",
+        "label": "Mahogany Kilims",
+        "tag": "3-Piece Curry Bowl Suite",
+        "title": "Mahogany Kilims Porcelain Curry Bowl Set",
+        "desc": "Deep mahogany red with artisanal geometric kilim weave patterns, gold rim accents, and matching domed porcelain lids."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-dsh-67",
@@ -3511,8 +4131,8 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
-    "description": "Generous 12\u2033 (30.5 cm / 3.8L) vitrified porcelain covered banquet dish with fitted domed lid and spherical knob. Persian turquoise floral medallions with 24K gold rim.",
-    "price": 29.0,
+    "description": "Generous 12″ (30.5 cm / 3.8L) vitrified porcelain covered banquet dish with fitted domed lid and spherical knob. Persian turquoise floral medallions with 24K gold rim.",
+    "price": 29,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -3525,7 +4145,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Fitted Banquet Dome Cover"
     ],
     "imageUrl": "/images/products/ceramics/CT-DSH-67-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2800,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3566,9 +4186,32 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-DSH-67-sq.jpg",
+        "label": "12″ Banquet Dish & Lid",
+        "tag": "Covered Banquet Baker",
+        "title": "Artisanal Porcelain Covered Banquet Dish with Domed Lid (12″)",
+        "desc": "Vibrant Persian turquoise floral medallions with saffron and cobalt accents, paired with matching fitted domed porcelain lid and hot biryani filling."
+      },
+      {
+        "src": "/images/products/ceramics/CT-DSH-67-detail-sq.jpg",
+        "label": "Persian Decal Detail",
+        "tag": "Craftsmanship & Decalwork",
+        "title": "Persian Medallion Decal & Gold Rim Detail",
+        "desc": "Macro perspective showing high-resolution glaze decals, 24K gold rim lining, and precision-fitted lid edge."
+      },
+      {
+        "src": "/images/products/ceramics/CT-DSH-67.jpg",
+        "label": "Oven-to-Table Presentation",
+        "tag": "Culinary Banquet Context",
+        "title": "12″ Porcelain Banquet Dish Table Setting",
+        "desc": "Full lifestyle presentation showing the covered dish on marble tabletop, ideal for high-end hospitality, family banquet, and catering services."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-dst-68",
@@ -3581,7 +4224,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Vitrified porcelain 6-piece dessert and appetizer suites (11 cm / 12 cm). Available in Piscine Artisan Fish, Bohemian Mandala, and Sakura Blossom pastels. Microwave & dishwasher safe.",
-    "price": 14.0,
+    "price": 14,
     "currency": "USD",
     "moq": 200,
     "dimensions": {
@@ -3594,7 +4237,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Persian Floral & Fish Decal"
     ],
     "imageUrl": "/images/products/ceramics/CT-DST-68-fish-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 950,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3622,7 +4265,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 18758
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 21.0,
+    "samplePriceUsd": 21,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -3635,9 +4278,32 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-DST-68-fish-sq.jpg",
+        "label": "Piscine Artisan Suite",
+        "tag": "4.5″ Fish Bowls (6 Pcs)",
+        "title": "Piscine Artisan Fish Dessert & Dipping Bowls (6 Pcs)",
+        "desc": "Six vibrant hand-painted fish-form porcelain appetizer & dessert bowls with sculpted fin and tail handles, featuring distinct geometric, scale, wave, and floral decal interiors."
+      },
+      {
+        "src": "/images/products/ceramics/CT-DST-68-boh-sq.jpg",
+        "label": "Bohemian Mandala Suite",
+        "tag": "12 cm Bowls + Chopsticks",
+        "title": "Bohemian Mandala Dessert & Rice Bowls with Chopsticks",
+        "desc": "Six 12 cm vitrified porcelain bowls with intricate kaleidoscopic floral mandala motifs in terracotta, cobalt, and gold, complete with 12 matching bamboo chopsticks and luxury yellow presentation box."
+      },
+      {
+        "src": "/images/products/ceramics/CT-DST-68-sak-sq.jpg",
+        "label": "Sakura Blossom Suite",
+        "tag": "12 cm Pastel Bowls (6 Pcs)",
+        "title": "Sakura Blossom Pastel Dessert Bowls (6 Pcs)",
+        "desc": "Six 12 cm hand-painted Japanese cherry blossom watercolor bowls in pastel glazes (sky blue, sakura pink, matcha green, lilac) displayed in partitioned eco-luxury kraft gift box."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-cut-69",
@@ -3649,7 +4315,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "03 The Ceramic Index",
     "categoryGroup": "Modern Living & Decor",
     "subCategory": "Botanicals & Interior Vessels",
-    "description": "Architectural tote-bag silhouette ceramic cutlery and utensil caddy (11.5 \u00d7 8 \u00d7 12 cm) with dual upright arch loop handles. Available in Moroccan Trellis, Ethnic Ikat, and Folk Chevron.",
+    "description": "Architectural tote-bag silhouette ceramic cutlery and utensil caddy (11.5 × 8 × 12 cm) with dual upright arch loop handles. Available in Moroccan Trellis, Ethnic Ikat, and Folk Chevron.",
     "price": 9.5,
     "currency": "USD",
     "moq": 250,
@@ -3663,7 +4329,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Underglaze Pattern"
     ],
     "imageUrl": "/images/products/ceramics/CT-CUT-69-tre-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 550,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3704,9 +4370,32 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-CUT-69-tre-sq.jpg",
+        "label": "Cobalt Moroccan Trellis",
+        "tag": "Trellis & Yellow Collar",
+        "title": "Cobalt Moroccan Trellis Tote Cutlery Holder",
+        "desc": "Deep cobalt blue porcelain with crisp white Moroccan quatrefoil trellis body, mustard-yellow glazed rim band, and twin ergonomic off-white loop tote handles."
+      },
+      {
+        "src": "/images/products/ceramics/CT-CUT-69-ikt-sq.jpg",
+        "label": "Cobalt Ethnic Ikat",
+        "tag": "24K Gold Rim Edition",
+        "title": "Cobalt Ethnic Ikat Tote Cutlery Holder",
+        "desc": "Royal cobalt blue with ivory ethnic ikat chevron arrows, hand-painted 24K gold rim lining, and dual upright tote handles, presented with luxury gold flatware."
+      },
+      {
+        "src": "/images/products/ceramics/CT-CUT-69-nak-sq.jpg",
+        "label": "Ivory Bengal Folk Chevron",
+        "tag": "Bengal Folk Rosettes",
+        "title": "Ivory Bengal Folk Chevron Tote Cutlery Holder",
+        "desc": "Warm ivory porcelain body decorated with intricate Bengali folk chevron zig-zag cross-stitch borders, geometric diamonds, and ruby-red & cobalt floral rosettes."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-trn-70",
@@ -3719,7 +4408,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Palace-grade vitrified bone porcelain banquet tureen (2.0L) with sculpted swan handles, pedestal foot, and 24K gold finial domed lid. Available in Royal Marigold and Emerald Peacock.",
-    "price": 38.0,
+    "price": 38,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -3732,7 +4421,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "24K Gold Finial & Trim"
     ],
     "imageUrl": "/images/products/ceramics/CT-TRN-70-yel-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2600,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3760,7 +4449,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 2270
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 57.0,
+    "samplePriceUsd": 57,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -3773,9 +4462,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-TRN-70-yel-sq.jpg",
+        "label": "Royal Marigold Trellis",
+        "tag": "2.0L Marigold Edition",
+        "title": "Royal Marigold & Charcoal Trellis Swan Tureen",
+        "desc": "Lustrous white bone porcelain tureen with sunny marigold floral damask and charcoal trellis rim band, sculptural swan handles, and 24K gold wave finial lid."
+      },
+      {
+        "src": "/images/products/ceramics/CT-TRN-70-tur-sq.jpg",
+        "label": "Emerald Peacock Mosaic",
+        "tag": "2.0L Peacock Edition",
+        "title": "Emerald Peacock & Gold Mosaic Swan Tureen",
+        "desc": "Opulent emerald turquoise and gold geometric mosaic damask border with 24K gold rim lining, paired with glowing candlelight and black marble setting."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-cmp-72",
@@ -3801,7 +4506,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Integral Ergonomic Loop Handle"
     ],
     "imageUrl": "/images/products/ceramics/CT-CMP-72-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 850,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3842,9 +4547,18 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-CMP-72-sq.jpg",
+        "label": "Botanical Platter",
+        "tag": "3-Compartment Caddy",
+        "title": "Artisanal 3-Compartment Handled Botanical Relish & Dip Platter",
+        "desc": "Triple-compartment relish dish with central ergonomic loop handle and hand-painted Persian botanical florals on warm ivory ceramic."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-spc-74",
@@ -3857,7 +4571,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Modern Living & Decor",
     "subCategory": "Botanicals & Interior Vessels",
     "description": "350 ml Vitrified ceramic spice & condiment canister suite with knobbed lids. Available in artisan heritage patterns (Moroccan Trellis, Daisy, Floral Garland, Florette) or high-gloss solid glazes.",
-    "price": 16.0,
+    "price": 16,
     "currency": "USD",
     "moq": 200,
     "dimensions": {
@@ -3871,7 +4585,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Printed Heritage Decals"
     ],
     "imageUrl": "/images/products/ceramics/CT-SPC-74-pat-clean-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1200,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3899,7 +4613,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 11929
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 24.0,
+    "samplePriceUsd": 24,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -3912,9 +4626,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-SPC-74-pat-clean-sq.jpg",
+        "label": "Artisan Patterned Set",
+        "tag": "350 ml 4-Piece Suite",
+        "title": "Artisan Patterned Ceramic Canister Suite (4-Piece Set)",
+        "desc": "Set of four 350 ml handcrafted canisters featuring Moroccan Trellis, Sunshine Daisy, Blue Floral Garland, and Crimson Florette motifs."
+      },
+      {
+        "src": "/images/products/ceramics/CT-SPC-74-gls-sq.jpg",
+        "label": "High-Gloss Solid Set",
+        "tag": "350 ml 4-Piece Suite",
+        "title": "Minimalist High-Gloss Ceramic Spice & Condiment Canister Suite",
+        "desc": "Vitrified ceramic canister jars in Crimson Red, Emerald Green, Sunshine Yellow, and Piano Black with spherical knobbed lids."
+      }
+    ]
   },
   {
     "id": "prod-ct-ct-fsh-75",
@@ -3927,7 +4657,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Culinary Serving & Hospitality",
     "subCategory": "Culinary & Serving Essentials",
     "description": "Grand 48 cm artisanal ceramic fish silhouette serving dish with Persian Bengal botanical mandala artwork, sculpted lips, saffron fins, and 4.3 cm depth profile.",
-    "price": 34.0,
+    "price": 34,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -3940,7 +4670,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Persian Bengal Blue Brushwork"
     ],
     "imageUrl": "/images/products/ceramics/CT-FSH-75-sq.jpg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2200,
     "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
     "complianceCertifications": [
@@ -3968,7 +4698,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "unitsPer40ftContainer": 5250
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 51.0,
+    "samplePriceUsd": 51,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Air Cargo",
@@ -3981,16 +4711,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
       "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
       "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
-      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "finishing": "1,280°C High-Fire Vitrified, Thermal Shock Resistant (200°C to 20°C)",
       "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/ceramics/CT-FSH-75-sq.jpg",
+        "label": "48 cm Platter & Profile",
+        "tag": "Grand Banquet Platter",
+        "title": "Grand Imperial Hand-Painted Fish Banquet Platter (48 cm)",
+        "desc": "48 cm sculpted ceramic fish banquet platter featuring intricate botanical mandala artwork, cobalt scale borders, and 4.3 cm side profile."
+      }
+    ]
   },
   {
     "id": "prod-ah-33",
     "prodtId": 33,
     "roadMapCode": "AH-RKB-33",
     "sku": "AH-RKB-33",
-    "name": "Combed Organic Cotton T-Shirts & Tank Tops (160\u2013240 GSM)",
+    "name": "Combed Organic Cotton T-Shirts & Tank Tops (160–240 GSM)",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "RMG: Knitwear & Basics",
@@ -4009,7 +4748,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "1x1 Spandex Ribbed Collar"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 210,
     "originHub": "Ashulia Knitwear Industrial Zone",
     "complianceCertifications": [
@@ -4056,7 +4795,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 34,
     "roadMapCode": "AH-RKB-34",
     "sku": "AH-RKB-34",
-    "name": "Heavyweight French Terry & Fleece Hoodies (320\u2013420 GSM)",
+    "name": "Heavyweight French Terry & Fleece Hoodies (320–420 GSM)",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "RMG: Knitwear & Basics",
@@ -4074,8 +4813,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "80% Organic Cotton / 20% Recycled Polyester (380 GSM)",
       "Heavy Metal Eyelets"
     ],
-    "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/textiles/RM-KNT-32-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 680,
     "originHub": "Gazipur Knitwear Park",
     "complianceCertifications": [
@@ -4095,7 +4834,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 420,
       "widthMm": 600,
       "depthMm": 450,
-      "grossWeightKg": 15.0,
+      "grossWeightKg": 15,
       "cbm": 0.1134,
       "unitsPer20ftContainer": 5800,
       "unitsPer40ftContainer": 12500
@@ -4111,19 +4850,35 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "seamStrength": "5-thread flatlock heavy-duty stitching"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/textiles/RM-KNT-32-sq.jpg",
+        "label": "Hoodie Profile",
+        "tag": "Heavyweight Fleece",
+        "title": "Heavyweight Brushed Organic Fleece Hoodie",
+        "desc": "Folded heather grey fleece hoodie featuring double-lined hood with brushed interior."
+      },
+      {
+        "src": "/images/products/textiles/RM-KNT-32-combo.jpg",
+        "label": "Apparel & Linen Set",
+        "tag": "Apparel & Living Suite",
+        "title": "Paired RMG & Hospitality Linens Setting",
+        "desc": "Shown alongside rolled luxury hotel duvet insert in clean studio setting."
+      }
+    ]
   },
   {
     "id": "prod-ah-35",
     "prodtId": 35,
     "roadMapCode": "AH-RKB-35",
     "sku": "AH-RKB-35",
-    "name": "Cotton-Piqu\u00e9 Polo Shirts & Long-Sleeve Henley Tops",
+    "name": "Cotton-Piqué Polo Shirts & Long-Sleeve Henley Tops",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "RMG: Knitwear & Basics",
     "subCategory": "Circular Knit Casualwear & Lounge",
-    "description": "Executive 220 GSM honeycomb cotton-piqu\u00e9 classic polo shirt featuring jacquard knit flat collar, mother-of-pearl 3-button placket, and side-vent split hem.",
+    "description": "Executive 220 GSM honeycomb cotton-piqué classic polo shirt featuring jacquard knit flat collar, mother-of-pearl 3-button placket, and side-vent split hem.",
     "price": 7.8,
     "currency": "USD",
     "moq": 300,
@@ -4133,11 +4888,11 @@ export const MOCK_PRODUCTS: Product[] = [
       "depthMm": 15
     },
     "materials": [
-      "100% Combed Ringspun Piqu\u00e9 Cotton (220 GSM)",
+      "100% Combed Ringspun Piqué Cotton (220 GSM)",
       "Genuine Shell Buttons"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 280,
     "originHub": "Ashulia RMG Cluster",
     "complianceCertifications": [
@@ -4185,7 +4940,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "RMG: Knitwear & Basics",
     "subCategory": "Circular Knit Casualwear & Lounge",
     "description": "Ultra-soft modal-cotton ribbed lounge coordinates and tapered jogger trousers with wide elastic waistband, natural drawcord, and deep welt slant pockets.",
-    "price": 12.0,
+    "price": 12,
     "currency": "USD",
     "moq": 250,
     "dimensions": {
@@ -4198,7 +4953,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Cotton Drawcord"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 420,
     "originHub": "Gazipur Industrial Park",
     "complianceCertifications": [
@@ -4258,7 +5013,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Resin Buttons"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 240,
     "originHub": "Tongi Woven Apparel Hub",
     "complianceCertifications": [
@@ -4277,7 +5032,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 320,
       "widthMm": 600,
       "depthMm": 400,
-      "grossWeightKg": 11.0,
+      "grossWeightKg": 11,
       "cbm": 0.0768,
       "unitsPer20ftContainer": 16000,
       "unitsPer40ftContainer": 35000
@@ -4319,7 +5074,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Natural Coconut Husk Buttons"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 220,
     "originHub": "Dhaka Woven Cluster",
     "complianceCertifications": [
@@ -4379,7 +5134,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Cast Copper Rivets"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 620,
     "originHub": "Chittagong Denim Industrial Zone",
     "complianceCertifications": [
@@ -4422,13 +5177,13 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 40,
     "roadMapCode": "AH-BSL-40",
     "sku": "AH-BSL-40",
-    "name": "200TC\u2013300TC Crisp Cotton Percale Sheet Sets",
+    "name": "200TC–300TC Crisp Cotton Percale Sheet Sets",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "Bedding & Sleep Linens",
     "subCategory": "Retail & Hospitality Bed Sets",
     "description": "Cool, matte-finish 250 thread-count percale bed linen set (Fitted sheet, Flat sheet, dual Oxford pillowcases) crafted from 100% combed long-staple cotton.",
-    "price": 28.0,
+    "price": 28,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -4441,7 +5196,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Continuous Elastic Hem"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1850,
     "originHub": "Gazipur Home Textile Mills",
     "complianceCertifications": [
@@ -4483,13 +5238,13 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 41,
     "roadMapCode": "AH-BSL-41",
     "sku": "AH-BSL-41",
-    "name": "300TC\u2013600TC Silky Cotton Sateen Hotel Suites",
+    "name": "300TC–600TC Silky Cotton Sateen Hotel Suites",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "Bedding & Sleep Linens",
     "subCategory": "Retail & Hospitality Bed Sets",
     "description": "5-star luxury hotel specification 400TC cotton sateen bedding collection with luminous sheen, silky drape, and 1 cm tone-on-tone woven damask stripe pattern.",
-    "price": 38.0,
+    "price": 38,
     "currency": "USD",
     "moq": 80,
     "dimensions": {
@@ -4502,7 +5257,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "High-Density Weave"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2400,
     "originHub": "Narayanganj Home Textile Zone",
     "complianceCertifications": [
@@ -4550,7 +5305,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Bedding & Sleep Linens",
     "subCategory": "Retail & Hospitality Bed Sets",
     "description": "Pre-washed pure European flax linen duvet set featuring hidden coconut shell button closure and internal corner ties to secure duvet insert.",
-    "price": 54.0,
+    "price": 54,
     "currency": "USD",
     "moq": 50,
     "dimensions": {
@@ -4562,8 +5317,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "100% French Flax Linen (170 GSM)",
       "Coconut Shell Buttons"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/textiles/RM-HLT-44-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 2100,
     "originHub": "Dhaka Textile Cluster",
     "complianceCertifications": [
@@ -4582,7 +5337,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 360,
       "widthMm": 580,
       "depthMm": 400,
-      "grossWeightKg": 14.0,
+      "grossWeightKg": 14,
       "cbm": 0.0835,
       "unitsPer20ftContainer": 2100,
       "unitsPer40ftContainer": 4800
@@ -4597,14 +5352,24 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0",
       "finishing": "Stone-washed vintage finish"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/textiles/RM-HLT-44-sq.jpg",
+        "label": "Duvet Profile"
+      },
+      {
+        "src": "/images/products/textiles/RM-HLT-44-combo.jpg",
+        "label": "Apparel & Linen Set"
+      }
+    ]
   },
   {
     "id": "prod-ah-43",
     "prodtId": 43,
     "roadMapCode": "AH-BNT-43",
     "sku": "AH-BNT-43",
-    "name": "Zero-Twist & Combed Cotton Bath Towels (500\u2013700 GSM)",
+    "name": "Zero-Twist & Combed Cotton Bath Towels (500–700 GSM)",
     "category": "Textiles",
     "divisionTitle": "04 Thread & Weave",
     "categoryGroup": "Bath & Towels",
@@ -4623,7 +5388,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Reinforced Dobby Border"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 640,
     "originHub": "Chittagong Terry Towel Cluster",
     "complianceCertifications": [
@@ -4684,7 +5449,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Heavy Terry Loop"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 750,
     "originHub": "Chittagong Terry Cluster",
     "complianceCertifications": [
@@ -4703,7 +5468,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 380,
       "widthMm": 580,
       "depthMm": 400,
-      "grossWeightKg": 16.0,
+      "grossWeightKg": 16,
       "cbm": 0.0882,
       "unitsPer20ftContainer": 6800,
       "unitsPer40ftContainer": 14500
@@ -4731,7 +5496,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Bath & Towels",
     "subCategory": "Terry Linens & Spa Goods",
     "description": "Deep 3D honeycomb waffle bathrobe with kimono wrap collar, matching belt, twin deep patch pockets, and fast-drying breathability.",
-    "price": 21.0,
+    "price": 21,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -4744,7 +5509,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Pre-Shrunk Weave"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 850,
     "originHub": "Narayanganj Textile Park",
     "complianceCertifications": [
@@ -4805,7 +5570,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Hanging Corner Loop"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 110,
     "originHub": "Dhaka Weaving Cluster",
     "complianceCertifications": [
@@ -4865,7 +5630,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Stain-Release Fluorocarbon-Free Barrier"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 950,
     "originHub": "Gazipur Textile Park",
     "complianceCertifications": [
@@ -4912,7 +5677,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Dining & Kitchen Textiles",
     "subCategory": "Tabletop & Culinary Linens",
     "description": "Barista and chef's bib apron crafted from 14oz waxed cotton canvas, cross-back adjustable leather straps, brass grommets, and matching bread warmer basket.",
-    "price": 14.0,
+    "price": 14,
     "currency": "USD",
     "moq": 150,
     "dimensions": {
@@ -4926,7 +5691,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Cast Brass Hardware"
     ],
     "imageUrl": "/products/Thread_&_Weave.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 480,
     "originHub": "Dhaka Industrial Cluster",
     "complianceCertifications": [
@@ -4967,7 +5732,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "prodtId": 62,
     "roadMapCode": "PT-BNG-62",
     "sku": "PT-BNG-62",
-    "name": "Fluted & Ribbed Cylinder Pots with Saucers (15\u201330 cm)",
+    "name": "Fluted & Ribbed Cylinder Pots with Saucers (15–30 cm)",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
     "categoryGroup": "Botanical & Garden",
@@ -4985,8 +5750,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "High-Iron Alluvial Red Clay",
       "Natural Breathable Mineral Sealant"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/terracotta/TC-PLT-61-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 1900,
     "originHub": "Dhamrai Heritage Pottery Artisan Cluster",
     "complianceCertifications": [
@@ -5019,9 +5784,25 @@ export const MOCK_PRODUCTS: Product[] = [
       "DDP Available"
     ],
     "technicalSpecs": {
-      "testStandard": "Frost resistance EN 539-2 down to -10\u00b0C",
+      "testStandard": "Frost resistance EN 539-2 down to -10°C",
       "chemicalCompliance": "100% lead-free alluvial sediment"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-PLT-61-sq.jpg",
+        "label": "Planter Profile",
+        "tag": "Fluted Silhouette",
+        "title": "Fluted Cylinder Planter & Saucer",
+        "desc": "Crisp vertical ribs on cylindrical terracotta body with matching fitted clay saucer tray."
+      },
+      {
+        "src": "/images/products/terracotta/TC-PLT-61-combo.jpg",
+        "label": "Living Setting",
+        "tag": "Terracotta Suite",
+        "title": "Botanical Terracotta Living Setting",
+        "desc": "Paired with matching evaporative terracotta wine cooler in modern architectural setting."
+      }
+    ]
   },
   {
     "id": "prod-pt-63",
@@ -5034,7 +5815,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Botanical & Garden",
     "subCategory": "Breathable Architectural Planters",
     "description": "Substantial monumental patio urn with hand-coiled classical tapering silhouette, heavy rim collar, and natural wood-fired variegated blushing.",
-    "price": 48.0,
+    "price": 48,
     "currency": "USD",
     "moq": 30,
     "dimensions": {
@@ -5046,8 +5827,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Natural Terracotta Clay",
       "Kiln Reduction Ash Blush"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/terracotta/TC-AMP-62-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 8500,
     "originHub": "Dhamrai Heritage Pottery Cluster",
     "complianceCertifications": [
@@ -5066,7 +5847,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 640,
       "widthMm": 480,
       "depthMm": 480,
-      "grossWeightKg": 11.0,
+      "grossWeightKg": 11,
       "cbm": 0.1475,
       "unitsPer20ftContainer": 220,
       "unitsPer40ftContainer": 480
@@ -5082,7 +5863,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "ISTA 2A Palletized Transit Tested",
       "barcodePackaging": "Heavy honeycomb cardboard + wooden pallet crate option"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-AMP-62-sq.jpg",
+        "label": "Amphora",
+        "tag": "Artisanal Vessel",
+        "title": "Artisanal Dual-Handled Terracotta Amphora",
+        "desc": "Hand-carved botanical relief across belly and neck with symmetrical curved amphora handles."
+      },
+      {
+        "src": "/images/products/terracotta/TC-VAS-64-sq.jpg",
+        "label": "Tribal Jute Vase",
+        "tag": "Heritage Series",
+        "title": "Heritage Tribal Geometric Terracotta Vase",
+        "desc": "Hand-etched tribal geometric bands with natural braided jute rope collar."
+      }
+    ]
   },
   {
     "id": "prod-pt-64",
@@ -5094,7 +5891,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "divisionTitle": "05 Earth & Form",
     "categoryGroup": "Botanical & Garden",
     "subCategory": "Breathable Architectural Planters",
-    "description": "Indoor hanging succulent pot with 3-strand natural jute suspension macram\u00e9 rope, paired with 2 micro-porous terracotta slow-release plant irrigation spikes.",
+    "description": "Indoor hanging succulent pot with 3-strand natural jute suspension macramé rope, paired with 2 micro-porous terracotta slow-release plant irrigation spikes.",
     "price": 9.5,
     "currency": "USD",
     "moq": 200,
@@ -5107,8 +5904,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Unglazed Red Terracotta",
       "Raw Jute Braided Hanger"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/terracotta/TC-VAS-63-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 420,
     "originHub": "Dhamrai Pottery Village",
     "complianceCertifications": [
@@ -5141,7 +5938,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "finishing": "Porosity calibrated for slow capillary discharge"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-VAS-63-sq.jpg",
+        "label": "Hand-Painted",
+        "tag": "Botanical Art",
+        "title": "Studio Hand-Painted Botanical Vase",
+        "desc": "Hand-painted botanical motifs painted on smooth ceramic earthenware body."
+      },
+      {
+        "src": "/images/terracotta-potter-wheel.jpg",
+        "label": "Artisan Wheel",
+        "tag": "Bengal Kiln Craft",
+        "title": "Master Potter Throwing Wheel",
+        "desc": "Hand-thrown on traditional Bengal pottery wheel by multigenerational clay artisans."
+      }
+    ]
   },
   {
     "id": "prod-pt-65",
@@ -5166,8 +5979,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "Pure Porous Earthen Terracotta",
       "Glazed Base Rim to Prevent Condensation"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "imageUrl": "/images/products/terracotta/TC-EVV-65-sq.jpg",
+    "aspectRatio": 1,
     "weightGrams": 890,
     "originHub": "Dhamrai Artisan Cluster",
     "complianceCertifications": [
@@ -5201,7 +6014,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0",
       "chemicalCompliance": "100% lead and cadmium free"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-EVV-65-sq.jpg",
+        "label": "Wine Cooler",
+        "tag": "Thermodynamic Chiller",
+        "title": "Evaporative Terracotta Wine Cooler",
+        "desc": "Cylindrical earthen cooler holding standard wine or champagne bottle with thermodynamic evaporative chill."
+      },
+      {
+        "src": "/images/products/terracotta/TC-EVV-65-combo.jpg",
+        "label": "Living Setting",
+        "tag": "Tabletop Suite",
+        "title": "Terracotta Hospitality Suite Setting",
+        "desc": "Paired with matching fluted architectural planter in clean contemporary interior."
+      }
+    ]
   },
   {
     "id": "prod-pt-66",
@@ -5214,7 +6043,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Tabletop & Hospitality",
     "subCategory": "Evaporative Serving & Dining Pieces",
     "description": "Heritage water cooling carafe (1.2L) with fitted clay cup lid and 4 matching tumblers. Naturally imparts alkaline mineral balance and chilling to drinking water.",
-    "price": 15.0,
+    "price": 15,
     "currency": "USD",
     "moq": 120,
     "dimensions": {
@@ -5227,7 +6056,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Mineral-Polished Exterior"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 1400,
     "originHub": "Dhamrai Pottery Village",
     "complianceCertifications": [
@@ -5259,8 +6088,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "DDP Available"
     ],
     "technicalSpecs": {
-      "testStandard": "LFGB \u00a7 30 & 31",
-      "foodSafety": "Naturally cools water by 3-5\u00b0C"
+      "testStandard": "LFGB § 30 & 31",
+      "foodSafety": "Naturally cools water by 3-5°C"
     }
   },
   {
@@ -5287,7 +6116,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Food-Contact Glossy Amber Glaze"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 210,
     "originHub": "Dhamrai Artisan Cluster",
     "complianceCertifications": [
@@ -5334,7 +6163,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Tabletop & Hospitality",
     "subCategory": "Evaporative Serving & Dining Pieces",
     "description": "Authentic covered round slow-cooking biryani/curry handi pot with fitted lid. Retains moisture, circulates steam, and enhances deep flavor profiles.",
-    "price": 18.0,
+    "price": 18,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -5347,7 +6176,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Unglazed Non-Toxic Organic Burnish"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2200,
     "originHub": "Dhamrai Heritage Pottery",
     "complianceCertifications": [
@@ -5391,10 +6220,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Hand-Coiled Floor Vases & Amphora Vessels",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
-    "categoryGroup": "Home Living & D\u00e9cor",
+    "categoryGroup": "Home Living & Décor",
     "subCategory": "Sculptural Accents & Interior Objects",
     "description": "Grand 65 cm artisan statement floor amphora vessel hand-coiled by master potters. Raw terracotta textured base with fluid turquoise drip glaze neck accent.",
-    "price": 65.0,
+    "price": 65,
     "currency": "USD",
     "moq": 25,
     "dimensions": {
@@ -5407,7 +6236,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Crystalline Fluid Enamel Glaze"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 6500,
     "originHub": "Dhamrai Heritage Pottery Artisan Cluster",
     "complianceCertifications": [
@@ -5452,7 +6281,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Minimalist Candle Holders, Vessels & Oil Diffusers",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
-    "categoryGroup": "Home Living & D\u00e9cor",
+    "categoryGroup": "Home Living & Décor",
     "subCategory": "Sculptural Accents & Interior Objects",
     "description": "Organic geometric taper candle holder pair and essential oil burner with hollow heat-diffusing candle chamber and unglazed textural raw finish.",
     "price": 11.5,
@@ -5468,7 +6297,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Smoked Wood-Ash Patina"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 280,
     "originHub": "Dhamrai Pottery Village",
     "complianceCertifications": [
@@ -5512,10 +6341,10 @@ export const MOCK_PRODUCTS: Product[] = [
     "name": "Decorative Terracotta Wall Plates & Catchall Trays",
     "category": "Pottery",
     "divisionTitle": "05 Earth & Form",
-    "categoryGroup": "Home Living & D\u00e9cor",
+    "categoryGroup": "Home Living & Décor",
     "subCategory": "Sculptural Accents & Interior Objects",
     "description": "Hand-etched decorative medallion wall plate (28 cm) with integrated wire hanging fixture and traditional Bengali folk geometric carved relief motifs.",
-    "price": 14.0,
+    "price": 14,
     "currency": "USD",
     "moq": 120,
     "dimensions": {
@@ -5528,7 +6357,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Natural White Clay Slip Inlay"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 950,
     "originHub": "Dhamrai Heritage Pottery",
     "complianceCertifications": [
@@ -5587,7 +6416,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Frost-Proof Mineral Seal"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 680,
     "originHub": "Mirzapur Architectural Clay Works",
     "complianceCertifications": [
@@ -5648,7 +6477,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Weather-Sealed Vitrified Finish"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2800,
     "originHub": "Mirzapur Structural Ceramics",
     "complianceCertifications": [
@@ -5667,7 +6496,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 240,
       "widthMm": 440,
       "depthMm": 440,
-      "grossWeightKg": 12.0,
+      "grossWeightKg": 12,
       "cbm": 0.0465,
       "unitsPer20ftContainer": 2600,
       "unitsPer40ftContainer": 5500
@@ -5696,7 +6525,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Architectural Elements",
     "subCategory": "Clay Tiles & Structural Ceramics",
     "description": "Pierced decorative garden hurricane lantern with intricate geometric light-casting pinhole apertures, weather-proof chimney top, and solid brass carry bail handle.",
-    "price": 22.0,
+    "price": 22,
     "currency": "USD",
     "moq": 100,
     "dimensions": {
@@ -5709,7 +6538,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Weathered Brass Bail Handle"
     ],
     "imageUrl": "/products/Earth_&_Form.jpeg",
-    "aspectRatio": 1.0,
+    "aspectRatio": 1,
     "weightGrams": 2450,
     "originHub": "Dhamrai Heritage Pottery",
     "complianceCertifications": [
@@ -5728,7 +6557,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "heightMm": 420,
       "widthMm": 620,
       "depthMm": 420,
-      "grossWeightKg": 16.0,
+      "grossWeightKg": 16,
       "cbm": 0.1094,
       "unitsPer20ftContainer": 1500,
       "unitsPer40ftContainer": 3200

@@ -44,6 +44,14 @@ export interface TechnicalSpecifications {
   barcodePackaging?: string; // e.g., 'Individual polybag with warning label + GS1 barcode, 5-ply export carton'
 }
 
+export interface ProductGalleryItem {
+  src: string;
+  label: string;
+  tag?: string;
+  title?: string;
+  desc?: string;
+}
+
 export interface Product {
   id: string;
   sku: string;
@@ -58,6 +66,7 @@ export interface Product {
   materials: string[];
   imageUrl: string;
   aspectRatio: number;
+  gallery?: ProductGalleryItem[];
   weightGrams?: number;
   originHub?: string;
   complianceCertifications?: string[];
