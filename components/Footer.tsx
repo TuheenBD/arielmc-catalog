@@ -219,7 +219,7 @@ export default function Footer({ onOpenSamplePolicy, onSelectCategory }: FooterP
                 onClick={() => handleCategoryClick('Ceramics')}
                 className="hover:text-[#C9A86A] transition cursor-pointer text-left"
               >
-                03 The Ceramic Index (13 SKUs)
+                03 The Ceramic Index (29 SKUs)
               </button>
             </li>
             <li>

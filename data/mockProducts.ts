@@ -1981,6 +1981,2011 @@ export const MOCK_PRODUCTS: Product[] = [
     }
   },
   {
+    "id": "prod-ct-ct-ath-48",
+    "prodtId": 49,
+    "roadMapCode": "CT-ATH-48",
+    "sku": "CT-ATH-48",
+    "name": "Athena 24K Gold Filigree Porcelain Dinner Suite",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Dinnerware & Tabletop",
+    "subCategory": "Hospitality & Retail Tableware Suites",
+    "description": "Fine porcelain 26/52-piece export dinner set adorned with opulent 24K gold filigree edging for timeless luxury dining.",
+    "price": 48.0,
+    "currency": "USD",
+    "moq": 100,
+    "dimensions": {
+      "heightMm": 280,
+      "widthMm": 320,
+      "depthMm": 320
+    },
+    "materials": [
+      "Fine Bone China",
+      "24K Gold Filigree Decal",
+      "Lead-Free Glaze"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-ATH-48-plate-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 4200,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6911.10.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 2,
+      "heightMm": 340,
+      "widthMm": 360,
+      "depthMm": 600,
+      "grossWeightKg": 10.2,
+      "cbm": 0.0734,
+      "unitsPer20ftContainer": 762,
+      "unitsPer40ftContainer": 1852
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 72.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-dnt-49",
+    "prodtId": 50,
+    "roadMapCode": "CT-DNT-49",
+    "sku": "CT-DNT-49",
+    "name": "Artisan Reactive Glaze Stoneware Tableware Suite",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Dinnerware & Tabletop",
+    "subCategory": "Hospitality & Retail Tableware Suites",
+    "description": "1,280\u00b0C Vitrified stoneware suite in textured matte charcoal ombr\u00e9. Includes 28 cm charger, 22 cm salad plate, 18 cm soup bowl, and 380 ml mug.",
+    "price": 28.0,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 260,
+      "widthMm": 280,
+      "depthMm": 280
+    },
+    "materials": [
+      "Vitrified Stoneware",
+      "Charcoal Ombre Reactive Glaze"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-DNT-49-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 3800,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 4,
+      "heightMm": 300,
+      "widthMm": 320,
+      "depthMm": 580,
+      "grossWeightKg": 16.5,
+      "cbm": 0.0557,
+      "unitsPer20ftContainer": 2010,
+      "unitsPer40ftContainer": 4883
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 42.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-eth-50",
+    "prodtId": 51,
+    "roadMapCode": "CT-ETH-50",
+    "sku": "CT-ETH-50",
+    "name": "Ethnic Floral Kaleidoscope Dinnerware Suite",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Dinnerware & Tabletop",
+    "subCategory": "Hospitality & Retail Tableware Suites",
+    "description": "Fine vitrified ceramic dinnerware showcasing an elaborate ethnic floral kaleidoscope design with coordinating teaware.",
+    "price": 32.0,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 270,
+      "widthMm": 290,
+      "depthMm": 290
+    },
+    "materials": [
+      "Fine Vitrified Porcelain",
+      "Ethnic Kaleidoscope Underglaze Decal"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-ETH-50-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 3900,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 4,
+      "heightMm": 310,
+      "widthMm": 330,
+      "depthMm": 600,
+      "grossWeightKg": 17.0,
+      "cbm": 0.0614,
+      "unitsPer20ftContainer": 1824,
+      "unitsPer40ftContainer": 4429
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 48.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-tur-58",
+    "prodtId": 52,
+    "roadMapCode": "CT-TUR-58",
+    "sku": "CT-TUR-58",
+    "name": "Turquoise Horizon Vitrified Dinnerware Set",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Dinnerware & Tabletop",
+    "subCategory": "Hospitality & Retail Tableware Suites",
+    "description": "Contemporary turquoise/teal ribbed rim dinnerware set engineered for luxury hospitality and everyday dining.",
+    "price": 26.0,
+    "currency": "USD",
+    "moq": 200,
+    "dimensions": {
+      "heightMm": 260,
+      "widthMm": 270,
+      "depthMm": 270
+    },
+    "materials": [
+      "Hospitality Grade Vitrified Ceramic",
+      "Ribbed Rim Turquoise Glaze"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-TUR-58-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 3400,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 4,
+      "heightMm": 290,
+      "widthMm": 310,
+      "depthMm": 560,
+      "grossWeightKg": 15.0,
+      "cbm": 0.0503,
+      "unitsPer20ftContainer": 2226,
+      "unitsPer40ftContainer": 5407
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 39.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-dwc-53",
+    "prodtId": 53,
+    "roadMapCode": "CT-DWC-53",
+    "sku": "CT-DWC-53",
+    "name": "Ergonomic Reactive Glaze Coffee Mugs (380 ml)",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Single-fire vitrified stoneware mug with ergonomic comfort handle, dipped reactive ombr\u00e9 glaze, and unglazed heat-retaining foot.",
+    "price": 3.8,
+    "currency": "USD",
+    "moq": 500,
+    "dimensions": {
+      "heightMm": 105,
+      "widthMm": 88,
+      "depthMm": 125
+    },
+    "materials": [
+      "Single-Fire Vitrified Stoneware",
+      "Dipped Reactive Glaze"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-DWC-53-mug.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 340,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 36,
+      "heightMm": 260,
+      "widthMm": 380,
+      "depthMm": 420,
+      "grossWeightKg": 13.5,
+      "cbm": 0.0415,
+      "unitsPer20ftContainer": 24289,
+      "unitsPer40ftContainer": 58987
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 5.7,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-nel-51",
+    "prodtId": 54,
+    "roadMapCode": "CT-NEL-51",
+    "sku": "CT-NEL-51",
+    "name": "Neelima Royal Cobalt Floral Tea Service",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Classic hand-painted cobalt blue & white floral teapot pouring set with matching saucers, cups, and creamer.",
+    "price": 24.0,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 180,
+      "widthMm": 220,
+      "depthMm": 150
+    },
+    "materials": [
+      "Royal Cobalt Brushwork Porcelain",
+      "Food-Grade Clear Glaze"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-NEL-51-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1850,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6911.10.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 6,
+      "heightMm": 380,
+      "widthMm": 480,
+      "depthMm": 420,
+      "grossWeightKg": 12.5,
+      "cbm": 0.0766,
+      "unitsPer20ftContainer": 2193,
+      "unitsPer40ftContainer": 5326
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 36.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-ind-52",
+    "prodtId": 55,
+    "roadMapCode": "CT-IND-52",
+    "sku": "CT-IND-52",
+    "name": "Indigo Petals Royal Cobalt Ceramic Tea Set",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Deep royal cobalt indigo glazed ceramic teapot, covered sugar, creamer, and teacups with botanical petal reliefs.",
+    "price": 22.0,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 175,
+      "widthMm": 210,
+      "depthMm": 145
+    },
+    "materials": [
+      "Royal Cobalt Ceramic",
+      "Indigo Petal Studio Glaze"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-IND-52-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1750,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 6,
+      "heightMm": 370,
+      "widthMm": 460,
+      "depthMm": 410,
+      "grossWeightKg": 12.0,
+      "cbm": 0.0698,
+      "unitsPer20ftContainer": 2406,
+      "unitsPer40ftContainer": 5845
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 33.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-mnk-71",
+    "prodtId": 56,
+    "roadMapCode": "CT-MNK-71",
+    "sku": "CT-MNK-71",
+    "name": "Handcrafted Meenakari Teapot Set",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "8-Piece tea service suite: 1.0L hand-enameled aluminium teapot, 6 matching cutting chai glasses (100 ml), and hand-painted wooden cart tray holder. Available in Midnight and Cobalt.",
+    "price": 35.0,
+    "currency": "USD",
+    "moq": 100,
+    "dimensions": {
+      "heightMm": 220,
+      "widthMm": 240,
+      "depthMm": 160
+    },
+    "materials": [
+      "Hand-Enameled Aluminium & Ceramic",
+      "Meenakari Floral Motifs"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-MNK-71-blk-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1950,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 6,
+      "heightMm": 400,
+      "widthMm": 500,
+      "depthMm": 440,
+      "grossWeightKg": 13.2,
+      "cbm": 0.088,
+      "unitsPer20ftContainer": 1909,
+      "unitsPer40ftContainer": 4636
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 52.5,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-cat-73",
+    "prodtId": 57,
+    "roadMapCode": "CT-CAT-73",
+    "sku": "CT-CAT-73",
+    "name": "Whimsical Cat-Lid Ceramic Mug (480 ml)",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Artisanal 480 ml porcelain stoneware mug with sculpted 3D cat head lid finial, fitted ceramic ball spoon, branch-form handle, and hand-drawn chef cat illustration.",
+    "price": 4.8,
+    "currency": "USD",
+    "moq": 300,
+    "dimensions": {
+      "heightMm": 140,
+      "widthMm": 90,
+      "depthMm": 130
+    },
+    "materials": [
+      "Artisanal Porcelain Stoneware",
+      "Sculpted 3D Cat Lid Finial"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-CAT-73-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 420,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 36,
+      "heightMm": 320,
+      "widthMm": 400,
+      "depthMm": 460,
+      "grossWeightKg": 16.5,
+      "cbm": 0.0589,
+      "unitsPer20ftContainer": 17113,
+      "unitsPer40ftContainer": 41561
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 7.2,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-vas-55",
+    "prodtId": 58,
+    "roadMapCode": "CT-VAS-55",
+    "sku": "CT-VAS-55",
+    "name": "Heritage Cobalt Flora Porcelain Globe Vase",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Modern Living & Decor",
+    "subCategory": "Botanicals & Interior Vessels",
+    "description": "Hand-thrown vitrified white porcelain spherical centerpiece vase (20 cm diameter) adorned with master hand-painted cobalt blue botanical tendrils and floral brushwork.",
+    "price": 28.0,
+    "currency": "USD",
+    "moq": 100,
+    "dimensions": {
+      "heightMm": 200,
+      "widthMm": 200,
+      "depthMm": 200
+    },
+    "materials": [
+      "Wheel-Thrown Porcelain",
+      "Underglaze Cobalt Flora"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-VAS-55-ped-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1400,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 6,
+      "heightMm": 440,
+      "widthMm": 440,
+      "depthMm": 460,
+      "grossWeightKg": 10.0,
+      "cbm": 0.0891,
+      "unitsPer20ftContainer": 1885,
+      "unitsPer40ftContainer": 4579
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 42.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-bot-54",
+    "prodtId": 59,
+    "roadMapCode": "CT-BOT-54",
+    "sku": "CT-BOT-54",
+    "name": "Royal Blue Flora Botanica Mug with Lid",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Fine cobalt blue botanical ceramic mug crafted with intricate white flora, comfortable arched handle, and matching tea lid.",
+    "price": 4.2,
+    "currency": "USD",
+    "moq": 300,
+    "dimensions": {
+      "heightMm": 130,
+      "widthMm": 85,
+      "depthMm": 120
+    },
+    "materials": [
+      "Cobalt Botanical Ceramic",
+      "Matching Porcelain Lid"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-BOT-54-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 380,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 36,
+      "heightMm": 300,
+      "widthMm": 390,
+      "depthMm": 440,
+      "grossWeightKg": 15.0,
+      "cbm": 0.0515,
+      "unitsPer20ftContainer": 19572,
+      "unitsPer40ftContainer": 47533
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 6.3,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-mug-60",
+    "prodtId": 60,
+    "roadMapCode": "CT-MUG-60",
+    "sku": "CT-MUG-60",
+    "name": "Modern Ceramic Artisan Coffee Mug Suite",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Contemporary matte ceramic coffee mug collection with minimalist typography, line-art illustrations, and ergonomic handle design.",
+    "price": 3.6,
+    "currency": "USD",
+    "moq": 500,
+    "dimensions": {
+      "heightMm": 100,
+      "widthMm": 85,
+      "depthMm": 120
+    },
+    "materials": [
+      "Matte Glazed Ceramic",
+      "Minimalist Typography Decal"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-MUG-60-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 320,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 48,
+      "heightMm": 300,
+      "widthMm": 420,
+      "depthMm": 460,
+      "grossWeightKg": 16.8,
+      "cbm": 0.058,
+      "unitsPer20ftContainer": 23172,
+      "unitsPer40ftContainer": 56275
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 5.4,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-jar-61",
+    "prodtId": 61,
+    "roadMapCode": "CT-JAR-61",
+    "sku": "CT-JAR-61",
+    "name": "Artisanal Airtight Porcelain Biscuit Canister",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Modern Living & Decor",
+    "subCategory": "Botanicals & Interior Vessels",
+    "description": "1,000 ml food-safe porcelain airtight storage jar with food-grade silicone freshness gasket and sculptural 24K gold wing finial lid.",
+    "price": 14.5,
+    "currency": "USD",
+    "moq": 200,
+    "dimensions": {
+      "heightMm": 160,
+      "widthMm": 120,
+      "depthMm": 120
+    },
+    "materials": [
+      "Fine Porcelain",
+      "Food-Grade Silicone Ring",
+      "24K Gold Finial"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-JAR-61-tur-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 750,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6911.10.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 12,
+      "heightMm": 350,
+      "widthMm": 400,
+      "depthMm": 420,
+      "grossWeightKg": 10.2,
+      "cbm": 0.0588,
+      "unitsPer20ftContainer": 5714,
+      "unitsPer40ftContainer": 13877
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 21.8,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-cks-62",
+    "prodtId": 62,
+    "roadMapCode": "CT-CKS-62",
+    "sku": "CT-CKS-62",
+    "name": "Botanical Floral Porcelain Pedestal Cake Stand",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Modern Living & Decor",
+    "subCategory": "Botanicals & Interior Vessels",
+    "description": "30.5 cm (12\") raised pedestal cake and dessert display stand in fine porcelain, showcasing vibrant red poppies, blue hydrangeas, and glossy vitrified glaze.",
+    "price": 19.5,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 120,
+      "widthMm": 305,
+      "depthMm": 305
+    },
+    "materials": [
+      "Fine Porcelain",
+      "Botanical Floral Decal",
+      "Glazed Pedestal Base"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-CKS-62-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1600,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 4,
+      "heightMm": 340,
+      "widthMm": 350,
+      "depthMm": 480,
+      "grossWeightKg": 7.8,
+      "cbm": 0.0571,
+      "unitsPer20ftContainer": 1961,
+      "unitsPer40ftContainer": 4763
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 29.2,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-hnd-56",
+    "prodtId": 63,
+    "roadMapCode": "CT-HND-56",
+    "sku": "CT-HND-56",
+    "name": "Artisanal Ceramic Serving Handi & Casserole (1.5L)",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "Export-grade culinary serving handi in 1,500 ml banquet casserole with 24K gold finial domed cover. Available in 4 heritage motifs: Cobalt Ikat, Onyx Nakshi, Folk Chevron, and Yellow Damask.",
+    "price": 18.0,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 160,
+      "widthMm": 220,
+      "depthMm": 220
+    },
+    "materials": [
+      "Culinary Grade Vitrified Ceramic",
+      "24K Gold Plated Finial"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-HND-56-15L-blu-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1450,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 6,
+      "heightMm": 360,
+      "widthMm": 480,
+      "depthMm": 420,
+      "grossWeightKg": 10.5,
+      "cbm": 0.0726,
+      "unitsPer20ftContainer": 2314,
+      "unitsPer40ftContainer": 5619
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 27.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-duo-76",
+    "prodtId": 64,
+    "roadMapCode": "CT-DUO-76",
+    "sku": "CT-DUO-76",
+    "name": "Artisanal Ceramic Mini Handi Duo with Serving Tray",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "Twin 200 cc covered mini handis with matching 20 \u00d7 13 cm porcelain platter tray in rich Crimson/Onyx Nakshi Paisley and Ivory/Sand Folk Chevron.",
+    "price": 16.5,
+    "currency": "USD",
+    "moq": 200,
+    "dimensions": {
+      "heightMm": 90,
+      "widthMm": 200,
+      "depthMm": 130
+    },
+    "materials": [
+      "Fine Porcelain",
+      "Matching Porcelain Platter Tray"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-DUO-76-nak-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1100,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 12,
+      "heightMm": 300,
+      "widthMm": 440,
+      "depthMm": 440,
+      "grossWeightKg": 14.5,
+      "cbm": 0.0581,
+      "unitsPer20ftContainer": 5783,
+      "unitsPer40ftContainer": 14044
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 24.8,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-flr-59",
+    "prodtId": 65,
+    "roadMapCode": "CT-FLR-59",
+    "sku": "CT-FLR-59",
+    "name": "Artisanal Ceramic Teacup & Serving Tray Duo Suite",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Artisan glazed 2-piece cup/mug set with matching 20 \u00d7 13 cm serving tray. Available in Royal Cobalt Aztec Ikat (150 ml), Turquoise Daisy Trellis (150 ml), Crimson Nakshi Paisley (300 ml), and Royal Marigold Damask (150 ml) with hand-finished rim accents.",
+    "price": 12.5,
+    "currency": "USD",
+    "moq": 200,
+    "dimensions": {
+      "heightMm": 90,
+      "widthMm": 200,
+      "depthMm": 130
+    },
+    "materials": [
+      "Artisan Vitrified Ceramic",
+      "Underglaze Ceramic Platter Tray"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-FLR-59-ikt-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 850,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 12,
+      "heightMm": 280,
+      "widthMm": 440,
+      "depthMm": 420,
+      "grossWeightKg": 11.2,
+      "cbm": 0.0517,
+      "unitsPer20ftContainer": 6499,
+      "unitsPer40ftContainer": 15783
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 18.8,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-emr-57",
+    "prodtId": 66,
+    "roadMapCode": "CT-EMR-57",
+    "sku": "CT-EMR-57",
+    "name": "Emerald Blossom Pastel Floral Tea Suite",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Drinkware & Caf\u00e9",
+    "subCategory": "Specialty Beverage Collections",
+    "description": "Mint emerald green floral patterned porcelain tea service with teacups, teapot, and coordinated serving platter.",
+    "price": 22.5,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 170,
+      "widthMm": 210,
+      "depthMm": 140
+    },
+    "materials": [
+      "Mint Emerald Pastel Porcelain",
+      "Gold Accent Trims"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-EMR-57-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1650,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 6,
+      "heightMm": 360,
+      "widthMm": 450,
+      "depthMm": 400,
+      "grossWeightKg": 11.5,
+      "cbm": 0.0648,
+      "unitsPer20ftContainer": 2592,
+      "unitsPer40ftContainer": 6296
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 33.8,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-plt-63",
+    "prodtId": 67,
+    "roadMapCode": "CT-PLT-63",
+    "sku": "CT-PLT-63",
+    "name": "Artisanal Porcelain Snacks & Serving Platter",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "20 \u00d7 13 cm vitrified fine porcelain snacks and hors d'oeuvre platter with genuine 24K gold rim. Oven, microwave, and dishwasher safe.",
+    "price": 8.5,
+    "currency": "USD",
+    "moq": 300,
+    "dimensions": {
+      "heightMm": 25,
+      "widthMm": 200,
+      "depthMm": 130
+    },
+    "materials": [
+      "Fine Porcelain",
+      "24K Gold Filigree Rim"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-PLT-63-tur-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 420,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6911.10.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 24,
+      "heightMm": 240,
+      "widthMm": 320,
+      "depthMm": 440,
+      "grossWeightKg": 11.0,
+      "cbm": 0.0338,
+      "unitsPer20ftContainer": 19881,
+      "unitsPer40ftContainer": 48284
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 12.8,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-pza-64",
+    "prodtId": 68,
+    "roadMapCode": "CT-PZA-64",
+    "sku": "CT-PZA-64",
+    "name": "Artisanal Ceramic Pizza & Flatbread Platter",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "34 \u00d7 20 cm handcrafted vitrified ceramic pizza paddle with ergonomic serving handle. Oven, microwave, and dishwasher safe.",
+    "price": 15.0,
+    "currency": "USD",
+    "moq": 200,
+    "dimensions": {
+      "heightMm": 20,
+      "widthMm": 340,
+      "depthMm": 200
+    },
+    "materials": [
+      "Handcrafted Vitrified Ceramic",
+      "Ergonomic Integral Paddle Handle"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-PZA-64-nok-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 850,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 12,
+      "heightMm": 260,
+      "widthMm": 380,
+      "depthMm": 460,
+      "grossWeightKg": 11.5,
+      "cbm": 0.0454,
+      "unitsPer20ftContainer": 7400,
+      "unitsPer40ftContainer": 17973
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 22.5,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-srv-65",
+    "prodtId": 69,
+    "roadMapCode": "CT-SRV-65",
+    "sku": "CT-SRV-65",
+    "name": "Artisanal Porcelain Oval Serving Set (3 Pcs)",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "3-piece banquet-grade vitrified porcelain oval serving platter and deep baker set (1\u00d7 34 cm platter, 2\u00d7 28 cm entr\u00e9e bakers). Oven, microwave, and dishwasher safe.",
+    "price": 24.0,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 60,
+      "widthMm": 340,
+      "depthMm": 220
+    },
+    "materials": [
+      "Banquet Grade Vitrified Porcelain",
+      "Hand-Decorated Flora Motifs"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-SRV-65-tur-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 2200,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 4,
+      "heightMm": 280,
+      "widthMm": 380,
+      "depthMm": 480,
+      "grossWeightKg": 10.0,
+      "cbm": 0.0511,
+      "unitsPer20ftContainer": 2191,
+      "unitsPer40ftContainer": 5322
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 36.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-cry-66",
+    "prodtId": 70,
+    "roadMapCode": "CT-CRY-66",
+    "sku": "CT-CRY-66",
+    "name": "Artisanal Porcelain Casserole & Curry Bowl Set",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "Tiered 3-piece vitrified porcelain casserole and curry bowl set (7\u2033, 8\u2033 & 10\u2033) with dual stay-cool handles and fitted steam-vented lids. Oven, microwave, and dishwasher safe.",
+    "price": 26.0,
+    "currency": "USD",
+    "moq": 150,
+    "dimensions": {
+      "heightMm": 120,
+      "widthMm": 250,
+      "depthMm": 250
+    },
+    "materials": [
+      "Vitrified Porcelain",
+      "24K Gold Rim Accent"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-CRY-66-red-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 2400,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 4,
+      "heightMm": 300,
+      "widthMm": 320,
+      "depthMm": 540,
+      "grossWeightKg": 11.2,
+      "cbm": 0.0518,
+      "unitsPer20ftContainer": 2162,
+      "unitsPer40ftContainer": 5250
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 39.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-dsh-67",
+    "prodtId": 71,
+    "roadMapCode": "CT-DSH-67",
+    "sku": "CT-DSH-67",
+    "name": "Artisanal Porcelain Covered Banquet Dish",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "Generous 12\u2033 (30.5 cm / 3.8L) vitrified porcelain covered banquet dish with fitted domed lid and spherical knob. Persian turquoise floral medallions with 24K gold rim.",
+    "price": 29.0,
+    "currency": "USD",
+    "moq": 100,
+    "dimensions": {
+      "heightMm": 180,
+      "widthMm": 305,
+      "depthMm": 305
+    },
+    "materials": [
+      "Vitrified Porcelain",
+      "Fitted Banquet Dome Cover"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-DSH-67-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 2800,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 2,
+      "heightMm": 340,
+      "widthMm": 360,
+      "depthMm": 480,
+      "grossWeightKg": 7.2,
+      "cbm": 0.0588,
+      "unitsPer20ftContainer": 952,
+      "unitsPer40ftContainer": 2312
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 43.5,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-dst-68",
+    "prodtId": 72,
+    "roadMapCode": "CT-DST-68",
+    "sku": "CT-DST-68",
+    "name": "Artisanal Porcelain Dessert Bowl Set (6 Pcs)",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "Vitrified porcelain 6-piece dessert and appetizer suites (11 cm / 12 cm). Available in Piscine Artisan Fish, Bohemian Mandala, and Sakura Blossom pastels. Microwave & dishwasher safe.",
+    "price": 14.0,
+    "currency": "USD",
+    "moq": 200,
+    "dimensions": {
+      "heightMm": 55,
+      "widthMm": 115,
+      "depthMm": 115
+    },
+    "materials": [
+      "Vitrified Porcelain",
+      "Persian Floral & Fish Decal"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-DST-68-fish-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 950,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 12,
+      "heightMm": 260,
+      "widthMm": 380,
+      "depthMm": 440,
+      "grossWeightKg": 12.5,
+      "cbm": 0.0435,
+      "unitsPer20ftContainer": 7724,
+      "unitsPer40ftContainer": 18758
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 21.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-cut-69",
+    "prodtId": 73,
+    "roadMapCode": "CT-CUT-69",
+    "sku": "CT-CUT-69",
+    "name": "Artisanal Ceramic Tote Cutlery Holder",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Modern Living & Decor",
+    "subCategory": "Botanicals & Interior Vessels",
+    "description": "Architectural tote-bag silhouette ceramic cutlery and utensil caddy (11.5 \u00d7 8 \u00d7 12 cm) with dual upright arch loop handles. Available in Moroccan Trellis, Ethnic Ikat, and Folk Chevron.",
+    "price": 9.5,
+    "currency": "USD",
+    "moq": 250,
+    "dimensions": {
+      "heightMm": 120,
+      "widthMm": 115,
+      "depthMm": 80
+    },
+    "materials": [
+      "Architectural Stoneware Ceramic",
+      "Underglaze Pattern"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-CUT-69-tre-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 550,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 24,
+      "heightMm": 280,
+      "widthMm": 360,
+      "depthMm": 420,
+      "grossWeightKg": 14.2,
+      "cbm": 0.0423,
+      "unitsPer20ftContainer": 15886,
+      "unitsPer40ftContainer": 38581
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 14.2,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-trn-70",
+    "prodtId": 74,
+    "roadMapCode": "CT-TRN-70",
+    "sku": "CT-TRN-70",
+    "name": "Imperial Swan-Neck Porcelain Tureen",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "Palace-grade vitrified bone porcelain banquet tureen (2.0L) with sculpted swan handles, pedestal foot, and 24K gold finial domed lid. Available in Royal Marigold and Emerald Peacock.",
+    "price": 38.0,
+    "currency": "USD",
+    "moq": 100,
+    "dimensions": {
+      "heightMm": 220,
+      "widthMm": 290,
+      "depthMm": 240
+    },
+    "materials": [
+      "Palace-Grade Bone Porcelain",
+      "24K Gold Finial & Trim"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-TRN-70-yel-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 2600,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 2,
+      "heightMm": 320,
+      "widthMm": 360,
+      "depthMm": 520,
+      "grossWeightKg": 6.8,
+      "cbm": 0.0599,
+      "unitsPer20ftContainer": 934,
+      "unitsPer40ftContainer": 2270
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 57.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-cmp-72",
+    "prodtId": 75,
+    "roadMapCode": "CT-CMP-72",
+    "sku": "CT-CMP-72",
+    "name": "3-Compartment Handled Relish Platter",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "24.5 cm Triple-bowl relish & condiment caddy with central ergonomic loop handle. Fused high-fire ceramic with hand-painted crimson peony and sapphire berry botanical motifs.",
+    "price": 11.5,
+    "currency": "USD",
+    "moq": 250,
+    "dimensions": {
+      "heightMm": 95,
+      "widthMm": 245,
+      "depthMm": 245
+    },
+    "materials": [
+      "Fine Vitrified Stoneware",
+      "Integral Ergonomic Loop Handle"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-CMP-72-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 850,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 12,
+      "heightMm": 280,
+      "widthMm": 420,
+      "depthMm": 460,
+      "grossWeightKg": 11.5,
+      "cbm": 0.0541,
+      "unitsPer20ftContainer": 6210,
+      "unitsPer40ftContainer": 15083
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 17.2,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-spc-74",
+    "prodtId": 76,
+    "roadMapCode": "CT-SPC-74",
+    "sku": "CT-SPC-74",
+    "name": "Artisanal Ceramic Spice Canister Suite",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Modern Living & Decor",
+    "subCategory": "Botanicals & Interior Vessels",
+    "description": "350 ml Vitrified ceramic spice & condiment canister suite with knobbed lids. Available in artisan heritage patterns (Moroccan Trellis, Daisy, Floral Garland, Florette) or high-gloss solid glazes.",
+    "price": 16.0,
+    "currency": "USD",
+    "moq": 200,
+    "dimensions": {
+      "heightMm": 110,
+      "widthMm": 85,
+      "depthMm": 85
+    },
+    "materials": [
+      "Vitrified Ceramic",
+      "Knobbed Ceramic Lids",
+      "Printed Heritage Decals"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-SPC-74-pat-clean-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 1200,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 8,
+      "heightMm": 300,
+      "widthMm": 380,
+      "depthMm": 400,
+      "grossWeightKg": 10.8,
+      "cbm": 0.0456,
+      "unitsPer20ftContainer": 4912,
+      "unitsPer40ftContainer": 11929
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 24.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
+    "id": "prod-ct-ct-fsh-75",
+    "prodtId": 77,
+    "roadMapCode": "CT-FSH-75",
+    "sku": "CT-FSH-75",
+    "name": "Imperial Hand-Painted Fish Banquet Platter",
+    "category": "Ceramics",
+    "divisionTitle": "03 The Ceramic Index",
+    "categoryGroup": "Culinary Serving & Hospitality",
+    "subCategory": "Culinary & Serving Essentials",
+    "description": "Grand 48 cm artisanal ceramic fish silhouette serving dish with Persian Bengal botanical mandala artwork, sculpted lips, saffron fins, and 4.3 cm depth profile.",
+    "price": 34.0,
+    "currency": "USD",
+    "moq": 100,
+    "dimensions": {
+      "heightMm": 45,
+      "widthMm": 480,
+      "depthMm": 260
+    },
+    "materials": [
+      "Artisanal Ceramic",
+      "Persian Bengal Blue Brushwork"
+    ],
+    "imageUrl": "/images/products/ceramics/CT-FSH-75-sq.jpg",
+    "aspectRatio": 1.0,
+    "weightGrams": 2200,
+    "originHub": "Mirpur & Gazipur Ceramic Export Industrial Cluster",
+    "complianceCertifications": [
+      "LFGB Food Safe Certified",
+      "FDA 21 CFR 175.300",
+      "ISO 6486 Lead & Cadmium Leaching Certified",
+      "BSCI Audited Facility"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6912.00.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US MFN Eligible"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 4,
+      "heightMm": 240,
+      "widthMm": 400,
+      "depthMm": 540,
+      "grossWeightKg": 10.2,
+      "cbm": 0.0518,
+      "unitsPer20ftContainer": 2162,
+      "unitsPer40ftContainer": 5250
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 51.0,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "CIF Los Angeles",
+      "DDP by Request"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor (ISO 2859-1)",
+      "chemicalCompliance": "REACH SVHC, Lead/Cadmium Migration Certified",
+      "foodSafety": "LFGB & FDA 21 CFR 175.300 Certified Safe",
+      "finishing": "1,280\u00b0C High-Fire Vitrified, Thermal Shock Resistant (200\u00b0C to 20\u00b0C)",
+      "barcodePackaging": "Individual protective foam sleeve + 5-ply export master carton with drop-tested honeycomb cushions"
+    }
+  },
+  {
     "id": "prod-ah-33",
     "prodtId": 33,
     "roadMapCode": "AH-RKB-33",
@@ -2955,791 +4960,6 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "finishing": "Water and oil repellent wax treatment"
-    }
-  },
-  {
-    "id": "prod-ct-49",
-    "prodtId": 49,
-    "roadMapCode": "CT-DNT-49",
-    "sku": "CT-DNT-49",
-    "name": "Coupe & Rimmed Dinner Plates (27 cm)",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Dinnerware & Tabletop",
-    "subCategory": "Hospitality & Retail Tableware Suites",
-    "description": "High-alumina vitrified stoneware dinner plate fired at 1280\u00b0C. Features subtle organic unglazed outer rim edge, semi-matte glazed eating well, and extreme chip resistance.",
-    "price": 5.4,
-    "currency": "USD",
-    "moq": 300,
-    "dimensions": {
-      "heightMm": 26,
-      "widthMm": 270,
-      "depthMm": 270
-    },
-    "materials": [
-      "High-Alumina Stoneware Clay",
-      "Food-Safe Non-Toxic Glaze"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 820,
-    "originHub": "Gazipur Fine Tableware Industrial Zone",
-    "complianceCertifications": [
-      "LFGB / FDA Certified Food Contact Safe",
-      "Lead & Cadmium Free",
-      "ISO 9001:2015"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 4,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 16,
-      "heightMm": 320,
-      "widthMm": 320,
-      "depthMm": 320,
-      "grossWeightKg": 14.2,
-      "cbm": 0.0328,
-      "unitsPer20ftContainer": 14000,
-      "unitsPer40ftContainer": 30000
-    },
-    "sampleLeadTimeDays": 7,
-    "samplePriceUsd": 20,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "CIF Southampton",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "FDA CPG Sec. 545.450 / LFGB \u00a7 30 & 31",
-      "foodSafety": "Dishwasher, microwave & oven safe to 220\u00b0C"
-    }
-  },
-  {
-    "id": "prod-ct-50",
-    "prodtId": 50,
-    "roadMapCode": "CT-DNT-50",
-    "sku": "CT-DNT-50",
-    "name": "Side, Salad & Dessert Plates (20 cm)",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Dinnerware & Tabletop",
-    "subCategory": "Hospitality & Retail Tableware Suites",
-    "description": "20 cm vitrified side plate designed for fine-dining appetizers and pastry service. Stackable nested foot ring and scratch-resistant matte obsidian glaze.",
-    "price": 3.8,
-    "currency": "USD",
-    "moq": 400,
-    "dimensions": {
-      "heightMm": 20,
-      "widthMm": 200,
-      "depthMm": 200
-    },
-    "materials": [
-      "Vitrified White Stoneware",
-      "Chip-Resistant Silicate Glaze"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 450,
-    "originHub": "Gazipur Fine Tableware Park",
-    "complianceCertifications": [
-      "LFGB Food Contact",
-      "FDA 21 CFR Compliant"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 24,
-      "heightMm": 260,
-      "widthMm": 450,
-      "depthMm": 260,
-      "grossWeightKg": 12.0,
-      "cbm": 0.0304,
-      "unitsPer20ftContainer": 22000,
-      "unitsPer40ftContainer": 48000
-    },
-    "sampleLeadTimeDays": 6,
-    "samplePriceUsd": 18,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.0",
-      "chemicalCompliance": "Lead < 0.05 mg/L, Cadmium < 0.01 mg/L"
-    }
-  },
-  {
-    "id": "prod-ct-51",
-    "prodtId": 51,
-    "roadMapCode": "CT-DNT-51",
-    "sku": "CT-DNT-51",
-    "name": "Pasta Bowls & Deep Cereal/Soup Bowls (16\u201322 cm)",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Dinnerware & Tabletop",
-    "subCategory": "Hospitality & Retail Tableware Suites",
-    "description": "Versatile flat-bottom pasta coupe bowl with steep rim. Crafted with dense ceramic walls for superior heat retention for broths and pastas.",
-    "price": 4.9,
-    "currency": "USD",
-    "moq": 300,
-    "dimensions": {
-      "heightMm": 55,
-      "widthMm": 215,
-      "depthMm": 215
-    },
-    "materials": [
-      "High-Fire Kaolin Stoneware",
-      "Semi-Gloss Glaze"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 620,
-    "originHub": "Mirzapur Tableware Park",
-    "complianceCertifications": [
-      "LFGB",
-      "FDA Food Safe"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 18,
-      "heightMm": 320,
-      "widthMm": 460,
-      "depthMm": 240,
-      "grossWeightKg": 12.2,
-      "cbm": 0.0353,
-      "unitsPer20ftContainer": 15000,
-      "unitsPer40ftContainer": 32000
-    },
-    "sampleLeadTimeDays": 6,
-    "samplePriceUsd": 20,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.5",
-      "foodSafety": "Thermal shock tested to 180\u00b0C"
-    }
-  },
-  {
-    "id": "prod-ct-52",
-    "prodtId": 52,
-    "roadMapCode": "CT-DNT-52",
-    "sku": "CT-DNT-52",
-    "name": "Sharing Platters & Flat Serving Trays",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Dinnerware & Tabletop",
-    "subCategory": "Hospitality & Retail Tableware Suites",
-    "description": "Substantial 38 cm oval hospitality sharing platter with gently upturned raw stoneware lip and glazed central presentation surface.",
-    "price": 14.5,
-    "currency": "USD",
-    "moq": 100,
-    "dimensions": {
-      "heightMm": 30,
-      "widthMm": 380,
-      "depthMm": 240
-    },
-    "materials": [
-      "High-Density Stoneware",
-      "Food-Grade Semi-Matte Glaze"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 1650,
-    "originHub": "Gazipur Fine Ceramics",
-    "complianceCertifications": [
-      "ISO 9001:2015",
-      "LFGB Food Safe"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 4,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 6,
-      "heightMm": 260,
-      "widthMm": 420,
-      "depthMm": 280,
-      "grossWeightKg": 11.0,
-      "cbm": 0.0306,
-      "unitsPer20ftContainer": 5800,
-      "unitsPer40ftContainer": 12500
-    },
-    "sampleLeadTimeDays": 7,
-    "samplePriceUsd": 30,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.0",
-      "barcodePackaging": "EPE foam corner cushions inside ISTA-3A box"
-    }
-  },
-  {
-    "id": "prod-ct-53",
-    "prodtId": 53,
-    "roadMapCode": "CT-DWC-53",
-    "sku": "CT-DWC-53",
-    "name": "Ergonomic Barista Coffee Mugs (250 ml, 350 ml, 400 ml)",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
-    "subCategory": "Specialty Beverage Collections",
-    "description": "Ergonomic caf\u00e9 mug with 2-finger balanced handle, comfort rounded drinking lip, and thick vitrified base that stabilizes heat retention during espresso brewing.",
-    "price": 3.4,
-    "currency": "USD",
-    "moq": 500,
-    "dimensions": {
-      "heightMm": 90,
-      "widthMm": 85,
-      "depthMm": 85
-    },
-    "materials": [
-      "Fine Stoneware Body",
-      "Matte Obsidian / Satin White Glaze"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 320,
-    "originHub": "Gazipur Fine Tableware Industrial Zone",
-    "complianceCertifications": [
-      "LFGB Certified",
-      "FDA 21 CFR 175.300",
-      "Dishwasher Safe > 1000 Cycles"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 36,
-      "heightMm": 320,
-      "widthMm": 420,
-      "depthMm": 320,
-      "grossWeightKg": 13.0,
-      "cbm": 0.043,
-      "unitsPer20ftContainer": 24000,
-      "unitsPer40ftContainer": 52000
-    },
-    "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 15,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "CIF Felixstowe",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.0 Strict",
-      "chemicalCompliance": "Lead & Cadmium undetectable (< 0.01 ppm)"
-    }
-  },
-  {
-    "id": "prod-ct-54",
-    "prodtId": 54,
-    "roadMapCode": "CT-DWC-54",
-    "sku": "CT-DWC-54",
-    "name": "Commercial Espresso & Cappuccino Cups with Saucers",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
-    "subCategory": "Specialty Beverage Collections",
-    "description": "Heavy-wall 80 ml espresso and 180 ml flat white cup setting with matching recessed-center saucers engineered for high-turnover specialty coffee bars.",
-    "price": 4.2,
-    "currency": "USD",
-    "moq": 400,
-    "dimensions": {
-      "heightMm": 60,
-      "widthMm": 130,
-      "depthMm": 130
-    },
-    "materials": [
-      "Thermal Heavy Stoneware",
-      "High-Gloss Vitreous Glaze"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 420,
-    "originHub": "Gazipur Tableware Park",
-    "complianceCertifications": [
-      "LFGB",
-      "FDA Food Contact Safe"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 24,
-      "heightMm": 300,
-      "widthMm": 440,
-      "depthMm": 320,
-      "grossWeightKg": 11.5,
-      "cbm": 0.0422,
-      "unitsPer20ftContainer": 18000,
-      "unitsPer40ftContainer": 39000
-    },
-    "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 18,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.0",
-      "foodSafety": "1000 cycle commercial dishwasher wash tested"
-    }
-  },
-  {
-    "id": "prod-ct-55",
-    "prodtId": 55,
-    "roadMapCode": "CT-DWC-55",
-    "sku": "CT-DWC-55",
-    "name": "Stackable Ceramic Tumblers & Teapots",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Drinkware & Caf\u00e9",
-    "subCategory": "Specialty Beverage Collections",
-    "description": "Handle-free stackable drinking tumbler with tactile horizontal ridge ribs, paired with an 800 ml teapot fitted with stainless steel micro-perforated tea infuser basket.",
-    "price": 18.0,
-    "currency": "USD",
-    "moq": 150,
-    "dimensions": {
-      "heightMm": 140,
-      "widthMm": 180,
-      "depthMm": 120
-    },
-    "materials": [
-      "Kaolin Stoneware",
-      "304 Stainless Steel Infuser",
-      "Beechwood Lid Handle"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 890,
-    "originHub": "Gazipur Fine Ceramics",
-    "complianceCertifications": [
-      "LFGB Food Contact",
-      "FDA 21 CFR Compliant"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 4,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 12,
-      "heightMm": 340,
-      "widthMm": 480,
-      "depthMm": 380,
-      "grossWeightKg": 12.0,
-      "cbm": 0.062,
-      "unitsPer20ftContainer": 6000,
-      "unitsPer40ftContainer": 13000
-    },
-    "sampleLeadTimeDays": 7,
-    "samplePriceUsd": 35,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.5",
-      "finishing": "Non-drip precision pouring spout"
-    }
-  },
-  {
-    "id": "prod-ct-56",
-    "prodtId": 56,
-    "roadMapCode": "CT-MLD-56",
-    "sku": "CT-MLD-56",
-    "name": "Cylindrical Indoor Planter Pots with Nesting Saucers",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Modern Living & Decor",
-    "subCategory": "Botanicals & Interior Vessels",
-    "description": "Minimalist straight-sided ceramic botanical cylinder with interior drainage hole and precision nested low-profile drip saucer in matte textured chalk finish.",
-    "price": 16.5,
-    "currency": "USD",
-    "moq": 120,
-    "dimensions": {
-      "heightMm": 180,
-      "widthMm": 180,
-      "depthMm": 180
-    },
-    "materials": [
-      "High-Density Stoneware",
-      "Matte Chalk Protective Sealant"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
-    "weightGrams": 1400,
-    "originHub": "Mirzapur Tableware Park",
-    "complianceCertifications": [
-      "ISO 9001:2015"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6914.90.00",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 8,
-      "heightMm": 420,
-      "widthMm": 420,
-      "depthMm": 420,
-      "grossWeightKg": 12.5,
-      "cbm": 0.0741,
-      "unitsPer20ftContainer": 3200,
-      "unitsPer40ftContainer": 7000
-    },
-    "sampleLeadTimeDays": 7,
-    "samplePriceUsd": 25,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.5",
-      "finishing": "Precision water drainage aperture"
-    }
-  },
-  {
-    "id": "prod-ct-57",
-    "prodtId": 57,
-    "roadMapCode": "CT-MLD-57",
-    "sku": "CT-MLD-57",
-    "name": "Minimalist Centerpiece Vases & Candle Vessels",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Modern Living & Decor",
-    "subCategory": "Botanicals & Interior Vessels",
-    "description": "Architectural organic silhouette statement vase with fluted vertical ribbing and vitreous interior glaze suitable for fresh botanicals and luxury candle pours.",
-    "price": 24.0,
-    "currency": "USD",
-    "moq": 80,
-    "dimensions": {
-      "heightMm": 320,
-      "widthMm": 150,
-      "depthMm": 150
-    },
-    "materials": [
-      "Vitrified Kaolin Stoneware",
-      "Semi-Matte Satin Enamel"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=800&q=80",
-    "aspectRatio": 1.0,
-    "weightGrams": 1950,
-    "originHub": "Mirzapur Tableware Park",
-    "complianceCertifications": [
-      "ISO 9001:2015"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 4,
-    "hsCode": "6913.90.10",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 6,
-      "heightMm": 380,
-      "widthMm": 520,
-      "depthMm": 360,
-      "grossWeightKg": 13.0,
-      "cbm": 0.0711,
-      "unitsPer20ftContainer": 2600,
-      "unitsPer40ftContainer": 5600
-    },
-    "sampleLeadTimeDays": 8,
-    "samplePriceUsd": 40,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "ISTA 1A Drop Tested",
-      "chemicalCompliance": "Vitreous non-porous interior"
-    }
-  },
-  {
-    "id": "prod-ct-58",
-    "prodtId": 58,
-    "roadMapCode": "CT-MLD-58",
-    "sku": "CT-MLD-58",
-    "name": "Aroma Diffusers, Catchall Trays & Coasters",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Modern Living & Decor",
-    "subCategory": "Botanicals & Interior Vessels",
-    "description": "Modern home fragrance ceramic setting comprising a cold-reed ultrasonic reservoir vase, matching jewelry trinket dish, and 4 felt-backed non-scratch coasters.",
-    "price": 15.0,
-    "currency": "USD",
-    "moq": 150,
-    "dimensions": {
-      "heightMm": 120,
-      "widthMm": 180,
-      "depthMm": 180
-    },
-    "materials": [
-      "Dense White Stoneware",
-      "Natural Cork Backing Pads"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 620,
-    "originHub": "Gazipur Fine Ceramics",
-    "complianceCertifications": [
-      "Sedex SMETA",
-      "ISO 9001"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6913.90.10",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 16,
-      "heightMm": 300,
-      "widthMm": 420,
-      "depthMm": 420,
-      "grossWeightKg": 11.2,
-      "cbm": 0.0529,
-      "unitsPer20ftContainer": 9000,
-      "unitsPer40ftContainer": 19000
-    },
-    "sampleLeadTimeDays": 6,
-    "samplePriceUsd": 25,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.5",
-      "barcodePackaging": "Rigid printed presentation box"
-    }
-  },
-  {
-    "id": "prod-ct-59",
-    "prodtId": 59,
-    "roadMapCode": "CT-OTB-59",
-    "sku": "CT-OTB-59",
-    "name": "Thermal Shock-Resistant Casserole Dishes & Bakers",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Oven-to-Table Bakeware",
-    "subCategory": "Culinary & Serving Essentials",
-    "description": "Commercial oven-to-table rectangular baking dish (32x22cm) with integrated easy-grip side handles, engineered with cordierite additives to resist 260\u00b0C thermal shock.",
-    "price": 19.5,
-    "currency": "USD",
-    "moq": 120,
-    "dimensions": {
-      "heightMm": 65,
-      "widthMm": 320,
-      "depthMm": 220
-    },
-    "materials": [
-      "Cordierite-Reinforced Stoneware",
-      "Non-Stick Vitreous Enamel"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 1850,
-    "originHub": "Gazipur Fine Tableware Industrial Zone",
-    "complianceCertifications": [
-      "FDA 21 CFR 175.300",
-      "LFGB Food Safe",
-      "Thermal Shock 260\u00b0C"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 4,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 6,
-      "heightMm": 280,
-      "widthMm": 480,
-      "depthMm": 360,
-      "grossWeightKg": 12.5,
-      "cbm": 0.0484,
-      "unitsPer20ftContainer": 3800,
-      "unitsPer40ftContainer": 8200
-    },
-    "sampleLeadTimeDays": 7,
-    "samplePriceUsd": 35,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "EN 13834 Cookware - Ovenware",
-      "foodSafety": "Zero lead or cadmium migration"
-    }
-  },
-  {
-    "id": "prod-ct-60",
-    "prodtId": 60,
-    "roadMapCode": "CT-OTB-60",
-    "sku": "CT-OTB-60",
-    "name": "Individual Ramekins & Tapas Bowls",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Oven-to-Table Bakeware",
-    "subCategory": "Culinary & Serving Essentials",
-    "description": "Fluted 180 ml stoneware souffle ramekins and tapas serving dishes (Set of 4). High-temperature fired for broiler and direct salamander oven service.",
-    "price": 6.8,
-    "currency": "USD",
-    "moq": 300,
-    "dimensions": {
-      "heightMm": 45,
-      "widthMm": 90,
-      "depthMm": 90
-    },
-    "materials": [
-      "Oven-Safe Stoneware",
-      "Glossy White Easy-Clean Interior"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 180,
-    "originHub": "Gazipur Tableware Park",
-    "complianceCertifications": [
-      "LFGB",
-      "FDA Food Safe"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 48,
-      "heightMm": 250,
-      "widthMm": 420,
-      "depthMm": 320,
-      "grossWeightKg": 10.2,
-      "cbm": 0.0336,
-      "unitsPer20ftContainer": 42000,
-      "unitsPer40ftContainer": 90000
-    },
-    "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 18,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.0",
-      "foodSafety": "Oven safe to 250\u00b0C, microwave & freezer safe"
-    }
-  },
-  {
-    "id": "prod-ct-61",
-    "prodtId": 61,
-    "roadMapCode": "CT-OTB-61",
-    "sku": "CT-OTB-61",
-    "name": "Oil & Vinegar Cruets, Condiment Pots & Spoon Rests",
-    "category": "Ceramics",
-    "divisionTitle": "03 The Ceramic Index",
-    "categoryGroup": "Oven-to-Table Bakeware",
-    "subCategory": "Culinary & Serving Essentials",
-    "description": "Culinary countertop suite: 500 ml oil and vinegar cruet bottles with stainless steel weighted drip-free spouts, covered salt cellar, and matching spoon rest.",
-    "price": 16.0,
-    "currency": "USD",
-    "moq": 150,
-    "dimensions": {
-      "heightMm": 220,
-      "widthMm": 80,
-      "depthMm": 80
-    },
-    "materials": [
-      "Stoneware Clay",
-      "304 Stainless Steel Pourer",
-      "Natural Cork Gasket"
-    ],
-    "imageUrl": "/products/The_Ceramic_Index.jpeg",
-    "aspectRatio": 1.0,
-    "weightGrams": 680,
-    "originHub": "Gazipur Fine Ceramics",
-    "complianceCertifications": [
-      "LFGB",
-      "FDA Certified"
-    ],
-    "inStock": true,
-    "leadTimeWeeks": 3,
-    "hsCode": "6912.00.20",
-    "tariffPreferences": [
-      "UK DCTS 0% Duty",
-      "EU GSP 0% Duty"
-    ],
-    "masterCarton": {
-      "unitsPerCarton": 16,
-      "heightMm": 320,
-      "widthMm": 420,
-      "depthMm": 420,
-      "grossWeightKg": 12.5,
-      "cbm": 0.0564,
-      "unitsPer20ftContainer": 8800,
-      "unitsPer40ftContainer": 18500
-    },
-    "sampleLeadTimeDays": 6,
-    "samplePriceUsd": 25,
-    "incoTermsAvailable": [
-      "FOB Chittagong",
-      "DAC Dhaka Cargo",
-      "DDP Available"
-    ],
-    "technicalSpecs": {
-      "testStandard": "AQL 1.5",
-      "barcodePackaging": "Molded pulp protective insert"
     }
   },
   {

@@ -114,7 +114,7 @@ export default function HeroShowcase({
           </h2>
         </div>
         <span className="text-[10.5px] font-mono font-bold text-slate-500 bg-[#0A1A2F]/5 px-2.5 py-1 rounded-md border border-[#0A1A2F]/10">
-          74 Export Specifications
+          90 Export Specifications
         </span>
       </div>
 
@@ -200,7 +200,7 @@ export default function HeroShowcase({
         <div className="flex items-center space-x-2">
           <Sparkles className="h-3.5 w-3.5 text-[#C9A86A] shrink-0" />
           <span>
-            Click any sector card above to filter the <strong>74-item commercial roadmap</strong> instantly. Curated by{' '}
+            Click any sector card above to filter the <strong>90-item commercial roadmap</strong> instantly. Curated by{' '}
             <strong style={{ textTransform: 'none' }} className="font-black text-[#0A1A2F] inline-block">
               ArielMC
             </strong>
