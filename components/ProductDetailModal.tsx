@@ -115,21 +115,9 @@ export default function ProductDetailModal({
                 )}
               </div>
 
-              {/* Multi-Angle / Colorway Gallery Thumbnails */}
+              {/* Multi-Angle / Colorway Gallery Thumbnails (Fixed Uniform 4-Column Grid) */}
               {product.gallery && product.gallery.length > 1 && (
-                <div
-                  className={`grid gap-2 ${
-                    product.gallery.length === 2
-                      ? 'grid-cols-2'
-                      : product.gallery.length === 3
-                      ? 'grid-cols-3'
-                      : product.gallery.length === 4
-                      ? 'grid-cols-4'
-                      : product.gallery.length === 5
-                      ? 'grid-cols-5'
-                      : 'grid-cols-6'
-                  }`}
-                >
+                <div className="grid grid-cols-4 gap-2">
                   {product.gallery.map((item, idx) => {
                     const isActive = (activeImage || product.imageUrl) === item.src;
                     return (

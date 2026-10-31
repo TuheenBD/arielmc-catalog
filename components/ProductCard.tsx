@@ -115,20 +115,10 @@ export default function ProductCard({
         </div>
       </div>
 
-      {/* Multi-Angle / Colorway Gallery Thumbnails Row (Replicating Corporate Website) */}
+      {/* Multi-Angle / Colorway Gallery Thumbnails Row (Fixed Uniform Size across All Cards) */}
       {hasGallery && product.gallery && (
         <div
-          className={`grid gap-1.5 px-4 pt-2.5 pb-0.5 ${
-            product.gallery.length === 2
-              ? 'grid-cols-2'
-              : product.gallery.length === 3
-              ? 'grid-cols-3'
-              : product.gallery.length === 4
-              ? 'grid-cols-4'
-              : product.gallery.length === 5
-              ? 'grid-cols-5'
-              : 'grid-cols-6'
-          }`}
+          className="grid grid-cols-4 gap-1.5 px-4 pt-2.5 pb-0.5"
           onClick={(e) => e.stopPropagation()}
         >
           {product.gallery.map((item, idx) => {
