@@ -24,7 +24,7 @@ const HERO_PILLARS: HeroPillar[] = [
     num: '01',
     title: 'The Leather Compendium',
     shortTitle: 'Leather Compendium',
-    imageUrl: '/products/Bloom_Leather_Hero.jpg',
+    imageUrl: '/products/leather-compendium.jpg',
   },
   {
     id: 'Jute',
