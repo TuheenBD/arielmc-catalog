@@ -1,85 +1,120 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Product } from '@/types/product';
+import React, { useMemo } from 'react';
+import { Product, ProductCategory } from '@/types/product';
 import ProductCard from './ProductCard';
-import ProductTree from './ProductTree';
-import { CheckSquare, Square, PackageOpen, LayoutGrid, ListTree, Columns } from 'lucide-react';
+import DivisionHeroBanner from './DivisionHeroBanner';
+import { getDepartmentAnchorId } from './FilterSidebar';
+import { CheckSquare, Square, PackageOpen } from 'lucide-react';
 
 interface ProductGridProps {
   products: Product[];
   selectedProducts: Product[];
+  activeCategory?: ProductCategory | null;
+  onClearCategoryFilter?: () => void;
   onToggleSelect: (product: Product) => void;
   onSelectAllVisible: () => void;
   onClearSelection: () => void;
   onViewDetails?: (product: Product) => void;
 }
 
+const DIVISION_NUMBERS: Record<string, string> = {
+  Leather: '01',
+  Jute: '02',
+  Ceramics: '03',
+  Textiles: '04',
+  Pottery: '05',
+};
+
 export default function ProductGrid({
   products,
   selectedProducts,
+  activeCategory,
+  onClearCategoryFilter,
   onToggleSelect,
   onSelectAllVisible,
   onClearSelection,
   onViewDetails,
 }: ProductGridProps) {
-  // Default to 'both': displays product tree right after "Showing 74 Products" line AND visual product cards below it
-  const [viewMode, setViewMode] = useState<'both' | 'tree' | 'grid'>('both');
-
   const selectedIds = new Set(selectedProducts.map((p) => p.id));
   const areAllVisibleSelected =
     products.length > 0 && products.every((p) => selectedIds.has(p.id));
 
-  return (
-    <div className="flex-1 space-y-4">
-      {/* Grid Action Toolbar */}
-      <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-200">
-        <div className="flex flex-wrap items-center gap-3">
-          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-            Showing <span className="text-slate-900 font-bold">{products.length}</span> Products
-          </div>
+  // Structure products by Division and Department (Category Group)
+  const structuredSections = useMemo(() => {
+    const sections: {
+      key: string;
+      anchorId: string;
+      divisionTitle: string;
+      groupName: string;
+      items: Product[];
+    }[] = [];
 
-          {/* View Mode Switcher Pills */}
-          <div className="inline-flex rounded-lg border border-slate-200 bg-slate-100 p-0.5 text-xs font-medium">
-            <button
-              type="button"
-              onClick={() => setViewMode('tree')}
-              className={`flex items-center space-x-1.5 px-3 py-1 rounded-md transition-all ${
-                viewMode === 'tree'
-                  ? 'bg-white text-slate-900 shadow-xs font-bold'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-              title="Hierarchical Category & Product Tree"
-            >
-              <ListTree className="h-3.5 w-3.5 text-[#C9A86A]" />
-              <span>Product Tree</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setViewMode('grid')}
-              className={`flex items-center space-x-1.5 px-3 py-1 rounded-md transition-all ${
-                viewMode === 'grid'
-                  ? 'bg-white text-slate-900 shadow-xs font-bold'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-              title="Visual Product Cards Grid"
-            >
-              <LayoutGrid className="h-3.5 w-3.5 text-slate-500" />
-              <span>Grid Cards</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setViewMode('both')}
-              className={`flex items-center space-x-1.5 px-3 py-1 rounded-md transition-all ${
-                viewMode === 'both'
-                  ? 'bg-white text-slate-900 shadow-xs font-bold'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-              title="Display Tree and Grid Together"
-            >
-              <Columns className="h-3.5 w-3.5 text-slate-500" />
-              <span>Both</span>
-            </button>
+    const uniqueDivisions = Array.from(
+      new Set(products.map((p) => p.divisionTitle || p.category || 'General Compendium'))
+    );
+    const isMultiDivision = uniqueDivisions.length > 1;
+
+    const sectionMap = new Map<string, { divisionTitle: string; groupName: string; divisionNum: string; items: Product[] }>();
+
+    products.forEach((product) => {
+      const divisionTitle = product.divisionTitle || product.category || 'General Compendium';
+      const groupName = product.categoryGroup || 'General Collection';
+      const divisionNum = DIVISION_NUMBERS[product.category] || divisionTitle.slice(0, 2) || '01';
+      const key = `${divisionTitle}__${groupName}`;
+
+      if (!sectionMap.has(key)) {
+        sectionMap.set(key, { divisionTitle, groupName, divisionNum, items: [] });
+      }
+      sectionMap.get(key)!.items.push(product);
+    });
+
+    sectionMap.forEach((val, key) => {
+      const anchorId = getDepartmentAnchorId(val.divisionNum, val.groupName);
+      sections.push({ key, anchorId, divisionTitle: val.divisionTitle, groupName: val.groupName, items: val.items });
+    });
+
+    return { sections, isMultiDivision };
+  }, [products]);
+
+  // Refinement B: 1-Click Select / Deselect entire Department
+  const handleToggleDepartmentSelect = (departmentProducts: Product[]) => {
+    const allSelected = departmentProducts.every((p) => selectedIds.has(p.id));
+    if (allSelected) {
+      departmentProducts.forEach((p) => {
+        if (selectedIds.has(p.id)) {
+          onToggleSelect(p);
+        }
+      });
+    } else {
+      departmentProducts.forEach((p) => {
+        if (!selectedIds.has(p.id)) {
+          onToggleSelect(p);
+        }
+      });
+    }
+  };
+
+  return (
+    <div className="flex-1 min-w-0 w-full space-y-6">
+      {/* 
+        When visitors select a Hero Section (Leather, Jute, Ceramics, Textiles, Pottery),
+        The corresponding Division Page (from website) appears at the top of Section 3 [Right Window]!
+      */}
+      {activeCategory && onClearCategoryFilter && (
+        <DivisionHeroBanner
+          category={activeCategory}
+          productCount={products.length}
+          onClearCategoryFilter={onClearCategoryFilter}
+        />
+      )}
+
+      {/* Clean Grid Action Toolbar */}
+      <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200 w-full min-w-0">
+        <div className="flex items-center space-x-3">
+          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+            Showing <span className="text-slate-900 font-bold">{products.length}</span> Products across{' '}
+            <span className="text-slate-900 font-bold">{structuredSections.sections.length}</span> Departments
           </div>
         </div>
 
@@ -88,17 +123,17 @@ export default function ProductGrid({
             <button
               type="button"
               onClick={areAllVisibleSelected ? onClearSelection : onSelectAllVisible}
-              className="flex items-center space-x-1.5 font-semibold text-slate-700 hover:text-slate-900 transition-colors"
+              className="flex items-center space-x-1.5 font-semibold text-slate-700 hover:text-slate-900 transition-colors cursor-pointer"
             >
               {areAllVisibleSelected ? (
                 <>
-                  <CheckSquare className="h-4 w-4 text-slate-900" />
-                  <span>Deselect Visible</span>
+                  <CheckSquare className="h-4 w-4 text-[#0A1A2F]" />
+                  <span>Deselect All Visible</span>
                 </>
               ) : (
                 <>
                   <Square className="h-4 w-4 text-slate-400" />
-                  <span>Select All Visible</span>
+                  <span>Select All Visible ({products.length})</span>
                 </>
               )}
             </button>
@@ -106,7 +141,7 @@ export default function ProductGrid({
         )}
       </div>
 
-      {/* Main Content Layout */}
+      {/* Main Content: Department Sections */}
       {products.length === 0 ? (
         <div className="flex flex-col items-center justify-center p-12 bg-white rounded-xl border border-dashed border-slate-300 text-center space-y-3">
           <div className="h-12 w-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400">
@@ -120,41 +155,92 @@ export default function ProductGrid({
           </div>
         </div>
       ) : (
-        <>
-          {/* Product Tree: rendered right after SHOWING PRODUCTS line */}
-          {(viewMode === 'tree' || viewMode === 'both') && (
-            <ProductTree
-              products={products}
-              selectedProducts={selectedProducts}
-              onToggleSelect={onToggleSelect}
-              onViewDetails={onViewDetails}
-            />
-          )}
+        <div className="space-y-12">
+          {structuredSections.sections.map((section, idx) => {
+            const isFirstOfDivision =
+              structuredSections.isMultiDivision &&
+              (idx === 0 || structuredSections.sections[idx - 1].divisionTitle !== section.divisionTitle);
 
-          {/* Grid Layout Cards */}
-          {(viewMode === 'grid' || viewMode === 'both') && (
-            <div>
-              {viewMode === 'both' && (
-                <div className="pt-2 pb-4">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-2">
-                    Visual Product Card Showcase ({products.length} Specifications)
-                  </h4>
+            const allDeptSelected = section.items.every((p) => selectedIds.has(p.id));
+            const someDeptSelected = section.items.some((p) => selectedIds.has(p.id));
+
+            return (
+              <section key={section.key} className="space-y-5 scroll-mt-28" id={section.anchorId}>
+                {/* 
+                  HEADING: Major Compendium Heading (BIGGER, as requested)
+                  Displayed when transitioning between divisions in full-catalog view
+                */}
+                {isFirstOfDivision && (
+                  <div className="pt-8 pb-3 border-b-2 border-[#0A1A2F]/15 first:pt-2">
+                    <div className="inline-flex items-center space-x-2 text-[10px] font-bold uppercase tracking-widest text-[#C9A86A] mb-1.5">
+                      <span className="w-2 h-2 rounded-full bg-[#C9A86A]" />
+                      <span>Export Sourcing Division</span>
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0A1A2F] tracking-tight uppercase font-heading">
+                      {section.divisionTitle}
+                    </h2>
+                  </div>
+                )}
+
+                {/* 
+                  SUB-HEADING ROW: Department Sub-Heading (Small & Refined) + 1-Click Sourcing Action
+                */}
+                <div className="flex flex-wrap items-center justify-between gap-3 pt-1.5 pb-2 border-b border-slate-200/60">
+                  <div className="flex items-center space-x-2.5">
+                    <div className="w-5 h-0.5 bg-[#C9A86A] rounded-full shrink-0" />
+                    <div className="flex items-baseline space-x-2">
+                      <h3 className="text-sm sm:text-base font-semibold text-[#0A1A2F] tracking-tight font-heading">
+                        {section.groupName}
+                      </h3>
+                      <span className="text-[11px] font-mono text-slate-400 font-normal">
+                        ({section.items.length} {section.items.length === 1 ? 'item' : 'items'})
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* 1-Click Select / Deselect All for Department */}
+                  <button
+                    type="button"
+                    onClick={() => handleToggleDepartmentSelect(section.items)}
+                    className={`inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg text-xs font-semibold transition-all border cursor-pointer ${
+                      allDeptSelected
+                        ? 'bg-[#0A1A2F] text-[#C9A86A] border-[#0A1A2F] shadow-xs'
+                        : someDeptSelected
+                        ? 'bg-amber-50 text-amber-900 border-amber-300 shadow-2xs hover:bg-amber-100'
+                        : 'bg-white text-slate-700 hover:text-slate-900 hover:bg-slate-50 border-slate-200 shadow-2xs'
+                    }`}
+                    title={`Select or deselect all ${section.items.length} items in ${section.groupName}`}
+                  >
+                    {allDeptSelected ? (
+                      <>
+                        <CheckSquare className="h-3.5 w-3.5 text-[#C9A86A]" />
+                        <span>All {section.items.length} Selected</span>
+                      </>
+                    ) : (
+                      <>
+                        <Square className="h-3.5 w-3.5 text-slate-400" />
+                        <span>+ Select Department ({section.items.length})</span>
+                      </>
+                    )}
+                  </button>
                 </div>
-              )}
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                {products.map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    product={product}
-                    isSelected={selectedIds.has(product.id)}
-                    onToggleSelect={onToggleSelect}
-                    onViewDetails={onViewDetails}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-        </>
+
+                {/* Visual Product Grid for this Department */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {section.items.map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      isSelected={selectedIds.has(product.id)}
+                      onToggleSelect={onToggleSelect}
+                      onViewDetails={onViewDetails}
+                    />
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
       )}
     </div>
   );

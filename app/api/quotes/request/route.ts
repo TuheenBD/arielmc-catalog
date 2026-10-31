@@ -28,9 +28,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Generate atomic RFQ identifier matching ArielMC ERP tracking conventions
+    // Generate atomic RFQ/Dossier identifier matching ArielMC ERP tracking conventions
     const yearStr = new Date().getFullYear().toString();
-    const prefix = requestType === 'sample_dispatch' ? 'SMP' : 'REQ';
+    const prefix = requestType === 'sample_dispatch' ? 'SMP' : requestType === 'bespoke_dossier' ? 'DOS' : 'REQ';
     const randomCount = Math.floor(1000 + Math.random() * 9000);
     const quoteNumber = `${prefix}-${yearStr}-${randomCount}`;
 
@@ -61,8 +61,11 @@ export async function POST(req: NextRequest) {
     // 1. Build High-Impact Corporate Notification Email Body
     // =========================================================================
     const isSample = requestType === 'sample_dispatch';
+    const isDossier = requestType === 'bespoke_dossier';
     const subjectTitle = isSample
       ? `🚨 [Sample Request] ${quoteNumber} — ${companyName} (${targetCountry})`
+      : isDossier
+      ? `📑 [Bespoke Dossier Dispatch] ${quoteNumber} — ${companyName} (${targetCountry})`
       : `💼 [Formal RFQ] ${quoteNumber} — ${companyName} (${targetCountry})`;
 
     const skuRowsHtml = items
@@ -279,10 +282,12 @@ export async function POST(req: NextRequest) {
         success: true,
         message: isSample
           ? 'Courier sample request confirmed for dispatch.'
+          : isDossier
+          ? 'Bespoke Sourcing Dossier registered and dispatched to client corporate email.'
           : 'RFQ successfully registered for ArielMC ERP synchronization.',
         quoteNumber,
         quote: quoteRecord,
-        notified: ['info@arielmc.com', 'tuheen@arielmc.com'],
+        notified: ['info@arielmc.com', 'tuheen@arielmc.com', clientEmail],
       },
       { status: 201 }
     );

@@ -25,13 +25,22 @@ function CatalogContent() {
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [isSamplePolicyOpen, setIsSamplePolicyOpen] = useState(false);
 
-  const [filters, setFilters] = useState<FilterState>({
-    searchQuery: '',
-    selectedCategories: [],
+  const initialCategories = useMemo(() => {
+    const categoryParam = searchParams.get('category');
+    if (!categoryParam) return [];
+    const matchedCat = ['Leather', 'Jute', 'Ceramics', 'Textiles', 'Pottery'].find(
+      (c) => c.toLowerCase() === categoryParam.toLowerCase()
+    ) as ProductCategory | undefined;
+    return matchedCat ? [matchedCat] : [];
+  }, [searchParams]);
+
+  const [filters, setFilters] = useState<FilterState>(() => ({
+    searchQuery: searchParams.get('search') || '',
+    selectedCategories: initialCategories,
     priceRange: [0, 500],
     selectedMaterials: [],
     sortBy: 'featured',
-  });
+  }));
 
   // Deep-linking: Parse incoming query parameters from website
   useEffect(() => {
@@ -201,9 +210,9 @@ function CatalogContent() {
       />
 
       {/* ArielMC Master Compendium Corporate Hero Header */}
-      <section className="bg-white border-b border-[#0A1A2F]/10">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-          <div className="flex flex-col lg:flex-row lg:items-stretch lg:justify-between gap-6 lg:gap-8">
+      <section className="bg-white border-b border-[#0A1A2F]/10 w-full overflow-hidden">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
+          <div className="flex flex-col lg:flex-row lg:items-stretch lg:justify-between gap-6 lg:gap-8 w-full min-w-0">
             {/* Left Column: Commercial Narrative & Certified Compliance */}
             <div className="w-full lg:w-[36%] xl:w-[35%] flex flex-col justify-between space-y-4 shrink-0">
               <div className="space-y-3">
@@ -288,10 +297,10 @@ function CatalogContent() {
       </section>
 
       {/* Main Catalog Sourcing Matrix */}
-      <main id="sourcing-matrix" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1 scroll-mt-24">
-        <div className="flex flex-col lg:flex-row gap-8">
+      <main id="sourcing-matrix" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1 min-w-0 scroll-mt-24">
+        <div className="flex flex-col lg:flex-row gap-8 w-full min-w-0">
           {/* Desktop Filter Sidebar */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block w-72 shrink-0">
             <FilterSidebar
               filters={filters}
               onChange={setFilters}
@@ -301,10 +310,12 @@ function CatalogContent() {
             />
           </div>
 
-          {/* Product Grid Area */}
+          {/* Product Grid Area (Section 3: Right Window) */}
           <ProductGrid
             products={filteredProducts}
             selectedProducts={selectedProducts}
+            activeCategory={filters.selectedCategories.length === 1 ? filters.selectedCategories[0] : null}
+            onClearCategoryFilter={() => setFilters((prev) => ({ ...prev, selectedCategories: [] }))}
             onToggleSelect={handleToggleSelect}
             onSelectAllVisible={handleSelectAllVisible}
             onClearSelection={handleClearVisibleSelection}

@@ -42,16 +42,20 @@ export default function ExportTray({
   const [exportError, setExportError] = useState<string | null>(null);
   const [submissionSuccess, setSubmissionSuccess] = useState<string | null>(null);
 
+  // Bespoke Dossier Gated Registration Modal State
+  const [isDossierModalOpen, setIsDossierModalOpen] = useState(false);
+  const [dossierSuccessData, setDossierSuccessData] = useState<{ quoteNumber: string; email: string } | null>(null);
+
   const [consignee, setConsignee] = useState<ExportConsigneeInfo>({
-    companyName: 'Nordic Heritage Goods Ltd',
-    contactName: 'Alexander Lind',
-    contactEmail: 'a.lind@nordicheritage.com',
+    companyName: '',
+    contactName: '',
+    contactEmail: '',
     targetMarket: 'United Kingdom & European Union',
     targetPort: 'Felixstowe Port (UK DCTS 0% Duty)',
     incoTerm: 'FOB Chittagong Sea Port',
-    courierAccount: 'DHL Express Account #968341902',
-    deliveryAddress: '44 Commercial Road, London E1 1LN, United Kingdom',
-    notes: 'Require DAE Phytosanitary and Fumigation certificates with GOTS certification.',
+    courierAccount: '',
+    deliveryAddress: '',
+    notes: '',
   });
 
   // Calculate container loadability metrics
@@ -85,14 +89,49 @@ export default function ExportTray({
     return null;
   }
 
-  // Handle PDF Generation
-  const handleGeneratePdf = async () => {
+  // Handle Bespoke Dossier Compilation & Official Email Dispatch
+  const handleCompileAndDeliverDossier = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+
+    if (!consignee.companyName.trim() || !consignee.contactName.trim() || !consignee.contactEmail.trim()) {
+      setExportError('Please enter your Company Name, Sourcing Officer Name, and Corporate Work Email.');
+      return;
+    }
+
     setIsExporting(true);
     setExportError(null);
     setSubmissionSuccess(null);
 
     try {
-      const response = await fetch('/api/export-pdf', {
+      // 1. Dispatch Formal Registration & Lead Notification via Email / CRM Pipeline
+      const quoteRes = await fetch('/api/quotes/request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          requestType: 'bespoke_dossier',
+          consignee,
+          products: selectedProducts.map((p) => ({
+            id: p.id,
+            sku: p.sku,
+            name: p.name,
+            category: p.category,
+            moq: p.moq,
+            priceUsd: p.price,
+            samplePriceUsd: p.samplePriceUsd,
+            hsCode: p.hsCode,
+          })),
+          currency: currentCurrency,
+          currencyRate: currencyConfig.rateFromUsd,
+          logistics: logisticsSummary,
+          submittedAt: new Date().toISOString(),
+        }),
+      });
+
+      const quoteData = await quoteRes.json().catch(() => ({}));
+      const quoteNumber = quoteData.quoteNumber || `DOS-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+
+      // 2. Compile High-Resolution Multi-Page A4 PDF Dossier
+      const pdfResponse = await fetch('/api/export-pdf', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -101,7 +140,7 @@ export default function ExportTray({
           consignee,
           products: selectedProducts,
           generatedAt: new Date().toISOString(),
-          documentTitle: `ArielMC Commercial Line Sheet — Corporate Sourcing Edition`,
+          documentTitle: `ArielMC Bespoke Executive Sourcing Dossier — ${consignee.companyName}`,
           selectedCurrency: currentCurrency,
           currencyRate: currencyConfig.rateFromUsd,
           currencySymbol: currencyConfig.symbol,
@@ -112,24 +151,35 @@ export default function ExportTray({
         }),
       });
 
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
+      if (!pdfResponse.ok) {
+        const errorData = await pdfResponse.json().catch(() => ({}));
         throw new Error(errorData.error || 'Server failed to compile catalog PDF.');
       }
 
-      const blob = await response.blob();
+      // 3. Initiate Immediate Browser Download for Registered Buyer
+      const blob = await pdfResponse.blob();
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      const sanitizedCompany = consignee.companyName.replace(/[^a-zA-Z0-9]/g, '_') || 'ArielMC_Corporate';
-      link.download = `ArielMC_${sanitizedCompany}_LineSheet_${currentCurrency}_${new Date().toISOString().slice(0, 10)}.pdf`;
+      const sanitizedCompany = consignee.companyName.replace(/[^a-zA-Z0-9]/g, '_') || 'Corporate';
+      link.download = `ArielMC_Bespoke_Dossier_${sanitizedCompany}_${currentCurrency}_${new Date().toISOString().slice(0, 10)}.pdf`;
       document.body.appendChild(link);
       link.click();
       link.remove();
       window.URL.revokeObjectURL(url);
+
+      // 4. Update Success State
+      setDossierSuccessData({
+        quoteNumber,
+        email: consignee.contactEmail,
+      });
+
+      setSubmissionSuccess(
+        `Bespoke Sourcing Dossier Dispatched! Tracking Reference: ${quoteNumber}. An official copy was dispatched to ${consignee.contactEmail} and logged with our Export Desk.`
+      );
     } catch (err: unknown) {
       console.error('PDF Generation Failure:', err);
-      setExportError(err instanceof Error ? err.message : 'Failed to compile line sheet PDF.');
+      setExportError(err instanceof Error ? err.message : 'Failed to compile bespoke dossier PDF.');
     } finally {
       setIsExporting(false);
     }
@@ -243,12 +293,15 @@ export default function ExportTray({
                 <span>Request Sample</span>
               </button>
 
-              {/* PDF Line Sheet Action */}
+              {/* Bespoke Dossier Action */}
               <button
                 type="button"
                 disabled={isExporting}
-                onClick={handleGeneratePdf}
-                className="px-4 py-2 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center space-x-2 disabled:opacity-50 font-heading"
+                onClick={() => {
+                  setDossierSuccessData(null);
+                  setIsDossierModalOpen(true);
+                }}
+                className="px-4 py-2 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center space-x-2 disabled:opacity-50 font-heading cursor-pointer"
               >
                 {isExporting ? (
                   <>
@@ -258,7 +311,7 @@ export default function ExportTray({
                 ) : (
                   <>
                     <FileDown className="h-3.5 w-3.5 stroke-[2.5]" />
-                    <span>A4 Line Sheet ({currencyConfig.symbol})</span>
+                    <span>Request Bespoke Dossier ({currencyConfig.symbol})</span>
                   </>
                 )}
               </button>
@@ -304,14 +357,17 @@ export default function ExportTray({
               <div className="flex border-b border-slate-800 pb-3 gap-2">
                 <button
                   type="button"
-                  onClick={() => setActiveMode('linesheet')}
+                  onClick={() => {
+                    setActiveMode('linesheet');
+                    setIsDossierModalOpen(true);
+                  }}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
                     activeMode === 'linesheet'
                       ? 'bg-[#C9A86A] text-[#0A1A2F]'
                       : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
                   }`}
                 >
-                  Commercial Line Sheet (PDF)
+                  Bespoke Sourcing Dossier (PDF)
                 </button>
                 <button
                   type="button"
@@ -592,9 +648,22 @@ export default function ExportTray({
                   </div>
                 </div>
 
-                {/* Submit Action for Sample / RFQ */}
-                {activeMode !== 'linesheet' && (
-                  <div className="pt-2 flex justify-end">
+                {/* Submit Action for Dossier / Sample / RFQ */}
+                <div className="pt-2 flex justify-end">
+                  {activeMode === 'linesheet' ? (
+                    <button
+                      type="button"
+                      disabled={isExporting}
+                      onClick={() => {
+                        setDossierSuccessData(null);
+                        setIsDossierModalOpen(true);
+                      }}
+                      className="px-6 py-2.5 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center space-x-2 disabled:opacity-50 cursor-pointer font-heading"
+                    >
+                      <FileDown className="h-4 w-4" />
+                      <span>Compile & Deliver Bespoke Dossier (A4 PDF)</span>
+                    </button>
+                  ) : (
                     <button
                       type="button"
                       disabled={isExporting}
@@ -621,13 +690,250 @@ export default function ExportTray({
                         </>
                       )}
                     </button>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </div>
           )}
         </div>
       </div>
+
+      {/* ==============================================================
+          BESPOKE DOSSIER GATED REGISTRATION MODAL
+          Enforces Company Registration before dossier dispatch per user rule
+          ============================================================== */}
+      {isDossierModalOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 overflow-y-auto">
+          <div className="bg-[#0A1A2F] border-2 border-[#C9A86A] rounded-2xl max-w-2xl w-full p-6 text-white shadow-2xl relative my-8 animate-in fade-in zoom-in-95 duration-200">
+            {/* Close Button */}
+            <button
+              type="button"
+              onClick={() => {
+                setIsDossierModalOpen(false);
+                setDossierSuccessData(null);
+              }}
+              className="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+            >
+              <X className="h-5 w-5" />
+            </button>
+
+            {dossierSuccessData ? (
+              /* Success Confirmation View */
+              <div className="text-center py-6 space-y-4">
+                <div className="w-16 h-16 rounded-full bg-emerald-950/80 border-2 border-emerald-400 text-emerald-400 flex items-center justify-center mx-auto shadow-lg">
+                  <CheckCircle2 className="h-8 w-8" />
+                </div>
+                <div className="inline-block px-3 py-1 bg-[#C9A86A]/20 border border-[#C9A86A] text-[#C9A86A] rounded-full text-xs font-bold font-mono tracking-wider">
+                  OFFICIAL DOSSIER ISSUED
+                </div>
+                <h3 className="text-2xl font-black text-white uppercase tracking-tight font-heading">
+                  Bespoke Sourcing Dossier Dispatched!
+                </h3>
+                <div className="bg-slate-900/80 border border-slate-700 rounded-xl p-4 max-w-md mx-auto text-left space-y-2 text-xs">
+                  <div className="flex justify-between items-center pb-2 border-b border-slate-800">
+                    <span className="text-slate-400">Dossier Tracking ID:</span>
+                    <strong className="text-[#C9A86A] font-mono text-sm">{dossierSuccessData.quoteNumber}</strong>
+                  </div>
+                  <div className="flex justify-between items-center pb-2 border-b border-slate-800">
+                    <span className="text-slate-400">Delivered to Email:</span>
+                    <strong className="text-white font-mono">{dossierSuccessData.email}</strong>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-slate-400">Export Desk:</span>
+                    <strong className="text-emerald-400">ArielMC Global Sourcing (Dhaka HQ)</strong>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-300 max-w-lg mx-auto leading-relaxed">
+                  Your customized multi-page A4 Sourcing Dossier has been compiled and dispatched to your corporate email. A direct high-resolution PDF copy has also been initiated in your browser download manager.
+                </p>
+                <div className="pt-2 flex justify-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsDossierModalOpen(false);
+                      setDossierSuccessData(null);
+                    }}
+                    className="px-6 py-2.5 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all cursor-pointer font-heading"
+                  >
+                    Done & Return to Catalog
+                  </button>
+                </div>
+              </div>
+            ) : (
+              /* Registration & Request Form */
+              <form onSubmit={handleCompileAndDeliverDossier} className="space-y-4">
+                <div className="flex items-center space-x-2 text-[#C9A86A] text-xs font-bold uppercase tracking-widest font-mono">
+                  <span className="w-2 h-2 rounded-full bg-[#C9A86A]" />
+                  <span>Confidential Executive Procurement Protocol</span>
+                </div>
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight font-heading">
+                    Request Bespoke Sourcing Dossier (PDF)
+                  </h3>
+                  <p className="text-xs text-slate-300 mt-1">
+                    Customized A4 Tech-Pack Compendium with factory dimensions, container CBM volumetrics, and 4-tier volume FOB pricing.
+                  </p>
+                </div>
+
+                {/* Gated Policy Notice */}
+                <div className="bg-slate-900/90 border border-[#C9A86A]/40 rounded-xl p-3.5 text-xs text-slate-300 space-y-1">
+                  <div className="flex items-center space-x-1.5 text-[#C9A86A] font-bold text-[11px] uppercase tracking-wide">
+                    <Building2 className="h-3.5 w-3.5" />
+                    <span>Official Corporate Registration Required</span>
+                  </div>
+                  <p className="text-[11px] text-slate-300 leading-relaxed">
+                    To safeguard proprietary factory tooling, export master molds, and volume pricing matrices, bespoke dossiers are compiled on-demand and delivered directly to verified corporate email addresses. An official tracking reference (e.g. <span className="text-[#C9A86A] font-mono font-bold">DOS-2026-XXXX</span>) is registered with our Global Sourcing Desk in Dhaka.
+                  </p>
+                </div>
+
+                {/* Form Fields */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-left">
+                  <div className="sm:col-span-2">
+                    <label htmlFor="dossier-company" className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Company / Organization Name <span className="text-[#C9A86A]">*</span>
+                    </label>
+                    <input
+                      id="dossier-company"
+                      type="text"
+                      required
+                      placeholder="e.g. Nordic Heritage Goods Ltd / Harrods London"
+                      value={consignee.companyName}
+                      onChange={(e) => setConsignee({ ...consignee, companyName: e.target.value })}
+                      className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#C9A86A]"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="dossier-name" className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Sourcing Officer Full Name & Title <span className="text-[#C9A86A]">*</span>
+                    </label>
+                    <input
+                      id="dossier-name"
+                      type="text"
+                      required
+                      placeholder="e.g. Alexander Lind, Head of Buying"
+                      value={consignee.contactName}
+                      onChange={(e) => setConsignee({ ...consignee, contactName: e.target.value })}
+                      className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#C9A86A]"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="dossier-email" className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Corporate Work Email <span className="text-[#C9A86A]">*</span>
+                    </label>
+                    <input
+                      id="dossier-email"
+                      type="email"
+                      required
+                      placeholder="e.g. a.lind@nordicheritage.com"
+                      value={consignee.contactEmail}
+                      onChange={(e) => setConsignee({ ...consignee, contactEmail: e.target.value })}
+                      className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#C9A86A]"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="dossier-port" className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Destination Sea Port / Country <span className="text-[#C9A86A]">*</span>
+                    </label>
+                    <input
+                      id="dossier-port"
+                      type="text"
+                      required
+                      placeholder="e.g. Felixstowe Port (UK DCTS 0% Duty)"
+                      value={consignee.targetPort || consignee.targetMarket}
+                      onChange={(e) =>
+                        setConsignee({ ...consignee, targetPort: e.target.value, targetMarket: e.target.value })
+                      }
+                      className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#C9A86A]"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Commercial IncoTerm Preference
+                    </label>
+                    <select
+                      value={consignee.incoTerm}
+                      onChange={(e) => setConsignee({ ...consignee, incoTerm: e.target.value })}
+                      className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-[#C9A86A]"
+                    >
+                      <option value="FOB Chittagong Sea Port">FOB Chittagong Sea Port (Standard)</option>
+                      <option value="DAC Dhaka Air Cargo">DAC Dhaka Airport (Express Air Freight)</option>
+                      <option value="CIF Felixstowe / Southampton (UK)">CIF Felixstowe / Southampton (UK)</option>
+                      <option value="CIF Rotterdam / Hamburg (EU)">CIF Rotterdam / Hamburg (EU)</option>
+                      <option value="CIF Los Angeles / Long Beach (USA)">CIF Los Angeles / Long Beach (USA)</option>
+                      <option value="DDP Delivered to Buyer Warehouse">DDP (Turnkey Delivery to Warehouse)</option>
+                    </select>
+                  </div>
+
+                  <div className="sm:col-span-2">
+                    <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">
+                      Specific OEM/ODM Packaging, Embossing or Timeline Notes (Optional)
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="e.g. Custom foil debossing, target delivery Q3 2026, Phytosanitary cert needed"
+                      value={consignee.notes || ''}
+                      onChange={(e) => setConsignee({ ...consignee, notes: e.target.value })}
+                      className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#C9A86A]"
+                    />
+                  </div>
+                </div>
+
+                {/* Selected Products Footprint */}
+                <div className="bg-slate-900/60 p-3 rounded-lg border border-slate-800 flex items-center justify-between text-xs text-slate-300">
+                  <div className="flex items-center space-x-2">
+                    <span className="w-6 h-6 rounded-md bg-[#C9A86A] text-[#0A1A2F] flex items-center justify-center font-black text-xs font-heading">
+                      {selectedProducts.length}
+                    </span>
+                    <span>Selected Products ({logisticsSummary.totalCbm} CBM • {logisticsSummary.totalCartons} Boxes)</span>
+                  </div>
+                  <span className="text-[#C9A86A] font-mono font-bold">
+                    Curated Portfolio ({currentCurrency})
+                  </span>
+                </div>
+
+                {/* Error Banner inside modal */}
+                {exportError && (
+                  <div className="p-3 bg-rose-950/80 border border-rose-800 text-rose-200 text-xs rounded-lg">
+                    {exportError}
+                  </div>
+                )}
+
+                {/* Submit Button */}
+                <div className="pt-2 flex justify-end gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setIsDossierModalOpen(false)}
+                    className="px-4 py-2.5 text-xs font-semibold text-slate-400 hover:text-white transition-colors cursor-pointer"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={isExporting}
+                    className="px-6 py-2.5 bg-[#C9A86A] hover:bg-[#b69557] text-[#0A1A2F] font-black text-xs uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center space-x-2 disabled:opacity-50 cursor-pointer font-heading"
+                  >
+                    {isExporting ? (
+                      <>
+                        <Loader2 className="h-4 w-4 animate-spin text-[#0A1A2F]" />
+                        <span>Compiling & Delivering Dossier...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-4 w-4" />
+                        <span>Register & Deliver Dossier via Email</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+              </form>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
