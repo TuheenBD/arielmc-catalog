@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Product } from '@/types/product';
-import { Check, Box, Ruler, MapPin, ShieldCheck, Eye, Package, Clock } from 'lucide-react';
+import { Check, Box, Ruler, MapPin, ShieldCheck, Eye, Package, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useCurrency } from './CurrencyContext';
 
 interface ProductCardProps {
@@ -26,6 +26,24 @@ export default function ProductCard({
   const [activeLabel, setActiveLabel] = useState<string>(
     product.gallery?.[0]?.label || product.gallery?.[0]?.tag || ''
   );
+  const [galleryStart, setGalleryStart] = useState<number>(0);
+
+  const totalGallery = product.gallery?.length || 0;
+  const hasGallery = totalGallery > 1;
+  const maxVisible = 4;
+  const visibleGallery = product.gallery
+    ? product.gallery.slice(galleryStart, galleryStart + maxVisible)
+    : [];
+
+  const handlePrevGallery = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setGalleryStart((prev) => Math.max(0, prev - 1));
+  };
+
+  const handleNextGallery = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setGalleryStart((prev) => Math.min(totalGallery - maxVisible, prev + 1));
+  };
 
   // Clean division label: e.g. "03 The Ceramic Index" -> "CERAMIC INDEX"
   const divisionLabel = product.divisionTitle
@@ -40,7 +58,6 @@ export default function ProductCard({
     }
   };
 
-  const hasGallery = product.gallery && product.gallery.length > 1;
 
   return (
     <div
@@ -96,15 +113,7 @@ export default function ProductCard({
           </div>
         )}
 
-        {/* SKU Badge + HS Tariff Code */}
-        <div className="absolute bottom-2 right-2 z-10 flex items-center space-x-1">
-          <span className="font-mono text-[9px] font-bold px-1.5 py-0.5 rounded bg-[#0A1A2F]/90 text-[#C9A86A] border border-[#C9A86A]/40 shadow-xs">
-            {product.sku}
-          </span>
-          <span className="font-mono text-[9px] font-bold px-1.5 py-0.5 rounded bg-emerald-900/90 text-emerald-200 border border-emerald-500/40 shadow-xs">
-            HS {product.hsCode}
-          </span>
-        </div>
+
 
         {/* Quick View Hover Prompt */}
         <div className="absolute inset-0 bg-[#0A1A2F]/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
@@ -115,40 +124,79 @@ export default function ProductCard({
         </div>
       </div>
 
-      {/* Multi-Angle / Colorway Gallery Thumbnails Row (Fixed Uniform Size across All Cards) */}
+      {/* Multi-Angle / Colorway Gallery Thumbnails Row (Fixed 4 Slots, Uniform Size across All Cards) */}
       {hasGallery && product.gallery && (
         <div
-          className="grid grid-cols-4 gap-1.5 px-4 pt-2.5 pb-0.5"
+          className="relative px-4 pt-2.5 pb-0.5"
           onClick={(e) => e.stopPropagation()}
         >
-          {product.gallery.map((item, idx) => {
-            const isActive = (activeImage || product.imageUrl) === item.src;
-            return (
-              <button
-                key={idx}
-                type="button"
-                title={item.title || item.label}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveImage(item.src);
-                  setActiveLabel(item.label || item.tag || '');
-                }}
-                className={`aspect-square rounded-md overflow-hidden p-0.5 bg-white transition-all cursor-pointer ${
-                  isActive
-                    ? 'border-2 border-[#C9A86A] shadow-xs scale-[1.02] opacity-100'
-                    : 'border border-slate-200 opacity-60 hover:opacity-100 hover:border-slate-400'
-                }`}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={item.src}
-                  alt={item.label || product.name}
-                  className="w-full h-full object-cover rounded"
-                  loading="lazy"
-                />
-              </button>
-            );
-          })}
+          {/* Always a 4-column grid: whether 2, 3, or 4 images, each thumbnail has identical dimensions */}
+          <div className="grid grid-cols-4 gap-1.5">
+            {visibleGallery.map((item, idx) => {
+              const isActive = (activeImage || product.imageUrl) === item.src;
+              return (
+                <button
+                  key={galleryStart + idx}
+                  type="button"
+                  title={item.title || item.label}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setActiveImage(item.src);
+                    setActiveLabel(item.label || item.tag || '');
+                  }}
+                  className={`aspect-square rounded-md overflow-hidden p-0.5 bg-white transition-all cursor-pointer ${
+                    isActive
+                      ? 'border-2 border-[#C9A86A] shadow-xs scale-[1.02] opacity-100'
+                      : 'border border-slate-200 opacity-60 hover:opacity-100 hover:border-slate-400'
+                  }`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={item.src}
+                    alt={item.label || product.name}
+                    className="w-full h-full object-cover rounded"
+                    loading="lazy"
+                  />
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Navigation Arrows for Products with >4 Thumbnails */}
+          {totalGallery > maxVisible && (
+            <>
+              {galleryStart > 0 && (
+                <button
+                  type="button"
+                  onClick={handlePrevGallery}
+                  className="absolute left-1.5 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-[#0A1A2F]/90 hover:bg-[#C9A86A] hover:text-[#0A1A2F] text-white flex items-center justify-center shadow-md z-20 transition-all border border-white/20"
+                  title="Previous thumbnail"
+                  aria-label="Previous thumbnail"
+                >
+                  <ChevronLeft className="h-3.5 w-3.5" />
+                </button>
+              )}
+              {galleryStart + maxVisible < totalGallery && (
+                <button
+                  type="button"
+                  onClick={handleNextGallery}
+                  className="absolute right-1.5 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-[#0A1A2F]/90 hover:bg-[#C9A86A] hover:text-[#0A1A2F] text-white flex items-center justify-center shadow-md z-20 transition-all border border-white/20"
+                  title="More thumbnails"
+                  aria-label="More thumbnails"
+                >
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </button>
+              )}
+            </>
+          )}
+
+          {/* Indicator when >4 Thumbnails */}
+          {totalGallery > maxVisible && (
+            <div className="flex items-center justify-between text-[9px] font-mono text-slate-400 mt-1 px-0.5">
+              <span>{galleryStart + 1}–{Math.min(galleryStart + maxVisible, totalGallery)} of {totalGallery} photos</span>
+              <span className="text-[#C9A86A] font-sans font-semibold">Click arrow for more &rarr;</span>
+            </div>
+          )}
         </div>
       )}
 
@@ -172,6 +220,18 @@ export default function ProductCard({
               </span>
               <span className="text-[9px] text-slate-400 block -mt-0.5 font-medium">FOB BGD</span>
             </div>
+          </div>
+
+          {/* Model No (SKU) & HS Customs Tariff Code */}
+          <div className="flex items-center gap-1.5 mt-2 mb-1 flex-wrap">
+            <span className="font-mono text-[9.5px] font-bold px-2 py-0.5 rounded bg-slate-100 text-[#0A1A2F] border border-slate-200">
+              {product.sku}
+            </span>
+            {product.hsCode && (
+              <span className="font-mono text-[9px] font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
+                HS {product.hsCode}
+              </span>
+            )}
           </div>
 
           <p className="text-xs text-slate-600 line-clamp-2 mt-1 leading-relaxed">
