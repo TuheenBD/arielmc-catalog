@@ -5035,6 +5035,111 @@ export const MOCK_PRODUCTS: Product[] = [
     ]
   },
   {
+    "id": "prod-tx-ctb-01-amc",
+    "prodtId": 329,
+    "roadMapCode": "TX-CTB-01-AMC",
+    "sku": "TX-CTB-01-AMC",
+    "name": "The Ariel Horizon Canvas Tote",
+    "category": "Textiles",
+    "divisionTitle": "04 Thread & Weave",
+    "categoryGroup": "Canvas Tote Bags",
+    "subCategory": "Heavyweight Cotton Duck Totes",
+    "description": "16 oz heavy unbleached cotton canvas mini tote with 18 oz reinforced contrast base & handles, 3D satin embroidery, drop-in bay with iPad compartment, external sleeve, and dual interior slip pockets. Features 4 curated colorways plus custom OEM.",
+    "price": 3.95,
+    "currency": "USD",
+    "moq": 500,
+    "dimensions": {
+      "heightMm": 229,
+      "widthMm": 318,
+      "depthMm": 121
+    },
+    "materials": [
+      "100% Premium Heavyweight Cotton Canvas (16 oz / 450 GSM)",
+      "Reinforced Dyed Duck Canvas Trim & Handles (18 oz)",
+      "Water-Resistant Poly-Cotton Twill Matrix Lining",
+      "High-Density 3D Multi-Tonal Satin Embroidery"
+    ],
+    "imageUrl": "/images/products/textiles/horizon-tote/1.jpeg",
+    "gallery": [
+      {
+        "src": "/images/products/textiles/horizon-tote/1.jpeg",
+        "label": "Forest Green",
+        "tag": "Primary Colorway",
+        "title": "The Ariel Horizon Canvas Tote - Forest Green Edition",
+        "desc": "Natural unbleached 16 oz heavy canvas body with Forest Pine Green contrast base & handles and 3D floral satin embroidery."
+      },
+      {
+        "src": "/images/products/textiles/horizon-tote/5.jpeg",
+        "label": "4 Colorways",
+        "tag": "Color Palette",
+        "title": "Complete 4-Colorway Commercial Collection",
+        "desc": "Four curated colorways: Forest Green (Botanical Leaf), Royal Blue (Sun & Waves), Pastel Blush Pink (Tulip), and Midnight Jet Black (Artisan Line-art)."
+      },
+      {
+        "src": "/images/products/textiles/horizon-tote/2.jpeg",
+        "label": "Macro Details",
+        "tag": "Artisan Closeups",
+        "title": "Macro Construction & Material Integrity",
+        "desc": "Four-panel macro detail showing 3D satin embroidery, 16 oz tight-weave canvas, reinforced handle tacking, and flat-molded corner stitching."
+      },
+      {
+        "src": "/images/products/textiles/horizon-tote/3.jpeg",
+        "label": "Specs & Cavity",
+        "tag": "Architecture Callouts",
+        "title": "Architectural Blueprint & Interior Cavity Callout",
+        "desc": "Detailed breakdown highlighting 3D embroidery, heavy canvas weave, mini tote silhouette, self-standing base, and water-resistant lining with dual slip pockets."
+      },
+      {
+        "src": "/images/products/textiles/horizon-tote/4.jpeg",
+        "label": "Loaded Packshot",
+        "tag": "Lifestyle Utility",
+        "title": "Packed Commuter & Academic Utility",
+        "desc": "Fully packed demonstration showing storage for an 11-inch tablet/iPad, notebook, reusable water bottle, travel umbrella, zipper pouch, and external front sleeve."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 340,
+    "originHub": "Gazipur & Narayanganj Mills / ArielMC Studio (Own Dev: AMC)",
+    "complianceCertifications": [
+      "OEKO-TEX Standard 100",
+      "GOTS Organic Cotton Base",
+      "BSCI Audit Grade A",
+      "Sedex SMETA"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "4202.92.15",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 7%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 50,
+      "heightMm": 450,
+      "widthMm": 600,
+      "depthMm": 400,
+      "grossWeightKg": 18,
+      "cbm": 0.108,
+      "unitsPer20ftContainer": 13500,
+      "unitsPer40ftContainer": 28000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 25,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP US Long Beach"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5 / 2.5 Major/Minor",
+      "colorFastness": "Grade 4-5 to washing and rubbing",
+      "seamStrength": "Cross-box handle pull test > 250N"
+    }
+  },
+  {
     "id": "prod-ah-33",
     "prodtId": 33,
     "roadMapCode": "AH-RKB-33",
