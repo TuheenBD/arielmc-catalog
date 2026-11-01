@@ -1382,9 +1382,26 @@ function generateArielBespokeDossierHtml(payload: PDFExportPayload): string {
             </div>
 
             <div class="protocol-box">
-              <h5>Buyer IP, Tooling & Non-Disclosure Guarantee</h5>
+              <h5>Transit Breakage Guarantee &amp; Quality Policy</h5>
               <p>
-                All OEM molds, embossing dies, and proprietary buyer tech-packs are strictly protected under mutual Non-Disclosure and Non-Circumvention agreements. Proprietary buyer designs are never commercialized, replicated, or displayed to third parties.
+                We guarantee transit breakage rates <strong>under 1.5%</strong> under standard container transport. Any breakage in excess of 1.5% is credited or replaced on subsequent shipments. All cargo is packed in ISTA-1A drop-test certified 5-ply honeycomb master cartons with EPE foam separators on ISPM-15 heat-treated pallets.
+              </p>
+            </div>
+
+            <div class="protocol-box">
+              <h5>Customization &amp; Tooling Surcharge Schedule</h5>
+              <p style="font-size: 7.5px; font-family: ui-monospace, monospace; line-height: 1.35;">
+                &bull; <strong>Custom Plaster Mold Development:</strong> .00 / shape (3D CAD included, MOQ: 1,000 pcs)<br />
+                &bull; <strong>Underglaze Ceramic Decal Print:</strong> .00 / color screen setup + zsh.18 / unit<br />
+                &bull; <strong>Laser-Engraved Bottom Backstamp:</strong> .00 stamp tooling + zsh.05 / unit<br />
+                &bull; <strong>Custom 4-Color Retail Window Box:</strong> .00 print plate + zsh.45 / unit
+              </p>
+            </div>
+
+            <div class="protocol-box">
+              <h5>Buyer IP &amp; Non-Disclosure Guarantee</h5>
+              <p>
+                All OEM molds, embossing dies, and proprietary buyer tech-packs are strictly protected under mutual Non-Disclosure agreements. Proprietary designs are never commercialized or displayed to third parties.
               </p>
             </div>
           </div>
@@ -1407,8 +1424,18 @@ function generateArielBespokeDossierHtml(payload: PDFExportPayload): string {
               </div>
 
               <div class="exec-info-row">
+                <div class="exec-info-lbl">Executive Desk Phones</div>
+                <div class="exec-info-val font-mono" style="font-size: 8px;">+880 1819 273458 &bull; +880 2410 81191</div>
+              </div>
+
+              <div class="exec-info-row">
+                <div class="exec-info-lbl">Commercial Sales Desk</div>
+                <div class="exec-info-val font-mono gold" style="font-size: 8px;">sales@arielmc.com</div>
+              </div>
+
+              <div class="exec-info-row">
                 <div class="exec-info-lbl">Corporate Headquarters</div>
-                <div class="exec-info-val">Ariel Marketing & Communications Limited<br />Dhaka, Bangladesh</div>
+                <div class="exec-info-val" style="font-size: 7.5px; line-height: 1.3;">House - 30 (1st Floor), Road - 07, Block - C,<br />Niketon, Gulshan, Dhaka-12112, Bangladesh</div>
               </div>
 
               <div class="exec-info-row">

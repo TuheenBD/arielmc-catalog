@@ -173,10 +173,17 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-EDC-2-sq.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "Men's RFID Slim Bifold Wallet Suite",
-        "desc": "Ultra-slim profile engineered to eliminate pocket bulk with signal-shielding copper-nickel mesh and hand-waxed bonded nylon stitching."
+        "label": "Cardholder Front",
+        "tag": "Front Profile",
+        "title": "Minimalist Front-Pocket Cardholder",
+        "desc": "Sleek 6-pocket vegetable-tanned cowhide cardholder with RFID protection."
+      },
+      {
+        "src": "/images/products/leather/LD-EDC-2.jpg",
+        "label": "Coin Case Detail",
+        "tag": "Gusseted Profile",
+        "title": "Expandable Coin & Card Architecture",
+        "desc": "Beveled edge burnished leather with expandable side gusset for folded bills."
       }
     ]
   },
@@ -244,10 +251,24 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-HNB-09.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "Style Essential Structured Crossbody",
-        "desc": "Artisanal structured cream body with cognac leather flap, adjustable leather shoulder strap, and polished gold-tone turn-lock clasp."
+        "label": "Zippered Accordion",
+        "tag": "Accordion Architecture",
+        "title": "Zippered Accordion Wallet",
+        "desc": "Full-circumference YKK brass zipper with multi-compartment accordion card slots."
+      },
+      {
+        "src": "/images/products/leather/LD-HNB-08.jpg",
+        "label": "Key Case Profile",
+        "tag": "Key Organizer",
+        "title": "Snap-Button Key Organizer Case",
+        "desc": "Structured key wrap with 6 individual brass key hooks and snap-closure flap."
+      },
+      {
+        "src": "/images/products/leather/LD-HNB-10.jpg",
+        "label": "Compact Folio",
+        "tag": "EDC Pouch",
+        "title": "Handheld SLG Travel Pouch",
+        "desc": "Full-grain pebble grain leather with smooth glide nylon teeth and leather pull tab."
       }
     ]
   },
@@ -319,10 +340,17 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-DEN-01.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "Dark Denim & Tan Leather Tassel Tote (Style Collection 1)",
-        "desc": "Dark denim shoulder tote featuring tan leather trim, an adjustable strap, embossed flap, and dual fringe tassels."
+        "label": "Day Crossbody",
+        "tag": "Daytime Silhouette",
+        "title": "Architectural Day Crossbody Bag",
+        "desc": "Structured saddle-profile crossbody with adjustable strap and burnished leather edges."
+      },
+      {
+        "src": "/images/products/leather/LD-DEN-02.jpg",
+        "label": "Evening Clutch",
+        "tag": "Evening Silhouette",
+        "title": "Detachable Strap Evening Clutch",
+        "desc": "Clean minimalist flap with concealed magnetic closure and convertible shoulder strap."
       }
     ]
   },
@@ -392,10 +420,17 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-SCB-5-sq.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "Structured Leather Commuter Tote & Satchel",
-        "desc": "Minimalist architectural silhouette engineered for business utility with reinforced dual shoulder handles comfortably bearing heavy tech payloads."
+        "label": "Commuter Tote",
+        "tag": "Front Profile",
+        "title": "High-Capacity Commuter Tote",
+        "desc": "Padded 15.6 inch laptop compartment with reinforced top-handles and structured base feet."
+      },
+      {
+        "src": "/images/products/leather/LD-SCB-5.jpg",
+        "label": "Leather Texture",
+        "tag": "Full Grain Savar",
+        "title": "Savar Artisan Full-Grain Cowhide",
+        "desc": "Close-up texture showcasing natural drum-dyed pebble grain and bonded nylon seams."
       }
     ]
   },
@@ -463,10 +498,24 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-CRK-03.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "Black & Burgundy Croc-Embossed Tote (Style Collection 3)",
-        "desc": "Structured black tote featuring burgundy croc-embossed leather trim, elongated shoulder handles, and subtle script debossing."
+        "label": "Satchel Briefcase",
+        "tag": "Front Profile",
+        "title": "Structured Leather Satchel & Briefcase",
+        "desc": "Single-gusset executive satchel with brass lock hardware and top carry handle."
+      },
+      {
+        "src": "/images/products/leather/LD-COR-04.jpg",
+        "label": "Artisan Handbag",
+        "tag": "Side Silhouette",
+        "title": "Structured Artisan Handbag",
+        "desc": "Beveled edge hand-stitched construction with reinforced side panels."
+      },
+      {
+        "src": "/images/products/leather/LD-HNB-07.jpg",
+        "label": "Pochette Clutch",
+        "tag": "Evening Profile",
+        "title": "Slim Evening Pochette Clutch",
+        "desc": "Sleek envelope-style clutch with interior suede lining and zip pocket."
       }
     ]
   },
@@ -534,10 +583,15 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-TNW-7-sq.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "The Hudson 14\" Padded Leather Folio Suite",
-        "desc": "Tailored full-grain leather shield designed for modern professional transit and high-end executive corporate gifting."
+        "label": "14\" Folio Profile",
+        "tag": "Front Profile",
+        "title": "Shock-Absorbent Laptop Folio (14 Inch)"
+      },
+      {
+        "src": "/images/products/leather/LD-TNW-7.jpg",
+        "label": "Desk Blotter Setting",
+        "tag": "Workspace Setting",
+        "title": "Full Workspace Leather Suite"
       }
     ]
   },
@@ -603,10 +657,21 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-HNB-11.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "Cognac Executive Briefcase & Laptop Tote",
-        "desc": "A stylish executive handbag designed to offer ample space, durable quality, and effortless elegance for corporate or professional transit."
+        "label": "Tablet Sleeve",
+        "tag": "Front Profile",
+        "title": "Magnetic Snap Tablet Sleeve"
+      },
+      {
+        "src": "/images/products/leather/LD-HNB-12.jpg",
+        "label": "Stylus Case",
+        "tag": "Accessory Case",
+        "title": "Apple Pencil / Stylus Case"
+      },
+      {
+        "src": "/images/products/leather/LD-HNB-13.jpg",
+        "label": "Cable Wrap",
+        "tag": "Tech Organizer",
+        "title": "Compact Cable & Charger Organizer"
       }
     ]
   },
@@ -673,10 +738,15 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/leather/LD-TOT-05.jpg",
-        "label": "Overview",
-        "tag": "Product Overview",
-        "title": "Chestnut Full-Grain Everyday Carry Tote (Latest Arrival)",
-        "desc": "A stylish everyday handbag designed to offer ample space, durable quality, and effortless elegance with reinforced dual brass-riveted shoulder straps."
+        "label": "A4 Portfolio",
+        "tag": "Front Profile",
+        "title": "A4 / US Letter Document Portfolio"
+      },
+      {
+        "src": "/images/products/leather/LD-MSG-06.jpg",
+        "label": "Messenger Folio",
+        "tag": "Carry Profile",
+        "title": "Crossbody Messenger Tech Folio"
       }
     ]
   },
@@ -704,7 +774,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "RFID Copper-Nickel Mesh",
       "Burnished Edges"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "/images/products/leather/LD-TRV-10.jpg",
     "aspectRatio": 1,
     "weightGrams": 95,
     "originHub": "Savar Leather Cluster",
@@ -739,7 +809,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0 Strict",
       "chemicalCompliance": "Chromium-VI Free"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-TRV-10.jpg",
+        "label": "Passport Wallet",
+        "tag": "Dual-Fold Cover",
+        "title": "Dual-Fold Passport & Boarding Pass Wallet",
+        "desc": "Engineered with twin passport slots, 4 card sleeves, and RFID-blocking foil."
+      },
+      {
+        "src": "/images/products/leather/LD-TRV-10-sq.jpg",
+        "label": "Closed Profile",
+        "tag": "Pocket Profile",
+        "title": "Compact Travel Cover Closed Profile",
+        "desc": "Slim profile fitting jacket pockets with natural wax edge burnishing."
+      }
+    ]
   },
   {
     "id": "prod-ld-11",
@@ -765,7 +851,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Solid Brass Hardware",
       "Clear Mylar Privacy Shield"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "/images/products/leather/LD-TRV-10-sq.jpg",
     "aspectRatio": 1,
     "weightGrams": 180,
     "originHub": "Savar Cluster",
@@ -800,7 +886,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "finishing": "Deep debossed blind branding ready"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-TRV-10-sq.jpg",
+        "label": "Luggage Tag Suite",
+        "tag": "Travel Accents",
+        "title": "Brass Buckle Leather Luggage Tag",
+        "desc": "Concealed identity flap with solid brass roller buckle and reinforced strap."
+      }
+    ]
   },
   {
     "id": "prod-ld-12",
@@ -826,7 +921,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Antibacterial TPU Coated Lining",
       "YKK Brass Zippers"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "/images/products/leather/LD-TRV-12.jpg",
     "aspectRatio": 1,
     "weightGrams": 420,
     "originHub": "DEPZ Export Park",
@@ -862,7 +957,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "finishing": "Water-resistant seal on leather surface"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-TRV-12.jpg",
+        "label": "Structured Dopp Kit",
+        "tag": "Front Profile",
+        "title": "Structured Full-Grain Leather Dopp Kit",
+        "desc": "Water-resistant nylon lining with wide-mouth frame and heavy-duty brass zipper."
+      },
+      {
+        "src": "/images/products/leather/LD-TRV-12-sq.jpg",
+        "label": "Travel Setting",
+        "tag": "Voyage Context",
+        "title": "Hanging Toiletry & Voyage Suite",
+        "desc": "Reinforced side grab handle and structured flat base."
+      }
+    ]
   },
   {
     "id": "prod-ld-13",
@@ -887,7 +998,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "9-10oz Vegetable Tanned Bridle Leather",
       "Solid Cast Brass Buckle (Nickel Free)"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "/images/products/leather/LD-ACC-13.jpg",
     "aspectRatio": 1,
     "weightGrams": 190,
     "originHub": "Savar Leather Tannery Cluster",
@@ -924,7 +1035,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0",
       "seamStrength": "Tensile breaking strength > 400N"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-ACC-13.jpg",
+        "label": "32mm Formal Belt",
+        "tag": "English Bridle",
+        "title": "Full-Grain English Bridle Formal Belt (32 mm)",
+        "desc": "Solid brass nickel-plated buckle, 5 teardrop adjustment holes, beveled edges."
+      },
+      {
+        "src": "/images/products/leather/LD-ACC-13-sq.jpg",
+        "label": "Buckle Detail",
+        "tag": "Solid Brass Hardware",
+        "title": "Hand-Polished Brass Roller Buckle",
+        "desc": "Reinforced saddle stitching around buckle loop."
+      }
+    ]
   },
   {
     "id": "prod-ld-14",
@@ -950,7 +1077,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Antiqued Brass Roller Buckle",
       "Heavy Waxed Thread"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "/images/products/leather/LD-ACC-13-sq.jpg",
     "aspectRatio": 1,
     "weightGrams": 240,
     "originHub": "Savar Tannery Estate",
@@ -985,7 +1112,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "finishing": "Drum pull-up hot-waxed finish"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-ACC-13-sq.jpg",
+        "label": "38mm Casual Belt",
+        "tag": "Heavy Cowhide",
+        "title": "Casual Beveled Edge Jeans Belt (38 mm)",
+        "desc": "Heavyweight 9-10 oz vegetable-tanned cowhide with antique brass hardware."
+      }
+    ]
   },
   {
     "id": "prod-ld-15",
@@ -1011,7 +1147,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "316L Stainless Steel Hardware",
       "Hypoallergenic Zermatt Lining"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "/images/products/leather/LD-ACC-13.jpg",
     "aspectRatio": 1,
     "weightGrams": 35,
     "originHub": "Savar Cluster",
@@ -1046,7 +1182,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0",
       "finishing": "Quick-release spring-bar integrated"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/leather/LD-ACC-13.jpg",
+        "label": "Watch Straps & Fobs",
+        "tag": "Artisan Accents",
+        "title": "Interchangeable Watch Straps & Key Fobs",
+        "desc": "Quick-release spring bar watch straps with burnished edges."
+      }
+    ]
   },
   {
     "id": "prod-jd-16",
@@ -5790,17 +5935,17 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/terracotta/TC-PLT-61-sq.jpg",
-        "label": "Planter Profile",
-        "tag": "Fluted Silhouette",
-        "title": "Fluted Cylinder Planter & Saucer",
-        "desc": "Crisp vertical ribs on cylindrical terracotta body with matching fitted clay saucer tray."
+        "label": "Fluted Planter Profile",
+        "tag": "Planter Profile",
+        "title": "Fluted Cylinder Terracotta Planter (20 cm)",
+        "desc": "Hand-turned natural clay planter with drainage hole and matching saucer."
       },
       {
         "src": "/images/products/terracotta/TC-PLT-61-combo.jpg",
-        "label": "Living Setting",
-        "tag": "Terracotta Suite",
-        "title": "Botanical Terracotta Living Setting",
-        "desc": "Paired with matching evaporative terracotta wine cooler in modern architectural setting."
+        "label": "Planter Suite Setting",
+        "tag": "Living Setting",
+        "title": "Nesting Terracotta Planters Suite",
+        "desc": "Set of 3 nesting cylinders on natural wood flooring."
       }
     ]
   },
@@ -5867,17 +6012,24 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/terracotta/TC-AMP-62-sq.jpg",
-        "label": "Amphora",
-        "tag": "Artisanal Vessel",
-        "title": "Artisanal Dual-Handled Terracotta Amphora",
-        "desc": "Hand-carved botanical relief across belly and neck with symmetrical curved amphora handles."
+        "label": "Terracotta Amphora",
+        "tag": "Botanical Amphora",
+        "title": "Dual-Handled Terracotta Amphora Urn",
+        "desc": "Handcrafted dual-handled vessel finished with traditional hand-etched botanical relief."
+      },
+      {
+        "src": "/images/products/terracotta/TC-AMP-62.jpg",
+        "label": "Full Urn Profile",
+        "tag": "Patio Urn",
+        "title": "Tapered Outdoor Urn Profile",
+        "desc": "Frost-tested high-fired earthenware urn."
       },
       {
         "src": "/images/products/terracotta/TC-VAS-64-sq.jpg",
         "label": "Tribal Jute Vase",
-        "tag": "Heritage Series",
-        "title": "Heritage Tribal Geometric Terracotta Vase",
-        "desc": "Hand-etched tribal geometric bands with natural braided jute rope collar."
+        "tag": "Tribal Terracotta",
+        "title": "Geometric Tribal Relief Urn",
+        "desc": "Hand-etched tribal patterns with twisted jute rope collar."
       }
     ]
   },
@@ -5942,17 +6094,17 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/terracotta/TC-VAS-63-sq.jpg",
-        "label": "Hand-Painted",
-        "tag": "Botanical Art",
-        "title": "Studio Hand-Painted Botanical Vase",
-        "desc": "Hand-painted botanical motifs painted on smooth ceramic earthenware body."
+        "label": "Studio Hand-Painted",
+        "tag": "Hand-Painted Flora",
+        "title": "Studio Hand-Painted Botanical Ceramic Vase",
+        "desc": "Artisanal ceramic earthenware detailed with hand-painted floral and botanical motifs."
       },
       {
-        "src": "/images/terracotta-potter-wheel.jpg",
-        "label": "Artisan Wheel",
-        "tag": "Bengal Kiln Craft",
-        "title": "Master Potter Throwing Wheel",
-        "desc": "Hand-thrown on traditional Bengal pottery wheel by multigenerational clay artisans."
+        "src": "/images/products/terracotta/TC-VAS-63.jpg",
+        "label": "Artisan Glaze Angle",
+        "tag": "Vase Profile",
+        "title": "Studio Botanical Floral Glaze",
+        "desc": "Glossy vitrified floral glaze on hand-thrown terracotta core."
       }
     ]
   },
@@ -6018,17 +6170,17 @@ export const MOCK_PRODUCTS: Product[] = [
     "gallery": [
       {
         "src": "/images/products/terracotta/TC-EVV-65-sq.jpg",
-        "label": "Wine Cooler",
-        "tag": "Thermodynamic Chiller",
-        "title": "Evaporative Terracotta Wine Cooler",
-        "desc": "Cylindrical earthen cooler holding standard wine or champagne bottle with thermodynamic evaporative chill."
+        "label": "Wine Cooler Profile",
+        "tag": "Natural Evaporative",
+        "title": "Thermodynamic Terracotta Wine Cooler",
+        "desc": "Submerge in cold water for 15 minutes to chill wine bottles without messy melting ice."
       },
       {
         "src": "/images/products/terracotta/TC-EVV-65-combo.jpg",
-        "label": "Living Setting",
-        "tag": "Tabletop Suite",
-        "title": "Terracotta Hospitality Suite Setting",
-        "desc": "Paired with matching fluted architectural planter in clean contemporary interior."
+        "label": "Dining Presentation",
+        "tag": "Hospitality Tabletop",
+        "title": "Tabletop Hospitality Wine Suite",
+        "desc": "Natural porous earthenware core maintaining 12-14\u00b0C serving temperature."
       }
     ]
   },
@@ -6055,7 +6207,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Organic Alluvial Clay",
       "Mineral-Polished Exterior"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-EVV-65.jpg",
     "aspectRatio": 1,
     "weightGrams": 1400,
     "originHub": "Dhamrai Pottery Village",
@@ -6090,7 +6242,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "LFGB \u00a7 30 & 31",
       "foodSafety": "Naturally cools water by 3-5\u00b0C"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-EVV-65.jpg",
+        "label": "Clay Carafe Profile",
+        "tag": "Traditional Jug",
+        "title": "Clay Water Carafe & Tumbler Suite",
+        "desc": "Naturally cooling porous clay carafe with smooth glazed pouring rim."
+      }
+    ]
   },
   {
     "id": "prod-pt-67",
@@ -6115,7 +6276,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Red Terracotta Clay",
       "Food-Contact Glossy Amber Glaze"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-PLT-61.jpg",
     "aspectRatio": 1,
     "weightGrams": 210,
     "originHub": "Dhamrai Artisan Cluster",
@@ -6150,7 +6311,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0",
       "foodSafety": "Direct oven and microwave safe"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-PLT-61.jpg",
+        "label": "Tapas Serving Dish",
+        "tag": "Tapas Trays",
+        "title": "Terracotta Tapas Serving Bowl Suite",
+        "desc": "Oven-to-table unglazed earthenware tapas dishes for rustic hospitality."
+      }
+    ]
   },
   {
     "id": "prod-pt-68",
@@ -6175,7 +6345,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Natural Heavy Earthenware Clay",
       "Unglazed Non-Toxic Organic Burnish"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-PLT-61-sq.jpg",
     "aspectRatio": 1,
     "weightGrams": 2200,
     "originHub": "Dhamrai Heritage Pottery",
@@ -6210,7 +6380,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "EN 13834",
       "foodSafety": "Gas stovetop low heat & oven safe"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-PLT-61-sq.jpg",
+        "label": "Cooking Handi",
+        "tag": "Slow-Cooking",
+        "title": "Slow-Cooking Terracotta Handi & Baker",
+        "desc": "Retains steam and distributes heat uniformly for authentic clay oven baking."
+      }
+    ]
   },
   {
     "id": "prod-pt-69",
@@ -6235,7 +6414,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Natural Red Alluvial Clay",
       "Crystalline Fluid Enamel Glaze"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-AMP-62.jpg",
     "aspectRatio": 1,
     "weightGrams": 6500,
     "originHub": "Dhamrai Heritage Pottery Artisan Cluster",
@@ -6271,7 +6450,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "ISTA 2A Heavy Transit Packaging",
       "chemicalCompliance": "Non-toxic organic slips"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-AMP-62.jpg",
+        "label": "Floor Vase Profile",
+        "tag": "Hand-Coiled Amphora",
+        "title": "Hand-Coiled Floor Vase & Amphora Vessel",
+        "desc": "Large-scale decorative floor vase with traditional Bengali botanical etchings."
+      },
+      {
+        "src": "/images/products/terracotta/TC-AMP-62-sq.jpg",
+        "label": "Dual Handle Detail",
+        "tag": "Architectural Handle",
+        "title": "Sculptural Handle & Neck Detail",
+        "desc": "Reinforced dual-handled design hand-joined by master Bengal potters."
+      }
+    ]
   },
   {
     "id": "prod-pt-70",
@@ -6296,7 +6491,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Heat-Resistant Terracotta",
       "Smoked Wood-Ash Patina"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "/images/products/terracotta/TC-VAS-64.jpg",
     "aspectRatio": 1,
     "weightGrams": 280,
     "originHub": "Dhamrai Pottery Village",
@@ -6331,7 +6526,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.5",
       "barcodePackaging": "Individual kraft gift box with UPC barcode"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-VAS-64.jpg",
+        "label": "Tribal Vase Profile",
+        "tag": "Heritage Tribal",
+        "title": "Heritage Tribal Terracotta Vase with Jute Collar",
+        "desc": "Traditional terracotta vessel featuring hand-etched geometric tribal patterns and jute rope collar."
+      },
+      {
+        "src": "/images/products/terracotta/TC-VAS-64-sq.jpg",
+        "label": "Jute Collar Detail",
+        "tag": "Natural Jute Wrap",
+        "title": "Twisted Jute Collar Neck Detail",
+        "desc": "Natural unbleached jute cord wrapped around terracotta neck."
+      }
+    ]
   },
   {
     "id": "prod-pt-71",
@@ -6356,7 +6567,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Carved Terracotta Clay",
       "Natural White Clay Slip Inlay"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-VAS-63.jpg",
     "aspectRatio": 1,
     "weightGrams": 950,
     "originHub": "Dhamrai Heritage Pottery",
@@ -6390,7 +6601,23 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0",
       "finishing": "Rear steel reinforced suspension ring"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-VAS-63.jpg",
+        "label": "Studio Painted Vase",
+        "tag": "Hand-Painted Floral",
+        "title": "Studio Hand-Painted Botanical Ceramic Vase",
+        "desc": "Artisanal ceramic earthenware detailed with hand-painted floral and botanical motifs."
+      },
+      {
+        "src": "/images/products/terracotta/TC-VAS-63-sq.jpg",
+        "label": "Brushwork Detail",
+        "tag": "Bengal Folk Art",
+        "title": "Hand-Painted Flora & Butterfly Detail",
+        "desc": "Multi-color enamel underglaze painting on terracotta clay."
+      }
+    ]
   },
   {
     "id": "prod-pt-72",
@@ -6415,7 +6642,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Hydraulically Pressed Refractory Terracotta",
       "Frost-Proof Mineral Seal"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-PLT-61-combo.jpg",
     "aspectRatio": 1,
     "weightGrams": 680,
     "originHub": "Mirzapur Architectural Clay Works",
@@ -6451,7 +6678,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "ISO 10545 Breaking Strength > 1300N",
       "chemicalCompliance": "Class A1 Fire Rated non-combustible"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-PLT-61-combo.jpg",
+        "label": "Relief Tiles Context",
+        "tag": "Wall Terracotta",
+        "title": "Geometric Terracotta Relief Wall Tiles",
+        "desc": "Weather-resistant terracotta relief tiles inspired by Kantajew temple heritage."
+      }
+    ]
   },
   {
     "id": "prod-pt-73",
@@ -6476,7 +6712,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Structural High-Fire Alluvial Clay",
       "Weather-Sealed Vitrified Finish"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-EVV-65-combo.jpg",
     "aspectRatio": 1,
     "weightGrams": 2800,
     "originHub": "Mirzapur Structural Ceramics",
@@ -6512,7 +6748,16 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "Compressive strength > 15 MPa",
       "barcodePackaging": "Palletized shrink-wrapped with corner edge protectors"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-EVV-65-combo.jpg",
+        "label": "Brise-Soleil Blocks",
+        "tag": "Lattice Screen",
+        "title": "Breathable Clay Brise-Soleil Lattice Blocks",
+        "desc": "Passive cooling architectural screen blocks for eco-conscious fa\u00e7ades."
+      }
+    ]
   },
   {
     "id": "prod-pt-74",
@@ -6537,7 +6782,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Frost-Resistant Red Terracotta",
       "Weathered Brass Bail Handle"
     ],
-    "imageUrl": "/products/Earth_&_Form.jpeg",
+    "imageUrl": "/images/products/terracotta/TC-VAS-64.jpg",
     "aspectRatio": 1,
     "weightGrams": 2450,
     "originHub": "Dhamrai Heritage Pottery",
@@ -6572,6 +6817,15 @@ export const MOCK_PRODUCTS: Product[] = [
     "technicalSpecs": {
       "testStandard": "AQL 1.0",
       "barcodePackaging": "Drop-tested molded pulp corner protectors"
-    }
+    },
+    "gallery": [
+      {
+        "src": "/images/products/terracotta/TC-VAS-64.jpg",
+        "label": "Garden Lantern",
+        "tag": "Outdoor Illumination",
+        "title": "Handcrafted Terracotta Garden Lantern",
+        "desc": "Perforated clay lanterns casting intricate geometric light patterns."
+      }
+    ]
   }
 ];

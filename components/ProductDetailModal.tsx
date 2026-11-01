@@ -413,6 +413,54 @@ export default function ProductDetailModal({
               </div>
             </div>
           </div>
+
+          {/* Section 4: Ceramic & Terracotta Engineering & Custom Tooling (from official reference) */}
+          {(product.category === 'Ceramics' || product.category === 'Pottery') && (
+            <div className="border border-[#C9A86A]/40 rounded-xl p-4 bg-[#F8F6F2] space-y-3">
+              <div className="flex items-center justify-between border-b border-[#C9A86A]/20 pb-2">
+                <div className="flex items-center space-x-2">
+                  <span className="text-base">🏺</span>
+                  <h4 className="font-bold text-xs uppercase tracking-wider text-[#0A1A2F]">
+                    {product.category === 'Ceramics' ? 'Ceramics & Stoneware Engineering Protocol' : 'Bengal Terracotta & Earthenware Craftsmanship'}
+                  </h4>
+                </div>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+                  Breakage Guarantee &lt; 1.5%
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px]">
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Firing Vitrification</span>
+                  <span className="font-bold text-[#0A1A2F]">1,280°C Tunnel Kiln</span>
+                </div>
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Water Absorption</span>
+                  <span className="font-mono font-bold text-[#0A1A2F]">&lt; 0.2% – 0.5%</span>
+                </div>
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Thermal Durability</span>
+                  <span className="font-bold text-[#0A1A2F]">Oven Safe to 220°C</span>
+                </div>
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Food Safety Testing</span>
+                  <span className="font-bold text-emerald-700">FDA • LFGB • EU 1935</span>
+                </div>
+              </div>
+
+              <div className="pt-1">
+                <span className="text-[10px] uppercase font-bold text-slate-500 block mb-1">
+                  OEM / ODM Custom Tooling Surcharge Schedule:
+                </span>
+                <div className="text-[10.5px] text-slate-600 font-mono bg-white p-2.5 rounded-lg border border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                  <div>&bull; <strong>Custom Plaster Mold:</strong>  / shape (3D CAD, min 1k pcs)</div>
+                  <div>&bull; <strong>Underglaze Decal Print:</strong>  setup + zsh.18 / unit</div>
+                  <div>&bull; <strong>Laser Engraved Backstamp:</strong>  tooling + zsh.05 / unit</div>
+                  <div>&bull; <strong>4-Color Window Box:</strong>  plate + zsh.45 / unit</div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Modal Action Bar */}
