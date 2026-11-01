@@ -1489,6 +1489,144 @@ export const MOCK_PRODUCTS: Product[] = [
     }
   },
   {
+    "id": "prod-jd-20-amc",
+    "prodtId": 201,
+    "roadMapCode": "JD-EDC-20-AMC",
+    "sku": "JD-EDC-20-AMC",
+    "name": "Eco-Friendly Jute Tote Bag",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Everyday Carry & Bags",
+    "subCategory": "Market Shoppers & Lifestyle Totes",
+    "description": "Laminated heavy natural golden jute canvas tote with reinforced cotton webbing handles, box-X stitching, full top zip closure, and interior slip pocket. Features 5 curated colorways plus custom OEM.",
+    "price": 3.95,
+    "currency": "USD",
+    "moq": 500,
+    "dimensions": {
+      "heightMm": 280,
+      "widthMm": 340,
+      "depthMm": 140
+    },
+    "materials": [
+      "100% Biodegradable Heavy Faridpur Golden Jute",
+      "Food-Grade Water-Resistant Lamination",
+      "Heavyweight Narayanganj Cotton Webbing Handles",
+      "Full Top Zipper Closure with Metal Pull"
+    ],
+    "imageUrl": "/images/products/jute/style-1/IMG_2453.jpeg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/style-1/IMG_2453.jpeg",
+        "label": "Burnt Orange",
+        "tag": "Terracotta Colorway",
+        "title": "Burnt Orange / Terracotta Base Packshot",
+        "desc": "Studio packshot on white showing the rich terracotta base gusset, golden jute body, and cream webbing handles."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2461.jpeg",
+        "label": "Crimson Red",
+        "tag": "Crimson Colorway",
+        "title": "Crimson Red Base & Blank OEM Canvas",
+        "desc": "Studio packshot featuring the Crimson Red base panel, ideal for custom brand logo silkscreening and private label."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2465.jpeg",
+        "label": "Olive Green",
+        "tag": "Botanical Colorway",
+        "title": "Olive / Sage Green with Leaf Sprig Embroidery",
+        "desc": "Refined olive green base paired with artisanal delicate botanical leaf embroidery."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2466.jpeg",
+        "label": "Mustard Ochre",
+        "tag": "Golden Ochre Colorway",
+        "title": "Mustard Yellow / Ochre with Berry Branch Motif",
+        "desc": "Warm mustard ochre base with contrast floral berry branch embroidery."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2467.jpeg",
+        "label": "Cobalt Blue",
+        "tag": "Royal Blue Colorway",
+        "title": "Royal / Cobalt Blue with Botanical Motif",
+        "desc": "Vibrant cobalt blue base with delicate tonal blue floral embroidery."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2454.jpeg",
+        "label": "Market Lifestyle",
+        "tag": "Editorial In-Use",
+        "title": "Everyday Market Carry Lifestyle",
+        "desc": "Editorial outdoor market capture illustrating real-world drape and 18 cm shoulder handle drop."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2455.jpeg",
+        "label": "Utility Infographic",
+        "tag": "Multi-Use Practicality",
+        "title": "Multi-Purpose Daily Utility Infographic",
+        "desc": "Infographic highlighting 5 key daily use cases: Shopping, Work, Travel, Picnic, and Gifting."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2456.jpeg",
+        "label": "Studio Tabletop",
+        "tag": "Interior Setting",
+        "title": "Tabletop Aesthetic & Home Décor",
+        "desc": "Living room tabletop setting alongside design literature and indoor plants."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2460.jpeg",
+        "label": "Tech Specs 34x28",
+        "tag": "Engineering Blueprint",
+        "title": "Official Dimension Sketch & Tech Spec Sheet",
+        "desc": "Technical specification diagram verifying 34 cm width, 14 cm depth, 28 cm height, 18 cm handle drop, and full zipper closure."
+      },
+      {
+        "src": "/images/products/jute/style-1/IMG_2464.jpeg",
+        "label": "Gift Presentation",
+        "tag": "Luxury Packaging",
+        "title": "Kraft Gift Box with Crimson Ribbon Presentation",
+        "desc": "Export gift packaging option in structured rigid kraft box with red ribbon and care greeting card."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 320,
+    "originHub": "Faridpur River Delta / ArielMC Studio (Own Dev: AMC)",
+    "complianceCertifications": [
+      "DAE Phytosanitary",
+      "AZO-Free Dye Tested",
+      "OEKO-TEX Standard 100",
+      "Sedex SMETA Audited"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "4202.92.98",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP 0% Duty",
+      "US HTS 3.4%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 50,
+      "heightMm": 450,
+      "widthMm": 600,
+      "depthMm": 400,
+      "grossWeightKg": 16,
+      "cbm": 0.108,
+      "unitsPer20ftContainer": 14000,
+      "unitsPer40ftContainer": 29000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 25,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "CIF London Gateway",
+      "CIF Rotterdam",
+      "DDP US Long Beach"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5",
+      "colorFastness": "Grade 4-5"
+    }
+  },
+  {
     "id": "prod-jd-20",
     "prodtId": 20,
     "roadMapCode": "JD-MLD-20",
