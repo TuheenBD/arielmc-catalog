@@ -1628,33 +1628,38 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     "id": "prod-jd-22",
     "prodtId": 22,
-    "roadMapCode": "JD-MLD-22",
+    "roadMapCode": "JUT-RUN-022-JLX",
     "sku": "JD-MLD-22",
-    "name": "Table Runners, Coasters & Dining Mats",
+    "name": "Artisanal Jute Table Runners, Mats & Cutlery Sleeves",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
-    "categoryGroup": "Modern Living & D\u00e9cor",
+    "categoryGroup": "Modern Living & Décor",
     "subCategory": "Home Storage & Living Accessories",
-    "description": "Artisan table setting suite containing a 180 cm woven herringbone jute runner and 6 matching circular coasters with frayed fringe edging.",
-    "price": 18,
+    "description": "Handcrafted natural golden jute table runner and dining suite featuring delicate floral crochet lace inserts, geometric borders, two-tone bleached cotton panels, and matching silverware cutlery sleeves. Finished with food-grade water-resistant backing and selvedge overlocking.",
+    "price": 3.8,
     "currency": "USD",
-    "moq": 100,
+    "moq": 300,
     "dimensions": {
       "heightMm": 1800,
       "widthMm": 350,
       "depthMm": 6
     },
     "materials": [
-      "Fine-Spun Golden Jute Yarn",
-      "Cotton Warp Threads"
+      "100% Natural Golden Jute (Corchorus olitorius, 380 GSM)",
+      "Natural Cotton Crochet Lace Trim",
+      "Azo-Free Reactive Dyes",
+      "0.02 mm Plant-Based Food-Grade PP Lamination"
     ],
-    "imageUrl": "/images/products/jute/JD-MLD-22-sq.jpg",
+    "imageUrl": "/images/products/jute/JD-MLD-22.jpg",
     "aspectRatio": 1,
-    "weightGrams": 480,
-    "originHub": "Faridpur Weaving Mills",
+    "weightGrams": 360,
+    "originHub": "Gazipur Artisan Cluster (Jute Luxury Fashion)",
     "complianceCertifications": [
-      "OEKO-TEX Standard 100",
-      "GOTS Organic"
+      "Plant-Based 100% Biodegradable",
+      "REACH Compliant (EC No 1907/2006)",
+      "California Prop 65 Tested",
+      "Sedex SMETA 4-Pillar Audited",
+      "OEKO-TEX Standard 100 Trims"
     ],
     "inStock": true,
     "leadTimeWeeks": 3,
@@ -1664,17 +1669,17 @@ export const MOCK_PRODUCTS: Product[] = [
       "EU GSP 0% Duty"
     ],
     "masterCarton": {
-      "unitsPerCarton": 30,
-      "heightMm": 300,
-      "widthMm": 600,
-      "depthMm": 380,
-      "grossWeightKg": 15.5,
-      "cbm": 0.0684,
-      "unitsPer20ftContainer": 14000,
-      "unitsPer40ftContainer": 29000
+      "unitsPerCarton": 60,
+      "heightMm": 350,
+      "widthMm": 550,
+      "depthMm": 400,
+      "grossWeightKg": 14.5,
+      "cbm": 0.077,
+      "unitsPer20ftContainer": 28000,
+      "unitsPer40ftContainer": 58000
     },
-    "sampleLeadTimeDays": 6,
-    "samplePriceUsd": 20,
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 12,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Cargo",
@@ -1682,37 +1687,38 @@ export const MOCK_PRODUCTS: Product[] = [
       "DDP Available"
     ],
     "technicalSpecs": {
-      "testStandard": "AQL 1.5",
-      "chemicalCompliance": "Zero formaldehyde"
+      "testStandard": "AQL 2.5 Major / 4.0 Minor",
+      "chemicalCompliance": "REACH EC No 1907/2006 (Zero toxic phthalates & lead)",
+      "needleSafety": "100% Conveyorized 9-Point Needle Detector Scan"
     },
     "gallery": [
       {
-        "src": "/images/products/jute/JD-MLD-22-sq.jpg",
-        "label": "Aerial Setting",
-        "tag": "Floral Runner & Placemats",
-        "title": "Sunpetal Dining Suite Aerial Flat-Lay",
-        "desc": "Top-down aerial view of blooming floral table runner flanked by 6 matching circular floral placemats."
+        "src": "/images/products/jute/JD-MLD-22-lace-center.jpg",
+        "label": "Geometric Lace",
+        "tag": "Center Open-Work Lace",
+        "title": "Center Geometric Lace Runner",
+        "desc": "Natural golden hessian with central open-work geometric lace insert on formal dining table."
       },
       {
-        "src": "/images/products/jute/JD-MLD-22-table.jpg",
-        "label": "Table Context",
-        "tag": "Formal Dining Table Context",
-        "title": "Sunpetal Dining Table Setting",
-        "desc": "Horizontal wide-angle dining table setting showcasing natural and bleached jute texture across marble tabletop."
+        "src": "/images/products/jute/JD-MLD-22-botanical-sunflower.jpg",
+        "label": "Botanical Print",
+        "tag": "Hand-Stamped Motif",
+        "title": "Sunflower Botanical Runner & Coasters",
+        "desc": "Bleached natural jute runner stamped with olive-green sunflower motifs flanked by woven placemats."
       },
       {
-        "src": "/images/products/jute/JD-MLD-22-flr-sq.jpg",
-        "label": "Placemat Detail",
-        "tag": "Artisan Floral Medallion",
-        "title": "Sunpetal Floral Placemat Close-Up",
-        "desc": "Detailed view of concentric natural and bleached spiral medallion with delicate looped petal perimeter."
+        "src": "/images/products/jute/JD-MLD-22-red-stripe.jpg",
+        "label": "French Red Stripe",
+        "tag": "Farmhouse Classic",
+        "title": "French Farmhouse Red-Stripe Burlap Runner",
+        "desc": "Classic natural burlap with dual woven crimson culinary stripes and selvedge edge."
       },
       {
-        "src": "/images/products/jute/JD-MLD-22-macro-sq.jpg",
-        "label": "Loop Braid Macro",
-        "tag": "Craftsmanship Texture",
-        "title": "Hand-Touched Loop Braid Texture",
-        "desc": "Extreme macro showing the precision of hand-touched natural jute coils and contrasting bleached loops."
+        "src": "/images/products/jute/JD-MLD-22-cutlery-pocket.jpg",
+        "label": "Cutlery Pouches",
+        "tag": "Silverware Sleeve",
+        "title": "Lace-Bordered Cutlery Pockets",
+        "desc": "Matching natural jute silverware holders with delicate white lace border holding dinner cutlery."
       }
     ]
   },
@@ -2117,34 +2123,37 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     "id": "prod-jd-29",
     "prodtId": 29,
-    "roadMapCode": "JD-EPG-29",
+    "roadMapCode": "JUT-SAC-029-JLX",
     "sku": "JD-EPG-29",
-    "name": "Single & Dual Wine Bottle Carriers",
+    "name": "Single & Dual Jute Wine Bottle Carriers",
     "category": "Jute",
     "divisionTitle": "02 The Golden Fiber Edit",
     "categoryGroup": "Eco-Packaging & Gifting",
     "subCategory": "Retail Packaging & Hospitality",
-    "description": "Reinforced sommelier carrier with internal padded partition separator to prevent bottle clinking, clear viewing window, and round cane carrying handles.",
-    "price": 5.2,
+    "description": "Heavy-duty 380 GSM natural golden jute wine and champagne bottle carrier featuring full-grain artisan leather carrying handles, solid antique brass rivets, stitched leather emblem, and water-resistant wipe-clean lining.",
+    "price": 2.2,
     "currency": "USD",
     "moq": 300,
     "dimensions": {
-      "heightMm": 350,
-      "widthMm": 200,
-      "depthMm": 100
+      "heightMm": 360,
+      "widthMm": 120,
+      "depthMm": 110
     },
     "materials": [
-      "320 GSM Tossah Jute",
-      "Natural Cane Handles",
-      "Protective Internal Divider"
+      "100% Natural Golden Jute (Corchorus olitorius, 380 GSM)",
+      "Full-Grain Vegetable-Tanned Cowhide Leather Handle",
+      "Solid Antique Brass Rivets",
+      "0.02 mm Food-Grade PP Moisture-Barrier Lamination"
     ],
-    "imageUrl": "/products/The_Golden_Fiber_Edit.jpeg",
+    "imageUrl": "/images/products/jute/JD-EPG-29-sq.jpg",
     "aspectRatio": 1,
-    "weightGrams": 190,
-    "originHub": "Faridpur Jute Mills",
+    "weightGrams": 185,
+    "originHub": "Gazipur Artisan Cluster (Jute Luxury Fashion)",
     "complianceCertifications": [
-      "DAE Fumigated",
-      "Sedex SMETA"
+      "Plant-Based 100% Biodegradable",
+      "REACH Compliant (EC No 1907/2006)",
+      "Sedex SMETA 4-Pillar Audited",
+      "LWG Certified Leather Trim"
     ],
     "inStock": true,
     "leadTimeWeeks": 2,
@@ -2155,25 +2164,43 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
     "masterCarton": {
       "unitsPerCarton": 100,
-      "heightMm": 380,
-      "widthMm": 550,
-      "depthMm": 420,
-      "grossWeightKg": 20,
-      "cbm": 0.0878,
-      "unitsPer20ftContainer": 35000,
+      "heightMm": 400,
+      "widthMm": 450,
+      "depthMm": 400,
+      "grossWeightKg": 14.0,
+      "cbm": 0.072,
+      "unitsPer20ftContainer": 36000,
       "unitsPer40ftContainer": 75000
     },
     "sampleLeadTimeDays": 5,
-    "samplePriceUsd": 15,
+    "samplePriceUsd": 10,
     "incoTermsAvailable": [
       "FOB Chittagong",
       "DAC Dhaka Cargo",
+      "CIF Rotterdam",
       "DDP Available"
     ],
     "technicalSpecs": {
-      "testStandard": "AQL 1.5",
-      "seamStrength": "Handles tested to 8 kg dynamic shock"
-    }
+      "testStandard": "AQL 2.5 Major / 4.0 Minor",
+      "seamStrength": "Riveted leather handle load-tested to 12 kg dynamic weight",
+      "needleSafety": "100% Conveyorized 9-Point Needle Detector Scan"
+    },
+    "gallery": [
+      {
+        "src": "/images/products/jute/JD-EPG-29.jpg",
+        "label": "Full Profile",
+        "tag": "Leather Handle",
+        "title": "Single Jute Wine Carrier Full Profile",
+        "desc": "Natural jute bottle carrier with full-grain leather handle, brass rivets, and 'Made in Bangladesh' tag."
+      },
+      {
+        "src": "/images/products/jute/JD-EPG-29-sq.jpg",
+        "label": "Table Context",
+        "tag": "Hospitality Presentation",
+        "title": "Sommelier Wine Bottle Presentation",
+        "desc": "Wine bottle carrier shown alongside vintage red wine and dining glassware on wooden table."
+      }
+    ]
   },
   {
     "id": "prod-jd-30",

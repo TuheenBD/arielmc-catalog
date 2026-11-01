@@ -461,6 +461,61 @@ export default function ProductDetailModal({
               </div>
             </div>
           )}
+
+          {/* Section 4.5: Golden Jute Circularity & Precision Manufacturing Protocol (from official B2B reference) */}
+          {product.category === 'Jute' && (
+            <div className="border border-emerald-600/30 rounded-xl p-4 bg-emerald-50/40 space-y-3">
+              <div className="flex items-center justify-between border-b border-emerald-600/20 pb-2">
+                <div className="flex items-center space-x-2">
+                  <span className="text-base">🌱</span>
+                  <h4 className="font-bold text-xs uppercase tracking-wider text-[#0A1A2F]">
+                    Golden Jute Circularity &amp; Engineering Protocol (Corchorus olitorius)
+                  </h4>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-200 text-emerald-900">
+                    Plant-Based 100% Biodegradable
+                  </span>
+                  {product.roadMapCode && product.roadMapCode.includes('JLX') && (
+                    <span className="text-[9.5px] font-mono font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300" title="Factory Cum Supplier: Jute Luxury Fashion (Gazipur)">
+                      FAC-GAZ-02 (JLX)
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px]">
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Carbon Sequestration</span>
+                  <span className="font-bold text-[#0A1A2F]">15 MT CO₂ / Hectare</span>
+                </div>
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Soil Degradation</span>
+                  <span className="font-bold text-emerald-700">60–90 Days Compost</span>
+                </div>
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Monthly Bag Output</span>
+                  <span className="font-bold text-[#0A1A2F]">250k – 300k Bags / Mo</span>
+                </div>
+                <div className="bg-white p-2.5 rounded-lg border border-slate-200">
+                  <span className="text-[9.5px] uppercase font-bold text-slate-400 block">Quality &amp; Metal Safety</span>
+                  <span className="font-bold text-emerald-700">AQL 2.5 • 9-Pt Needle Scan</span>
+                </div>
+              </div>
+
+              <div className="pt-1">
+                <span className="text-[10px] uppercase font-bold text-slate-500 block mb-1">
+                  OEM / ODM Customization &amp; Tooling Surcharges (B2B Export Policy):
+                </span>
+                <div className="text-[10.5px] text-slate-600 font-mono bg-white p-2.5 rounded-lg border border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                  <div>&bull; <strong>Silkscreen Printing:</strong> .00 setup / screen + zsh.12 / color / side (MOQ: 500 pcs)</div>
+                  <div>&bull; <strong>Custom Pantone Dyeing:</strong> Included if MOQ met, or +zsh.25 / unit (1,000m fabric)</div>
+                  <div>&bull; <strong>Embossed Leather Patch:</strong> .00 brass stamp die + zsh.45 / unit (MOQ: 1,000 pcs)</div>
+                  <div>&bull; <strong>Custom Woven Outer Label:</strong> .00 loom setup + zsh.08 / unit (MOQ: 2,000 pcs)</div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Modal Action Bar */}

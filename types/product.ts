@@ -42,6 +42,7 @@ export interface TechnicalSpecifications {
   seamStrength?: string; // e.g., 'Tensile load capacity 250N / 15kg drop test'
   finishing?: string;
   barcodePackaging?: string; // e.g., 'Individual polybag with warning label + GS1 barcode, 5-ply export carton'
+  needleSafety?: string; // e.g., '100% Conveyorized 9-Point Needle Detector Scan'
 }
 
 export interface ProductGalleryItem {
