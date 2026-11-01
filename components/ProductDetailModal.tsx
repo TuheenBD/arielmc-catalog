@@ -42,6 +42,11 @@ export default function ProductDetailModal({
   const [activeLabel, setActiveLabel] = React.useState<string>(
     product?.gallery?.[0]?.label || product?.gallery?.[0]?.tag || ''
   );
+  const [selectedSizeIndex, setSelectedSizeIndex] = React.useState<number>(0);
+
+  React.useEffect(() => {
+    setSelectedSizeIndex(0);
+  }, [product?.id]);
 
   React.useEffect(() => {
     if (product) {
@@ -52,7 +57,14 @@ export default function ProductDetailModal({
 
   if (!product) return null;
 
-  const { heightMm, widthMm, depthMm } = product.dimensions;
+  const activeSize = product.sizeOptions && product.sizeOptions[selectedSizeIndex]
+    ? product.sizeOptions[selectedSizeIndex]
+    : null;
+  const activeDimensions = activeSize ? activeSize.dimensions : product.dimensions;
+  const activeWeight = activeSize?.weightGrams || product.weightGrams;
+  const activePrice = activeSize ? activeSize.price : product.price;
+
+  const { heightMm, widthMm, depthMm } = activeDimensions;
   const carton = product.masterCarton;
   const specs = product.technicalSpecs;
 
@@ -184,6 +196,47 @@ export default function ProductDetailModal({
                 </p>
               </div>
 
+              {/* Size & Diameter Specification Selector */}
+              {product.sizeOptions && product.sizeOptions.length > 0 && (
+                <div className="bg-[#F8F6F2] p-3.5 rounded-xl border border-slate-200/90">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10.5px] uppercase font-bold text-slate-500 tracking-wider">
+                      Select Diameter &amp; Sourcing Tier:
+                    </span>
+                    <span className="text-[10px] text-emerald-800 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                      2 Sizes Available
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {product.sizeOptions.map((opt, idx) => (
+                      <button
+                        key={idx}
+                        type="button"
+                        onClick={() => setSelectedSizeIndex(idx)}
+                        className={`p-2.5 rounded-lg text-left transition-all border cursor-pointer ${
+                          selectedSizeIndex === idx
+                            ? 'bg-[#0A1A2F] text-white border-[#0A1A2F] shadow-md ring-1 ring-[#C9A86A]'
+                            : 'bg-white text-slate-700 border-slate-200 hover:border-[#0A1A2F]'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span className={`text-xs font-bold ${selectedSizeIndex === idx ? 'text-[#C9A86A]' : 'text-[#0A1A2F]'}`}>
+                            {opt.label}
+                          </span>
+                          <span className={`text-xs font-extrabold font-mono ${selectedSizeIndex === idx ? 'text-[#C9A86A]' : 'text-[#0A1A2F]'}`}>
+                            {formatPrice(opt.price)}
+                          </span>
+                        </div>
+                        <span className={`text-[10px] block mt-0.5 ${selectedSizeIndex === idx ? 'text-slate-300' : 'text-slate-400'}`}>
+                          {opt.dimensions.widthMm} mm ({opt.shortLabel}) &bull; {opt.dimensions.heightMm} mm profile
+                          {opt.weightGrams && ` &bull; ${(opt.weightGrams / 1000).toFixed(2)} kg`}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Pricing & Commercial Terms Matrix */}
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 bg-[#F8F6F2] p-4 rounded-xl border border-slate-200">
                 <div>
@@ -192,13 +245,18 @@ export default function ProductDetailModal({
                   </span>
                   <div className="flex items-baseline space-x-1 mt-0.5">
                     <span className="text-xl font-extrabold text-[#0A1A2F] font-mono">
-                      {formatPrice(product.price)}
+                      {formatPrice(activePrice)}
                     </span>
                     <span className="text-[10px] text-slate-500 font-semibold">/ unit</span>
                   </div>
+                  {activeSize && (
+                    <span className="text-[10px] font-bold text-[#C9A86A] block font-mono">
+                      For {activeSize.shortLabel}
+                    </span>
+                  )}
                   {currentCurrency !== 'USD' && (
                     <span className="text-[10px] text-slate-400 block font-mono">
-                      (Base: ${product.price} USD)
+                      (Base: ${activePrice} USD)
                     </span>
                   )}
                 </div>
@@ -525,8 +583,13 @@ export default function ProductDetailModal({
             <strong className="text-[#0A1A2F] font-mono">
               {heightMm} × {widthMm} × {depthMm} mm
             </strong>
-            {product.weightGrams && (
-              <span className="ml-2">({(product.weightGrams / 1000).toFixed(2)} kg)</span>
+            {activeWeight && (
+              <span className="ml-1.5">({(activeWeight / 1000).toFixed(2)} kg)</span>
+            )}
+            {activeSize && (
+              <span className="ml-2 text-[10px] font-bold font-mono text-[#0A1A2F] bg-amber-100/80 px-2 py-0.5 rounded border border-amber-300">
+                {activeSize.shortLabel}
+              </span>
             )}
           </div>
 

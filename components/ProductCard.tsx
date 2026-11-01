@@ -215,10 +215,21 @@ export default function ProductCard({
               </h3>
             </div>
             <div className="text-right shrink-0">
-              <span className="text-sm font-extrabold text-[#0A1A2F] font-mono">
-                {formatPrice(product.price)}
-              </span>
-              <span className="text-[9px] text-slate-400 block -mt-0.5 font-medium">FOB BGD</span>
+              {product.sizeOptions && product.sizeOptions.length > 0 ? (
+                <>
+                  <span className="text-sm font-extrabold text-[#0A1A2F] font-mono">
+                    {formatPrice(product.sizeOptions[0].price)} – {formatPrice(product.sizeOptions[product.sizeOptions.length - 1].price)}
+                  </span>
+                  <span className="text-[9px] text-[#C9A86A] block -mt-0.5 font-semibold">3' to 4' FOB</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-sm font-extrabold text-[#0A1A2F] font-mono">
+                    {formatPrice(product.price)}
+                  </span>
+                  <span className="text-[9px] text-slate-400 block -mt-0.5 font-medium">FOB BGD</span>
+                </>
+              )}
             </div>
           </div>
 
@@ -230,6 +241,11 @@ export default function ProductCard({
             {product.hsCode && (
               <span className="font-mono text-[9px] font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
                 HS {product.hsCode}
+              </span>
+            )}
+            {product.sizeOptions && product.sizeOptions.length > 0 && (
+              <span className="font-mono text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200">
+                3' ({formatPrice(product.sizeOptions[0].price)}) &bull; 4' ({formatPrice(product.sizeOptions[product.sizeOptions.length - 1].price)})
               </span>
             )}
           </div>

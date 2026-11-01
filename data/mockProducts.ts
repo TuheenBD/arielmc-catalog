@@ -1963,7 +1963,31 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Modern Living & Décor",
     "subCategory": "Handcrafted Jute Area Rugs",
     "description": "Concentric flat-braided raw natural jute base block-printed with a striking geometric mandala motif in rich terracotta red, deep charcoal, and organic cream. Reversible 8 mm flatweave profile (3 ft / 90 cm & 4 ft / 120 cm dia).",
-    "price": 11.5,
+    "price": 8.75,
+    "sizeOptions": [
+      {
+        "label": "3 ft (90 cm) Diameter",
+        "shortLabel": "3 ft / 90 cm",
+        "price": 8.75,
+        "dimensions": {
+          "heightMm": 8,
+          "widthMm": 900,
+          "depthMm": 900
+        },
+        "weightGrams": 1400
+      },
+      {
+        "label": "4 ft (120 cm) Diameter",
+        "shortLabel": "4 ft / 120 cm",
+        "price": 11.5,
+        "dimensions": {
+          "heightMm": 8,
+          "widthMm": 1200,
+          "depthMm": 1200
+        },
+        "weightGrams": 2400
+      }
+    ],
     "currency": "USD",
     "moq": 300,
     "dimensions": {
@@ -2040,7 +2064,31 @@ export const MOCK_PRODUCTS: Product[] = [
     "categoryGroup": "Modern Living & Décor",
     "subCategory": "Handcrafted Jute Area Rugs",
     "description": "Dense hand-guided crewel floral embroidery over polished fine golden jute webbing with ivory daisies, marigold blossoms, soft green foliage, and classic running-vine border (3 ft / 90 cm & 4 ft / 120 cm dia).",
-    "price": 11.5,
+    "price": 8.75,
+    "sizeOptions": [
+      {
+        "label": "3 ft (90 cm) Diameter",
+        "shortLabel": "3 ft / 90 cm",
+        "price": 8.75,
+        "dimensions": {
+          "heightMm": 10,
+          "widthMm": 900,
+          "depthMm": 900
+        },
+        "weightGrams": 1600
+      },
+      {
+        "label": "4 ft (120 cm) Diameter",
+        "shortLabel": "4 ft / 120 cm",
+        "price": 11.5,
+        "dimensions": {
+          "heightMm": 10,
+          "widthMm": 1200,
+          "depthMm": 1200
+        },
+        "weightGrams": 2800
+      }
+    ],
     "currency": "USD",
     "moq": 300,
     "dimensions": {

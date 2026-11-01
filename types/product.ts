@@ -17,6 +17,14 @@ export const SUPPORTED_CURRENCIES: Record<CurrencyCode, CurrencyConfig> = {
   AUD: { code: 'AUD', symbol: 'A$', name: 'Australian Dollar', rateFromUsd: 1.54, flag: '🇦🇺' },
 };
 
+export interface ProductSizeOption {
+  label: string; // e.g. "3 ft (90 cm) Diameter"
+  shortLabel: string; // e.g. "3 ft / 90 cm"
+  price: number; // e.g. 8.75
+  dimensions: ProductDimensions;
+  weightGrams?: number;
+}
+
 export interface ProductDimensions {
   heightMm: number;
   widthMm: number;
@@ -86,6 +94,7 @@ export interface Product {
   samplePriceUsd?: number; // Cost for courier tech-pack sample
   incoTermsAvailable?: string[]; // e.g., ['FOB Chittagong', 'DAC Dhaka Air Cargo', 'CIF Felixstowe', 'CIF Rotterdam', 'CIF Los Angeles', 'DDP by Request']
   technicalSpecs?: TechnicalSpecifications;
+  sizeOptions?: ProductSizeOption[];
 }
 
 export interface FilterState {
