@@ -239,12 +239,57 @@ export async function POST(req: NextRequest) {
     }
 
     // =========================================================================
-    // 4. DISPATCH VECTOR C: Sync Lead into Supabase ERP Database
+    // 4. DISPATCH VECTOR C: Sync into Supabase PostgreSQL (Live Persistence)
     // =========================================================================
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
     const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
     if (supabaseUrl && supabaseKey) {
+      // 4A. Persist Full Bespoke Dossier / RFQ Request
+      try {
+        const dossierPayload = {
+          quote_number: quoteNumber,
+          request_type: requestType,
+          status: 'NEW',
+          company_name: companyName,
+          buyer_name: clientName,
+          buyer_email: clientEmail,
+          country: targetCountry,
+          target_port: targetPort,
+          incoterm: incoTerm,
+          courier_account: courierAccount,
+          delivery_address: deliveryAddress,
+          buyer_notes: notes,
+          selected_items: items,
+          total_items: items.length,
+          currency: currency,
+          currency_rate: body.currencyRate || 1.0,
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        };
+
+        const dossierRes = await fetch(`${supabaseUrl}/rest/v1/buyer_dossier_requests`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            apikey: supabaseKey,
+            Authorization: `Bearer ${supabaseKey}`,
+            Prefer: 'return=minimal',
+          },
+          body: JSON.stringify(dossierPayload),
+        });
+
+        if (dossierRes.ok) {
+          console.log(`[Supabase Database] Successfully persisted dossier request ${quoteNumber} for ${companyName}`);
+        } else {
+          const errText = await dossierRes.text();
+          console.warn('[Supabase Database] Dossier insert notice:', errText);
+        }
+      } catch (dossierDbErr) {
+        console.warn('[Supabase Database] Dossier persistence error:', dossierDbErr);
+      }
+
+      // 4B. Sync / Upsert Master CRM Lead
       try {
         const leadId = `lead-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`;
         const interestedSectors = Array.from(new Set(items.map((i: any) => i.category || i.sector || 'GENERAL')));
@@ -271,9 +316,9 @@ export async function POST(req: NextRequest) {
             updated_at: new Date().toISOString(),
           }),
         });
-        console.log(`[Supabase ERP] Synced lead ${leadId} for ${companyName}`);
-      } catch (dbErr) {
-        console.warn('[Supabase ERP] Lead sync bypassed:', dbErr);
+        console.log(`[Supabase ERP] Synced master lead ${leadId} for ${companyName}`);
+      } catch (leadDbErr) {
+        console.warn('[Supabase ERP] Lead sync error:', leadDbErr);
       }
     }
 
