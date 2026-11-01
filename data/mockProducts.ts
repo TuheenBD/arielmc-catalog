@@ -5140,6 +5140,90 @@ export const MOCK_PRODUCTS: Product[] = [
     }
   },
   {
+    "id": "prod-tx-ctb-02-amc",
+    "prodtId": 330,
+    "roadMapCode": "TX-CTB-02-AMC",
+    "sku": "TX-CTB-02-AMC",
+    "name": "The Sage & Sapphire Everyday Shopper",
+    "category": "Textiles",
+    "divisionTitle": "04 Thread & Weave",
+    "categoryGroup": "Canvas Tote Bags",
+    "subCategory": "Heavyweight Cotton Duck Totes",
+    "description": "14 oz washed cotton canvas body in slate sapphire blue with 16 oz reinforced organic sage base & full-height straps, botanical imprint, and 15 kg structural capacity (40 × 34 × 14 cm). Custom OEM dyeing and client branding available.",
+    "price": 3.95,
+    "currency": "USD",
+    "moq": 500,
+    "dimensions": {
+      "heightMm": 340,
+      "widthMm": 400,
+      "depthMm": 140
+    },
+    "materials": [
+      "100% Premium Washed Cotton Canvas (14 oz / 400 GSM, Slate Sapphire)",
+      "Reinforced Heavy-Duty Cotton Duck Canvas (16 oz / 450 GSM, Muted Sage Base & Straps)",
+      "Bound Internal Seams with High-Tensile Heavy-Duty Nylon Thread",
+      "AZO-Free Eco-Friendly Dyes & Biodegradable Fibers"
+    ],
+    "imageUrl": "/images/products/textiles/sage-sapphire/IMG_2457.jpeg",
+    "gallery": [
+      {
+        "src": "/images/products/textiles/sage-sapphire/IMG_2457.jpeg",
+        "label": "Studio Packshot",
+        "tag": "Primary Front Profile",
+        "title": "The Sage & Sapphire Everyday Shopper - Studio Packshot",
+        "desc": "Studio packshot on stone plinth showcasing 14 oz slate sapphire blue canvas body, contrast muted sage green base and dual continuous shoulder straps, with subtle botanical leaf imprint."
+      },
+      {
+        "src": "/images/products/textiles/sage-sapphire/IMG_2458.jpeg",
+        "label": "Shoulder Carry",
+        "tag": "Lifestyle Utility",
+        "title": "Lifestyle Shoulder Carry (26 cm Drop Height)",
+        "desc": "On-model shoulder carry demonstrating generous 26 cm drop height, ergonomic fit under the arm, structured base posture, and balanced everyday commuter proportions."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 380,
+    "originHub": "Gazipur & Narayanganj Mills / ArielMC Studio (Own Dev: AMC)",
+    "complianceCertifications": [
+      "OEKO-TEX Standard 100",
+      "GOTS Organic Cotton Base",
+      "BSCI Audit Grade A",
+      "Sedex SMETA"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "4202.92.15",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 7%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 50,
+      "heightMm": 450,
+      "widthMm": 600,
+      "depthMm": 400,
+      "grossWeightKg": 20,
+      "cbm": 0.108,
+      "unitsPer20ftContainer": 13500,
+      "unitsPer40ftContainer": 28000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 25,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP US Long Beach"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5 / 2.5 Major/Minor",
+      "colorFastness": "Grade 4-5 to washing and rubbing",
+      "seamStrength": "Cross-box handle pull test > 250N (Load rated to 15 kg / 33 lbs)"
+    }
+  },
+  {
     "id": "prod-ah-33",
     "prodtId": 33,
     "roadMapCode": "AH-RKB-33",
