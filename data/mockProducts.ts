@@ -1953,6 +1953,160 @@ export const MOCK_PRODUCTS: Product[] = [
     ]
   },
   {
+    "id": "prod-jd-mld-24-rdl",
+    "prodtId": 331,
+    "roadMapCode": "JD-MLD-24-RDL",
+    "sku": "JD-MLD-24-RDL",
+    "name": "ArielMC Terracotta Mandala Round Jute Rug",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Modern Living & Décor",
+    "subCategory": "Handcrafted Jute Area Rugs",
+    "description": "Concentric flat-braided raw natural jute base block-printed with a striking geometric mandala motif in rich terracotta red, deep charcoal, and organic cream. Reversible 8 mm flatweave profile (3 ft / 90 cm & 4 ft / 120 cm dia).",
+    "price": 11.5,
+    "currency": "USD",
+    "moq": 300,
+    "dimensions": {
+      "heightMm": 8,
+      "widthMm": 1200,
+      "depthMm": 1200
+    },
+    "materials": [
+      "100% High-Grade Biodegradable Coarse Jute Fibers",
+      "Concentric Flat-Braided Hand-Coiled Construction",
+      "Eco-Friendly Fade-Resistant Organic Dyes & Block Prints",
+      "Reversible Identical Flatweave Foundation"
+    ],
+    "imageUrl": "/images/products/jute/rugs/mandala-rug.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/rugs/mandala-rug.jpg",
+        "label": "Mandala Flatweave",
+        "tag": "Primary Living Setting",
+        "title": "ArielMC Terracotta Mandala Round Jute Rug",
+        "desc": "Living room setting on natural oak floor, showcasing concentric braided weave and terracotta, charcoal, and organic cream mandala."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 2400,
+    "originHub": "Mirpur Artisan Cluster / Rodela Crafts (Supplier: RDL)",
+    "complianceCertifications": [
+      "100% Golden Jute Biodegradable",
+      "AZO-Free Eco Dyes",
+      "Fair Trade Craft Cluster",
+      "Sedex SMETA Audited"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 4,
+    "hsCode": "5702.39.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 8,
+      "heightMm": 400,
+      "widthMm": 1250,
+      "depthMm": 280,
+      "grossWeightKg": 22,
+      "cbm": 0.14,
+      "unitsPer20ftContainer": 1800,
+      "unitsPer40ftContainer": 3800
+    },
+    "sampleLeadTimeDays": 7,
+    "samplePriceUsd": 45,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP US Long Beach"
+    ],
+    "technicalSpecs": {
+      "testStandard": "BS 4790 Textile Floor Coverings",
+      "colorFastness": "Grade 4-5 to dry and wet crocking",
+      "seamStrength": "Hand-stitched concentric braided coil join > 280N"
+    }
+  },
+  {
+    "id": "prod-jd-mld-25-rdl",
+    "prodtId": 332,
+    "roadMapCode": "JD-MLD-25-RDL",
+    "sku": "JD-MLD-25-RDL",
+    "name": "ArielMC Crimson Bloom Embroidered Jute Rug",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Modern Living & Décor",
+    "subCategory": "Handcrafted Jute Area Rugs",
+    "description": "Dense hand-guided crewel floral embroidery over polished fine golden jute webbing with ivory daisies, marigold blossoms, soft green foliage, and classic running-vine border (3 ft / 90 cm & 4 ft / 120 cm dia).",
+    "price": 11.5,
+    "currency": "USD",
+    "moq": 300,
+    "dimensions": {
+      "heightMm": 10,
+      "widthMm": 1200,
+      "depthMm": 1200
+    },
+    "materials": [
+      "100% Polished Fine Golden Jute Webbing Base",
+      "Premium Multi-Ply Soft Cotton/Wool Blend Crewel Yarn",
+      "Securely Stitched Cross-Woven Flat Foundation",
+      "Chemically Unbleached Natural Fiber Backing"
+    ],
+    "imageUrl": "/images/products/jute/rugs/crimson-bloom-rug.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/rugs/crimson-bloom-rug.jpg",
+        "label": "Crewel Embroidery",
+        "tag": "Artisan Reading Setting",
+        "title": "ArielMC Crimson Bloom Embroidered Jute Rug",
+        "desc": "Artisan reading nook setting showing dense floral crewel embroidery, ivory daisies, marigold blossoms, and running-vine border."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 2800,
+    "originHub": "Mirpur Artisan Cluster / Rodela Crafts (Supplier: RDL)",
+    "complianceCertifications": [
+      "100% Golden Jute Biodegradable",
+      "AZO-Free Eco Dyes",
+      "Fair Trade Craft Cluster",
+      "Sedex SMETA Audited"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 4,
+    "hsCode": "5702.39.00",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 6,
+      "heightMm": 350,
+      "widthMm": 1250,
+      "depthMm": 300,
+      "grossWeightKg": 20,
+      "cbm": 0.13,
+      "unitsPer20ftContainer": 1500,
+      "unitsPer40ftContainer": 3200
+    },
+    "sampleLeadTimeDays": 7,
+    "samplePriceUsd": 50,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP US Long Beach"
+    ],
+    "technicalSpecs": {
+      "testStandard": "BS 4790 Textile Floor Coverings",
+      "colorFastness": "Grade 4-5 to dry and wet crocking",
+      "seamStrength": "Reinforced cross-woven foundation pull test > 300N"
+    }
+  },
+  {
     "id": "prod-jd-24",
     "prodtId": 24,
     "roadMapCode": "JD-TES-24",
