@@ -1627,6 +1627,217 @@ export const MOCK_PRODUCTS: Product[] = [
     }
   },
   {
+    "id": "prod-jd-edc-21-rdl",
+    "prodtId": 202,
+    "roadMapCode": "JD-EDC-21-RDL",
+    "sku": "JD-EDC-21-RDL",
+    "name": "ArielMC Riviera Tropical Monstera Leaf Tote",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Market Shoppers & Lifestyle Totes",
+    "subCategory": "Resort Shoppers & Beach Bags",
+    "description": "Resort utility tote crafted from 380 GSM jute-cotton composite weave featuring a multi-tonal tropical Monstera and split-leaf palm print. Finished with 12 mm thick nautical braided cotton rope handles, hand-knotted tassels, turned wooden beads, and food-grade clear laminated PE inner lining.",
+    "price": 5.5,
+    "currency": "USD",
+    "moq": 300,
+    "dimensions": {
+      "heightMm": 305,
+      "widthMm": 380,
+      "depthMm": 127
+    },
+    "materials": [
+      "60% Natural Biodegradable Golden Jute / 40% Heavy Unbleached Cotton (380 GSM)",
+      "Food-Grade Clear Water-Resistant Laminated PE Inner Lining",
+      "12 mm Nautical-Grade Braided Cotton Rope Handles (23 cm / 9\" Drop)",
+      "Turned Natural Polished Wooden Accent Beads & Cotton Tassels",
+      "Concealed Self-Healing Nylon Zipper Closure"
+    ],
+    "imageUrl": "/images/products/jute/riviera/riviera-tote-lifestyle.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/riviera/riviera-tote-lifestyle.jpg",
+        "label": "Resort Lifestyle",
+        "tag": "Model Editorial Context",
+        "title": "ArielMC Riviera Tote Courtyard Lifestyle",
+        "desc": "Resort leisure editorial showcasing model with tropical Monstera leaf tote and nautical rope shoulder carry."
+      },
+      {
+        "src": "/images/products/jute/riviera/riviera-tote-studio.jpg",
+        "label": "Studio Packshot",
+        "tag": "Tabletop Setting",
+        "title": "Riviera Jute-Cotton Shopper Tabletop Setting",
+        "desc": "Detailed view of the 380 GSM jute-cotton composite weave, split-leaf palm print, and tabletop styling."
+      },
+      {
+        "src": "/images/products/jute/riviera/riviera-tote-detail.jpg",
+        "label": "Rope & Tassels",
+        "tag": "Hardware & Trims",
+        "title": "Nautical Rope Handles & Turned Wooden Beads",
+        "desc": "Macro view of the 12 mm thick braided cotton rope handle anchor points, dual tassels, and turned wood beads."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 420,
+    "originHub": "Dhaka Artisan Cluster • Facility Code: FAC-DHK-04",
+    "complianceCertifications": [
+      "100% Golden Jute Biodegradable",
+      "AZO-Free Eco Dyes",
+      "REACH Compliant (EC No 1907/2006)",
+      "California Prop 65 Tested",
+      "Sedex SMETA Audited"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 4,
+    "hsCode": "4202.92.98",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 40,
+      "heightMm": 380,
+      "widthMm": 550,
+      "depthMm": 420,
+      "grossWeightKg": 18.5,
+      "cbm": 0.088,
+      "unitsPer20ftContainer": 14000,
+      "unitsPer40ftContainer": 30000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 35,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF London Gateway",
+      "CIF Rotterdam",
+      "DDP US Long Beach"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5 Major / 2.5 Minor",
+      "seamStrength": "Tensile static load capacity rated up to 9 kg (20 lbs)",
+      "colorFastness": "Grade 4-5 to dry and wet crocking",
+      "foodSafety": "Food-grade clear PE 0.02 mm moisture barrier inner lining"
+    }
+  },
+  {
+    "id": "prod-jd-edc-22-rdl",
+    "prodtId": 203,
+    "roadMapCode": "JD-EDC-22-RDL",
+    "sku": "JD-EDC-22-RDL",
+    "name": "ArielMC Heritage Folk Jute-Cotton Pouch Collection",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Market Shoppers & Lifestyle Totes",
+    "subCategory": "Artisanal Pouches & Cosmetic Clutches",
+    "description": "Artisanal accessory pouches marrying Scandinavian geometric cross-stitch geometry with Bangladeshi textile craft. Available in 2 silhouettes: Handy Hand Purse (flat rectangular clutch) and Stylish Dome Clutch (curved stand-up profile with thick braided nautical rope wristlet).",
+    "price": 3.5,
+    "sizeOptions": [
+      {
+        "label": "Handy Hand Purse (Flat 10\" × 5.5\")",
+        "shortLabel": "Flat Purse (10\" × 5.5\")",
+        "price": 3.5,
+        "dimensions": {
+          "heightMm": 140,
+          "widthMm": 254,
+          "depthMm": 15
+        },
+        "weightGrams": 120
+      },
+      {
+        "label": "Stylish Dome Clutch (Curved 10\" × 6.5\")",
+        "shortLabel": "Dome Clutch (10\" × 6.5\")",
+        "price": 4.25,
+        "dimensions": {
+          "heightMm": 165,
+          "widthMm": 254,
+          "depthMm": 60
+        },
+        "weightGrams": 180
+      }
+    ],
+    "currency": "USD",
+    "moq": 300,
+    "dimensions": {
+      "heightMm": 140,
+      "widthMm": 254,
+      "depthMm": 15
+    },
+    "materials": [
+      "50% Organic Natural Jute / 50% Long-Staple Cotton Canvas (340 GSM)",
+      "High-Density Nordic Cross-Stitch Geometric Folk Print",
+      "Water-Resistant Clear Laminated Interior Protective Lining",
+      "Smooth-Glide Nylon Zipper with Reinforced Fabric Binding",
+      "12 mm Braided Cotton Rope Wristlet Strap (Dome Clutch)"
+    ],
+    "imageUrl": "/images/products/jute/pouches/heritage-folk-flat.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/pouches/heritage-folk-flat.jpg",
+        "label": "Flat Hand Purse",
+        "tag": "Handy Purse Silhouette",
+        "title": "ArielMC Nordic Cross-Stitch Handy Hand Purse",
+        "desc": "Flat rectangular clutch silhouette (10\" x 5.5\") featuring dense Scandinavian cross-stitch geometry in vermillion, gold, and moss green."
+      },
+      {
+        "src": "/images/products/jute/pouches/heritage-folk-dome.jpg",
+        "label": "Dome Clutch",
+        "tag": "Curved Dome Silhouette",
+        "title": "ArielMC Nordic Cross-Stitch Stylish Dome Clutch",
+        "desc": "Curved semi-circular dome profile (10\" x 6.5\") with expanded base gusset and thick nautical braided cotton rope wristlet handle."
+      },
+      {
+        "src": "/images/products/jute/pouches/heritage-folk-detail.jpg",
+        "label": "Folk Cross-Stitch",
+        "tag": "Artisan Textile Detail",
+        "title": "Intricate Nordic Cross-Stitch Motif Close-Up",
+        "desc": "Extreme macro view showing the precision of the multi-tonal folk print over premium 340 GSM jute-cotton canvas."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 120,
+    "originHub": "Dhaka Artisan Cluster • Facility Code: FAC-DHK-04",
+    "complianceCertifications": [
+      "100% Golden Jute Biodegradable",
+      "AZO-Free Eco Dyes",
+      "REACH Compliant (EC No 1907/2006)",
+      "Fair Trade Craft Cluster",
+      "Sedex SMETA Audited"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "4202.32.10",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 100,
+      "heightMm": 320,
+      "widthMm": 520,
+      "depthMm": 450,
+      "grossWeightKg": 15.0,
+      "cbm": 0.075,
+      "unitsPer20ftContainer": 36000,
+      "unitsPer40ftContainer": 78000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 30,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF London Gateway",
+      "CIF Rotterdam",
+      "DDP US Long Beach"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5 Major / 2.5 Minor",
+      "colorFastness": "Grade 4-5 to dry and wet crocking",
+      "seamStrength": "Reinforced structural binding; zipper rated > 5,000 cycles"
+    }
+  },
+  {
     "id": "prod-jd-20",
     "prodtId": 20,
     "roadMapCode": "JD-MLD-20",
