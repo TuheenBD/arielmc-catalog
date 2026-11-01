@@ -1788,7 +1788,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "Azo-Free Reactive Dyes",
       "0.02 mm Plant-Based Food-Grade PP Lamination"
     ],
-    "imageUrl": "/images/products/jute/JD-MLD-22.jpg",
+    "imageUrl": "/images/products/jute/JD-MLD-22-lace-center.jpg",
     "aspectRatio": 1,
     "weightGrams": 360,
     "originHub": "Gazipur Artisan Weaving Cluster (FAC-GAZ-02)",
@@ -2009,6 +2009,13 @@ export const MOCK_PRODUCTS: Product[] = [
         "tag": "Primary Living Setting",
         "title": "ArielMC Terracotta Mandala Round Jute Rug",
         "desc": "Living room setting on natural oak floor, showcasing concentric braided weave and terracotta, charcoal, and organic cream mandala."
+      },
+      {
+        "src": "/images/products/jute/rugs/mandala-rug-detail.jpg",
+        "label": "Center Mandala",
+        "tag": "Block-Print Detail",
+        "title": "Terracotta & Charcoal Mandala Medallion",
+        "desc": "Macro view of the central sunburst rosette block-printed onto coarse natural jute flatweave foundation."
       }
     ],
     "aspectRatio": 1,
@@ -2110,6 +2117,13 @@ export const MOCK_PRODUCTS: Product[] = [
         "tag": "Artisan Reading Setting",
         "title": "ArielMC Crimson Bloom Embroidered Jute Rug",
         "desc": "Artisan reading nook setting showing dense floral crewel embroidery, ivory daisies, marigold blossoms, and running-vine border."
+      },
+      {
+        "src": "/images/products/jute/rugs/crimson-bloom-detail.jpg",
+        "label": "Embroidery Detail",
+        "tag": "Hand Crewel Stitching",
+        "title": "Artisan Crewel Floral Stitch Close-Up",
+        "desc": "Detailed close-up of raised tufted cotton/wool embroidery stitching over golden jute webbing."
       }
     ],
     "aspectRatio": 1,
