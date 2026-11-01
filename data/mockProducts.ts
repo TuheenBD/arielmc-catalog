@@ -1791,7 +1791,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "imageUrl": "/images/products/jute/JD-MLD-22.jpg",
     "aspectRatio": 1,
     "weightGrams": 360,
-    "originHub": "Gazipur Artisan Cluster (Jute Luxury Fashion)",
+    "originHub": "Gazipur Artisan Weaving Cluster (FAC-GAZ-02)",
     "complianceCertifications": [
       "Plant-Based 100% Biodegradable",
       "REACH Compliant (EC No 1907/2006)",
@@ -1989,7 +1989,7 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
     "aspectRatio": 1,
     "weightGrams": 2400,
-    "originHub": "Mirpur Artisan Cluster / Rodela Crafts (Supplier: RDL)",
+    "originHub": "Dhaka Artisan Cluster • Facility Code: FAC-DHK-04",
     "complianceCertifications": [
       "100% Golden Jute Biodegradable",
       "AZO-Free Eco Dyes",
@@ -2066,7 +2066,7 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
     "aspectRatio": 1,
     "weightGrams": 2800,
-    "originHub": "Mirpur Artisan Cluster / Rodela Crafts (Supplier: RDL)",
+    "originHub": "Dhaka Artisan Cluster • Facility Code: FAC-DHK-04",
     "complianceCertifications": [
       "100% Golden Jute Biodegradable",
       "AZO-Free Eco Dyes",
@@ -2440,7 +2440,7 @@ export const MOCK_PRODUCTS: Product[] = [
     "imageUrl": "/images/products/jute/JD-EPG-29-sq.jpg",
     "aspectRatio": 1,
     "weightGrams": 185,
-    "originHub": "Gazipur Artisan Cluster (Jute Luxury Fashion)",
+    "originHub": "Gazipur Artisan Weaving Cluster (FAC-GAZ-02)",
     "complianceCertifications": [
       "Plant-Based 100% Biodegradable",
       "REACH Compliant (EC No 1907/2006)",
