@@ -40,8 +40,8 @@ export const COMPENDIUM_DIVISIONS: CompendiumDivision[] = [
     officialTitle: 'The Golden Fiber Edit',
     label: 'Golden Jute Textiles',
     departments: [
-      { name: 'Everyday Carry & Bags', count: 4 },
-      { name: 'Modern Living & Décor', count: 4 },
+      { name: 'Market Shoppers & Lifestyle Totes', count: 7 },
+      { name: 'Modern Living & Décor', count: 6 },
       { name: 'Tech & Eco-Stationery', count: 4 },
       { name: 'Eco-Packaging & Gifting', count: 5 },
       { name: 'Capsule Run & Pilot Orders (Low MOQ: 100 Pcs)', count: 4 },
