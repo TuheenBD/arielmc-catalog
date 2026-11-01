@@ -286,6 +286,32 @@ export default function ProductDetailModal({
                 </div>
               </div>
 
+              {/* Tiered Volume Pricing Matrix (Capsule Run & Pilot Orders) */}
+              {product.priceTiers && product.priceTiers.length > 0 && (
+                <div className="bg-[#FAF8F5] p-3.5 rounded-xl border border-amber-200/80">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10.5px] uppercase font-bold text-slate-700 tracking-wider flex items-center gap-1.5">
+                      <span>⚡ Tiered Volume Pricing Matrix:</span>
+                    </span>
+                    <span className="text-[10px] text-amber-800 font-bold bg-amber-100/80 px-2 py-0.5 rounded border border-amber-300">
+                      Pilot Run MOQ: {product.moq} pcs
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                    {product.priceTiers.map((tier, idx) => (
+                      <div key={idx} className="p-2.5 rounded-lg bg-white border border-slate-200 text-center shadow-xs">
+                        <span className="text-[10px] font-bold text-slate-500 uppercase block mb-0.5">{tier.label}</span>
+                        <span className="text-sm font-extrabold text-[#0A1A2F] font-mono block">{formatPrice(tier.price)}</span>
+                        <span className="text-[9px] text-slate-400 block">{tier.maxQty ? `${tier.minQty}–${tier.maxQty} pcs` : `${tier.minQty}+ pcs`}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-[10px] text-slate-500 mt-2 font-light italic">
+                    *Pilot run tier covers specialized custom screen setup and small-batch line calibration. Scale to 500+ units for standard export wholesale economy.
+                  </p>
+                </div>
+              )}
+
               {/* Customs Tariff & Preference Bar */}
               <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-xl p-3 flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center space-x-2">

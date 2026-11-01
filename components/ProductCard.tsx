@@ -98,10 +98,15 @@ export default function ProductCard({
         </div>
 
         {/* Clean Sourcing Division Pill */}
-        <div className="absolute top-3 left-3 z-10">
+        <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 flex-wrap">
           <span className="inline-block text-[9.5px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#0A1A2F]/90 text-[#C9A86A] backdrop-blur-xs border border-[#C9A86A]/40 shadow-xs">
             {divisionLabel}
           </span>
+          {product.moq <= 100 && (
+            <span className="inline-block text-[9px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500 text-slate-900 shadow-xs font-mono">
+              ⚡ PILOT MOQ 100
+            </span>
+          )}
         </div>
 
         {/* Dynamic Colorway / Variant Floating Pill */}
@@ -272,8 +277,8 @@ export default function ProductCard({
               <Box className="h-3 w-3 text-slate-400" />
               <span>Export MOQ:</span>
             </span>
-            <span className="font-semibold text-[#0A1A2F]">
-              {product.moq} units
+            <span className={`font-semibold ${product.moq <= 100 ? 'text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-300 font-bold' : 'text-[#0A1A2F]'}`}>
+              {product.moq <= 100 ? `⚡ ${product.moq} units (Low MOQ)` : `${product.moq} units`}
             </span>
           </div>
 

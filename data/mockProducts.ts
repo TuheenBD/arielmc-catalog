@@ -2951,6 +2951,495 @@ export const MOCK_PRODUCTS: Product[] = [
     }
   },
   {
+    "id": "prod-jd-pkg-33-ffc",
+    "prodtId": 333,
+    "roadMapCode": "JD-PKG-33",
+    "sku": "JD-PKG-33",
+    "name": "ArielMC Executive Corporate Pilot Tote with Front Canvas Pocket",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Capsule Run & Pilot Orders (Low MOQ: 100 Pcs)",
+    "subCategory": "Pilot Runs & Corporate Gifting (MOQ: 100 Pcs)",
+    "description": "Heavy laminated natural golden jute tote featuring 10 oz unbleached cotton canvas front slip pocket, structured gussets, and soft padded cotton webbing carry handles. Engineered for corporate branding, conference kits, and boutique pilot runs.",
+    "price": 2.85,
+    "moq": 100,
+    "isLowMoq": true,
+    "pilotMoq": 100,
+    "priceTiers": [
+      { "minQty": 100, "maxQty": 299, "label": "Pilot Run (100–299)", "price": 4.90 },
+      { "minQty": 300, "maxQty": 499, "label": "Commercial (300–499)", "price": 3.80 },
+      { "minQty": 500, "label": "Volume Scale (500+)", "price": 2.85 }
+    ],
+    "currency": "USD",
+    "dimensions": {
+      "heightMm": 330,
+      "widthMm": 380,
+      "depthMm": 150
+    },
+    "materials": [
+      "100% High-Grade Natural Bangladeshi Golden Jute",
+      "10 oz Natural Unbleached Cotton Canvas Front Pocket",
+      "Food-Grade Wipe-Clean PP Water-Resistant Inner Lamination",
+      "Padded Cotton Webbing Rolled Core Carry Handles"
+    ],
+    "imageUrl": "/images/products/jute/pilot-canvas-tote.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/pilot-canvas-tote.jpg",
+        "label": "Pocket Profile",
+        "tag": "Canvas Pocket Detail",
+        "title": "Natural Jute Tote with Contrast Canvas Pocket",
+        "desc": "Executive tote profile featuring unbleached canvas slip pocket optimized for corporate silkscreen and heat-transfer branding."
+      },
+      {
+        "src": "/images/products/jute/pilot-canvas-tote-lifestyle.jpg",
+        "label": "Collection Setting",
+        "tag": "Eco-Lifestyle Lineup",
+        "title": "Artisan Woodland Lifestyle Trio",
+        "desc": "Natural eco presentation showcasing golden jute tote, tall wine carrier, and border shopper in outdoor woodland setting."
+      },
+      {
+        "src": "/images/products/jute/pilot-bleached-shopper.jpg",
+        "label": "Bleached Edit",
+        "tag": "Executive Conference Tote",
+        "title": "Bleached Natural Corporate Shopper",
+        "desc": "Off-white bleached jute structured carrier with rolled cotton rope handles and custom institutional corporate imprint."
+      },
+      {
+        "src": "/images/products/jute/pilot-corporate-versatility.jpg",
+        "label": "Gusset Lineup",
+        "tag": "Versatile Form Factors",
+        "title": "Corporate Multi-Gusset & Sizing Suite",
+        "desc": "Comprehensive overview showing olive green, onyx black, and natural ecru corporate gusset variations."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 340,
+    "originHub": "Dhaka Enterprise Packaging Hub • Facility Code: FAC-DHK-05",
+    "complianceCertifications": [
+      "ISO 9001:2015 Quality Management",
+      "SEDEX SMETA 4-Pillar Audited",
+      "OEKO-TEX Standard 100 Certified Dyes",
+      "100% Recyclable Biodegradable Natural Fiber"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "4202.92.98",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 50,
+      "heightMm": 420,
+      "widthMm": 580,
+      "depthMm": 400,
+      "grossWeightKg": 18.5,
+      "cbm": 0.097,
+      "unitsPer20ftContainer": 14500,
+      "unitsPer40ftContainer": 32000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 35,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP Available"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5/2.5 Major/Minor",
+      "seamStrength": "Reinforced Cross-X Box Stitch Handles > 250N",
+      "finishing": "Precision Screen Printing / Heat Transfer Ready"
+    }
+  },
+  {
+    "id": "prod-jd-pkg-34-ffc",
+    "prodtId": 334,
+    "roadMapCode": "JD-PKG-34",
+    "sku": "JD-PKG-34",
+    "name": "ArielMC Clear-Window Single & Dual Wine/Beverage Carrier",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Capsule Run & Pilot Orders (Low MOQ: 100 Pcs)",
+    "subCategory": "Pilot Runs & Corporate Gifting (MOQ: 100 Pcs)",
+    "description": "Eco-luxury wine and beverage gifting tote crafted from 360 GSM natural laminated golden jute with transparent food-grade presentation window, rigid partition dividers, and soft padded cane-style handles.",
+    "price": 1.95,
+    "sizeOptions": [
+      {
+        "label": "Single Bottle Carrier (100 × 350 × 100 mm)",
+        "shortLabel": "Single Bottle",
+        "price": 1.95,
+        "dimensions": {
+          "heightMm": 350,
+          "widthMm": 100,
+          "depthMm": 100
+        },
+        "weightGrams": 140
+      },
+      {
+        "label": "Dual Bottle Carrier (200 × 350 × 100 mm)",
+        "shortLabel": "Dual Bottle",
+        "price": 2.80,
+        "dimensions": {
+          "heightMm": 350,
+          "widthMm": 200,
+          "depthMm": 100
+        },
+        "weightGrams": 230
+      }
+    ],
+    "moq": 100,
+    "isLowMoq": true,
+    "pilotMoq": 100,
+    "priceTiers": [
+      { "minQty": 100, "maxQty": 299, "label": "Pilot Run (100–299)", "price": 3.40 },
+      { "minQty": 300, "maxQty": 499, "label": "Commercial (300–499)", "price": 2.65 },
+      { "minQty": 500, "label": "Volume Scale (500+)", "price": 1.95 }
+    ],
+    "currency": "USD",
+    "dimensions": {
+      "heightMm": 350,
+      "widthMm": 200,
+      "depthMm": 100
+    },
+    "materials": [
+      "360 GSM Laminated Natural Golden Jute",
+      "Clear Food-Grade Showcase Window",
+      "Padded Cane-Style Rolled Rope Handles",
+      "Heavy-Duty Reinforced Bottle Divider"
+    ],
+    "imageUrl": "/images/products/jute/pilot-wine-window-carrier.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/pilot-wine-window-carrier.jpg",
+        "label": "Window Carrier",
+        "tag": "Beverage Showcase",
+        "title": "Single & Dual Wine Bottle Window Display",
+        "desc": "Natural golden jute wine carriers featuring crystal-clear display windows, padded handles, and rigid protective base."
+      },
+      {
+        "src": "/images/products/jute/pilot-canvas-tote-lifestyle.jpg",
+        "label": "Tall Profile",
+        "tag": "Slim Silhouette",
+        "title": "Artisan Tall Bottle Carrier Profile",
+        "desc": "Slim single bottle carrying pouch positioned beside structured conference shoppers in woodland setting."
+      },
+      {
+        "src": "/images/products/jute/pilot-corporate-versatility.jpg",
+        "label": "Product Suite",
+        "tag": "Comprehensive Lineup",
+        "title": "Wine Carrier & Corporate Tote Showcase",
+        "desc": "Detailed overview of single bottle tote form factor alongside corporate color-gusset options."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 230,
+    "originHub": "Dhaka Enterprise Packaging Hub • Facility Code: FAC-DHK-05",
+    "complianceCertifications": [
+      "ISO 9001:2015 Certified",
+      "Food Safety Contact Certified",
+      "AZO-Free Eco Inks",
+      "Sedex SMETA Audited"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "4202.92.98",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 100,
+      "heightMm": 450,
+      "widthMm": 600,
+      "depthMm": 450,
+      "grossWeightKg": 24,
+      "cbm": 0.12,
+      "unitsPer20ftContainer": 23000,
+      "unitsPer40ftContainer": 49000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 35,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP Available"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5",
+      "seamStrength": "Load-bearing capacity > 8kg per compartment",
+      "foodSafety": "FDA 21 CFR Compliant Window Film"
+    }
+  },
+  {
+    "id": "prod-jd-pkg-35-ffc",
+    "prodtId": 335,
+    "roadMapCode": "JD-PKG-35",
+    "sku": "JD-PKG-35",
+    "name": "ArielMC Color-Gusset Corporate Shopper Suite",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Capsule Run & Pilot Orders (Low MOQ: 100 Pcs)",
+    "subCategory": "Pilot Runs & Corporate Gifting (MOQ: 100 Pcs)",
+    "description": "Structured corporate shopper tote engineered with raw golden jute body and dyed azo-free color-contrast side gussets (Navy, Forest Green, Terracotta, Burgundy, Onyx). Padded handles and perimeter piping.",
+    "price": 2.45,
+    "sizeOptions": [
+      {
+        "label": "Medium Corporate Shopper (300 × 320 × 140 mm)",
+        "shortLabel": "Medium Shopper",
+        "price": 2.45,
+        "dimensions": {
+          "heightMm": 320,
+          "widthMm": 300,
+          "depthMm": 140
+        },
+        "weightGrams": 280
+      },
+      {
+        "label": "Large Conference Tote (380 × 350 × 160 mm)",
+        "shortLabel": "Large Conference",
+        "price": 2.95,
+        "dimensions": {
+          "heightMm": 350,
+          "widthMm": 380,
+          "depthMm": 160
+        },
+        "weightGrams": 360
+      }
+    ],
+    "moq": 100,
+    "isLowMoq": true,
+    "pilotMoq": 100,
+    "priceTiers": [
+      { "minQty": 100, "maxQty": 299, "label": "Pilot Run (100–299)", "price": 4.25 },
+      { "minQty": 300, "maxQty": 499, "label": "Commercial (300–499)", "price": 3.25 },
+      { "minQty": 500, "label": "Volume Scale (500+)", "price": 2.45 }
+    ],
+    "currency": "USD",
+    "dimensions": {
+      "heightMm": 320,
+      "widthMm": 300,
+      "depthMm": 140
+    },
+    "materials": [
+      "350 GSM Laminated Golden Jute Body",
+      "Azo-Free Reactive Dyed Color Gussets (Navy, Green, Orange, Red, Black)",
+      "Full Perimeter Cotton Twill Piping",
+      "Padded Core Rolled Webbing Handles"
+    ],
+    "imageUrl": "/images/products/jute/pilot-color-gusset-shopper.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/pilot-color-gusset-shopper.jpg",
+        "label": "Color Gusset Lineup",
+        "tag": "Corporate Palettes",
+        "title": "5 Contrast Gusset Colorways",
+        "desc": "Executive shopper sizes shown with contrast gussets in deep navy, forest green, terracotta orange, and burgundy red."
+      },
+      {
+        "src": "/images/products/jute/pilot-corporate-conference-tote.jpg",
+        "label": "Conference Print",
+        "tag": "Corporate Branding",
+        "title": "Custom Corporate Silk-Screening",
+        "desc": "Natural bleached jute corporate tote demonstrating high-definition multi-color company emblem printing."
+      },
+      {
+        "src": "/images/products/jute/pilot-corporate-versatility.jpg",
+        "label": "Olive Gusset",
+        "tag": "Dual Size Presentation",
+        "title": "Olive Green Gusset & Mini Shopper",
+        "desc": "Executive olive green contrast tote paired with matching natural ecru gift bag."
+      },
+      {
+        "src": "/images/products/jute/pilot-corporate-white-tote.jpg",
+        "label": "Office Setting",
+        "tag": "Executive Desk Suite",
+        "title": "Corporate Conference Kit Desk Setting",
+        "desc": "Structured corporate event tote presented in executive boardroom office environment."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 280,
+    "originHub": "Dhaka Enterprise Packaging Hub • Facility Code: FAC-DHK-05",
+    "complianceCertifications": [
+      "ISO 9001:2015 Certified",
+      "OEKO-TEX Standard 100 Certified Dyes",
+      "SEDEX SMETA Audited",
+      "100% Biodegradable Base"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "4202.92.98",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 60,
+      "heightMm": 450,
+      "widthMm": 620,
+      "depthMm": 420,
+      "grossWeightKg": 19,
+      "cbm": 0.117,
+      "unitsPer20ftContainer": 14000,
+      "unitsPer40ftContainer": 30000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 35,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP Available"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5",
+      "colorFastness": "ISO 105-C06 Grade 4-5",
+      "seamStrength": "Heavy Bar-Tack Handle Reinforcement > 260N"
+    }
+  },
+  {
+    "id": "prod-jd-pkg-36-ffc",
+    "prodtId": 336,
+    "roadMapCode": "JD-PKG-36",
+    "sku": "JD-PKG-36",
+    "name": "ArielMC Coordinated Executive Desk & Hospitality Amenity Set",
+    "category": "Jute",
+    "divisionTitle": "02 The Golden Fiber Edit",
+    "categoryGroup": "Capsule Run & Pilot Orders (Low MOQ: 100 Pcs)",
+    "subCategory": "Pilot Runs & Corporate Gifting (MOQ: 100 Pcs)",
+    "description": "Eco-luxury coordinated desk and hospitality accessory collection including executive structured tissue box dispenser, insulated bento lunch tote, zipper document pouch, and duffle amenity case.",
+    "price": 1.50,
+    "sizeOptions": [
+      {
+        "label": "Executive Tissue Box Dispenser Cover",
+        "shortLabel": "Tissue Box Cover",
+        "price": 1.50,
+        "dimensions": {
+          "heightMm": 90,
+          "widthMm": 250,
+          "depthMm": 130
+        },
+        "weightGrams": 110
+      },
+      {
+        "label": "Insulated Bento Lunch Carrier",
+        "shortLabel": "Bento Lunch Tote",
+        "price": 2.45,
+        "dimensions": {
+          "heightMm": 180,
+          "widthMm": 240,
+          "depthMm": 150
+        },
+        "weightGrams": 220
+      },
+      {
+        "label": "Travel Amenity & Document Pouch",
+        "shortLabel": "Amenity Pouch",
+        "price": 2.10,
+        "dimensions": {
+          "heightMm": 160,
+          "widthMm": 280,
+          "depthMm": 120
+        },
+        "weightGrams": 160
+      }
+    ],
+    "moq": 100,
+    "isLowMoq": true,
+    "pilotMoq": 100,
+    "priceTiers": [
+      { "minQty": 100, "maxQty": 299, "label": "Pilot Run (100–299)", "price": 2.90 },
+      { "minQty": 300, "maxQty": 499, "label": "Commercial (300–499)", "price": 2.10 },
+      { "minQty": 500, "label": "Volume Scale (500+)", "price": 1.50 }
+    ],
+    "currency": "USD",
+    "dimensions": {
+      "heightMm": 90,
+      "widthMm": 250,
+      "depthMm": 130
+    },
+    "materials": [
+      "100% Fine Bangladeshi Golden Jute Shell",
+      "Moisture-Resistant Inner Lining",
+      "YKK Smooth Nylon Coil Zippers",
+      "Contrast Piping & Top-Stitching"
+    ],
+    "imageUrl": "/images/products/jute/pilot-hospitality-suite.jpg",
+    "gallery": [
+      {
+        "src": "/images/products/jute/pilot-hospitality-suite.jpg",
+        "label": "Hospitality Suite",
+        "tag": "Coordinated Corporate Gifts",
+        "title": "Emerald & Natural Executive Gifting Set",
+        "desc": "Coordinated suite comprising tote bag, zipper pouch, insulated lunch carrier, and single bottle tote with emerald green accents."
+      },
+      {
+        "src": "/images/products/jute/pilot-hospitality-infographic.jpg",
+        "label": "6-Piece Range",
+        "tag": "Versatile Product Line",
+        "title": "Hospitality & Travel Collection Matrix",
+        "desc": "Comprehensive range showing tissue box dispenser, duffle bag, lunch bag, bottle holder, and laundry sack."
+      },
+      {
+        "src": "/images/products/jute/pilot-corporate-versatility.jpg",
+        "label": "Finish Options",
+        "tag": "Material Excellence",
+        "title": "Executive Finish & Handle Details",
+        "desc": "Detailed craftsmanship view of precision-stitched handles and durable edge binding."
+      }
+    ],
+    "aspectRatio": 1,
+    "weightGrams": 110,
+    "originHub": "Dhaka Enterprise Packaging Hub • Facility Code: FAC-DHK-05",
+    "complianceCertifications": [
+      "ISO 9001:2015 Certified",
+      "Hospitality Grade Cleanability",
+      "Azo-Free Certified",
+      "Sedex SMETA Audited"
+    ],
+    "inStock": true,
+    "leadTimeWeeks": 3,
+    "hsCode": "6305.10.10",
+    "tariffPreferences": [
+      "UK DCTS 0% Duty",
+      "EU GSP Duty-Free",
+      "US HTS 0%"
+    ],
+    "masterCarton": {
+      "unitsPerCarton": 120,
+      "heightMm": 400,
+      "widthMm": 550,
+      "depthMm": 450,
+      "grossWeightKg": 16,
+      "cbm": 0.099,
+      "unitsPer20ftContainer": 32000,
+      "unitsPer40ftContainer": 68000
+    },
+    "sampleLeadTimeDays": 5,
+    "samplePriceUsd": 35,
+    "incoTermsAvailable": [
+      "FOB Chittagong",
+      "DAC Dhaka Air Cargo",
+      "CIF Felixstowe",
+      "CIF Rotterdam",
+      "DDP Available"
+    ],
+    "technicalSpecs": {
+      "testStandard": "AQL 1.5",
+      "needleSafety": "100% Conveyorized Needle Detector Inspected",
+      "finishing": "Wipeable Stain-Resistant Inner Barrier"
+    }
+  },
+  {
     "id": "prod-ct-ct-ath-48",
     "prodtId": 49,
     "roadMapCode": "CT-ATH-48",

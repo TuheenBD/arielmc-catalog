@@ -61,6 +61,13 @@ export interface ProductGalleryItem {
   desc?: string;
 }
 
+export interface PriceTier {
+  minQty: number;
+  maxQty?: number;
+  label: string;
+  price: number;
+}
+
 export interface Product {
   id: string;
   sku: string;
@@ -71,6 +78,9 @@ export interface Product {
   price: number; // Base USD FOB
   currency: string;
   moq: number;
+  isLowMoq?: boolean;
+  pilotMoq?: number;
+  priceTiers?: PriceTier[];
   dimensions: ProductDimensions;
   materials: string[];
   imageUrl: string;
