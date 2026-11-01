@@ -303,7 +303,16 @@ export default function Footer({ onOpenSamplePolicy, onSelectCategory }: FooterP
           )}
           <span>•</span>
           <a
-            href="https://arielmc.com/portal.html"
+            href="https://arielmc.com/privacy-policy.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#C9A86A] transition font-medium"
+          >
+            Privacy Policy &amp; Terms
+          </a>
+          <span>•</span>
+          <a
+            href="https://portal.arielmc.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#C9A86A] transition font-medium flex items-center gap-1"
